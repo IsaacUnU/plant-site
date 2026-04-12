@@ -1,0 +1,56 @@
+name: Content Pipeline
+
+on:
+  schedule:
+    # Runs 4 times per day: 6am, 10am, 2pm, 6pm UTC
+    - cron: '0 6,10,14,18 * * *'
+  workflow_dispatch:
+    inputs:
+      plant_name:
+        description: 'Specific plant to generate (leave empty for next in queue)'
+        required: false
+        type: string
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run content pipeline
+        run: |
+          if [ -n "${{ github.event.inputs.plant_name }}" ]; then
+            node scripts/pipeline.js "${{ github.event.inputs.plant_name }}"
+          else
+            node scripts/pipeline.js
+          fi
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+
+      - name: Commit new content
+        run: |
+          git config --local user.email "pipeline@plantcareguide.com"
+          git config --local user.name "Content Pipeline"
+          git add content/plants/ scripts/plants-queue.json public/images/plants/
+          if git diff --staged --quiet; then
+            echo "No new content to commit"
+          else
+            git commit -m "feat: add plant care guide + image via pipeline [skip ci]"
+            git push
+          fi
