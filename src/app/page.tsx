@@ -162,7 +162,7 @@ export default function HomePage() {
             className="text-2xl font-bold text-[#0F172A] mb-10 text-center"
             style={{ fontFamily: 'var(--font-display)' }}
           >
-            Why PlantCare Guide?
+            Why PlantCare Central?
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 stagger-children">
             {[

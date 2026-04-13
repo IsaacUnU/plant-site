@@ -61,7 +61,7 @@ export default async function OGImage({ params }: { params: Promise<{ slug: stri
               <line x1="16" y1="8" x2="16" y2="23" stroke="#15803D" strokeWidth="1.2" strokeLinecap="round" />
             </svg>
             <span style={{ fontSize: 20, fontWeight: 600, color: '#0F172A', letterSpacing: '-0.02em' }}>
-              PlantCare Guide
+              PlantCare Central
             </span>
           </div>
 
@@ -114,7 +114,7 @@ export default async function OGImage({ params }: { params: Promise<{ slug: stri
           display: 'flex', alignItems: 'center', justifyContent: 'space-between',
         }}>
           <span style={{ color: 'rgba(255,255,255,0.7)', fontSize: 16 }}>
-            plantcareguide.com
+            plantcarecentral.com
           </span>
           <span style={{ color: 'white', fontSize: 16, fontWeight: 600 }}>
             Complete Care Guide →

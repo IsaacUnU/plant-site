@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { LogoMark } from './Logo';
 
-const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'PlantCare Guide';
+const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'PlantCare Central';
 
 export default function Footer() {
   const year = new Date().getFullYear();

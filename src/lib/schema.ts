@@ -1,7 +1,7 @@
 import { Plant } from '@/types/plant';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://yoursite.com';
-const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'PlantCare Guide';
+const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'PlantCare Central';
 
 export function articleSchema(plant: Plant) {
   return {

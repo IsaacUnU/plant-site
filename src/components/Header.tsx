@@ -3,7 +3,7 @@ import { Search } from 'lucide-react';
 import { LogoMark } from './Logo';
 import MobileMenu from './MobileMenu';
 
-const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'PlantCare Guide';
+const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'PlantCare Central';
 
 const navLinks = [
   { href: '/plants', label: 'All Plants' },

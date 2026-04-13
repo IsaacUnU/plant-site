@@ -21,7 +21,7 @@ const raleway = Raleway({
   display: 'swap',
 });
 
-const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'PlantCare Guide';
+const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'PlantCare Central';
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://yoursite.com';
 const SITE_DESCRIPTION =
   'Expert plant care guides for every houseplant. Learn how to water, feed, and grow healthy plants indoors.';

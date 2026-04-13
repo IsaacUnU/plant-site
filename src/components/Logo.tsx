@@ -32,7 +32,7 @@ export function LogoFull({ height = 36, className = '' }: LogoImageProps) {
   return (
     <Image
       src="/images/logo/logo-full.png"
-      alt="PlantCare Guide"
+      alt="PlantCare Central"
       width={0}
       height={height}
       sizes="100vw"
@@ -48,7 +48,7 @@ export function LogoDark({ height = 36, className = '' }: LogoImageProps) {
   return (
     <Image
       src="/images/logo/logo-dark.png"
-      alt="PlantCare Guide"
+      alt="PlantCare Central"
       width={0}
       height={height}
       sizes="100vw"
@@ -73,7 +73,7 @@ export default function Logo({
   size = 32,
   showText = true,
   textClassName = '',
-  siteName = 'PlantCare Guide',
+  siteName = 'PlantCare Central',
   variant = 'default',
 }: LogoProps) {
   const textColor = variant === 'light' ? 'text-white' : 'text-[#0F172A]';
