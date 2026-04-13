@@ -15,7 +15,8 @@ import {
 
 const PLANTS_DIR = path.join(process.cwd(), 'content', 'plants');
 
-function normalizeSearchValue(value: string): string {
+function normalizeSearchValue(value: string | undefined | null): string {
+  if (!value) return '';
   return value
     .toLowerCase()
     .replace(/[-_]+/g, ' ')
@@ -25,7 +26,7 @@ function normalizeSearchValue(value: string): string {
 
 function getDerivedSearchTerms(fm: PlantFrontmatter): string[] {
   const terms = new Set<string>();
-  const add = (...values: string[]) => {
+  const add = (...values: (string | undefined | null)[]) => {
     values
       .map(normalizeSearchValue)
       .filter(Boolean)

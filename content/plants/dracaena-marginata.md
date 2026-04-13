@@ -1,9 +1,4 @@
 ---
-image: "https://images.unsplash.com/photo-1584125969736-16f1bd470401?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxkcmFjYWVuYSUyMG1hcmdpbmF0YSUyMGhvdXNlcGxhbnQlMjBpbmRvb3J8ZW58MHwwfHx8MTc3NjA5MTExNnww&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop"
-imageAlt: dracaena-marginata houseplant
-imageCredit: Tatiana Rodriguez
-imageCreditUrl: "https://unsplash.com/@tata186?utm_source=plantcare_guide&utm_medium=referral"
-------
 title: "Dracaena marginata Care Guide: Tips for a Healthy and Thriving Plant"
 slug: "dracaena-marginata"
 commonName: "Red-Edged Dracaena"
@@ -20,6 +15,11 @@ growthRate: "moderate"
 description: "The Dracaena marginata is a popular and versatile houseplant known for its striking red-edged leaves and ability to purify the air. With proper care, this plant can grow up to 10 feet tall and provide a beautiful touch to any room, making it a great choice for indoor gardeners of all levels."
 datePublished: "2026-04-13"
 dateModified: "2026-04-13"
+image: "https://images.unsplash.com/photo-1584125969736-16f1bd470401?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxkcmFjYWVuYSUyMG1hcmdpbmF0YSUyMGhvdXNlcGxhbnQlMjBpbmRvb3J8ZW58MHwwfHx8MTc3NjA5MTExNnww&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop"
+imageAlt: "Dracaena marginata houseplant"
+imageCredit: "Tatiana Rodriguez"
+imageCreditUrl: "https://unsplash.com/@tata186?utm_source=plantcare_guide&utm_medium=referral"
+---
 
 ## Overview
 The Dracaena marginata, also known as the Red-Edged Dracaena, is a tropical plant native to Madagascar. It is a member of the Asparagaceae family and is known for its slender leaves with red or pink margins, which give it a unique and attractive appearance. This plant has become a popular choice for indoor gardens due to its low-maintenance requirements and ability to thrive in a variety of lighting conditions. The Dracaena marginata is also a great air-purifying plant, making it a popular choice for those looking to improve the air quality in their homes.
