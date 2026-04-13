@@ -15,6 +15,10 @@ growthRate: "moderate"
 description: "The Boston Fern is a popular, low-maintenance houseplant known for its lush, green foliage and air-purifying properties. With proper care, this tropical plant can thrive in indoor conditions, bringing a touch of natural beauty to any room."
 datePublished: "2026-04-13"
 dateModified: "2026-04-13"
+image: "https://images.unsplash.com/photo-1515054788900-574580f821ad?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxib3N0b24lMjBmZXJufGVufDB8MHx8fDE3NzYxMDk1NzJ8MA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop"
+imageAlt: "Boston Fern houseplant"
+imageCredit: "Unknown Wong"
+imageCreditUrl: "https://unsplash.com/@goodchinese?utm_source=plantcare_guide&utm_medium=referral"
 ---
 
 ## Overview
