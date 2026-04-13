@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-      <h1 className="text-3xl font-bold text-gray-900 mb-6">About PlantCare Guide</h1>
+      <h1 className="text-3xl font-bold text-gray-900 mb-6">About {SITE_NAME}</h1>
 
       <div className="prose max-w-none">
         <p>
-          Welcome to <strong>PlantCare Guide</strong> — your trusted source for houseplant care
+          Welcome to <strong>{SITE_NAME}</strong> — your trusted source for houseplant care
           information. We believe that anyone can become a confident plant parent with the right
           knowledge and guidance.
         </p>

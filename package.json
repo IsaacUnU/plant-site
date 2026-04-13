@@ -10,6 +10,7 @@
     "images": "node --env-file=.env.local scripts/fetch-images.js"
   },
   "dependencies": {
+    "@formspree/react": "^3.0.0",
     "clsx": "^2.1.1",
     "fuse.js": "^7.3.0",
     "gray-matter": "^4.0.3",

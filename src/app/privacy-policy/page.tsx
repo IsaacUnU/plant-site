@@ -6,7 +6,7 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://yoursite.com';
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description: `Privacy policy for ${SITE_NAME}.`,
-  robots: { index: false, follow: false },
+  robots: { index: true, follow: true },
 };
 
 export default function PrivacyPolicyPage() {
