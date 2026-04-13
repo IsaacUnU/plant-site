@@ -2,8 +2,8 @@ name: Content Pipeline
 
 on:
   schedule:
-    # Runs 4 times per day: 6am, 10am, 2pm, 6pm UTC
-    - cron: '0 6,10,14,18 * * *'
+    # Runs once per day at 10:00 UTC (12:00 Spain CEST)
+    - cron: '0 10 * * *'
   workflow_dispatch:
     inputs:
       plant_name:
