@@ -3,10 +3,26 @@ import { Leaf, ArrowRight, Sun, Droplets, BookOpen } from 'lucide-react';
 import { getAllPlants, getAllCategories } from '@/lib/plants';
 import PlantCard from '@/components/PlantCard';
 import AdSlot from '@/components/AdSlot';
+import HeroCarousel, { type HeroPlant } from '@/components/HeroCarousel';
 
 export default function HomePage() {
-  const plants = getAllPlants().slice(0, 6);
+  const allPlants = getAllPlants();
+  const plants = allPlants.slice(0, 6);
   const categories = getAllCategories();
+
+  const carouselPlants: HeroPlant[] = allPlants
+    .filter((p) => p.image)
+    .slice(0, 5)
+    .map((p) => ({
+      slug: p.slug,
+      commonName: p.commonName,
+      scientificName: p.scientificName,
+      difficulty: p.difficulty,
+      light: p.light,
+      water: p.water,
+      image: p.image,
+      imageAlt: p.imageAlt,
+    }));
 
   return (
     <>
@@ -22,44 +38,56 @@ export default function HomePage() {
           style={{ background: 'radial-gradient(circle, #059669 0%, transparent 70%)' }}
         />
 
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 relative">
-          <div className="max-w-2xl">
-            {/* Eyebrow */}
-            <div className="inline-flex items-center gap-2 bg-[#F0FDF4] border border-[#E2EFE7] rounded-full px-4 py-1.5 mb-6 animate-fade-in">
-              <Leaf className="w-3.5 h-3.5 text-[#15803D]" />
-              <span className="text-xs font-semibold text-[#15803D] uppercase tracking-widest">
-                Plant Care Guides
-              </span>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 relative">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+            {/* Left: text + CTAs */}
+            <div>
+              {/* Eyebrow */}
+              <div className="inline-flex items-center gap-2 bg-[#F0FDF4] border border-[#E2EFE7] rounded-full px-4 py-1.5 mb-6 animate-fade-in">
+                <Leaf className="w-3.5 h-3.5 text-[#15803D]" />
+                <span className="text-xs font-semibold text-[#15803D] uppercase tracking-widest">
+                  Plant Care Guides
+                </span>
+              </div>
+
+              <h1
+                className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0F172A] leading-[1.1] mb-6 animate-fade-in-up"
+                style={{ fontFamily: 'var(--font-display)', animationDelay: '80ms' }}
+              >
+                Every plant,<br />
+                <span className="text-[#15803D] italic">thriving.</span>
+              </h1>
+
+              <p className="text-lg text-[#475569] leading-relaxed mb-8 max-w-xl animate-fade-in-up" style={{ animationDelay: '160ms' }}>
+                Expert care guides for every houseplant — from beginner-friendly pothos
+                to demanding fiddle-leaf figs. Grow with confidence.
+              </p>
+
+              <div className="flex flex-wrap gap-3 animate-fade-in-up" style={{ animationDelay: '240ms' }}>
+                <Link
+                  href="/plants"
+                  className="inline-flex items-center gap-2 bg-[#15803D] text-white px-6 py-3 rounded-2xl font-semibold hover:bg-[#166534] transition-colors duration-200 cursor-pointer"
+                >
+                  Browse All Plants
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+                <Link
+                  href="/plants"
+                  className="inline-flex items-center gap-2 bg-white border border-[#E2EFE7] text-[#0F172A] px-6 py-3 rounded-2xl font-semibold hover:border-[#86efac] hover:text-[#15803D] transition-all duration-200 cursor-pointer"
+                >
+                  Start with Tropicals
+                </Link>
+              </div>
             </div>
 
-            <h1
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0F172A] leading-[1.1] mb-6 animate-fade-in-up"
-              style={{ fontFamily: 'var(--font-display)', animationDelay: '80ms' }}
-            >
-              Every plant,<br />
-              <span className="text-[#15803D] italic">thriving.</span>
-            </h1>
+            {/* Right: plant carousel (desktop only) */}
+            {carouselPlants.length > 0 && (
+              <div className="hidden lg:flex justify-center items-center py-6">
+                <HeroCarousel plants={carouselPlants} />
+              </div>
+            )}
 
-            <p className="text-lg text-[#475569] leading-relaxed mb-8 max-w-xl animate-fade-in-up" style={{ animationDelay: '160ms' }}>
-              Expert care guides for every houseplant — from beginner-friendly pothos
-              to demanding fiddle-leaf figs. Grow with confidence.
-            </p>
-
-            <div className="flex flex-wrap gap-3 animate-fade-in-up" style={{ animationDelay: '240ms' }}>
-              <Link
-                href="/plants"
-                className="inline-flex items-center gap-2 bg-[#15803D] text-white px-6 py-3 rounded-2xl font-semibold hover:bg-[#166534] transition-colors duration-200 cursor-pointer"
-              >
-                Browse All Plants
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-              <Link
-                href="/category/tropical"
-                className="inline-flex items-center gap-2 bg-white border border-[#E2EFE7] text-[#0F172A] px-6 py-3 rounded-2xl font-semibold hover:border-[#86efac] hover:text-[#15803D] transition-all duration-200 cursor-pointer"
-              >
-                Start with Tropicals
-              </Link>
-            </div>
           </div>
         </div>
       </section>

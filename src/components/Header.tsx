@@ -2,17 +2,26 @@ import Link from 'next/link';
 import { Search } from 'lucide-react';
 import { LogoMark } from './Logo';
 import MobileMenu from './MobileMenu';
+import { getAllCategories } from '@/lib/plants';
 
 const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'PlantCare Central';
 
-const navLinks = [
-  { href: '/plants', label: 'All Plants' },
-  { href: '/category/tropical', label: 'Tropical' },
-  { href: '/category/succulents', label: 'Succulents' },
-  { href: '/category/low-light', label: 'Low Light' },
-];
-
 export default function Header() {
+  // Dynamic: top 3 categories sorted by plant count
+  const topCategories = getAllCategories()
+    .sort((a, b) => b.count - a.count)
+    .slice(0, 3)
+    .map((cat) => ({
+      href: `/category/${cat.slug}`,
+      label: cat.name.charAt(0).toUpperCase() + cat.name.slice(1),
+    }));
+
+  const navLinks = [
+    { href: '/plants', label: 'All Plants' },
+    ...topCategories,
+    { href: '/about', label: 'About' },
+  ];
+
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-[#E2EFE7]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,7 +51,7 @@ export default function Header() {
             </Link>
           </nav>
 
-          {/* Mobile: search icon + hamburger (with dropdown) */}
+          {/* Mobile: search icon + hamburger */}
           <div className="flex items-center gap-1">
             <Link
               href="/search"
@@ -51,7 +60,7 @@ export default function Header() {
             >
               <Search className="w-5 h-5" />
             </Link>
-            <MobileMenu />
+            <MobileMenu navLinks={navLinks} />
           </div>
         </div>
       </div>

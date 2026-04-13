@@ -5,15 +5,12 @@ import Link from 'next/link';
 import { Menu, X, Search } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 
-const navLinks = [
-  { href: '/plants',              label: 'All Plants' },
-  { href: '/category/tropical',   label: 'Tropical' },
-  { href: '/category/succulents', label: 'Succulents' },
-  { href: '/category/low-light',  label: 'Low Light' },
-  { href: '/search',              label: 'Search', icon: <Search className="w-4 h-4" /> },
-];
+interface NavLink {
+  href: string;
+  label: string;
+}
 
-export default function MobileMenu() {
+export default function MobileMenu({ navLinks }: { navLinks: NavLink[] }) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
@@ -47,10 +44,16 @@ export default function MobileMenu() {
                 href={link.href}
                 className="flex items-center gap-2.5 px-4 py-3 rounded-xl text-sm font-medium text-[#475569] hover:text-[#15803D] hover:bg-[#F0FDF4] transition-all duration-200 cursor-pointer"
               >
-                {link.icon && link.icon}
                 {link.label}
               </Link>
             ))}
+            <Link
+              href="/search"
+              className="flex items-center gap-2.5 px-4 py-3 rounded-xl text-sm font-medium text-[#475569] hover:text-[#15803D] hover:bg-[#F0FDF4] transition-all duration-200 cursor-pointer"
+            >
+              <Search className="w-4 h-4" />
+              Search
+            </Link>
           </nav>
         </div>
       )}
