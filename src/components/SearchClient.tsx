@@ -11,6 +11,25 @@ interface SearchClientProps {
   plants: PlantCardData[];
 }
 
+function normalizeSearchValue(value: string): string {
+  return value
+    .toLowerCase()
+    .replace(/[-_]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function matchesAllQueryTokens(plant: PlantCardData, query: string): boolean {
+  const normalizedQuery = normalizeSearchValue(query);
+
+  if (!normalizedQuery) {
+    return false;
+  }
+
+  const tokens = normalizedQuery.split(' ').filter(Boolean);
+  return tokens.every((token) => plant.searchText.includes(token));
+}
+
 export default function SearchClient({ plants }: SearchClientProps) {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<PlantCardData[]>([]);
@@ -20,15 +39,21 @@ export default function SearchClient({ plants }: SearchClientProps) {
   const fuse = useRef(
     new Fuse(plants, {
       keys: [
-        { name: 'commonName',     weight: 0.4 },
-        { name: 'scientificName', weight: 0.25 },
-        { name: 'category',       weight: 0.15 },
-        { name: 'description',    weight: 0.1  },
-        { name: 'tags',           weight: 0.1  },
+        { name: 'commonName',     weight: 0.3  },
+        { name: 'scientificName', weight: 0.18 },
+        { name: 'category',       weight: 0.12 },
+        { name: 'difficulty',     weight: 0.12 },
+        { name: 'growthRate',     weight: 0.1  },
+        { name: 'light',          weight: 0.08 },
+        { name: 'toxicity',       weight: 0.06 },
+        { name: 'tags',           weight: 0.14 },
+        { name: 'searchTerms',    weight: 0.18 },
+        { name: 'description',    weight: 0.06 },
       ],
       threshold: 0.35,
       includeScore: true,
       minMatchCharLength: 2,
+      ignoreLocation: true,
     })
   );
 
@@ -36,15 +61,23 @@ export default function SearchClient({ plants }: SearchClientProps) {
     (value: string) => {
       setQuery(value);
       setHasSearched(true);
-      if (!value.trim()) {
+      const normalizedQuery = normalizeSearchValue(value);
+
+      if (!normalizedQuery) {
         setResults([]);
         setHasSearched(false);
         return;
       }
-      const found = fuse.current.search(value).map((r) => r.item);
-      setResults(found);
+
+      const fusedResults = fuse.current.search(normalizedQuery).map((result) => result.item);
+      const tokenMatches = plants.filter((plant) => matchesAllQueryTokens(plant, normalizedQuery));
+      const mergedResults = Array.from(new Map(
+        [...tokenMatches, ...fusedResults].map((plant) => [plant.slug, plant])
+      ).values());
+
+      setResults(mergedResults);
     },
-    []
+    [plants]
   );
 
   const clearSearch = () => {

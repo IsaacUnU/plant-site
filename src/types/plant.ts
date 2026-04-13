@@ -38,10 +38,16 @@ export interface PlantCardData {
   commonName: string;
   scientificName: string;
   category: string;
+  tags: string[];
   difficulty: Difficulty;
   light: Light;
   water: WaterFrequency;
+  humidity: Humidity;
+  toxicity: ToxicityLevel;
+  growthRate: 'slow' | 'moderate' | 'fast';
   description: string;
+  searchTerms: string[];
+  searchText: string;
   image?: string;
   imageAlt?: string;
   imageCredit?: string;
