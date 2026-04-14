@@ -54,7 +54,7 @@ function getDerivedSearchTerms(fm: PlantFrontmatter): string[] {
     `${fm.growthRate} grower`
   );
 
-  fm.tags.forEach((tag) => add(tag));
+  (fm.tags ?? []).forEach((tag) => add(tag));
 
   switch (fm.difficulty) {
     case 'easy':
@@ -130,7 +130,7 @@ export function getPlantCard(slug: string): PlantCardData | null {
     commonName: fm.commonName,
     scientificName: fm.scientificName,
     category: fm.category,
-    tags: fm.tags,
+    tags: fm.tags ?? [],
     difficulty: fm.difficulty,
     light: fm.light,
     water: fm.water,
