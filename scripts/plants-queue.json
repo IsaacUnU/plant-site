@@ -1,9 +1,5 @@
 {
   "pending": [
-    "Bird of Paradise",
-    "Philodendron heartleaf",
-    "Pothos marble queen",
-    "English Ivy",
     "Cast Iron Plant",
     "Jade Plant",
     "Haworthia fasciata",
@@ -213,6 +209,10 @@
     "Chinese Evergreen",
     "Dracaena marginata",
     "Spider Plant",
-    "Boston Fern"
+    "Boston Fern",
+    "Bird of Paradise",
+    "Philodendron heartleaf",
+    "Pothos marble queen",
+    "English Ivy"
   ]
 }
