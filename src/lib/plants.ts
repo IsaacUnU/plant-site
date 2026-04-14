@@ -112,9 +112,16 @@ export function getAllPlantSlugs(): string[] {
 export function getAllPlants(): PlantCardData[] {
   const slugs = getAllPlantSlugs();
   return slugs
-    .map((slug) => getPlantCard(slug))
+    .map((slug) => {
+      try {
+        return getPlantCard(slug);
+      } catch (err) {
+        console.warn(`[plants] Skipping ${slug}.md — parse error:`, err);
+        return null;
+      }
+    })
     .filter((p): p is PlantCardData => p !== null)
-    .sort((a, b) => a.commonName.localeCompare(b.commonName));
+    .sort((a, b) => (a.commonName ?? '').localeCompare(b.commonName ?? ''));
 }
 
 export function getPlantCard(slug: string): PlantCardData | null {
