@@ -38,6 +38,9 @@ jobs:
             node scripts/pipeline.js "${{ github.event.inputs.plant_name }}"
           else
             node scripts/pipeline.js
+            node scripts/pipeline.js
+            node scripts/pipeline.js
+            node scripts/pipeline.js
           fi
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
