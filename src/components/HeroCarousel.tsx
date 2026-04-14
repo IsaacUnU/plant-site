@@ -38,7 +38,7 @@ export default function HeroCarousel({ plants }: { plants: HeroPlant[] }) {
   if (items.length === 0) return null;
 
   const plant = items[current];
-  const diff = DIFFICULTY_STYLES_CLIENT[plant.difficulty];
+  const diff = DIFFICULTY_STYLES_CLIENT[plant.difficulty] ?? DIFFICULTY_STYLES_CLIENT.easy;
 
   function goTo(i: number) {
     if (i === current) return;

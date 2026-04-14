@@ -16,7 +16,7 @@ const DIFFICULTY_STYLES = {
 };
 
 export default function PlantCard({ plant, className }: PlantCardProps) {
-  const diff = DIFFICULTY_STYLES[plant.difficulty];
+  const diff = DIFFICULTY_STYLES[plant.difficulty] ?? DIFFICULTY_STYLES.easy;
 
   return (
     <Link href={`/plants/${plant.slug}`} className={`group block cursor-pointer${className ? ` ${className}` : ''}`}>

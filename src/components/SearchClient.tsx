@@ -167,7 +167,7 @@ export default function SearchClient({ plants }: SearchClientProps) {
       {(showResults || showAll) && (
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {(showResults ? results : plants.slice(0, 12)).map((plant) => {
-            const diff = DIFFICULTY_STYLES_CLIENT[plant.difficulty];
+            const diff = DIFFICULTY_STYLES_CLIENT[plant.difficulty] ?? DIFFICULTY_STYLES_CLIENT.easy;
             return (
               <Link
                 key={plant.slug}
