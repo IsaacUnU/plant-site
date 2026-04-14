@@ -38,8 +38,14 @@ jobs:
             node scripts/pipeline.js "${{ github.event.inputs.plant_name }}"
           else
             node scripts/pipeline.js
+            echo "[pipeline] Waiting 5 min before next generation..."
+            sleep 300
             node scripts/pipeline.js
+            echo "[pipeline] Waiting 5 min before next generation..."
+            sleep 300
             node scripts/pipeline.js
+            echo "[pipeline] Waiting 5 min before next generation..."
+            sleep 300
             node scripts/pipeline.js
           fi
         env:
