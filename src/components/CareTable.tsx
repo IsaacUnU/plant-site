@@ -53,7 +53,7 @@ export default function CareTable({ plant }: CareTableProps) {
     {
       icon: <TrendingUp className="w-4 h-4 text-[#8b5cf6]" />,
       label: 'Growth Rate',
-      value: plant.growthRate.charAt(0).toUpperCase() + plant.growthRate.slice(1),
+      value: plant.growthRate ? plant.growthRate.charAt(0).toUpperCase() + plant.growthRate.slice(1) : '—',
     },
   ];
 

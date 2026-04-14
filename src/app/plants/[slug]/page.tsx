@@ -158,7 +158,7 @@ export default async function PlantPage({ params }: Props) {
               className="text-2xl font-bold text-[#0F172A] mb-6"
               style={{ fontFamily: 'var(--font-display)' }}
             >
-              More {plant.category.charAt(0).toUpperCase() + plant.category.slice(1)} Plants
+              More {plant.category ? plant.category.charAt(0).toUpperCase() + plant.category.slice(1) : 'Related'} Plants
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 stagger-children">
               {related.map((p) => (

@@ -12,53 +12,19 @@
  * Env: UNSPLASH_ACCESS_KEY
  */
 
-const fs   = require('fs');
-const path = require('path');
+const fs    = require('fs');
+const path  = require('path');
 const https = require('https');
+const matter = require('gray-matter');
 
 const CONTENT_DIR  = path.join(__dirname, '..', 'content', 'plants');
 const UNSPLASH_API = 'https://api.unsplash.com';
 
 // ── Helpers ──────────────────────────────────────────────────
 
-function parseFrontmatter(content) {
-  const match = content.match(/^---\n([\s\S]*?)\n---(\n[\s\S]*)?$/);
-  if (!match) return { fields: {}, body: content, raw: content };
-
-  const fields = {};
-  for (const line of match[1].split('\n')) {
-    const i = line.indexOf(':');
-    if (i === -1) continue;
-    const key = line.slice(0, i).trim();
-    let val = line.slice(i + 1).trim();
-    // Strip surrounding quotes
-    if ((val.startsWith('"') && val.endsWith('"')) ||
-        (val.startsWith("'") && val.endsWith("'"))) {
-      val = val.slice(1, -1);
-    }
-    // Arrays: ["a", "b"]
-    if (val.startsWith('[')) {
-      fields[key] = val;   // keep raw for re-serialisation
-    } else {
-      fields[key] = val;
-    }
-  }
-  return { fields, body: match[2] ?? '', raw: match[1] };
-}
-
-function serializeFrontmatter(fields) {
-  return Object.entries(fields)
-    .map(([k, v]) => {
-      if (typeof v === 'string' && (v.includes(':') || v.includes('#'))) {
-        return `${k}: "${v.replace(/"/g, '\\"')}"`;
-      }
-      return `${k}: ${v}`;
-    })
-    .join('\n');
-}
-
-function writeMarkdown(mdPath, fields, body) {
-  fs.writeFileSync(mdPath, `---\n${serializeFrontmatter(fields)}\n---${body}`);
+function writeMarkdown(mdPath, data, content) {
+  // matter.stringify handles all YAML types correctly (arrays, multiline, etc.)
+  fs.writeFileSync(mdPath, matter.stringify(content, data));
 }
 
 function httpsGet(url, headers = {}) {
@@ -111,8 +77,8 @@ async function processPlant(slug, accessKey) {
     return;
   }
 
-  const content = fs.readFileSync(mdPath, 'utf8');
-  const { fields, body } = parseFrontmatter(content);
+  const raw = fs.readFileSync(mdPath, 'utf8');
+  const { data: fields, content } = matter(raw);
 
   if (fields.image) {
     console.log(`[images] ✓  Already has image: ${slug}`);
@@ -148,7 +114,7 @@ async function processPlant(slug, accessKey) {
   fields.imageCredit    = creditName;
   fields.imageCreditUrl = creditUrl;
 
-  writeMarkdown(mdPath, fields, body);
+  writeMarkdown(mdPath, fields, content);
   console.log(`[images] ✓  ${slug} — photo by ${creditName}`);
 }
 

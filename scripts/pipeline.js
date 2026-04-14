@@ -52,26 +52,40 @@ RULES:
 - Do NOT include placeholder text or [brackets]
 - Do NOT use markdown code blocks in your response
 
-Return ONLY valid Markdown with YAML frontmatter. Use exactly this structure:
+Return ONLY valid Markdown with YAML frontmatter. Use EXACTLY this structure — replace values but keep the format identical:
 
 ---
-title: "[SEO title including plant name and 'care guide']"
-slug: "${slugify(plantName)}"
-commonName: "[most common English name]"
-scientificName: "[full scientific name]"
-category: "[one of: tropical, succulents, low-light, flowering, herbs, ferns, cacti, vines]"
-tags: ["tag1", "tag2", "tag3", "tag4"]
-difficulty: "[easy | medium | hard]"
-light: "[low | indirect | indirect-bright | direct]"
-water: "[daily | every-2-3-days | weekly | every-2-weeks | monthly]"
-humidity: "[low | medium | high]"
-temperature: "[e.g. 65–80°F (18–27°C)]"
-toxicity: "[non-toxic | mildly-toxic | toxic-to-pets | toxic]"
-growthRate: "[slow | moderate | fast]"
-description: "[2 sentences, engaging, includes main benefit or characteristic]"
-datePublished: "${today}"
-dateModified: "${today}"
+title: ${plantName} Care Guide: Everything You Need to Know
+slug: ${slugify(plantName)}
+commonName: Most Common English Name Here
+scientificName: Genus species here
+category: tropical
+tags:
+  - houseplant
+  - easy care
+  - low maintenance
+  - indoor
+difficulty: easy
+light: indirect
+water: weekly
+humidity: medium
+temperature: 65-80°F (18-27°C)
+toxicity: non-toxic
+growthRate: moderate
+description: Two engaging sentences about this plant and its main benefit or characteristic.
+datePublished: ${today}
+dateModified: ${today}
 ---
+
+CRITICAL YAML RULES — your response will be rejected if you break these:
+- category: use ONE word or hyphenated word (e.g. tropical, succulents, low-light, flowering, herbs, ferns, cacti, vines, palms, bromeliads, air-plants). Never leave it blank.
+- difficulty: MUST be exactly one of: easy, medium, hard
+- light: MUST be exactly one of: low, indirect, indirect-bright, direct
+- water: MUST be exactly one of: daily, every-2-3-days, weekly, every-2-weeks, monthly
+- humidity: MUST be exactly one of: low, medium, high
+- toxicity: MUST be exactly one of: non-toxic, mildly-toxic, toxic-to-pets, toxic
+- growthRate: MUST be exactly one of: slow, moderate, fast
+- tags: MUST be a YAML list with "  - item" format (as shown above), NOT a comma string, NOT ["a","b"] inline
 
 ## Overview
 [2–3 paragraphs covering origin, appearance, why it's popular]
@@ -132,15 +146,47 @@ async function callGroq(prompt) {
 }
 
 function validateContent(content) {
-  const required = ['title:', 'slug:', 'commonName:', 'scientificName:', 'category:', 'difficulty:'];
-  for (const field of required) {
-    if (!content.includes(field)) {
-      throw new Error(`Missing required frontmatter field: ${field}`);
-    }
-  }
   if (content.length < 1000) {
     throw new Error(`Content too short (${content.length} chars). Likely an API error.`);
   }
+
+  // Parse frontmatter to validate actual values
+  const fmMatch = content.match(/^---\n([\s\S]*?)\n---/);
+  if (!fmMatch) throw new Error('Missing YAML frontmatter block');
+
+  const yaml = fmMatch[1];
+
+  // Check required string fields are present and non-empty
+  const requiredFields = ['title', 'slug', 'commonName', 'scientificName', 'category', 'difficulty', 'light', 'water', 'humidity', 'toxicity', 'growthRate'];
+  for (const field of requiredFields) {
+    const match = yaml.match(new RegExp(`^${field}:\\s*(.+)`, 'm'));
+    if (!match || !match[1].trim()) {
+      throw new Error(`Missing or empty frontmatter field: ${field}`);
+    }
+  }
+
+  // Check tags is a YAML list (has at least one "  - " line after tags:)
+  if (!yaml.includes('\n  - ') && !yaml.match(/^tags:\s*\[.+\]/m)) {
+    throw new Error('Field "tags" must be a YAML list (use "  - item" format)');
+  }
+
+  // Validate enum fields
+  const valid = {
+    difficulty: ['easy', 'medium', 'hard'],
+    light: ['low', 'indirect', 'indirect-bright', 'direct'],
+    water: ['daily', 'every-2-3-days', 'weekly', 'every-2-weeks', 'monthly'],
+    humidity: ['low', 'medium', 'high'],
+    toxicity: ['non-toxic', 'mildly-toxic', 'toxic-to-pets', 'toxic'],
+    growthRate: ['slow', 'moderate', 'fast'],
+  };
+  for (const [field, allowed] of Object.entries(valid)) {
+    const match = yaml.match(new RegExp(`^${field}:\\s*(.+)`, 'm'));
+    const value = match?.[1]?.trim();
+    if (!allowed.includes(value)) {
+      throw new Error(`Invalid value for "${field}": "${value}". Must be one of: ${allowed.join(', ')}`);
+    }
+  }
+
   return true;
 }
 

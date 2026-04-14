@@ -170,7 +170,7 @@ export async function getPlant(slug: string): Promise<Plant | null> {
 
 export function getPlantsByCategory(category: string): PlantCardData[] {
   return getAllPlants().filter(
-    (p) => p.category.toLowerCase() === category.toLowerCase()
+    (p) => p.category?.toLowerCase() === category.toLowerCase()
   );
 }
 
@@ -178,6 +178,7 @@ export function getAllCategories(): { name: string; slug: string; count: number 
   const plants = getAllPlants();
   const map = new Map<string, number>();
   plants.forEach((p) => {
+    if (!p.category) return;
     map.set(p.category, (map.get(p.category) || 0) + 1);
   });
   return Array.from(map.entries()).map(([name, count]) => ({
