@@ -5,6 +5,7 @@ commonName: Golden Pothos
 scientificName: Epipremnum aureum
 category: vines
 tags: ["trailing", "beginner-friendly", "low-light", "air-purifying"]
+secondaryFunctions: ["air-purifying"]
 difficulty: easy
 light: low
 water: every-2-weeks

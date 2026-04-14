@@ -45,15 +45,34 @@ function buildPrompt(plantName) {
 
 Write a complete plant care guide for: **${plantName}**
 
-RULES:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 1 — DECIDE secondaryFunctions FIRST (do this before writing anything else)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+You MUST assign at least one value to secondaryFunctions. There are exactly 6 allowed values:
+
+  "air-purifying"     → virtually ALL houseplants qualify; include this unless the plant is known NOT to filter air
+  "humidity-boosting" → ferns, tropical broad-leaf plants, peace lily, boston fern, monstera-type plants
+  "insect-repelling"  → lavender, citronella, basil, snake plant, lemongrass, rosemary, marigold, aloe, ivy
+  "pleasant-scent"    → jasmine, gardenia, lavender, scented geranium, peace lily, citrus plants
+  "medicinal"         → aloe vera, calendula, chamomile, lavender, echinacea, holy basil, tea tree
+  "pet-safe"          → ONLY if this plant's toxicity is non-toxic (ASPCA safe). Never combine with mildly-toxic/toxic.
+
+Pick every value that honestly applies. MINIMUM: always include "air-purifying".
+The field format is: secondaryFunctions: ["value1", "value2"]
+NEVER write: secondaryFunctions: undefined
+NEVER write: secondaryFunctions: []
+NEVER omit this field.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 2 — WRITE THE ARTICLE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 - Write in English
-- The guide must be genuinely helpful, accurate, and detailed (800–1200 words of content)
-- Use a friendly, expert tone
-- Include practical, actionable advice
+- 800–1200 words of content
+- Friendly, expert tone with practical, actionable advice
 - Do NOT include placeholder text or [brackets]
 - Do NOT use markdown code blocks in your response
 
-Return ONLY valid Markdown with YAML frontmatter. Use EXACTLY this structure — replace values but keep the format identical:
+Return ONLY valid Markdown with YAML frontmatter. Use EXACTLY this structure:
 
 ---
 title: "${plantName} Complete Care Guide"
@@ -66,6 +85,7 @@ tags:
   - easy care
   - low maintenance
   - indoor
+secondaryFunctions: ["air-purifying"]
 difficulty: easy
 light: indirect
 water: weekly
@@ -79,15 +99,16 @@ dateModified: ${today}
 ---
 
 CRITICAL YAML RULES — your response will be rejected if you break these:
-- title, commonName, scientificName, description, temperature MUST be wrapped in double quotes (they can contain colons or special characters)
-- category: use ONE word or hyphenated word (e.g. tropical, succulents, low-light, flowering, herbs, ferns, cacti, vines, palms, bromeliads, air-plants). Never leave it blank. No quotes needed.
-- difficulty: MUST be exactly one of: easy, medium, hard
-- light: MUST be exactly one of: low, indirect, indirect-bright, direct
-- water: MUST be exactly one of: daily, every-2-3-days, weekly, every-2-weeks, monthly
-- humidity: MUST be exactly one of: low, medium, high
-- toxicity: MUST be exactly one of: non-toxic, mildly-toxic, toxic-to-pets, toxic
-- growthRate: MUST be exactly one of: slow, moderate, fast
-- tags: MUST be a YAML list with "  - item" format (as shown above), NOT a comma string, NOT ["a","b"] inline
+- title, commonName, scientificName, description, temperature MUST be wrapped in double quotes
+- category: one word or hyphenated word (tropical, succulents, low-light, ferns, cacti, vines, palms…). No quotes.
+- difficulty: exactly one of: easy, medium, hard
+- light: exactly one of: low, indirect, indirect-bright, direct
+- water: exactly one of: daily, every-2-3-days, weekly, every-2-weeks, monthly
+- humidity: exactly one of: low, medium, high
+- toxicity: exactly one of: non-toxic, mildly-toxic, toxic-to-pets, toxic
+- growthRate: exactly one of: slow, moderate, fast
+- tags: YAML block list with "  - item" format. NOT inline ["a","b"]
+- secondaryFunctions: inline array ["a","b"]. Only from the 6 values above. MINIMUM ["air-purifying"].
 
 ## Overview
 [2–3 paragraphs covering origin, appearance, why it's popular]
@@ -171,6 +192,17 @@ function validateContent(content) {
     throw new Error('Field "tags" must be a YAML list with at least one item');
   }
 
+  // Step 3b: secondaryFunctions — sanitise and auto-fix rather than reject
+  const validFunctions = ['humidity-boosting', 'air-purifying', 'insect-repelling', 'pleasant-scent', 'medicinal', 'pet-safe'];
+  if (!Array.isArray(fm.secondaryFunctions) || fm.secondaryFunctions.length === 0) {
+    console.warn('[pipeline] ⚠ "secondaryFunctions" missing/empty — will be auto-set to ["air-purifying"] before saving');
+  } else {
+    const invalid = fm.secondaryFunctions.filter((fn) => !validFunctions.includes(fn));
+    if (invalid.length > 0) {
+      console.warn(`[pipeline] ⚠ Unknown secondaryFunctions values (will be stripped): ${invalid.join(', ')}`);
+    }
+  }
+
   // Step 4: Validate enum fields
   const valid = {
     difficulty: ['easy', 'medium', 'hard'],
@@ -189,10 +221,29 @@ function validateContent(content) {
   return true;
 }
 
+const VALID_FUNCTIONS = ['humidity-boosting', 'air-purifying', 'insect-repelling', 'pleasant-scent', 'medicinal', 'pet-safe'];
+
+/**
+ * Ensures secondaryFunctions in the raw markdown content is valid.
+ * - Strips unknown values
+ * - Falls back to ["air-purifying"] if nothing valid remains or field is missing
+ */
+function sanitizeSecondaryFunctions(content) {
+  const { data: fm, content: body } = matter(content);
+
+  let fns = Array.isArray(fm.secondaryFunctions) ? fm.secondaryFunctions : [];
+  fns = fns.filter((fn) => VALID_FUNCTIONS.includes(fn));
+  if (fns.length === 0) fns = ['air-purifying'];
+
+  fm.secondaryFunctions = fns;
+  return matter.stringify(body, fm);
+}
+
 function saveArticle(plantName, content) {
   const slug = slugify(plantName);
   const filePath = path.join(CONTENT_DIR, `${slug}.md`);
-  fs.writeFileSync(filePath, content.trim() + '\n');
+  const sanitized = sanitizeSecondaryFunctions(content);
+  fs.writeFileSync(filePath, sanitized.trim() + '\n');
   return filePath;
 }
 

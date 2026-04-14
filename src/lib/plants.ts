@@ -4,7 +4,10 @@ import matter from 'gray-matter';
 import { remark } from 'remark';
 import remarkHtml from 'remark-html';
 import readingTime from 'reading-time';
-import { Plant, PlantCardData, PlantFrontmatter } from '@/types/plant';
+import { Plant, PlantCardData, PlantFrontmatter, SecondaryFunction } from '@/types/plant';
+import { SECONDARY_FUNCTION_META } from '@/lib/secondaryFunctions';
+
+const VALID_SECONDARY_FUNCTIONS = new Set<string>(Object.keys(SECONDARY_FUNCTION_META));
 import {
   DIFFICULTY_LABELS,
   HUMIDITY_LABELS,
@@ -151,6 +154,9 @@ export function getPlantCard(slug: string): PlantCardData | null {
     imageAlt: fm.imageAlt,
     imageCredit: fm.imageCredit,
     imageCreditUrl: fm.imageCreditUrl,
+    secondaryFunctions: (fm.secondaryFunctions ?? []).filter(
+      (fn): fn is SecondaryFunction => VALID_SECONDARY_FUNCTIONS.has(fn)
+    ),
   };
 }
 
@@ -192,4 +198,21 @@ export function getAllCategories(): { name: string; slug: string; count: number 
     slug: name.toLowerCase().replace(/\s+/g, '-'),
     count,
   }));
+}
+
+export function getPlantsBySecondaryFunction(slug: SecondaryFunction | string): PlantCardData[] {
+  return getAllPlants().filter((p) =>
+    (p.secondaryFunctions ?? []).includes(slug as SecondaryFunction)
+  );
+}
+
+export function getAllSecondaryFunctions(): { slug: SecondaryFunction; name: string; emoji: string; description: string; count: number }[] {
+  const plants = getAllPlants();
+  return (Object.keys(SECONDARY_FUNCTION_META) as SecondaryFunction[]).map((slug) => {
+    const count = plants.filter((p) =>
+      (p.secondaryFunctions ?? []).includes(slug)
+    ).length;
+    const meta = SECONDARY_FUNCTION_META[slug];
+    return { slug, name: meta.name, emoji: meta.emoji, description: meta.description, count };
+  });
 }

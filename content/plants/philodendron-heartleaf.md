@@ -9,6 +9,7 @@ tags:
   - easy care
   - low maintenance
   - indoor
+secondaryFunctions: ["air-purifying", "pet-safe"]
 difficulty: easy
 light: indirect
 water: weekly

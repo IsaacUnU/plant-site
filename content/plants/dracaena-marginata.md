@@ -5,6 +5,7 @@ commonName: "Red-Edged Dracaena"
 scientificName: "Dracaena marginata"
 category: "tropical"
 tags: ["indoor plants", "low-maintenance", "air-purifying", "tropical plants"]
+secondaryFunctions: ["air-purifying"]
 difficulty: "easy"
 light: "indirect-bright"
 water: "every-2-3-days"

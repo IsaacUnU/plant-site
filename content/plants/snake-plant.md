@@ -5,6 +5,7 @@ commonName: Snake Plant
 scientificName: Dracaena trifasciata
 category: low-light
 tags: ["low-light", "drought-tolerant", "air-purifying", "beginner-friendly"]
+secondaryFunctions: ["air-purifying", "insect-repelling"]
 difficulty: easy
 light: low
 water: monthly

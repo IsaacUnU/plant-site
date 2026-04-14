@@ -7,10 +7,10 @@ import { getAllCategories } from '@/lib/plants';
 const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'PlantCare Central';
 
 export default function Header() {
-  // Dynamic: top 3 categories sorted by plant count
+  // Dynamic: top 2 categories sorted by plant count (Vines replaced by Uses)
   const topCategories = getAllCategories()
     .sort((a, b) => b.count - a.count)
-    .slice(0, 3)
+    .slice(0, 2)
     .map((cat) => ({
       href: `/category/${cat.slug}`,
       label: cat.name.charAt(0).toUpperCase() + cat.name.slice(1),
@@ -19,6 +19,7 @@ export default function Header() {
   const navLinks = [
     { href: '/plants', label: 'All Plants' },
     ...topCategories,
+    { href: '/uses', label: 'Uses & Benefits' },
     { href: '/about', label: 'About' },
   ];
 

@@ -5,6 +5,7 @@ commonName: Swiss Cheese Plant
 scientificName: Monstera deliciosa
 category: tropical
 tags: ["tropical", "statement plant", "beginner-friendly", "air-purifying"]
+secondaryFunctions: ["humidity-boosting", "air-purifying"]
 difficulty: easy
 light: indirect-bright
 water: every-2-weeks

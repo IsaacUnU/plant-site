@@ -3,6 +3,13 @@ export type Light = 'low' | 'indirect' | 'indirect-bright' | 'direct';
 export type WaterFrequency = 'daily' | 'every-2-3-days' | 'weekly' | 'every-2-weeks' | 'monthly';
 export type Humidity = 'low' | 'medium' | 'high';
 export type ToxicityLevel = 'non-toxic' | 'mildly-toxic' | 'toxic-to-pets' | 'toxic';
+export type SecondaryFunction =
+  | 'humidity-boosting'
+  | 'air-purifying'
+  | 'insect-repelling'
+  | 'pleasant-scent'
+  | 'medicinal'
+  | 'pet-safe';
 
 export interface PlantFrontmatter {
   title: string;
@@ -25,6 +32,7 @@ export interface PlantFrontmatter {
   imageAlt?: string;        // descriptive alt text
   imageCredit?: string;     // photographer name for Unsplash attribution
   imageCreditUrl?: string;  // link to photographer's profile
+  secondaryFunctions?: SecondaryFunction[];
 }
 
 export interface Plant extends PlantFrontmatter {
@@ -52,4 +60,5 @@ export interface PlantCardData {
   imageAlt?: string;
   imageCredit?: string;
   imageCreditUrl?: string;
+  secondaryFunctions?: SecondaryFunction[];
 }

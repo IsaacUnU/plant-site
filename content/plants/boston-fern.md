@@ -5,6 +5,7 @@ commonName: "Boston Fern"
 scientificName: "Nephrolepis exaltata"
 category: "ferns"
 tags: ["indoor plants", "houseplants", "low-maintenance", "air-purifying", "tropical"]
+secondaryFunctions: ["humidity-boosting", "air-purifying", "pet-safe"]
 difficulty: "easy"
 light: "indirect-bright"
 water: "every-2-3-days"

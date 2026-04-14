@@ -5,6 +5,7 @@ commonName: Peace Lily
 scientificName: Spathiphyllum wallisii
 category: low-light
 tags: ["flowering", "low-light", "air-purifying", "shade-tolerant"]
+secondaryFunctions: ["humidity-boosting", "air-purifying", "pleasant-scent"]
 difficulty: easy
 light: low
 water: weekly

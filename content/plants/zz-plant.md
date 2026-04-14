@@ -5,6 +5,7 @@ commonName: ZZ Plant
 scientificName: Zamioculcas zamiifolia
 category: low-light
 tags: ["low-maintenance", "indoor-plants", "air-purifying", "shade-tolerant"]
+secondaryFunctions: ["air-purifying"]
 difficulty: easy
 light: low
 water: every-2-weeks

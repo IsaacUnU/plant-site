@@ -5,6 +5,7 @@ commonName: Chinese Evergreen
 scientificName: Aglaonema modestum
 category: low-light
 tags: ["low-maintenance", "indoor plants", "air purification", "tropical plants", "houseplants"]
+secondaryFunctions: ["air-purifying"]
 difficulty: easy
 light: indirect
 water: weekly

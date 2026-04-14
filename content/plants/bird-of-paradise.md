@@ -5,6 +5,7 @@ commonName: Bird of Paradise
 scientificName: Strelitzia reginae
 category: tropical
 tags: ["flowering", "indoor-plants", "exotic", "low-maintenance", "bird-attracting"]
+secondaryFunctions: ["humidity-boosting", "air-purifying", "pleasant-scent"]
 difficulty: medium
 light: indirect-bright
 water: weekly

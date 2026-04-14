@@ -5,6 +5,7 @@ commonName: Spider Plant
 scientificName: Chlorophytum comosum
 category: tropical
 tags: ["indoor plants", "air purifying", "low maintenance", "easy care"]
+secondaryFunctions: ["air-purifying", "pet-safe"]
 difficulty: easy
 light: indirect-bright
 water: weekly

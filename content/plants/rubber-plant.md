@@ -5,6 +5,7 @@ commonName: Rubber Plant
 scientificName: Ficus elastica
 category: tropical
 tags: ["indoor plants", "low-maintenance", "air-purifying", "houseplants"]
+secondaryFunctions: ["air-purifying"]
 difficulty: easy
 light: indirect-bright
 water: weekly

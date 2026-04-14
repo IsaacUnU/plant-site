@@ -5,6 +5,7 @@ commonName: Aloe Vera
 scientificName: Aloe barbadensis miller
 category: succulents
 tags: ["succulent", "medicinal", "drought-tolerant", "beginner-friendly"]
+secondaryFunctions: ["medicinal", "insect-repelling", "air-purifying"]
 difficulty: easy
 light: indirect-bright
 water: every-2-weeks

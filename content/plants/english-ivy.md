@@ -5,6 +5,7 @@ commonName: English Ivy
 scientificName: Hedera helix
 category: vines
 tags: ["houseplants", "indoor gardening", "easy to care for", "air purifying", "versatile"]
+secondaryFunctions: ["air-purifying", "insect-repelling"]
 difficulty: easy
 light: indirect-bright
 water: every-2-3-days

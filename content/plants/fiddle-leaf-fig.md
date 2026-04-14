@@ -5,6 +5,7 @@ commonName: Fiddle Leaf Fig
 scientificName: Ficus lyrata
 category: tropical
 tags: ["indoor plants", "houseplants", "fig trees", "low-maintenance", "air-purifying"]
+secondaryFunctions: ["humidity-boosting", "air-purifying"]
 difficulty: medium
 light: indirect-bright
 water: weekly
