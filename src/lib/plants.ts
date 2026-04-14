@@ -173,7 +173,8 @@ export async function getPlant(slug: string): Promise<Plant | null> {
   }
 }
 
-export function getPlantsByCategory(category: string): PlantCardData[] {
+export function getPlantsByCategory(category: string | undefined): PlantCardData[] {
+  if (!category) return [];
   return getAllPlants().filter(
     (p) => p.category?.toLowerCase() === category.toLowerCase()
   );

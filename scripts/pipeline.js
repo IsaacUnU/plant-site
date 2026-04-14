@@ -13,6 +13,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const matter = require('gray-matter');
 
 const QUEUE_FILE = path.join(__dirname, 'plants-queue.json');
 const CONTENT_DIR = path.join(__dirname, '..', 'content', 'plants');
@@ -55,10 +56,10 @@ RULES:
 Return ONLY valid Markdown with YAML frontmatter. Use EXACTLY this structure — replace values but keep the format identical:
 
 ---
-title: ${plantName} Care Guide: Everything You Need to Know
+title: "${plantName} Complete Care Guide"
 slug: ${slugify(plantName)}
-commonName: Most Common English Name Here
-scientificName: Genus species here
+commonName: "Most Common English Name Here"
+scientificName: "Genus species here"
 category: tropical
 tags:
   - houseplant
@@ -69,16 +70,17 @@ difficulty: easy
 light: indirect
 water: weekly
 humidity: medium
-temperature: 65-80°F (18-27°C)
+temperature: "65-80°F (18-27°C)"
 toxicity: non-toxic
 growthRate: moderate
-description: Two engaging sentences about this plant and its main benefit or characteristic.
+description: "Two engaging sentences about this plant and its main benefit or characteristic."
 datePublished: ${today}
 dateModified: ${today}
 ---
 
 CRITICAL YAML RULES — your response will be rejected if you break these:
-- category: use ONE word or hyphenated word (e.g. tropical, succulents, low-light, flowering, herbs, ferns, cacti, vines, palms, bromeliads, air-plants). Never leave it blank.
+- title, commonName, scientificName, description, temperature MUST be wrapped in double quotes (they can contain colons or special characters)
+- category: use ONE word or hyphenated word (e.g. tropical, succulents, low-light, flowering, herbs, ferns, cacti, vines, palms, bromeliads, air-plants). Never leave it blank. No quotes needed.
 - difficulty: MUST be exactly one of: easy, medium, hard
 - light: MUST be exactly one of: low, indirect, indirect-bright, direct
 - water: MUST be exactly one of: daily, every-2-3-days, weekly, every-2-weeks, monthly
@@ -150,27 +152,26 @@ function validateContent(content) {
     throw new Error(`Content too short (${content.length} chars). Likely an API error.`);
   }
 
-  // Parse frontmatter to validate actual values
-  const fmMatch = content.match(/^---\n([\s\S]*?)\n---/);
-  if (!fmMatch) throw new Error('Missing YAML frontmatter block');
-
-  const yaml = fmMatch[1];
-
-  // Check required string fields are present and non-empty
-  const requiredFields = ['title', 'slug', 'commonName', 'scientificName', 'category', 'difficulty', 'light', 'water', 'humidity', 'toxicity', 'growthRate'];
-  for (const field of requiredFields) {
-    const match = yaml.match(new RegExp(`^${field}:\\s*(.+)`, 'm'));
-    if (!match || !match[1].trim()) {
-      throw new Error(`Missing or empty frontmatter field: ${field}`);
-    }
+  // Step 1: Parse with gray-matter — catches ALL YAML syntax errors (unquoted colons, etc.)
+  let fm;
+  try {
+    fm = matter(content).data;
+  } catch (e) {
+    throw new Error(`Invalid YAML frontmatter: ${e.message}`);
   }
 
-  // Check tags is a YAML list (has at least one "  - " line after tags:)
-  if (!yaml.includes('\n  - ') && !yaml.match(/^tags:\s*\[.+\]/m)) {
-    throw new Error('Field "tags" must be a YAML list (use "  - item" format)');
+  // Step 2: Check required fields are present and non-empty
+  const required = ['title', 'slug', 'commonName', 'scientificName', 'category', 'difficulty', 'light', 'water', 'humidity', 'toxicity', 'growthRate'];
+  for (const field of required) {
+    if (!fm[field]) throw new Error(`Missing or empty frontmatter field: "${field}"`);
   }
 
-  // Validate enum fields
+  // Step 3: tags must be an array with at least one item
+  if (!Array.isArray(fm.tags) || fm.tags.length === 0) {
+    throw new Error('Field "tags" must be a YAML list with at least one item');
+  }
+
+  // Step 4: Validate enum fields
   const valid = {
     difficulty: ['easy', 'medium', 'hard'],
     light: ['low', 'indirect', 'indirect-bright', 'direct'],
@@ -180,10 +181,8 @@ function validateContent(content) {
     growthRate: ['slow', 'moderate', 'fast'],
   };
   for (const [field, allowed] of Object.entries(valid)) {
-    const match = yaml.match(new RegExp(`^${field}:\\s*(.+)`, 'm'));
-    const value = match?.[1]?.trim();
-    if (!allowed.includes(value)) {
-      throw new Error(`Invalid value for "${field}": "${value}". Must be one of: ${allowed.join(', ')}`);
+    if (!allowed.includes(fm[field])) {
+      throw new Error(`Invalid value for "${field}": "${fm[field]}". Must be one of: ${allowed.join(', ')}`);
     }
   }
 
