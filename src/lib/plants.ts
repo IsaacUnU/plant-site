@@ -157,15 +157,20 @@ export function getPlantCard(slug: string): PlantCardData | null {
 export async function getPlant(slug: string): Promise<Plant | null> {
   const filePath = path.join(PLANTS_DIR, `${slug}.md`);
   if (!fs.existsSync(filePath)) return null;
-  const fileContent = fs.readFileSync(filePath, 'utf8');
-  const { data, content } = matter(fileContent);
-  const processed = await remark().use(remarkHtml).process(content);
-  const stats = readingTime(content);
-  return {
-    ...(data as PlantFrontmatter),
-    content: processed.toString(),
-    readingTime: `${Math.ceil(stats.minutes)} min read`,
-  };
+  try {
+    const fileContent = fs.readFileSync(filePath, 'utf8');
+    const { data, content } = matter(fileContent);
+    const processed = await remark().use(remarkHtml).process(content);
+    const stats = readingTime(content);
+    return {
+      ...(data as PlantFrontmatter),
+      content: processed.toString(),
+      readingTime: `${Math.ceil(stats.minutes)} min read`,
+    };
+  } catch (err) {
+    console.warn(`[plants] Skipping ${slug}.md — parse error:`, err);
+    return null;
+  }
 }
 
 export function getPlantsByCategory(category: string): PlantCardData[] {
