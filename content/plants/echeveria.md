@@ -26,6 +26,10 @@ description: >-
   beauty and air-purifying benefits.
 datePublished: 2026-04-15T00:00:00.000Z
 dateModified: 2026-04-15T00:00:00.000Z
+image: "https://images.unsplash.com/photo-1618745281824-cf7113712e8e"
+imageAlt: "Green plant with white variegated leaves on dark background"
+imageCredit: "Pach Visuals"
+imageCreditUrl: "https://unsplash.com/@pach_visuals"
 ---
 
 ## Overview
