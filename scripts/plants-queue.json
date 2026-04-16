@@ -1,9 +1,5 @@
 {
   "pending": [
-    "Christmas Cactus",
-    "African Violet",
-    "Orchid Phalaenopsis",
-    "Anthurium",
     "Calathea orbifolia",
     "Maranta leuconeura",
     "Pilea peperomioides",
@@ -213,6 +209,10 @@
     "Haworthia fasciata",
     "String of Pearls",
     "Echeveria",
-    "Cactus barrel"
+    "Cactus barrel",
+    "Christmas Cactus",
+    "African Violet",
+    "Orchid Phalaenopsis",
+    "Anthurium"
   ]
 }
