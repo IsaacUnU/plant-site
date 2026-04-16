@@ -55,19 +55,18 @@ export default function HeroCarousel({ plants }: { plants: HeroPlant[] }) {
       <div className="absolute inset-0 translate-x-5 translate-y-5 rounded-3xl bg-[#dcfce7]" />
       <div className="absolute inset-0 translate-x-2.5 translate-y-2.5 rounded-3xl bg-[#bbf7d0]" />
 
-      {/* Main card */}
-      <Link href={`/plants/${plant.slug}`}>
-        <div
-          className="relative rounded-3xl bg-white border border-[#E2EFE7] overflow-hidden cursor-pointer"
-          style={{
-            boxShadow: '0 20px 60px rgba(21,128,61,0.15), 0 4px 16px rgba(0,0,0,0.08)',
-            transition: 'opacity 300ms ease, transform 300ms ease',
-            opacity: visible ? 1 : 0,
-            transform: visible ? 'translateY(0px)' : 'translateY(8px)',
-          }}
-        >
+      <div
+        className="relative rounded-3xl bg-white border border-[#E2EFE7] overflow-hidden"
+        style={{
+          boxShadow: '0 20px 60px rgba(21,128,61,0.15), 0 4px 16px rgba(0,0,0,0.08)',
+          transition: 'opacity 300ms ease, transform 300ms ease',
+          opacity: visible ? 1 : 0,
+          transform: visible ? 'translateY(0px)' : 'translateY(8px)',
+        }}
+      >
           {/* Image area */}
           <div className="relative h-52 overflow-hidden bg-gradient-to-br from-emerald-100 to-green-200">
+          <Link href={`/plants/${plant.slug}`} className="block relative h-full w-full" aria-label={`View ${plant.commonName}`}>
             {plant.image ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img
@@ -81,6 +80,7 @@ export default function HeroCarousel({ plants }: { plants: HeroPlant[] }) {
                 <Leaf className="w-16 h-16 text-emerald-300" />
               </div>
             )}
+          </Link>
             {/* Difficulty badge */}
             <span
               className={`absolute top-3 left-3 flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full shadow-sm ${diff.bg} ${diff.text}`}
@@ -92,13 +92,15 @@ export default function HeroCarousel({ plants }: { plants: HeroPlant[] }) {
 
           {/* Card content */}
           <div className="p-4">
+          <Link href={`/plants/${plant.slug}`} className="hover:no-underline">
             <h3
-              className="font-bold text-[#0F172A] text-base leading-snug"
+              className="font-bold text-[#0F172A] text-base leading-snug after:absolute after:inset-0 after:z-10"
               style={{ fontFamily: 'var(--font-display)' }}
             >
               {plant.commonName}
             </h3>
-            <p className="text-xs text-[#94a3b8] italic mt-0.5 mb-3">{plant.scientificName}</p>
+          </Link>
+          <p className="text-xs text-[#94a3b8] italic mt-0.5 mb-3">{plant.scientificName}</p>
 
             <div className="flex gap-2 flex-wrap">
               <span className="flex items-center gap-1 text-xs text-[#475569] bg-[#F0FDF4] rounded-xl px-2.5 py-1">
@@ -109,10 +111,9 @@ export default function HeroCarousel({ plants }: { plants: HeroPlant[] }) {
                 <Droplets className="w-3 h-3 text-[#0ea5e9]" />
                 {WATER_LABELS[plant.water]}
               </span>
-            </div>
           </div>
         </div>
-      </Link>
+      </div>
 
       {/* Navigation dots */}
       {items.length > 1 && (

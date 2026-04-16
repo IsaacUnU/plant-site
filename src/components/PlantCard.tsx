@@ -20,21 +20,22 @@ export default function PlantCard({ plant, className, priority = false }: PlantC
   const diff = DIFFICULTY_STYLES[plant.difficulty] ?? DIFFICULTY_STYLES.easy;
 
   return (
-    <Link href={`/plants/${plant.slug}`} className={`group block cursor-pointer${className ? ` ${className}` : ''}`}>
-      <article className="plant-card bg-white rounded-3xl border border-[#E2EFE7] overflow-hidden h-full flex flex-col">
+    <article className={`plant-card group relative bg-white rounded-3xl border border-[#E2EFE7] overflow-hidden h-full flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1${className ? ` ${className}` : ''}`}>
 
         {/* Image */}
         <div className="relative h-44 w-full shrink-0 overflow-hidden">
-          <PlantImage
-            src={plant.image}
-            alt={plant.imageAlt ?? `${plant.commonName} care guide`}
-            commonName={plant.commonName}
-            category={plant.category}
-            fill
-            className="group-hover:scale-105 transition-transform duration-500"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            priority={priority}
-          />
+          <Link href={`/plants/${plant.slug}`} className="block relative h-full w-full" aria-label={`View ${plant.commonName} care guide`}>
+            <PlantImage
+              src={plant.image}
+              alt={plant.imageAlt ?? `${plant.commonName} care guide`}
+              commonName={plant.commonName}
+              category={plant.category}
+              fill
+              className="group-hover:scale-105 transition-transform duration-500"
+              sizes="(max-width: 640px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              priority={priority}
+            />
+          </Link>
 
           {/* Difficulty badge over image */}
           <span className={`absolute top-3 right-3 flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm bg-white/90 backdrop-blur-md border border-white/50 ${diff.text}`}>
@@ -46,12 +47,14 @@ export default function PlantCard({ plant, className, priority = false }: PlantC
         {/* Content */}
         <div className="p-5 flex flex-col flex-1">
           <div className="mb-3">
-            <h2
-              className="font-semibold text-[1.05rem] text-[#0F172A] group-hover:text-[#15803D] transition-colors duration-200 leading-snug"
-              style={{ fontFamily: 'var(--font-display)' }}
-            >
-              {plant.commonName}
-            </h2>
+            <Link href={`/plants/${plant.slug}`} className="hover:no-underline">
+              <h2
+                className="font-semibold text-[1.05rem] text-[#0F172A] group-hover:text-[#15803D] transition-colors duration-200 leading-snug after:absolute after:inset-0 after:z-10"
+                style={{ fontFamily: 'var(--font-display)' }}
+              >
+                {plant.commonName}
+              </h2>
+            </Link>
             <p className="text-xs text-[#94a3b8] italic mt-0.5">{plant.scientificName}</p>
           </div>
 
@@ -70,8 +73,7 @@ export default function PlantCard({ plant, className, priority = false }: PlantC
               {WATER_LABELS[plant.water]}
             </span>
           </div>
-        </div>
-      </article>
-    </Link>
+      </div>
+    </article>
   );
 }

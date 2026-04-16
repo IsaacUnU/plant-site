@@ -12,11 +12,10 @@ export function LogoMark({ size = 34, className = '' }: LogoMarkProps) {
   return (
     <Image
       src="/images/logo/logo-icon.png"
-      alt=""
+      alt="PlantCare Central Logo Icon"
       width={size}
       height={size}
       className={`rounded-lg ${className}`}
-      aria-hidden="true"
       priority
     />
   );

@@ -7,7 +7,7 @@ import AdSlot from '@/components/AdSlot';
 import HeroCarousel, { type HeroPlant } from '@/components/HeroCarousel';
 
 export const metadata: Metadata = {
-  title: 'Expert Houseplant Care Guides — Learn to Grow Healthy Indoor Plants',
+  title: 'Expert Houseplant Care Guides',
   description: 'Master houseplant care with our professional guides. From easy-care snake plants to exotic tropicals, discover how to make every indoor plant thrive.',
 };
 
@@ -61,8 +61,8 @@ export default function HomePage() {
                 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0F172A] leading-[1.1] mb-6 animate-fade-in-up"
                 style={{ fontFamily: 'var(--font-display)', animationDelay: '80ms' }}
               >
-                Expert Houseplant<br />
-                <span className="text-[#15803D] italic">Care Guides.</span>
+                Expert Houseplant Care<br />
+                <span className="text-[#15803D] italic">Guides for Success.</span>
               </h1>
 
               <p className="text-lg text-[#475569] leading-relaxed mb-8 max-w-xl animate-fade-in-up" style={{ animationDelay: '160ms' }}>
@@ -229,6 +229,75 @@ export default function HomePage() {
                 <p className="text-sm text-[#475569] leading-relaxed">{item.desc}</p>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* ── SEO Content Section: Comprehensive Houseplant Care ────────────────── */}
+        <section className="mt-20 border-t border-[#E2EFE7] pt-16">
+          <div className="max-w-4xl mx-auto">
+            <h2 
+              className="text-3xl font-bold text-[#0F172A] mb-8 text-center"
+              style={{ fontFamily: 'var(--font-display)' }}
+            >
+              Mastering the Art of Houseplant Care: A Comprehensive Guide
+            </h2>
+            
+            <div className="prose prose-slate max-w-none text-[#475569] leading-relaxed space-y-6">
+              <p>
+                Welcome to <strong>PlantCare Central</strong>, your primary destination for high-quality, 
+                expert-vetted <em>houseplant care guides</em>. Whether you are a beginner looking for 
+                your first low-maintenance succulent or an experienced collector seeking tips for 
+                delicate tropical species, understanding the fundamentals of indoor gardening is 
+                the key to a thriving home jungle.
+              </p>
+
+              <h3 className="text-xl font-bold text-[#15803D] mt-8 mb-4">Understanding Light Requirements</h3>
+              <p>
+                Light is the most critical factor for plant survival. Most indoor plants fall into 
+                one of three categories: <strong>Low Light</strong>, <strong>Bright Indirect Light</strong>, 
+                and <strong>Direct Sunlight</strong>. 
+              </p>
+              <ul className="list-disc pl-5 space-y-2">
+                <li><strong>Low Light:</strong> Ideal for North-facing windows or corners far from light sources. Plants like Snake Plants and ZZ Plants are masters of these conditions.</li>
+                <li><strong>Bright Indirect Light:</strong> The "sweet spot" for most houseplants. This means the plant is in a bright room but the sun's rays don't touch the leaves directly.</li>
+                <li><strong>Direct Light:</strong> Reserved for sun-loving plants like Cacti and certain Succulents. Generally found right against South-facing windows.</li>
+              </ul>
+
+              <h3 className="text-xl font-bold text-[#15803D] mt-8 mb-4">Watering Best Practices: The Science of Sustenance</h3>
+              <p>
+                Overwatering is the number one cause of houseplant death. At PlantCare Central, we 
+                advocate for the "Finger Test" rather than a strict calendar schedule. Before 
+                watering, stick your finger about two inches into the soil. If it feels dry, it's 
+                time to water. If it's damp, wait a few more days. Proper drainage is also 
+                essential—always ensure your pots have holes at the bottom to prevent root rot.
+              </p>
+
+              <h3 className="text-xl font-bold text-[#15803D] mt-8 mb-4">Humidity, Soil, and Nutrition</h3>
+              <p>
+                Tropical plants often struggle in dry indoor air, especially during winter months when 
+                heaters are active. Grouping plants together or using a humidifier can make a world 
+                of difference. Furthermore, using the right potting mix—typically a well-draining 
+                blend of peat moss, perlite, and pine bark—ensures that roots can breathe. Don't 
+                forget to fertilize during the growing season (spring and summer) to provide the 
+                macro and micronutrients your green friends need to push out new leaves.
+              </p>
+
+              <h3 className="text-xl font-bold text-[#15803D] mt-8 mb-4">Common Issues and Troubleshooting</h3>
+              <p>
+                Yellowing leaves? It might be a sign of overwatering or a nutrient deficiency. 
+                Brown, crispy edges? Likely a lack of humidity or underwatering. Our 
+                individual plant guides delve deep into specific symptoms for each species, 
+                helping you diagnose and treat issues before they become terminal. From dealing 
+                with common pests like fungus gnats and spider mites to learning the secrets of 
+                proper pruning, our mission is to empower you with <strong>expert houseplant 
+                care guides</strong> that actually work.
+              </p>
+              
+              <p className="pt-4 font-medium italic border-t border-[#E2EFE7]">
+                Ready to find your next plant? Explore our categories above or use our search 
+                feature to find the exact care guide you need for a healthy, vibrant indoor garden.
+              </p>
+            </div>
           </div>
         </section>
 
