@@ -49,8 +49,8 @@ export default async function CategoryPage({ params }: Props) {
       <AdSlot slot="banner" className="mb-8" />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {plants.map((plant) => (
-          <PlantCard key={plant.slug} plant={plant} />
+        {plants.map((plant, index) => (
+          <PlantCard key={plant.slug} plant={plant} priority={index < 3} />
         ))}
       </div>
     </div>

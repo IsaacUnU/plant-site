@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getAllPlantSlugs, getPlant, getPlantsByCategory } from '@/lib/plants';
+import { getAllPlantSlugs, getPlant, getPlantsByCategory, autoLinkPlantNames } from '@/lib/plants';
 import { articleSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
 import CareTable from '@/components/CareTable';
 import Breadcrumb from '@/components/Breadcrumb';
@@ -46,6 +46,9 @@ export default async function PlantPage({ params }: Props) {
   const related = getPlantsByCategory(plant.category)
     .filter((p) => p.slug !== slug)
     .slice(0, 3);
+
+  const linkedDescription = autoLinkPlantNames(plant.description, slug);
+  const linkedContent = autoLinkPlantNames(plant.content, slug);
 
   const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://yoursite.com';
 
@@ -116,7 +119,7 @@ export default async function PlantPage({ params }: Props) {
               >
                 {plant.scientificName}
               </p>
-              <p className="text-[#475569] leading-relaxed">{plant.description}</p>
+              <p className="text-[#475569] leading-relaxed" dangerouslySetInnerHTML={{ __html: linkedDescription }} />
 
               <div className="flex items-center gap-5 mt-5 text-xs text-[#94a3b8]">
                 <span className="flex items-center gap-1.5">
@@ -134,7 +137,7 @@ export default async function PlantPage({ params }: Props) {
 
             <div
               className="prose max-w-none"
-              dangerouslySetInnerHTML={{ __html: plant.content }}
+              dangerouslySetInnerHTML={{ __html: linkedContent }}
             />
 
             <AdSlot slot="in-content" className="mt-10" />

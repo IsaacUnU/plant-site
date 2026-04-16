@@ -20,7 +20,7 @@ export default function Header() {
     { href: '/plants', label: 'All Plants' },
     ...topCategories,
     { href: '/uses', label: 'Uses & Benefits' },
-    { href: '/about', label: 'About' },
+    { href: '/articles', label: 'Care Guides' },
   ];
 
   return (
@@ -38,14 +38,14 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-4 py-2 rounded-lg text-sm font-medium text-[#475569] hover:text-[#15803D] hover:bg-[#F0FDF4] transition-all duration-200 cursor-pointer"
+                className="px-4 py-2 rounded-lg text-sm font-medium text-[#475569] hover:text-[#15803D] hover:bg-[#F0FDF4] transition-colors duration-300 cursor-pointer"
               >
                 {link.label}
               </Link>
             ))}
             <Link
               href="/search"
-              className="ml-1 p-2 rounded-lg text-[#475569] hover:bg-[#F0FDF4] hover:text-[#15803D] transition-colors duration-200 cursor-pointer"
+              className="ml-1 p-2 rounded-lg text-[#475569] hover:bg-[#F0FDF4] hover:text-[#15803D] transition-colors duration-300 cursor-pointer"
               aria-label="Search plants"
             >
               <Search className="w-5 h-5" />
@@ -56,7 +56,7 @@ export default function Header() {
           <div className="flex items-center gap-1">
             <Link
               href="/search"
-              className="md:hidden p-2 rounded-lg text-[#475569] hover:bg-[#F0FDF4] hover:text-[#15803D] transition-colors duration-200 cursor-pointer"
+              className="md:hidden p-2 rounded-lg text-[#475569] hover:bg-[#F0FDF4] hover:text-[#15803D] transition-colors duration-300 cursor-pointer"
               aria-label="Search plants"
             >
               <Search className="w-5 h-5" />

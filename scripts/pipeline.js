@@ -41,9 +41,9 @@ function saveQueue(queue) {
 
 function buildPrompt(plantName) {
   const today = new Date().toISOString().split('T')[0];
-  return `You are an expert horticulturist writing a detailed, SEO-optimised houseplant care guide.
+  return `You are a certified horticulturist and houseplant expert writing for PlantCare Central, a trusted online resource for indoor gardening.
 
-Write a complete plant care guide for: **${plantName}**
+Write a comprehensive, authoritative plant care guide for: **${plantName}**
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 STEP 1 — DECIDE secondaryFunctions FIRST (do this before writing anything else)
@@ -67,8 +67,9 @@ NEVER omit this field.
 STEP 2 — WRITE THE ARTICLE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 - Write in English
-- 800–1200 words of content
-- Friendly, expert tone with practical, actionable advice
+- 1000–1500 words of content (longer = better for SEO and AI citations)
+- Authoritative yet approachable tone — like a knowledgeable friend who happens to be a botanist
+- Include specific numbers, measurements, and actionable data (e.g. "water every 7–10 days", "thrives in 65–80°F")
 - Do NOT include placeholder text or [brackets]
 - Do NOT use markdown code blocks in your response
 
@@ -110,32 +111,60 @@ CRITICAL YAML RULES — your response will be rejected if you break these:
 - tags: YAML block list with "  - item" format. NOT inline ["a","b"]
 - secondaryFunctions: inline array ["a","b"]. Only from the 6 values above. MINIMUM ["air-purifying"].
 
+## Quick Care Summary
+
+Write a concise summary paragraph (3–4 sentences) that directly and clearly answers: "How do I care for ${plantName}?" This summary must be self-contained — someone reading ONLY this paragraph should know the basics. Include: light preference, watering frequency, ideal temperature range, and difficulty level in plain language. This is the single most important paragraph for AI search engine citations.
+
 ## Overview
-[2–3 paragraphs covering origin, appearance, why it's popular]
+2–3 paragraphs covering origin, native habitat, appearance, and why it's popular as a houseplant. Include the scientific name naturally in the text.
+
+## Pros and Cons
+
+List 4 pros and 2–3 cons in this exact format:
+**Pros:**
+- Pro 1
+- Pro 2
+- Pro 3
+- Pro 4
+
+**Cons:**
+- Con 1
+- Con 2
+- Con 3
 
 ## Light Requirements
-[Detailed light needs with best spots and what to avoid]
+Detailed light needs: best window direction, distance from window, signs of too much/too little light. Use specific measurements when possible (e.g. "200–400 foot-candles").
 
 ## Watering
-[Watering frequency, technique, and common mistakes]
+Step-by-step watering method. Include: how to check soil moisture (finger test depth), watering frequency by season, signs of over- and under-watering, and water quality tips.
 
 ## Soil and Potting
-[Soil mix recommendation, repotting frequency]
+Recommended soil mix recipe (e.g. "2 parts peat, 1 part perlite, 1 part orchid bark"). Pot type recommendation. Repotting frequency and signs that repotting is needed.
 
 ## Fertilizing
-[When and how to feed]
+When and how to feed. Specific NPK ratios if relevant. Seasonal schedule.
 
 ## Humidity and Temperature
-[Ideal ranges and tips for achieving them]
+Ideal ranges with specific numbers. 3–4 actionable tips for achieving the right humidity indoors (e.g. pebble tray, grouping plants, humidifier).
 
 ## Common Problems
-[4–5 common issues with causes and solutions, using ### headings]
+5–6 common issues. Use ### subheadings for each problem. For each: describe the symptom, the cause, and the fix in clear, actionable steps.
 
 ## Propagation
-[Step-by-step propagation method]
+Step-by-step propagation guide using numbered steps (1. Cut a stem… 2. Remove lower leaves… etc.). Include best time of year to propagate and expected rooting timeline.
+
+## Expert Verdict
+
+Write 2–3 opinionated sentences as a plant care expert. Rate the plant on a scale from 1 to 5 for beginners. State who this plant is best for and who should avoid it. Example tone: "If you're a first-time plant parent looking for a forgiving plant, this is your best bet. I'd rate it a 4 out of 5 for beginners."
 
 ## Frequently Asked Questions
-[3 Q&A pairs using **bold** for questions]
+
+Write 5 Q&A pairs. Use **bold** for questions, answer on the next line. Questions should be phrased exactly as someone would type them into Google or ask an AI assistant. Examples of good question formats:
+- **How often should I water my ${plantName}?**
+- **Is ${plantName} toxic to cats and dogs?**
+- **Why are the leaves on my ${plantName} turning yellow?**
+- **Can ${plantName} grow in low light?**
+- **How big does ${plantName} get indoors?**
 `;
 }
 

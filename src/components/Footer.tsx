@@ -15,10 +15,25 @@ export default function Footer() {
             <Link href="/" className="flex items-center mb-4 cursor-pointer group w-fit" aria-label={SITE_NAME}>
               <LogoMark size={36} className="group-hover:scale-105 transition-transform duration-200" />
             </Link>
-            <p className="text-sm text-slate-400 leading-relaxed max-w-xs">
+            <p className="text-sm text-slate-400 leading-relaxed max-w-xs mb-6">
               Expert plant care guides for every level of gardener.
               Grow with confidence — one plant at a time.
             </p>
+            <div className="flex items-center gap-4">
+              <a 
+                href="https://www.instagram.com/plant_care_central/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-pink-500 transition-colors"
+                aria-label="Follow us on Instagram"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+            </div>
           </div>
 
           {/* Browse */}

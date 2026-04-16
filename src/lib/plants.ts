@@ -7,7 +7,6 @@ import readingTime from 'reading-time';
 import { Plant, PlantCardData, PlantFrontmatter, SecondaryFunction } from '@/types/plant';
 import { SECONDARY_FUNCTION_META } from '@/lib/secondaryFunctions';
 
-const VALID_SECONDARY_FUNCTIONS = new Set<string>(Object.keys(SECONDARY_FUNCTION_META));
 import {
   DIFFICULTY_LABELS,
   HUMIDITY_LABELS,
@@ -15,6 +14,8 @@ import {
   TOXICITY_LABELS,
   WATER_LABELS,
 } from '@/lib/utils';
+
+const VALID_SECONDARY_FUNCTIONS = new Set<string>(Object.keys(SECONDARY_FUNCTION_META));
 
 const PLANTS_DIR = path.join(process.cwd(), 'content', 'plants');
 
@@ -235,4 +236,40 @@ export function getAllSecondaryFunctions(): { slug: SecondaryFunction; name: str
     const meta = SECONDARY_FUNCTION_META[slug];
     return { slug, name: meta.name, emoji: meta.emoji, description: meta.description, count };
   });
+}
+
+export function autoLinkPlantNames(htmlContent: string, currentSlug: string): string {
+  // 1. Get all plant names and slugs
+  const plants = getAllPlants();
+  
+  // Sort by name length descending so 'Snake Plant' matches before 'Snake'
+  const sortedPlants = [...plants].sort((a, b) => b.commonName.length - a.commonName.length);
+  
+  let linkedHtml = htmlContent;
+
+  for (const plant of sortedPlants) {
+    if (plant.slug === currentSlug) continue; // Don't link to self
+
+    // Regex explanation:
+    // (?<!<a[^>]*?>.*?)  -> Negative lookbehind: not preceded by an open <a tag (simple check)
+    // \b(${name})\b      -> Match the name as a whole word
+    // (?![^<]*?<\/a>)    -> Negative lookahead: not followed by a closing </a> before another tag
+    // This is a simplified approach because proper HTML parsing with Regex is hard, 
+    // but for markdown-generated standard HTML it works well.
+    
+    // Better logic: only replace in text nodes. 
+    // Since we are server-side and want performance, we'll use a slightly safer regex:
+    const escapedName = plant.commonName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`(?<!href="[^"]*|>)(\\b${escapedName}\\b)(?![^<]*?</a>)`, 'gi');
+    
+    // To avoid over-linking, we only link the FIRST occurrence of each plant name
+    let found = false;
+    linkedHtml = linkedHtml.replace(regex, (match) => {
+      if (found) return match;
+      found = true;
+      return `<a href="/plants/${plant.slug}" class="text-[#15803D] font-semibold hover:underline">${match}</a>`;
+    });
+  }
+
+  return linkedHtml;
 }

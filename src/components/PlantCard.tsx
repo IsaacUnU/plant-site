@@ -7,6 +7,7 @@ import PlantImage from './PlantImage';
 interface PlantCardProps {
   plant: PlantCardData;
   className?: string;
+  priority?: boolean;
 }
 
 const DIFFICULTY_STYLES = {
@@ -15,12 +16,12 @@ const DIFFICULTY_STYLES = {
   hard:   { dot: 'bg-red-500',     text: 'text-red-700',     bg: 'bg-red-50'     },
 };
 
-export default function PlantCard({ plant, className }: PlantCardProps) {
+export default function PlantCard({ plant, className, priority = false }: PlantCardProps) {
   const diff = DIFFICULTY_STYLES[plant.difficulty] ?? DIFFICULTY_STYLES.easy;
 
   return (
     <Link href={`/plants/${plant.slug}`} className={`group block cursor-pointer${className ? ` ${className}` : ''}`}>
-      <article className="plant-card bg-white rounded-3xl border border-[#E2EFE7] overflow-hidden h-full flex flex-col transition-all duration-300 group-hover:-translate-y-1">
+      <article className="plant-card bg-white rounded-3xl border border-[#E2EFE7] overflow-hidden h-full flex flex-col">
 
         {/* Image */}
         <div className="relative h-44 w-full shrink-0 overflow-hidden">
@@ -32,10 +33,11 @@ export default function PlantCard({ plant, className }: PlantCardProps) {
             fill
             className="group-hover:scale-105 transition-transform duration-500"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            priority={priority}
           />
 
           {/* Difficulty badge over image */}
-          <span className={`absolute top-3 right-3 flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full shadow-sm ${diff.bg} ${diff.text}`}>
+          <span className={`absolute top-3 right-3 flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm bg-white/90 backdrop-blur-md border border-white/50 ${diff.text}`}>
             <span className={`w-1.5 h-1.5 rounded-full ${diff.dot}`} />
             {DIFFICULTY_LABELS[plant.difficulty]}
           </span>
