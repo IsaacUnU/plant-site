@@ -52,6 +52,22 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
 
+      - name: Run listicle generator (Every 2 days)
+        run: |
+          # Use Day of Year modulo 2 to run every other day
+          DOY=$(date +%j)
+          if [ $((10#$DOY % 2)) -eq 0 ]; then
+            echo "[listicle] Scheduled run for today..."
+            node scripts/generate-lists.js
+          else
+            echo "[listicle] Not scheduled for today. Skipping."
+          fi
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          NEXT_PUBLIC_SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL }}
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+
       - name: Commit new content
         run: |
           git config --local user.email "pipeline@plantcareguide.com"

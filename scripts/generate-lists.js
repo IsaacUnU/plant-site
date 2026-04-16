@@ -14,6 +14,19 @@
 const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
+// Load .env.local if it exists
+const envPath = path.join(__dirname, '..', '.env.local');
+if (fs.existsSync(envPath)) {
+  const envFile = fs.readFileSync(envPath, 'utf8');
+  envFile.split('\n').forEach(line => {
+    // Basic parser for .env.local
+    const [key, ...valueParts] = line.split('=');
+    if (key && valueParts.length > 0) {
+      const value = valueParts.join('=').trim().replace(/^["']|["']$/g, '');
+      process.env[key.trim()] = value;
+    }
+  });
+}
 
 const CONTENT_DIR = path.join(__dirname, '..', 'content', 'plants');
 const ARTICLES_DIR = path.join(__dirname, '..', 'content', 'articles');
@@ -144,42 +157,59 @@ function getTopicBySlug(slug, plants) {
 
 function buildListPrompt(topic, matchingPlants) {
   const today = new Date().toISOString().split('T')[0];
-  const maxPlants = Math.min(matchingPlants.length, 10);
+  
+  // Dynamic plant count (5-10) for variety
+  const targetCount = Math.floor(Math.random() * 6) + 5; // 5 to 10
+  const maxPlants = Math.min(matchingPlants.length, targetCount);
+  
+  // Catchy title patterns
+  const titlePatterns = [
+    `Top ${maxPlants} ${topic.title} for Your Home`,
+    `${maxPlants} Essential ${topic.title} You Need Right Now`,
+    `Expert's Choice: The ${maxPlants} Best ${topic.title}`,
+    `The ${maxPlants} ${topic.title} Every Plant Lover Should Own`,
+    `${maxPlants} Stunning ${topic.title} to Transform Your Space`,
+    `Mastering Indoor Greenery: ${maxPlants} Best ${topic.title}`
+  ];
+  const selectedTitle = titlePatterns[Math.floor(Math.random() * titlePatterns.length)];
+
   const plantList = matchingPlants
     .slice(0, maxPlants)
     .map((p) => `- ${p.commonName} (${p.scientificName}) [SLUG: ${p.slug}] — ${p.difficulty} care, ${p.light} light, ${p.water} watering`)
     .join('\n');
 
-  return `You are a certified horticulturist writing for PlantCare Central, a trusted online resource for indoor gardening.
+  return `You are a certified horticulturist writing for PlantCare Central.
+Write a high-converting, click-worthy listicle article: "${selectedTitle}"
 
-Write a comprehensive listicle article: "Top ${maxPlants} ${topic.title}"
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ARTICLE STRUCTURE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. INTRODUCTION: 2-3 engaging paragraphs addressing the reader's pain points.
+2. PLANT LIST: For each of the ${maxPlants} plants below, write a 2-3 paragraph review with "Catchy" H2 headings (e.g. "{Name}: The low-light superstar").
+3. QUICK STATS: Include Light, Water, Difficulty, and Pet Safe stats for each.
+4. LINKS: Include [Read our full {Plant Name} care guide](/plants/{plant-slug}) for each.
+5. CLOSING: "How We Chose These Plants" and "Frequently Asked Questions" (3 Q&A pairs).
 
-Here are the plants to feature (use ALL of them):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PLANTS TO FEATURE (Use ALL of them)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ${plantList}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-RULES
+STRICT FORMATTING RULES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-- Write in English
-- 1200–2000 words
-- Authoritative yet approachable tone
-- Use the EXACT slug provided in [SLUG: slug-name] for the internal links.
-- For each plant, include a link in this exact format: [Read our full ${'{plantCommonName}'} care guide](/plants/${'{slug-name}'})
-- Do NOT include placeholder text or [brackets] except the links above
-- Do NOT use markdown code blocks in your response
-
-Return ONLY valid Markdown with YAML frontmatter:
+- Return ONLY valid Markdown.
+- You MUST start the response with YAML frontmatter exactly like this:
 
 ---
-title: "Top ${maxPlants} ${topic.title} for Your Home"
+title: "${selectedTitle}"
 slug: ${topic.slug}
 type: listicle
 category: guides
 tags:
   - houseplants
   - indoor gardening
-  - plant care
-  - ${topic.description.split(' ').slice(0, 3).join(' ')}
+  - ${topic.slug.split('-').slice(-1)[0]}
 description: "Discover the ${maxPlants} ${topic.description}. Expert picks with care tips, pros, cons, and links to full guides."
 featuredPlants:
 ${matchingPlants.slice(0, maxPlants).map((p) => `  - ${p.slug}`).join('\n')}
@@ -187,39 +217,10 @@ datePublished: ${today}
 dateModified: ${today}
 ---
 
-## Introduction
-
-Write 2–3 engaging paragraphs about why someone would want ${topic.description}. Address the reader's pain point (e.g. "Your apartment doesn't get much sunlight? These plants don't care."). Include a quick summary of what they'll find in the article.
-
-Then for each plant, write a section using this structure:
-
-## {number}. {Plant Common Name} ({Scientific Name})
-
-A 2–3 paragraph expert review covering:
-- Why this plant made the list
-- Key care requirements (light, water, humidity) with specific numbers
-- A pro tip or lesser-known fact
-- Who this plant is best for
-
-**Quick Stats:**
-- **Light:** {specific light need}
-- **Water:** {specific frequency}
-- **Difficulty:** {easy/medium/hard}
-- **Pet Safe:** {Yes/No}
-
-[Read our full {Plant Name} care guide](/plants/{plant-slug})
-
----
-
-After all plants, add:
-
-## How We Chose These Plants
-
-A short paragraph explaining the selection criteria (e.g. availability, ease of care, proven performance indoors).
-
-## Frequently Asked Questions
-
-Write 3 Q&A pairs using **bold** for questions. Questions should match what people actually search for about ${topic.description}.
+- Do NOT write any conversational text before the "---".
+- Do NOT use markdown code blocks ( \`\`\` ) to wrap the entire response.
+- Word count: 1200–2000 words.
+- Tone: Authoritative yet EXTREMELY engaging.
 `;
 }
 
@@ -253,27 +254,45 @@ async function callGroq(prompt) {
 }
 
 function validateListContent(content) {
-  if (content.length < 1500) {
-    throw new Error(`Content too short (${content.length} chars).`);
+  // Clean up AI response (strip garbage before frontmatter)
+  let cleanContent = content.trim();
+  
+  // Find the first occurrence of --- (YAML start)
+  const firstDash = cleanContent.indexOf('---');
+  if (firstDash !== -1) {
+    cleanContent = cleanContent.substring(firstDash).trim();
+  } else {
+    console.log('[listicle] DEBUG: NO FRONTMATTER FOUND. Raw AI Response follows:\n', content);
+    throw new Error('No frontmatter found in AI response.');
   }
 
-  let fm;
+  // Also strip code blocks if AI wrapped the whole thing
+  if (cleanContent.startsWith('```')) {
+    cleanContent = cleanContent.replace(/^```[a-z]*\n/i, '').replace(/\n```$/m, '').trim();
+  }
+
+  if (cleanContent.length < 1500) {
+    throw new Error(`Content too short (${cleanContent.length} chars).`);
+  }
+
+  let data;
   try {
-    fm = matter(content).data;
+    const parsed = matter(cleanContent);
+    data = parsed.data;
   } catch (e) {
-    console.log('[listicle] DEBUG: Raw AI Response below:\n', content);
+    console.log('[listicle] DEBUG: Raw AI Response below:\n', cleanContent);
     throw new Error(`Invalid YAML frontmatter: ${e.message}`);
   }
 
   const required = ['title', 'slug', 'type', 'description'];
   for (const field of required) {
-    if (!fm[field]) {
-      console.log('[listicle] DEBUG: Raw AI Response below:\n', content);
+    if (!data[field]) {
+      console.log('[listicle] DEBUG: Raw AI Response below:\n', cleanContent);
       throw new Error(`Missing or empty frontmatter field: "${field}"`);
     }
   }
 
-  return true;
+  return cleanContent;
 }
 
 function saveArticle(slug, content) {
@@ -329,11 +348,11 @@ async function main() {
 
   console.log(`[listicle] Calling Groq API...`);
   const prompt = buildListPrompt(topic, matchingPlants);
-  const content = await callGroq(prompt);
+  const rawContent = await callGroq(prompt);
 
-  validateListContent(content);
+  const cleanContent = validateListContent(rawContent);
 
-  const filePath = saveArticle(topic.slug, content);
+  const filePath = saveArticle(topic.slug, cleanContent);
   console.log(`[listicle] ✓ Saved: ${filePath}`);
 
   // Fetch image for the new listicle
