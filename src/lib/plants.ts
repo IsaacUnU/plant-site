@@ -160,6 +160,24 @@ export function getPlantCard(slug: string): PlantCardData | null {
   };
 }
 
+function extractFaqs(content: string): { question: string; answer: string }[] {
+  const faqs: { question: string; answer: string }[] = [];
+  const faqSectionMatch = content.match(/## Frequently Asked Questions([\s\S]*?)(?=##|$)/i);
+  if (faqSectionMatch) {
+    const faqBody = faqSectionMatch[1];
+    const qaRegex = /\*\*(.*?)\*\*[\s\r\n]*([\s\S]*?)(?=\*\*|$)/g;
+    let match;
+    while ((match = qaRegex.exec(faqBody)) !== null) {
+      const question = match[1].trim();
+      const answer = match[2].trim();
+      if (question && answer) {
+        faqs.push({ question, answer });
+      }
+    }
+  }
+  return faqs;
+}
+
 export async function getPlant(slug: string): Promise<Plant | null> {
   const filePath = path.join(PLANTS_DIR, `${slug}.md`);
   if (!fs.existsSync(filePath)) return null;
@@ -168,10 +186,12 @@ export async function getPlant(slug: string): Promise<Plant | null> {
     const { data, content } = matter(fileContent);
     const processed = await remark().use(remarkHtml).process(content);
     const stats = readingTime(content);
+    const faqs = extractFaqs(content);
     return {
       ...(data as PlantFrontmatter),
       content: processed.toString(),
       readingTime: `${Math.ceil(stats.minutes)} min read`,
+      faqs: faqs.length > 0 ? faqs : undefined,
     };
   } catch (err) {
     console.warn(`[plants] Skipping ${slug}.md — parse error:`, err);

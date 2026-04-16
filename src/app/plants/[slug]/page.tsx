@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getAllPlantSlugs, getPlant, getPlantsByCategory } from '@/lib/plants';
-import { articleSchema, breadcrumbSchema } from '@/lib/schema';
+import { articleSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
 import CareTable from '@/components/CareTable';
 import Breadcrumb from '@/components/Breadcrumb';
 import AdSlot from '@/components/AdSlot';
@@ -49,7 +49,7 @@ export default async function PlantPage({ params }: Props) {
 
   const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://yoursite.com';
 
-  const jsonLd = [
+  const jsonLd: any[] = [
     articleSchema(plant),
     breadcrumbSchema([
       { name: 'Home', url: SITE_URL },
@@ -58,16 +58,12 @@ export default async function PlantPage({ params }: Props) {
     ]),
   ];
 
+  if (plant.faqs) {
+    jsonLd.push(faqSchema(plant.faqs));
+  }
+
   return (
     <>
-      {jsonLd.map((schema, i) => (
-        <script
-          key={i}
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-      ))}
-
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <Breadcrumb
           items={[
@@ -168,6 +164,14 @@ export default async function PlantPage({ params }: Props) {
           </section>
         )}
       </div>
+
+      {jsonLd.map((schema, i) => (
+        <script
+          key={`ldjson-${schema['@type']}-${i}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
     </>
   );
 }

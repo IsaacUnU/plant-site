@@ -1,9 +1,15 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Leaf, ArrowRight, Sun, Droplets, BookOpen } from 'lucide-react';
 import { getAllPlants, getAllCategories } from '@/lib/plants';
 import PlantCard from '@/components/PlantCard';
 import AdSlot from '@/components/AdSlot';
 import HeroCarousel, { type HeroPlant } from '@/components/HeroCarousel';
+
+export const metadata: Metadata = {
+  title: 'Expert Houseplant Care Guides — Learn to Grow Healthy Indoor Plants',
+  description: 'Master houseplant care with our professional guides. From easy-care snake plants to exotic tropicals, discover how to make every indoor plant thrive.',
+};
 
 export default function HomePage() {
   const allPlants = getAllPlants();
@@ -55,8 +61,8 @@ export default function HomePage() {
                 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0F172A] leading-[1.1] mb-6 animate-fade-in-up"
                 style={{ fontFamily: 'var(--font-display)', animationDelay: '80ms' }}
               >
-                Every plant,<br />
-                <span className="text-[#15803D] italic">thriving.</span>
+                Expert Houseplant<br />
+                <span className="text-[#15803D] italic">Care Guides.</span>
               </h1>
 
               <p className="text-lg text-[#475569] leading-relaxed mb-8 max-w-xl animate-fade-in-up" style={{ animationDelay: '160ms' }}>

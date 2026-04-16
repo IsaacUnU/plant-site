@@ -38,6 +38,7 @@ export interface PlantFrontmatter {
 export interface Plant extends PlantFrontmatter {
   content: string;
   readingTime: string;
+  faqs?: { question: string; answer: string }[];
 }
 
 export interface PlantCardData {
