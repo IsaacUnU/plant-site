@@ -80,9 +80,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
         {/* Google AdSense */}
-        <script
-          async
+        <Script
+          id="adsense"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7863265866651285"
+          strategy="lazyOnload"
           crossOrigin="anonymous"
         />
       </head>

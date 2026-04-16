@@ -82,10 +82,10 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-slate-500">
+          <p className="text-xs text-slate-400">
             © {year} {SITE_NAME}. All rights reserved.
           </p>
-          <p className="text-xs text-slate-600">
+          <p className="text-xs text-slate-400">
             Making plant parents since {year}.
           </p>
         </div>

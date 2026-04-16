@@ -55,7 +55,7 @@ export default function PlantCard({ plant, className, priority = false }: PlantC
                 {plant.commonName}
               </h2>
             </Link>
-            <p className="text-xs text-[#94a3b8] italic mt-0.5">{plant.scientificName}</p>
+            <p className="text-xs text-slate-600 italic mt-0.5">{plant.scientificName}</p>
           </div>
 
           <p className="text-sm text-[#475569] leading-relaxed flex-1 line-clamp-2 mb-4">
