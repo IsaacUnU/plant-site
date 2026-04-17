@@ -81,53 +81,237 @@ a:hover .plant-card {
   transform: translateY(-4px);
 }
 
-/* Prose styles for markdown content */
+/* ── Prose: Editorial article styles ───────────────────────── */
 .prose {
-  color: #374151;
-  line-height: 1.75;
+  color: #334155;
+  line-height: 1.8;
+  font-size: 1.0625rem;
 }
+
+/* Lead paragraph — first p after the article tag */
+.prose > p:first-of-type {
+  font-size: 1.175rem;
+  line-height: 1.85;
+  color: #1e3a2f;
+  font-weight: 450;
+  border-left: 4px solid #15803D;
+  padding-left: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+/* H2 — section headings with green accent bar */
 .prose h2 {
-  font-size: 1.5rem;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
   font-weight: 700;
-  color: #111827;
-  margin-top: 2rem;
+  color: #0F172A;
+  margin-top: 3rem;
+  margin-bottom: 1.125rem;
+  padding-top: 1.5rem;
+  position: relative;
+}
+.prose h2::before {
+  content: '';
+  display: block;
+  width: 2.5rem;
+  height: 3px;
+  background: linear-gradient(90deg, #15803D 0%, #4ade80 100%);
+  border-radius: 9999px;
   margin-bottom: 0.75rem;
 }
+
+/* H3 — subsection headings with dot prefix */
 .prose h3 {
-  font-size: 1.25rem;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
   font-weight: 600;
-  color: #1f2937;
+  color: #15803D;
+  margin-top: 2rem;
+  margin-bottom: 0.625rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.prose h3::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #15803D;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* H4 */
+.prose h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0F172A;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: var(--font-body);
 }
+
+/* Paragraphs */
 .prose p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  max-width: 68ch;
 }
+
+/* Lists — custom green bullets */
 .prose ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-  margin-bottom: 1rem;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
 }
+.prose ul li {
+  position: relative;
+  padding-left: 1.75rem;
+  color: #334155;
+  line-height: 1.75;
+}
+.prose ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 8px;
+  height: 8px;
+  background: #15803D;
+  border-radius: 50%;
+}
+
+/* Ordered list */
 .prose ol {
-  list-style-type: decimal;
-  padding-left: 1.5rem;
-  margin-bottom: 1rem;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+  counter-reset: prose-counter;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
 }
-.prose li {
-  margin-bottom: 0.25rem;
+.prose ol li {
+  position: relative;
+  padding-left: 2.25rem;
+  color: #334155;
+  line-height: 1.75;
+  counter-increment: prose-counter;
 }
+.prose ol li::before {
+  content: counter(prose-counter);
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #15803D;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+/* Nested list item (li > strong — "Low Light: ...") */
+.prose li strong:first-child {
+  color: #0F172A;
+  font-weight: 700;
+}
+
+/* Strong / bold */
 .prose strong {
-  font-weight: 600;
-  color: #111827;
+  font-weight: 700;
+  color: #0F172A;
 }
+
+/* Links */
 .prose a {
-  color: #15803d;
-  text-decoration: underline;
+  color: #15803D;
+  text-decoration: none;
+  border-bottom: 1px solid #bbf7d0;
+  transition: border-color 0.15s, color 0.15s;
 }
+.prose a:hover {
+  color: #166534;
+  border-color: #15803D;
+}
+
+/* Blockquote — pull-quote style */
 .prose blockquote {
-  border-left: 4px solid #bbf7d0;
-  padding-left: 1rem;
-  color: #6b7280;
+  position: relative;
+  border: none;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border-left: 4px solid #15803D;
+  border-radius: 0 1rem 1rem 0;
+  padding: 1.25rem 1.5rem;
+  color: #1e3a2f;
   font-style: italic;
-  margin: 1.5rem 0;
+  font-size: 1.1rem;
+  margin: 2rem 0;
+  box-shadow: 0 2px 12px 0 rgba(21,128,61,0.07);
+}
+.prose blockquote::before {
+  content: '\201C';
+  position: absolute;
+  top: -0.5rem;
+  left: 1rem;
+  font-size: 4rem;
+  color: #15803D;
+  opacity: 0.25;
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+/* Horizontal rule */
+.prose hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #E2EFE7 20%, #E2EFE7 80%, transparent);
+  margin: 2.5rem 0;
+}
+
+/* Inline code */
+.prose code {
+  background: #f0fdf4;
+  color: #15803D;
+  border: 1px solid #E2EFE7;
+  border-radius: 0.3rem;
+  padding: 0.1em 0.4em;
+  font-size: 0.9em;
+}
+
+/* Table */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 0.95rem;
+}
+.prose th {
+  background: #15803D;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.prose td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #E2EFE7;
+  color: #334155;
+}
+.prose tr:nth-child(even) td {
+  background: #f9fffe;
 }

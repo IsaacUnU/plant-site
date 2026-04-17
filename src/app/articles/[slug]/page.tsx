@@ -126,26 +126,30 @@ export default async function ArticlePage({ params }: Props) {
             </header>
 
             <article
-              className="prose prose-green lg:prose-lg max-w-none prose-headings:font-display prose-headings:text-[#0F172A] prose-p:text-[#475569] prose-p:leading-relaxed prose-li:text-[#475569]"
+              className="prose max-w-none"
             >
               <div dangerouslySetInnerHTML={{ __html: contentBeforeAd }} />
               
               {contentAfterAd && (
                 <>
-                  <div className="my-12 py-8 border-y border-[#E2EFE7] bg-slate-50/50 -mx-4 px-4 sm:mx-0 sm:px-0 sm:rounded-xl">
-                    <p className="text-[10px] text-slate-400 uppercase tracking-[0.2em] font-bold mb-4 text-center">Sponsored Content</p>
-                    <AdSlot slot="in-content" className="!h-32" />
-                  </div>
+                  {process.env.NODE_ENV === 'development' && (
+                    <div className="my-12 py-8 border-y border-[#E2EFE7] bg-slate-50/50 -mx-4 px-4 sm:mx-0 sm:px-0 sm:rounded-xl">
+                      <p className="text-[10px] text-slate-400 uppercase tracking-[0.2em] font-bold mb-4 text-center">Sponsored Content</p>
+                      <AdSlot slot="in-content" className="!h-32" />
+                    </div>
+                  )}
                   <div dangerouslySetInnerHTML={{ __html: contentAfterAd }} />
                 </>
               )}
             </article>
 
             {/* Bottom Ad / Footer Slot */}
-            <div className="mt-12 py-6 border-t border-[#E2EFE7]">
-              <AdSlot slot="footer" className="!h-32 mb-4" />
-              <p className="text-center text-[10px] text-slate-300 uppercase tracking-widest">Advertisement</p>
-            </div>
+            {process.env.NODE_ENV === 'development' && (
+              <div className="mt-12 py-6 border-t border-[#E2EFE7]">
+                <AdSlot slot="footer" className="!h-32 mb-4" />
+                <p className="text-center text-[10px] text-slate-300 uppercase tracking-widest">Advertisement</p>
+              </div>
+            )}
           </div>
  
           {/* ── Sidebar ── */}
@@ -181,10 +185,12 @@ export default async function ArticlePage({ params }: Props) {
               </a>
 
               {/* Sticky Sidebar Ad - Second slot for long content */}
-              <div className="pt-6">
-                <AdSlot slot="sidebar" className="!h-[400px]" />
-                <p className="text-[10px] text-slate-300 uppercase tracking-widest mt-2 text-center">Advertisement</p>
-              </div>
+              {process.env.NODE_ENV === 'development' && (
+                <div className="pt-6">
+                  <AdSlot slot="sidebar" className="!h-[400px]" />
+                  <p className="text-[10px] text-slate-300 uppercase tracking-widest mt-2 text-center">Advertisement</p>
+                </div>
+              )}
             </div>
           </aside>
         </div>

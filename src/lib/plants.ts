@@ -260,15 +260,28 @@ export function autoLinkPlantNames(htmlContent: string, currentSlug: string): st
     // Better logic: only replace in text nodes. 
     // Since we are server-side and want performance, we'll use a slightly safer regex:
     const escapedName = plant.commonName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const regex = new RegExp(`(?<!href="[^"]*|>)(\\b${escapedName}\\b)(?![^<]*?</a>)`, 'gi');
-    
-    // To avoid over-linking, we only link the FIRST occurrence of each plant name
-    let found = false;
-    linkedHtml = linkedHtml.replace(regex, (match) => {
-      if (found) return match;
-      found = true;
-      return `<a href="/plants/${plant.slug}" class="text-[#15803D] font-semibold hover:underline">${match}</a>`;
-    });
+    const makeLink = (name: string) =>
+      `<a href="/plants/${plant.slug}" class="text-[#15803D] font-semibold hover:underline">${name}</a>`;
+
+    // Pass 1: always link inside h2/h3 headings regardless of body occurrences
+    linkedHtml = linkedHtml.replace(
+      new RegExp(`(<h[23][^>]*>(?:(?!<\\/h[23]>).)*?)\\b(${escapedName})\\b`, 'gi'),
+      (_, before, name) => `${before}${makeLink(name)}`
+    );
+
+    // Pass 2: link first occurrence per H2 section in body text.
+    // Each H2 is a distinct subtopic, so the first mention per section is natural
+    // and consistent — avoids the intro-paragraph "used up" problem.
+    const bodyRegex = new RegExp(`(?<!href="[^"]*|>)(\\b${escapedName}\\b)(?![^<]*?<\\/a>)`, 'gi');
+    const sections = linkedHtml.split(/(?=<h2[\s>])/i);
+    linkedHtml = sections.map(section => {
+      let sectionFound = false;
+      return section.replace(bodyRegex, (match) => {
+        if (sectionFound) return match;
+        sectionFound = true;
+        return makeLink(match);
+      });
+    }).join('');
   }
 
   return linkedHtml;
