@@ -1,9 +1,5 @@
 {
   "pending": [
-    "Calathea orbifolia",
-    "Maranta leuconeura",
-    "Pilea peperomioides",
-    "Tradescantia zebrina",
     "Hoya carnosa",
     "Oxalis triangularis",
     "Begonia maculata",
@@ -213,6 +209,10 @@
     "Christmas Cactus",
     "African Violet",
     "Orchid Phalaenopsis",
-    "Anthurium"
+    "Anthurium",
+    "Calathea orbifolia",
+    "Maranta leuconeura",
+    "Pilea peperomioides",
+    "Tradescantia zebrina"
   ]
 }
