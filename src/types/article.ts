@@ -27,6 +27,7 @@ export interface ArticleCardData {
   description: string;
   featuredPlants?: string[];
   datePublished: string;
+  dateModified?: string;
   image?: string;
   imageAlt?: string;
 }

@@ -27,6 +27,10 @@ description: >-
   living space.
 datePublished: 2026-04-17T00:00:00.000Z
 dateModified: 2026-04-17T00:00:00.000Z
+image: "https://images.unsplash.com/photo-1714507767656-2fb307e1b03d?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxDYWxhdGhlYSUyMG9yYmlmb2xpYSUyMGhvdXNlcGxhbnR8ZW58MHx8fHwxNzc2NDI4MDY2fDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop"
+imageAlt: Calathea Orbifolia houseplant with large rounded leaves and silver-green stripe pattern
+imageCredit: Gigi Visacri
+imageCreditUrl: "https://unsplash.com/@georgia_vis?utm_source=plantcare_guide&utm_medium=referral"
 ---
 
 ## Quick Care Summary

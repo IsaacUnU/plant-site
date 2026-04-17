@@ -52,16 +52,8 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
 
-      - name: Run listicle generator (Every 2 days)
-        run: |
-          # Use Day of Year modulo 2 to run every other day
-          DOY=$(date +%j)
-          if [ $((10#$DOY % 2)) -eq 0 ]; then
-            echo "[listicle] Scheduled run for today..."
-            node scripts/generate-lists.js
-          else
-            echo "[listicle] Not scheduled for today. Skipping."
-          fi
+      - name: Run listicle generator (Daily)
+        run: node scripts/generate-lists.js
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
@@ -72,7 +64,7 @@ jobs:
         run: |
           git config --local user.email "pipeline@plantcareguide.com"
           git config --local user.name "Content Pipeline"
-          git add content/plants/ scripts/plants-queue.json public/images/plants/
+          git add content/plants/ content/articles/ scripts/plants-queue.json public/images/plants/
           if git diff --staged --quiet; then
             echo "No new content to commit"
           else

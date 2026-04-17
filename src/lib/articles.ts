@@ -64,6 +64,7 @@ export function getArticleCard(slug: string): ArticleCardData | null {
     description: fm.description,
     featuredPlants: fm.featuredPlants,
     datePublished: fm.datePublished,
+    dateModified: fm.dateModified,
     image: fm.image,
     imageAlt: fm.imageAlt,
   };
