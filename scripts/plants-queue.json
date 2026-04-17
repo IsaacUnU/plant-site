@@ -1,9 +1,5 @@
 {
   "pending": [
-    "Hoya carnosa",
-    "Oxalis triangularis",
-    "Begonia maculata",
-    "Croton petra",
     "Dumb Cane",
     "Pothos neon",
     "Monstera adansonii",
@@ -213,6 +209,10 @@
     "Calathea orbifolia",
     "Maranta leuconeura",
     "Pilea peperomioides",
-    "Tradescantia zebrina"
+    "Tradescantia zebrina",
+    "Hoya carnosa",
+    "Oxalis triangularis",
+    "Begonia maculata",
+    "Croton petra"
   ]
 }
