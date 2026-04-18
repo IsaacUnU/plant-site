@@ -22,10 +22,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const plant = await getPlant(slug);
   if (!plant) return {};
-  const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://yoursite.com';
+  const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://plantcarecentral.com';
   return {
     title: plant.title,
     description: plant.description,
+    alternates: {
+      canonical: `${SITE_URL}/plants/${plant.slug}`,
+    },
     openGraph: {
       title: plant.title,
       description: plant.description,
@@ -50,7 +53,7 @@ export default async function PlantPage({ params }: Props) {
   const linkedDescription = autoLinkPlantNames(plant.description, slug);
   const linkedContent = autoLinkPlantNames(plant.content, slug);
 
-  const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://yoursite.com';
+  const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://plantcarecentral.com';
 
   const jsonLd: any[] = [
     articleSchema(plant),

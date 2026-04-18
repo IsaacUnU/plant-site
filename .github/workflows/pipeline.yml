@@ -4,6 +4,8 @@ on:
   schedule:
     # Runs once per day at 10:00 UTC (12:00 Spain CEST)
     - cron: '0 10 * * *'
+    # Pinterest pinning — every Monday at 11:00 UTC
+    - cron: '0 11 * * 1'
   workflow_dispatch:
     inputs:
       plant_name:
@@ -60,11 +62,19 @@ jobs:
           NEXT_PUBLIC_SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL }}
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
 
+      - name: Create Pinterest pins (Weekly — Mondays only)
+        # Only runs on the Monday cron trigger, not the daily one or manual dispatch
+        if: github.event.schedule == '0 11 * * 1'
+        run: node scripts/pinterest-pins.js
+        env:
+          PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
+          PINTEREST_BOARD_ID: ${{ secrets.PINTEREST_BOARD_ID }}
+
       - name: Commit new content
         run: |
           git config --local user.email "pipeline@plantcareguide.com"
           git config --local user.name "Content Pipeline"
-          git add content/plants/ content/articles/ scripts/plants-queue.json public/images/plants/
+          git add content/plants/ content/articles/ scripts/plants-queue.json scripts/pinterest-pinned.json public/images/plants/
           if git diff --staged --quiet; then
             echo "No new content to commit"
           else

@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "pipeline": "node --env-file=.env.local scripts/pipeline.js",
-    "images": "node --env-file=.env.local scripts/fetch-images.js"
+    "images": "node --env-file=.env.local scripts/fetch-images.js",
+    "lists": "node --env-file=.env.local scripts/generate-lists.js",
+    "howto": "node --env-file=.env.local scripts/generate-howto.js",
+    "pinterest": "node --env-file=.env.local scripts/pinterest-pins.js"
   },
   "dependencies": {
     "@formspree/react": "^3.0.0",

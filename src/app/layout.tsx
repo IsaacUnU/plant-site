@@ -24,7 +24,7 @@ const raleway = Raleway({
 });
 
 const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'PlantCare Central';
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://yoursite.com';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://plantcarecentral.com';
 const SITE_DESCRIPTION =
   'Expert plant care guides for every houseplant. Learn how to water, feed, and grow healthy plants indoors.';
 
@@ -35,6 +35,24 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
+  keywords: [
+    'houseplant care',
+    'indoor plant care guide',
+    'how to care for houseplants',
+    'plant watering tips',
+    'best indoor plants',
+    'low light houseplants',
+    'succulent care',
+    'monstera care',
+    'pothos care',
+    'fiddle leaf fig care',
+    'snake plant care',
+    'peace lily care',
+    'plant care for beginners',
+  ],
+  alternates: {
+    canonical: SITE_URL,
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',

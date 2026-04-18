@@ -1,6 +1,6 @@
 import { Plant } from '@/types/plant';
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://yoursite.com';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://plantcarecentral.com';
 const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'PlantCare Central';
 
 export function articleSchema(plant: Plant) {
@@ -21,6 +21,13 @@ export function articleSchema(plant: Plant) {
       name: SITE_NAME,
       url: SITE_URL,
     },
+    ...(plant.image && {
+      image: {
+        '@type': 'ImageObject',
+        url: `${SITE_URL}${plant.image}`,
+        description: plant.imageAlt ?? plant.commonName,
+      },
+    }),
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `${SITE_URL}/plants/${plant.slug}`,

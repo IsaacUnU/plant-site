@@ -23,7 +23,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     url: `${SITE_URL}/plants/${slug}`,
     lastModified: plantData[i]?.dateModified ?? now,
     changeFrequency: 'monthly',
-    priority: 0.8,
+    priority: 0.85,
   }));
 
   const categoryPages: MetadataRoute.Sitemap = categories.map((cat) => ({

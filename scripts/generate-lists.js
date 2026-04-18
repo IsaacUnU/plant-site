@@ -133,6 +133,129 @@ const LIST_TOPICS = [
     filter: (p) => p.humidity === 'high' || (p.secondaryFunctions || []).includes('humidity-boosting'),
     description: 'humidity-loving plants that thrive in bathroom conditions',
   },
+  {
+    slug: 'best-office-plants',
+    title: 'Best Office Plants',
+    filter: (p) => {
+      const matching =
+        (p.light === 'low' || p.light === 'indirect') && p.difficulty === 'easy';
+      if (matching) return true;
+      // Fallback: include medium difficulty if not enough results
+      return (p.light === 'low' || p.light === 'indirect') && p.difficulty === 'medium';
+    },
+    description: 'low-maintenance plants perfect for office and desk environments',
+  },
+  {
+    slug: 'best-plants-for-bedrooms',
+    title: 'Best Plants for Bedrooms',
+    filter: (p) =>
+      p.toxicity === 'non-toxic' &&
+      ((p.secondaryFunctions || []).includes('pleasant-scent') ||
+        (p.secondaryFunctions || []).includes('air-purifying')),
+    description: 'non-toxic, air-purifying, and fragrant plants ideal for bedrooms',
+  },
+  {
+    slug: 'best-drought-tolerant-houseplants',
+    title: 'Best Drought-Tolerant Houseplants',
+    filter: (p) => p.water === 'every-2-weeks' || p.water === 'monthly',
+    description: 'drought-tolerant houseplants that thrive on minimal watering',
+  },
+  {
+    slug: 'best-plants-for-small-spaces',
+    title: 'Best Plants for Small Spaces',
+    filter: (p) => {
+      const matching = p.growthRate === 'slow' && (p.difficulty === 'easy' || p.difficulty === 'medium');
+      if (matching) return true;
+      // Fallback: include moderate growth rate as well
+      return p.growthRate === 'moderate' && p.difficulty === 'easy';
+    },
+    description: 'compact, slow-growing houseplants perfect for apartments and small rooms',
+  },
+  {
+    slug: 'best-medicinal-houseplants',
+    title: 'Best Medicinal Houseplants',
+    filter: (p) => {
+      const matching = (p.secondaryFunctions || []).includes('medicinal');
+      if (matching) return true;
+      // Fallback: include plants tagged medicinal or aloe-type
+      return (p.tags || []).some((t) => /medicin|heal|aloe/i.test(t));
+    },
+    description: 'houseplants with proven medicinal and therapeutic properties',
+  },
+  {
+    slug: 'best-plants-for-bright-light',
+    title: 'Best Plants for Bright Sunny Windows',
+    filter: (p) => p.light === 'direct' || p.light === 'indirect-bright',
+    description: 'sun-loving houseplants that thrive in bright, sunny windowsills',
+  },
+  {
+    slug: 'best-vines-and-climbers',
+    title: 'Best Indoor Vines and Climbing Plants',
+    filter: (p) => {
+      const matching =
+        p.category === 'vines' || (p.tags || []).some((t) => /climb/i.test(t));
+      if (matching) return true;
+      // Fallback: include trailing plants as well
+      return (p.tags || []).some((t) => /trail|hang|vine/i.test(t));
+    },
+    description: 'stunning indoor vines and climbing plants for trellises, shelves, and walls',
+  },
+  {
+    slug: 'best-plants-for-hot-rooms',
+    title: 'Best Plants for Warm Rooms',
+    filter: (p) => {
+      const matching = p.category === 'tropical' || p.category === 'palms';
+      if (matching) return true;
+      // Fallback: include plants tagged heat-tolerant or desert
+      return (p.tags || []).some((t) => /heat|warm|tropic|desert/i.test(t));
+    },
+    description: 'heat-tolerant tropical plants that thrive in warm indoor environments',
+  },
+  {
+    slug: 'best-scented-houseplants',
+    title: 'Best Fragrant and Scented Houseplants',
+    filter: (p) => {
+      const matching = (p.secondaryFunctions || []).includes('pleasant-scent');
+      if (matching) return true;
+      // Fallback: include plants tagged fragrant or scented
+      return (p.tags || []).some((t) => /scent|fragran|aroma/i.test(t));
+    },
+    description: 'fragrant houseplants that fill your home with beautiful natural scents',
+  },
+  {
+    slug: 'best-palms-for-indoors',
+    title: 'Best Indoor Palm Trees',
+    filter: (p) => {
+      const matching = p.category === 'palms';
+      if (matching) return true;
+      // Fallback: include plants tagged palm
+      return (p.tags || []).some((t) => /palm/i.test(t));
+    },
+    description: 'elegant indoor palm trees that bring a tropical resort feel to any room',
+  },
+  {
+    slug: 'best-hard-to-kill-plants',
+    title: 'Almost Impossible to Kill: Best Hardy Houseplants',
+    filter: (p) => {
+      const matching =
+        p.difficulty === 'easy' && (p.water === 'every-2-weeks' || p.water === 'monthly');
+      if (matching) return true;
+      // Fallback: easy difficulty with weekly or less watering
+      return p.difficulty === 'easy' && p.water === 'weekly';
+    },
+    description: 'virtually indestructible houseplants perfect for busy or forgetful plant owners',
+  },
+  {
+    slug: 'best-plants-for-high-humidity',
+    title: 'Best Plants for High Humidity Environments',
+    filter: (p) => {
+      const matching = p.humidity === 'high';
+      if (matching) return true;
+      // Fallback: include humidity-boosting or bathroom-suited plants
+      return (p.secondaryFunctions || []).includes('humidity-boosting');
+    },
+    description: 'moisture-loving plants that thrive in high humidity rooms like bathrooms and kitchens',
+  },
 ];
 
 function getNextTopic(plants) {
