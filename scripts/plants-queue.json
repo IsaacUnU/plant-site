@@ -1,9 +1,5 @@
 {
   "pending": [
-    "Alocasia polly",
-    "Caladium",
-    "Nerve Plant",
-    "Baby rubber plant",
     "Peperomia obtusifolia",
     "Peperomia caperata",
     "Umbrella plant",
@@ -213,6 +209,10 @@
     "Dumb Cane",
     "Pothos neon",
     "Monstera adansonii",
-    "Rhaphidophora tetrasperma"
+    "Rhaphidophora tetrasperma",
+    "Alocasia polly",
+    "Caladium",
+    "Nerve Plant",
+    "Baby rubber plant"
   ]
 }
