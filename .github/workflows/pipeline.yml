@@ -74,7 +74,8 @@ jobs:
         run: |
           git config --local user.email "pipeline@plantcareguide.com"
           git config --local user.name "Content Pipeline"
-          git add content/plants/ content/articles/ scripts/plants-queue.json scripts/pinterest-pinned.json public/images/plants/
+          git add content/plants/ content/articles/ scripts/plants-queue.json public/images/plants/
+          [ -f scripts/pinterest-pinned.json ] && git add scripts/pinterest-pinned.json || true
           if git diff --staged --quiet; then
             echo "No new content to commit"
           else
