@@ -14,6 +14,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center mb-4 cursor-pointer group w-fit" aria-label={SITE_NAME}>
               <LogoMark size={36} className="group-hover:scale-105 transition-transform duration-200" />
+              <span className="sr-only">{SITE_NAME}</span>
             </Link>
             <p className="text-sm text-slate-400 leading-relaxed max-w-xs mb-6">
               Expert plant care guides for every level of gardener.

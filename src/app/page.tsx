@@ -62,7 +62,7 @@ export default function HomePage() {
                 style={{ fontFamily: 'var(--font-display)', animationDelay: '80ms' }}
               >
                 Expert Houseplant Care<br />
-                <span className="text-[#15803D] italic">Guides for Success.</span>
+                <span className="text-[#15803D] italic">Guides for Every Home.</span>
               </h1>
 
               <p className="text-lg text-[#475569] leading-relaxed mb-8 max-w-xl animate-fade-in-up" style={{ animationDelay: '160ms' }}>
@@ -79,7 +79,7 @@ export default function HomePage() {
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link
-                  href="/plants"
+                  href="/category/tropical"
                   className="inline-flex items-center gap-2 bg-white border border-[#E2EFE7] text-[#0F172A] px-6 py-3 rounded-2xl font-semibold hover:border-[#86efac] hover:text-[#15803D] transition-all duration-200 cursor-pointer"
                 >
                   Start with Tropicals

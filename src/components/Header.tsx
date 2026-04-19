@@ -30,6 +30,7 @@ export default function Header() {
 
           <Link href="/" className="flex items-center group cursor-pointer" aria-label={SITE_NAME}>
             <LogoMark size={36} className="group-hover:scale-105 transition-transform duration-200" />
+            <span className="sr-only">{SITE_NAME}</span>
           </Link>
 
           {/* Desktop nav */}
