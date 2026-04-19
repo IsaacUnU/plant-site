@@ -11,11 +11,10 @@ description: Learn to prune houseplants for lush growth and prevent overgrowth
 datePublished: 2026-04-18T00:00:00.000Z
 dateModified: 2026-04-18T00:00:00.000Z
 image: >-
-  https://images.unsplash.com/photo-1628246498566-c846ce32a5b5?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxIb3clMjB0byUyMFBydW5lJTIwSG91c2VwbGFudHMlMjBmb3IlMjBGdWxsZXIlMkMlMjBIZWFsdGhpZXIlMjBHcm93dGglMjBob3VzZXBsYW50cyUyMHBsYW50JTIwY2FyZSUyMGhvdXNlcGxhbnQlMjBpbmRvb3IlMjBnYXJkZW4lMjBsaWZlc3R5bGV8ZW58MHwwfHx8MTc3NjU0NTEyNHww&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
+  https://images.unsplash.com/photo-1684163674781-e1ca46f8c8a1?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwyfHxIb3clMjB0byUyMFBydW5lJTIwSG91c2VwbGFudHMlMjBmb3IlMjBGdWxsZXIlMkMlMjBIZWFsdGhpZXIlMjBHcm93dGglMjBob3VzZXBsYW50cyUyMHBsYW50JTIwY2FyZSUyMGhvdXNlcGxhbnQlMjBpbmRvb3J8ZW58MHwwfHx8MTc3NjYzMjcxM3ww&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
 imageAlt: 'How to Prune Houseplants for Fuller, Healthier Growth'
-imageCredit: Huy Phan
-imageCreditUrl: >-
-  https://unsplash.com/@huyphan2602?utm_source=plantcare_guide&utm_medium=referral
+imageCredit: ly han
+imageCreditUrl: 'https://unsplash.com/@hanly2684?utm_source=plantcare_guide&utm_medium=referral'
 ---
 
 ## Introduction

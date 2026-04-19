@@ -26,6 +26,12 @@ description: >-
   helping to purify the air.
 datePublished: 2026-04-19T00:00:00.000Z
 dateModified: 2026-04-19T00:00:00.000Z
+image: >-
+  https://images.unsplash.com/photo-1763518821406-55caf89c01fb?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwyfHxBbG9jYXNpYSUyMHBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzY2MzI4NjV8MA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
+imageAlt: Alocasia Polly houseplant
+imageCredit: Jakayla Toney
+imageCreditUrl: >-
+  https://unsplash.com/@thegardenstateexplorer?utm_source=plantcare_guide&utm_medium=referral
 ---
 
 ## Quick Care Summary

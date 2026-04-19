@@ -1,15 +1,21 @@
 ---
-title: "How to Water Houseplants: The Complete Guide"
+title: 'How to Water Houseplants: The Complete Guide'
 slug: how-to-water-houseplants
-type: "howto"
-category: "care-guides"
+type: howto
+category: care-guides
 tags:
   - houseplants
   - plant care
   - indoor gardening
-description: "Learn expert tips on watering houseplants for optimal health"
-datePublished: 2026-04-18
-dateModified: 2026-04-18
+description: Learn expert tips on watering houseplants for optimal health
+datePublished: 2026-04-18T00:00:00.000Z
+dateModified: 2026-04-18T00:00:00.000Z
+image: >-
+  https://images.unsplash.com/photo-1758273706261-ed896075a6ae?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxIb3clMjB0byUyMFdhdGVyJTIwSG91c2VwbGFudHMlM0ElMjBUaGUlMjBDb21wbGV0ZSUyMEd1aWRlJTIwaG91c2VwbGFudHMlMjBwbGFudCUyMGNhcmUlMjBob3VzZXBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzY2MzI3MTZ8MA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
+imageAlt: 'How to Water Houseplants: The Complete Guide'
+imageCredit: Vitaly Gariev
+imageCreditUrl: >-
+  https://unsplash.com/@silverkblack?utm_source=plantcare_guide&utm_medium=referral
 ---
 
 ## INTRODUCTION

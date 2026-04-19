@@ -11,11 +11,10 @@ description: Learn how to repot a houseplant with our step-by-step guide and exp
 datePublished: 2026-04-18T00:00:00.000Z
 dateModified: 2026-04-18T00:00:00.000Z
 image: >-
-  https://images.unsplash.com/photo-1628246498566-c846ce32a5b5?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxIb3clMjB0byUyMFJlcG90JTIwYSUyMEhvdXNlcGxhbnQlMjBTdGVwJTIwYnklMjBTdGVwJTIwaG91c2VwbGFudHMlMjBwbGFudCUyMGNhcmUlMjBob3VzZXBsYW50JTIwaW5kb29yJTIwZ2FyZGVuJTIwbGlmZXN0eWxlfGVufDB8MHx8fDE3NzY1NDQ5NTV8MA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
+  https://images.unsplash.com/photo-1762643565395-179a5b40ff5d?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxIb3clMjB0byUyMFJlcG90JTIwYSUyMEhvdXNlcGxhbnQlMjBTdGVwJTIwYnklMjBTdGVwJTIwaG91c2VwbGFudHMlMjBwbGFudCUyMGNhcmUlMjBob3VzZXBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzY2MzI3MTR8MA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
 imageAlt: How to Repot a Houseplant Step by Step
-imageCredit: Huy Phan
-imageCreditUrl: >-
-  https://unsplash.com/@huyphan2602?utm_source=plantcare_guide&utm_medium=referral
+imageCredit: Jim Luo
+imageCreditUrl: 'https://unsplash.com/@jimluo?utm_source=plantcare_guide&utm_medium=referral'
 ---
 
 ## Introduction

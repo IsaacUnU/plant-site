@@ -10,7 +10,9 @@
     "images": "node --env-file=.env.local scripts/fetch-images.js",
     "lists": "node --env-file=.env.local scripts/generate-lists.js",
     "howto": "node --env-file=.env.local scripts/generate-howto.js",
-    "pinterest": "node --env-file=.env.local scripts/pinterest-pins.js"
+    "pinterest": "node --env-file=.env.local scripts/pinterest-pins.js",
+    "article-images": "node --env-file=.env.local scripts/fetch-article-images.js",
+    "fix-images": "node scripts/fix-duplicate-images.js"
   },
   "dependencies": {
     "@formspree/react": "^3.0.0",

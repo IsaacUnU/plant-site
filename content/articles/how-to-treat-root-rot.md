@@ -11,11 +11,11 @@ description: Rescue your plant from root rot with expert steps
 datePublished: 2026-04-18T00:00:00.000Z
 dateModified: 2026-04-18T00:00:00.000Z
 image: >-
-  https://images.unsplash.com/photo-1628246498566-c846ce32a5b5?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxIb3clMjB0byUyMFRyZWF0JTIwUm9vdCUyMFJvdCUyMGFuZCUyMFNhdmUlMjBZb3VyJTIwUGxhbnQlMjBob3VzZXBsYW50cyUyMHBsYW50JTIwY2FyZSUyMGhvdXNlcGxhbnQlMjBpbmRvb3IlMjBnYXJkZW4lMjBsaWZlc3R5bGV8ZW58MHwwfHx8MTc3NjU0NTA4OHww&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
+  https://images.unsplash.com/photo-1653317747673-8143a35dd99b?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxIb3clMjB0byUyMFRyZWF0JTIwUm9vdCUyMFJvdCUyMGFuZCUyMFNhdmUlMjBZb3VyJTIwUGxhbnQlMjBob3VzZXBsYW50cyUyMHBsYW50JTIwY2FyZSUyMGhvdXNlcGxhbnQlMjBpbmRvb3J8ZW58MHwwfHx8MTc3NjYzMjcxNXww&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
 imageAlt: How to Treat Root Rot and Save Your Plant
-imageCredit: Huy Phan
+imageCredit: Greg Schmigel
 imageCreditUrl: >-
-  https://unsplash.com/@huyphan2602?utm_source=plantcare_guide&utm_medium=referral
+  https://unsplash.com/@gregschmigel?utm_source=plantcare_guide&utm_medium=referral
 ---
 
 ## Introduction

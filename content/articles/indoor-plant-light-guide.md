@@ -13,11 +13,11 @@ description: >-
 datePublished: 2026-04-18T00:00:00.000Z
 dateModified: 2026-04-18T00:00:00.000Z
 image: >-
-  https://images.unsplash.com/photo-1628246498566-c846ce32a5b5?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxJbmRvb3IlMjBQbGFudCUyMExpZ2h0JTIwR3VpZGUlM0ElMjBXaGF0JTIwRXZlcnklMjBHcm93ZXIlMjBOZWVkcyUyMHRvJTIwS25vdyUyMGhvdXNlcGxhbnRzJTIwcGxhbnQlMjBjYXJlJTIwaG91c2VwbGFudCUyMGluZG9vciUyMGdhcmRlbiUyMGxpZmVzdHlsZXxlbnwwfDB8fHwxNzc2NTQ1MTUxfDA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
+  https://images.unsplash.com/photo-1636908295924-c40a1f2e3400?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxJbmRvb3IlMjBQbGFudCUyMExpZ2h0JTIwR3VpZGUlM0ElMjBXaGF0JTIwRXZlcnklMjBHcm93ZXIlMjBOZWVkcyUyMHRvJTIwS25vdyUyMGhvdXNlcGxhbnRzJTIwcGxhbnQlMjBjYXJlJTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2NjMyNzE3fDA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
 imageAlt: 'Indoor Plant Light Guide: What Every Grower Needs to Know'
-imageCredit: Huy Phan
+imageCredit: Eugene Chystiakov
 imageCreditUrl: >-
-  https://unsplash.com/@huyphan2602?utm_source=plantcare_guide&utm_medium=referral
+  https://unsplash.com/@eugenechystiakov?utm_source=plantcare_guide&utm_medium=referral
 ---
 
 ## Introduction

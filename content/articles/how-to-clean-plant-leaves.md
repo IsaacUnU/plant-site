@@ -11,7 +11,7 @@ description: 'Learn how to clean houseplant leaves for healthier, happier plants
 datePublished: 2026-04-18T00:00:00.000Z
 dateModified: 2026-04-18T00:00:00.000Z
 image: >-
-  https://images.unsplash.com/photo-1628246498566-c846ce32a5b5?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxIb3clMjB0byUyMENsZWFuJTIwSG91c2VwbGFudCUyMExlYXZlcyUyMCUyOEFuZCUyMFdoeSUyMEl0JTIwTWF0dGVycyUyOSUyMGhvdXNlcGxhbnRzJTIwcGxhbnQlMjBjYXJlJTIwaG91c2VwbGFudCUyMGluZG9vciUyMGdhcmRlbiUyMGxpZmVzdHlsZXxlbnwwfDB8fHwxNzc2NTQ1MDYxfDA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
+  https://images.unsplash.com/photo-1628246498566-c846ce32a5b5?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxIb3clMjB0byUyMENsZWFuJTIwSG91c2VwbGFudCUyMExlYXZlcyUyMCUyOEFuZCUyMFdoeSUyMEl0JTIwTWF0dGVycyUyOSUyMGhvdXNlcGxhbnRzJTIwcGxhbnQlMjBjYXJlJTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2NjMyNzEyfDA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
 imageAlt: How to Clean Houseplant Leaves (And Why It Matters)
 imageCredit: Huy Phan
 imageCreditUrl: >-
