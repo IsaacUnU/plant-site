@@ -1,9 +1,5 @@
 {
   "pending": [
-    "Parlor Palm",
-    "Kentia Palm",
-    "Ponytail Palm",
-    "Sago Palm",
     "Corn Plant",
     "Dracaena reflexa",
     "Weeping Fig",
@@ -213,6 +209,10 @@
     "Peperomia obtusifolia",
     "Peperomia caperata",
     "Umbrella plant",
-    "Areca Palm"
+    "Areca Palm",
+    "Parlor Palm",
+    "Kentia Palm",
+    "Ponytail Palm",
+    "Sago Palm"
   ]
 }
