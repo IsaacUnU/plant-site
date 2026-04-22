@@ -1,9 +1,5 @@
 {
   "pending": [
-    "Corn Plant",
-    "Dracaena reflexa",
-    "Weeping Fig",
-    "Ficus microcarpa",
     "Ficus elastica burgundy",
     "Schefflera arboricola",
     "Yucca plant",
@@ -213,6 +209,10 @@
     "Parlor Palm",
     "Kentia Palm",
     "Ponytail Palm",
-    "Sago Palm"
+    "Sago Palm",
+    "Corn Plant",
+    "Dracaena reflexa",
+    "Weeping Fig",
+    "Ficus microcarpa"
   ]
 }
