@@ -24,8 +24,8 @@ description: >-
   leaves and ability to purify the air, making it a great addition to any home
   or office. With its golden stems and yellow-green leaves, this palm is not
   only a beautiful decorative piece but also a natural air freshener.
-datePublished: 2026-04-20T00:00:00.000Z
-dateModified: 2026-04-20T00:00:00.000Z
+datePublished: '2026-02-16T00:00:00.000Z'
+dateModified: '2026-02-16T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1588082672352-dd3eda2f8d81?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxEeXBzaXMlMjBsdXRlc2NlbnMlMjBwbGFudHxlbnwwfDB8fHwxNzc2NjgyMzM2fDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Golden Feather Palm houseplant

@@ -9,7 +9,9 @@ tags:
   - easy care
   - low maintenance
   - indoor
-secondaryFunctions: ["air-purifying", "pet-safe"]
+secondaryFunctions:
+  - air-purifying
+  - pet-safe
 difficulty: easy
 light: indirect
 water: weekly
@@ -23,8 +25,8 @@ description: >-
   enthusiasts alike. Its adaptability and low-maintenance requirements make it
   an ideal option for those looking to bring a touch of greenery into their
   homes or offices.
-datePublished: 2026-04-14T00:00:00.000Z
-dateModified: 2026-04-14T00:00:00.000Z
+datePublished: '2026-02-28T00:00:00.000Z'
+dateModified: '2026-02-28T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1767125067255-a6a2cc45941f?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxKYWRlJTIwUGxhbnQlMjBob3VzZXBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzYxNzExMDZ8MA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Jade Plant houseplant

@@ -24,8 +24,8 @@ description: >-
   attractive, variegated leaves and ability to purify the air. With proper care,
   it can thrive in a variety of indoor environments, making it a great choice
   for plant enthusiasts of all levels.
-datePublished: 2026-04-18T00:00:00.000Z
-dateModified: 2026-04-18T00:00:00.000Z
+datePublished: '2026-02-25T00:00:00.000Z'
+dateModified: '2026-02-25T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1773808605078-8fd613e3e9e5?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxEdW1iJTIwQ2FuZSUyMGhvdXNlcGxhbnQlMjBpbmRvb3J8ZW58MHwwfHx8MTc3NjUwNzQxMnww&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Dumb Cane houseplant

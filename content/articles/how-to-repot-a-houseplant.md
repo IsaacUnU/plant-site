@@ -8,8 +8,8 @@ tags:
   - plant care
   - indoor gardening
 description: Learn how to repot a houseplant with our step-by-step guide and expert tips
-datePublished: 2026-04-18T00:00:00.000Z
-dateModified: 2026-04-18T00:00:00.000Z
+datePublished: '2026-04-01T00:00:00.000Z'
+dateModified: '2026-04-01T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1762643565395-179a5b40ff5d?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxIb3clMjB0byUyMFJlcG90JTIwYSUyMEhvdXNlcGxhbnQlMjBTdGVwJTIwYnklMjBTdGVwJTIwaG91c2VwbGFudHMlMjBwbGFudCUyMGNhcmUlMjBob3VzZXBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzY2MzI3MTR8MA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
 imageAlt: How to Repot a Houseplant Step by Step
@@ -18,7 +18,7 @@ imageCreditUrl: 'https://unsplash.com/@jimluo?utm_source=plantcare_guide&utm_med
 ---
 
 ## Introduction
-As a fellow plant enthusiast, I understand the frustration of watching your beloved houseplant struggle in its current pot. Perhaps the soil is depleted, the roots are constricted, or the plant has simply outgrown its container. Whatever the reason, repotting can be a daunting task, especially for those new to plant care. But fear not – with the right guidance, you can give your houseplant the fresh start it deserves. In this article, I'll walk you through the process of repotting a houseplant step by step, sharing my expertise and insider tips to ensure a successful transplant.
+As a fellow plant enthusiast, I understand the frustration of watching your beloved houseplant struggle in its current pot. Perhaps the soil is depleted, the roots are constricted, or the plant has simply outgrown its container. Whatever the reason, repotting can be a daunting task, especially for those new to plant care. But fear not – with the right guidance, you can give your houseplant the fresh start it deserves. In this article, I'll walk you through the process of repotting a houseplant step by step, sharing the research and insider tips to ensure a successful transplant.
 
 Repotting is a crucial part of houseplant care, as it provides an opportunity to refresh the soil, prune the roots, and upgrade the container. By doing so, you'll be giving your plant the best chance to thrive and reach its full potential. Whether you're a seasoned plant parent or a beginner, this guide will empower you with the knowledge and confidence to repot your houseplant like a pro.
 

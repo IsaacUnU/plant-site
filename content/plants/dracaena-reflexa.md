@@ -24,8 +24,8 @@ description: >-
   beginners. Its slender leaves and compact growth habit make it an excellent
   choice for small spaces, and it's also known to be an effective air purifier,
   making it a great addition to any room.
-datePublished: 2026-04-22T00:00:00.000Z
-dateModified: 2026-04-22T00:00:00.000Z
+datePublished: '2026-02-24T00:00:00.000Z'
+dateModified: '2026-02-24T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1758836929753-b20850cad2c7?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxEcmFjYWVuYSUyMHBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzY4NTQyNTd8MA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Pleomele houseplant

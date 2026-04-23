@@ -25,8 +25,8 @@ description: >-
   of care, making it a perfect addition to any indoor space. With its moderate
   growth rate and ability to thrive in a variety of conditions, this plant is
   ideal for beginners and experienced plant enthusiasts alike.
-datePublished: 2026-04-17T00:00:00.000Z
-dateModified: 2026-04-17T00:00:00.000Z
+datePublished: '2026-02-16T00:00:00.000Z'
+dateModified: '2026-02-16T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1759914373168-d3245566c725?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxQb2xrYSUyMERvdCUyMEJlZ29uaWElMjBob3VzZXBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzY0Mjk4MzR8MA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Polka Dot Begonia houseplant

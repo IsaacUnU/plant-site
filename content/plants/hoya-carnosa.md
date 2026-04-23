@@ -24,8 +24,8 @@ description: >-
   low-maintenance houseplant that is easy to care for and offers beautiful,
   fragrant blooms. With its waxy leaves and stems, this plant is perfect for
   those who want to add a touch of tropical elegance to their indoor space.
-datePublished: 2026-04-17T00:00:00.000Z
-dateModified: 2026-04-17T00:00:00.000Z
+datePublished: '2026-02-27T00:00:00.000Z'
+dateModified: '2026-02-27T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1769346442881-b63ba7476b77?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxXYXglMjBGbG93ZXIlMjBob3VzZXBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzY0MjkyMTh8MA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Wax Flower houseplant

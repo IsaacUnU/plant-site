@@ -25,8 +25,8 @@ description: >-
   tropical elegance to any room. With its ability to purify the air and boost
   humidity, this plant is a great choice for indoor gardeners looking to create
   a healthy and thriving environment.
-datePublished: 2026-04-18T00:00:00.000Z
-dateModified: 2026-04-18T00:00:00.000Z
+datePublished: '2026-03-02T00:00:00.000Z'
+dateModified: '2026-03-02T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1762696764954-0233673307bf?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxNb25rZXklMjBNYXNrJTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2NTA4MDI3fDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Monkey Mask houseplant

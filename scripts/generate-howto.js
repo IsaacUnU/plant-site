@@ -146,7 +146,7 @@ function getTopicBySlug(slug) {
 function buildHowToPrompt(topic) {
   const today = new Date().toISOString().split('T')[0];
 
-  return `You are a certified horticulturist and expert plant care writer for PlantCare Central.
+  return `You write for PlantCare Central, a houseplant reference built by enthusiasts who believe plant care advice should use exact numbers, not vague directions.
 Write a comprehensive, authoritative how-to article on the topic: "${topic.title}"
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -155,8 +155,8 @@ ARTICLE STRUCTURE (follow this exactly)
 1. INTRODUCTION (2-3 paragraphs): Open with the reader's pain point. Hook them immediately. Make them feel understood, then promise a clear solution.
 2. MAIN BODY: Use H2 headings for major sections and H3 for sub-steps. Include:
    - Step-by-step instructions where relevant (numbered lists inside H2/H3 sections)
-   - At least one "Pro Tip" callout block formatted as: **Pro Tip:** [tip text]
-   - At least one "Common Mistake" callout: **Common Mistake:** [mistake text]
+   - At least one "Pro Tip" callout per major H2 section, formatted as: **Pro Tip:** [tip text]
+   - At least one "Common Mistake" callout per major H2 section, formatted as: **Common Mistake:** [mistake text]
    - Practical, specific advice — no vague platitudes
 3. FAQ SECTION: End with an H2 "Frequently Asked Questions" section containing exactly 5 Q&A pairs formatted as:
    ### Question here?
@@ -185,7 +185,7 @@ dateModified: ${today}
 
 - Do NOT write any conversational text before the opening "---".
 - Do NOT wrap the entire response in markdown code fences (\`\`\`).
-- Word count: 1200–1800 words (body content, not counting frontmatter).
+- Word count: 1500–2000 words (body content, not counting frontmatter).
 - Tone: authoritative, practical, first-person expert — as if you are personally advising a fellow plant lover.
 - Use "I" and "we" naturally; avoid passive voice wherever possible.
 - Do NOT use filler phrases like "In this article, we will..." or "As we can see...".

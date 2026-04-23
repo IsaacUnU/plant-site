@@ -9,7 +9,9 @@ tags:
   - easy care
   - low maintenance
   - indoor
-secondaryFunctions: ["air-purifying", "pet-safe"]
+secondaryFunctions:
+  - air-purifying
+  - pet-safe
 difficulty: easy
 light: indirect
 water: weekly
@@ -22,8 +24,8 @@ description: >-
   its beautiful, heart-shaped leaves and ability to thrive in a variety of
   lighting conditions. With proper care, this plant can grow quickly and provide
   a lush, tropical touch to any room.
-datePublished: 2026-04-14T00:00:00.000Z
-dateModified: 2026-04-14T00:00:00.000Z
+datePublished: '2026-03-06T00:00:00.000Z'
+dateModified: '2026-03-06T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1773003135769-430a980386cf?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxIZWFydGxlYWYlMjBQaGlsb2RlbmRyb24lMjBob3VzZXBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzYxNzAxODd8MA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Heartleaf Philodendron houseplant

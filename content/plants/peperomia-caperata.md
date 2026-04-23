@@ -25,8 +25,8 @@ description: >-
   to any room. This plant is perfect for beginners and experienced plant
   enthusiasts alike, offering a unique combination of attractive leaves and easy
   care requirements.
-datePublished: 2026-04-20T00:00:00.000Z
-dateModified: 2026-04-20T00:00:00.000Z
+datePublished: '2026-03-06T00:00:00.000Z'
+dateModified: '2026-03-06T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1695589046117-2d2e046d0cc8?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxSaXBwbGUlMjBQZXBlcm9taWElMjBwbGFudHxlbnwwfDB8fHwxNzc2NjgxNzIyfDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Ripple Peperomia houseplant

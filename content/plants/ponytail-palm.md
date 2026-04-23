@@ -24,8 +24,8 @@ description: >-
   distinctive, bulbous trunk and long, curly leaves. Its ability to thrive in
   indoor conditions and purify the air makes it a popular choice for plant
   enthusiasts and beginners alike.
-datePublished: 2026-04-21T00:00:00.000Z
-dateModified: 2026-04-21T00:00:00.000Z
+datePublished: '2026-03-08T00:00:00.000Z'
+dateModified: '2026-03-08T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1558690297-7052cd2c4ed8?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxQb255dGFpbCUyMFBhbG0lMjBob3VzZXBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzY2ODUwOTZ8MA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Ponytail Palm houseplant

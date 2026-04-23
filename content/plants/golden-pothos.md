@@ -1,11 +1,16 @@
 ---
-title: "Golden Pothos Care Guide: The Perfect Beginner Houseplant"
+title: 'Golden Pothos Care Guide: The Perfect Beginner Houseplant'
 slug: golden-pothos
 commonName: Golden Pothos
 scientificName: Epipremnum aureum
 category: vines
-tags: ["trailing", "beginner-friendly", "low-light", "air-purifying"]
-secondaryFunctions: ["air-purifying"]
+tags:
+  - trailing
+  - beginner-friendly
+  - low-light
+  - air-purifying
+secondaryFunctions:
+  - air-purifying
 difficulty: easy
 light: low
 water: every-2-weeks
@@ -13,13 +18,17 @@ humidity: low
 temperature: 60–85°F (15–29°C)
 toxicity: toxic-to-pets
 growthRate: fast
-description: The Golden Pothos is the ultimate beginner plant — nearly indestructible, fast-growing, and beautiful with its heart-shaped green and yellow marbled leaves. It thrives in almost any condition.
-datePublished: 2026-04-12
-dateModified: 2026-04-12
-image: "https://images.unsplash.com/photo-1763060819480-3261238b402e?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxHb2xkZW4lMjBQb3Rob3MlMjBob3VzZXBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzYwMTg4Nzl8MA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop"
+description: >-
+  The Golden Pothos is the ultimate beginner plant — nearly indestructible,
+  fast-growing, and beautiful with its heart-shaped green and yellow marbled
+  leaves. It thrives in almost any condition.
+datePublished: '2026-02-26T00:00:00.000Z'
+dateModified: '2026-02-26T00:00:00.000Z'
+image: >-
+  https://images.unsplash.com/photo-1763060819480-3261238b402e?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxHb2xkZW4lMjBQb3Rob3MlMjBob3VzZXBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzYwMTg4Nzl8MA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Golden Pothos houseplant
 imageCredit: Ronald Flores-Gunkle
-imageCreditUrl: "https://unsplash.com/@ronald1?utm_source=plantcare_guide&utm_medium=referral"
+imageCreditUrl: 'https://unsplash.com/@ronald1?utm_source=plantcare_guide&utm_medium=referral'
 ---
 
 ## Overview

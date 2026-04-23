@@ -1,11 +1,17 @@
 ---
-title: "Spider Plant Care Guide: Easy Tips for a Thriving Spider Plant"
+title: 'Spider Plant Care Guide: Easy Tips for a Thriving Spider Plant'
 slug: spider-plant
 commonName: Spider Plant
 scientificName: Chlorophytum comosum
 category: tropical
-tags: ["indoor plants", "air purifying", "low maintenance", "easy care"]
-secondaryFunctions: ["air-purifying", "pet-safe"]
+tags:
+  - indoor plants
+  - air purifying
+  - low maintenance
+  - easy care
+secondaryFunctions:
+  - air-purifying
+  - pet-safe
 difficulty: easy
 light: indirect-bright
 water: weekly
@@ -13,13 +19,20 @@ humidity: medium
 temperature: 65–80°F (18–27°C)
 toxicity: non-toxic
 growthRate: fast
-description: The Spider Plant is a popular, low-maintenance houseplant known for its air-purifying properties and ease of care, making it perfect for beginners and experienced gardeners alike. With its creeping stems and leaves, it's a great addition to any room, adding a touch of natural beauty and freshness to the space.
-datePublished: 2026-04-13
-dateModified: 2026-04-13
-image: "https://images.unsplash.com/photo-1775633905233-62bdc626c3ef?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxTcGlkZXIlMjBQbGFudCUyMGhvdXNlcGxhbnQlMjBpbmRvb3J8ZW58MHwwfHx8MTc3NjA5NjI5N3ww&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop"
+description: >-
+  The Spider Plant is a popular, low-maintenance houseplant known for its
+  air-purifying properties and ease of care, making it perfect for beginners and
+  experienced gardeners alike. With its creeping stems and leaves, it's a great
+  addition to any room, adding a touch of natural beauty and freshness to the
+  space.
+datePublished: '2026-03-13T00:00:00.000Z'
+dateModified: '2026-03-17T00:00:00.000Z'
+image: >-
+  https://images.unsplash.com/photo-1775633905233-62bdc626c3ef?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxTcGlkZXIlMjBQbGFudCUyMGhvdXNlcGxhbnQlMjBpbmRvb3J8ZW58MHwwfHx8MTc3NjA5NjI5N3ww&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Spider Plant houseplant
 imageCredit: Virginia Marinova
-imageCreditUrl: "https://unsplash.com/@virginiaphotostories?utm_source=plantcare_guide&utm_medium=referral"
+imageCreditUrl: >-
+  https://unsplash.com/@virginiaphotostories?utm_source=plantcare_guide&utm_medium=referral
 ---
 
 ## Overview

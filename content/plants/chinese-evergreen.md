@@ -1,11 +1,17 @@
 ---
-title: "Chinese Evergreen Care Guide: Tips for a Thriving Houseplant"
+title: 'Chinese Evergreen Care Guide: Tips for a Thriving Houseplant'
 slug: chinese-evergreen
 commonName: Chinese Evergreen
 scientificName: Aglaonema modestum
 category: low-light
-tags: ["low-maintenance", "indoor plants", "air purification", "tropical plants", "houseplants"]
-secondaryFunctions: ["air-purifying"]
+tags:
+  - low-maintenance
+  - indoor plants
+  - air purification
+  - tropical plants
+  - houseplants
+secondaryFunctions:
+  - air-purifying
 difficulty: easy
 light: indirect
 water: weekly
@@ -13,13 +19,19 @@ humidity: medium
 temperature: 65–80°F (18–27°C)
 toxicity: toxic-to-pets
 growthRate: moderate
-description: The Chinese Evergreen is a stunning, low-maintenance houseplant known for its attractive leaves with silver or gold markings, making it a popular choice for indoor spaces. With proper care, this plant can thrive in low-light conditions, purifying the air and adding a touch of tropical beauty to your home.
-datePublished: 2026-04-13
-dateModified: 2026-04-13
-image: "https://images.unsplash.com/photo-1714100878138-3332a92f702d?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxDaGluZXNlJTIwRXZlcmdyZWVuJTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2MDc2NjMwfDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop"
+description: >-
+  The Chinese Evergreen is a stunning, low-maintenance houseplant known for its
+  attractive leaves with silver or gold markings, making it a popular choice for
+  indoor spaces. With proper care, this plant can thrive in low-light
+  conditions, purifying the air and adding a touch of tropical beauty to your
+  home.
+datePublished: '2026-02-22T00:00:00.000Z'
+dateModified: '2026-02-22T00:00:00.000Z'
+image: >-
+  https://images.unsplash.com/photo-1714100878138-3332a92f702d?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxDaGluZXNlJTIwRXZlcmdyZWVuJTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2MDc2NjMwfDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Chinese Evergreen houseplant
 imageCredit: Soumen Ghosh
-imageCreditUrl: "https://unsplash.com/@soumen59?utm_source=plantcare_guide&utm_medium=referral"
+imageCreditUrl: 'https://unsplash.com/@soumen59?utm_source=plantcare_guide&utm_medium=referral'
 ---
 
 ## Overview

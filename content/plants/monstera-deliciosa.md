@@ -1,11 +1,17 @@
 ---
-title: "Monstera Deliciosa Care Guide: How to Grow the Swiss Cheese Plant"
+title: 'Monstera Deliciosa Care Guide: How to Grow the Swiss Cheese Plant'
 slug: monstera-deliciosa
 commonName: Swiss Cheese Plant
 scientificName: Monstera deliciosa
 category: tropical
-tags: ["tropical", "statement plant", "beginner-friendly", "air-purifying"]
-secondaryFunctions: ["humidity-boosting", "air-purifying"]
+tags:
+  - tropical
+  - statement plant
+  - beginner-friendly
+  - air-purifying
+secondaryFunctions:
+  - humidity-boosting
+  - air-purifying
 difficulty: easy
 light: indirect-bright
 water: every-2-weeks
@@ -13,13 +19,18 @@ humidity: medium
 temperature: 65–85°F (18–29°C)
 toxicity: toxic-to-pets
 growthRate: fast
-description: The Monstera deliciosa is one of the most popular houseplants in the world — and for good reason. Its iconic split leaves bring instant tropical drama to any room, and it's surprisingly forgiving for beginners.
-datePublished: 2026-04-12
-dateModified: 2026-04-12
-image: "https://images.unsplash.com/photo-1762696764954-0233673307bf?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxTd2lzcyUyMENoZWVzZSUyMFBsYW50JTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2MDE4ODc5fDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop"
+description: >-
+  The Monstera deliciosa is one of the most popular houseplants in the world —
+  and for good reason. Its iconic split leaves bring instant tropical drama to
+  any room, and it's surprisingly forgiving for beginners.
+datePublished: '2026-03-03T00:00:00.000Z'
+dateModified: '2026-03-03T00:00:00.000Z'
+image: >-
+  https://images.unsplash.com/photo-1762696764954-0233673307bf?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxTd2lzcyUyMENoZWVzZSUyMFBsYW50JTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2MDE4ODc5fDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Swiss Cheese Plant houseplant
 imageCredit: Jing Bo Wang
-imageCreditUrl: "https://unsplash.com/@teresawang?utm_source=plantcare_guide&utm_medium=referral"
+imageCreditUrl: >-
+  https://unsplash.com/@teresawang?utm_source=plantcare_guide&utm_medium=referral
 ---
 
 ## Overview

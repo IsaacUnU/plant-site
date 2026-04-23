@@ -23,8 +23,8 @@ description: >-
   stems, feathery leaves, and ability to purify the air. Native to Lord Howe
   Island in Australia, this palm is a great addition to any home due to its
   low-maintenance requirements and adaptability to indoor conditions.
-datePublished: 2026-04-21T00:00:00.000Z
-dateModified: 2026-04-21T00:00:00.000Z
+datePublished: '2026-03-02T00:00:00.000Z'
+dateModified: '2026-03-02T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1608270691744-3bd1b5a7833f?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxLZW50aWElMjBQYWxtJTIwcGxhbnR8ZW58MHwwfHx8MTc3NjY4NDc4OXww&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Kentia Palm houseplant

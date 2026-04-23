@@ -24,8 +24,8 @@ description: >-
   houseplant due to its unique, monstera-like leaves and easy-to-care-for
   nature. It is an excellent choice for indoor gardeners looking to add a touch
   of tropical beauty to their space.
-datePublished: 2026-04-18T00:00:00.000Z
-dateModified: 2026-04-18T00:00:00.000Z
+datePublished: '2026-03-09T00:00:00.000Z'
+dateModified: '2026-03-09T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1591896382017-bcfa17845a13?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxNaW5pJTIwTW9uc3RlcmElMjBob3VzZXBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzY1MDgzMzN8MA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Mini Monstera houseplant

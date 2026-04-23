@@ -24,8 +24,8 @@ description: >-
   vibrant, neon-like variegation and ability to thrive in a variety of lighting
   conditions. As a versatile and adaptable plant, it's perfect for indoor
   spaces, from homes to offices, and is safe for households with pets.
-datePublished: 2026-04-18T00:00:00.000Z
-dateModified: 2026-04-18T00:00:00.000Z
+datePublished: '2026-03-09T00:00:00.000Z'
+dateModified: '2026-03-09T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1720642099823-1a69a04d5e46?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxOZW9uJTIwUG90aG9zJTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2NTA3NzIwfDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Neon Pothos houseplant

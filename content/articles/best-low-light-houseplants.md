@@ -21,8 +21,8 @@ featuredPlants:
   - echeveria
   - golden-pothos
   - haworthia-fasciata
-datePublished: 2026-04-16T00:00:00.000Z
-dateModified: 2026-04-16T00:00:00.000Z
+datePublished: '2026-03-20T00:00:00.000Z'
+dateModified: '2026-03-20T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1628246498566-c846ce32a5b5?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxNYXN0ZXJpbmclMjBJbmRvb3IlMjBHcmVlbmVyeSUzQSUyMDEwJTIwQmVzdCUyMExvdy1MaWdodCUyMEhvdXNlcGxhbnRzJTIwaG91c2VwbGFudHMlMjBpbmRvb3IlMjBnYXJkZW5pbmclMjBob3VzZXBsYW50JTIwaW5kb29yJTIwZ2FyZGVuJTIwbGlmZXN0eWxlfGVufDB8MHx8fDE3NzYzNzE3NzZ8MA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
 imageAlt: 'Mastering Indoor Greenery: 10 Best Low-Light Houseplants'
@@ -34,7 +34,7 @@ imageCreditUrl: >-
 ## Introduction
 Are you tired of watching your houseplants wither away in low-light conditions? Do you struggle to find the perfect plants that can thrive in the limited natural light of your home or office? You're not alone. Many of us face the challenge of finding the right plants that can survive and even flourish in low-light environments. The good news is that there are many amazing houseplants that can tolerate low light, and with the right care, they can bring beauty, freshness, and a touch of nature to your indoor space.
 
-As a certified horticulturist, I've seen firsthand the impact that low-light houseplants can have on a room. Not only do they purify the air and improve the aesthetic, but they can also boost your mood and productivity. In this article, we'll explore the 10 best low-light houseplants that are perfect for indoor spaces. From the beautiful African Violet to the low-maintenance Golden Pothos, we'll dive into the pros, cons, and care tips for each plant.
+In practice, the impact that low-light houseplants can have on a room. Not only do they purify the air and improve the aesthetic, but they can also boost your mood and productivity. In this article, we'll explore the 10 best low-light houseplants that are perfect for indoor spaces. From the beautiful African Violet to the low-maintenance Golden Pothos, we'll dive into the pros, cons, and care tips for each plant.
 
 Whether you're a seasoned plant enthusiast or a beginner, this guide will provide you with the knowledge and inspiration you need to create a stunning and thriving indoor garden, even in the lowest of light conditions. So, let's get started and discover the amazing world of low-light houseplants.
 

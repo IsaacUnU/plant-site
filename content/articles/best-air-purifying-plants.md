@@ -22,8 +22,8 @@ featuredPlants:
   - dracaena-marginata
   - echeveria
   - english-ivy
-datePublished: 2026-04-16T00:00:00.000Z
-dateModified: 2026-04-16T00:00:00.000Z
+datePublished: '2026-03-18T00:00:00.000Z'
+dateModified: '2026-03-18T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1603436326383-5e88ea4953b2?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxUb3AlMjAxMCUyMEJlc3QlMjBBaXItUHVyaWZ5aW5nJTIwSW5kb29yJTIwUGxhbnRzJTIwZm9yJTIwWW91ciUyMEhvbWUlMjBob3VzZXBsYW50cyUyMGluZG9vciUyMGdhcmRlbmluZyUyMGhvdXNlcGxhbnQlMjBpbmRvb3IlMjBnYXJkZW4lMjBsaWZlc3R5bGV8ZW58MHwwfHx8MTc3NjM2ODgwNHww&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
 imageAlt: Top 10 Best Air-Purifying Indoor Plants for Your Home

@@ -1,25 +1,39 @@
 ---
-title: "Boston Fern Care Guide: Expert Tips for a Thriving Plant"
-slug: "boston-fern"
-commonName: "Boston Fern"
-scientificName: "Nephrolepis exaltata"
-category: "ferns"
-tags: ["indoor plants", "houseplants", "low-maintenance", "air-purifying", "tropical"]
-secondaryFunctions: ["humidity-boosting", "air-purifying", "pet-safe"]
-difficulty: "easy"
-light: "indirect-bright"
-water: "every-2-3-days"
-humidity: "high"
-temperature: "65–75°F (18–24°C)"
-toxicity: "non-toxic"
-growthRate: "moderate"
-description: "The Boston Fern is a popular, low-maintenance houseplant known for its lush, green foliage and air-purifying properties. With proper care, this tropical plant can thrive in indoor conditions, bringing a touch of natural beauty to any room."
-datePublished: "2026-04-13"
-dateModified: "2026-04-13"
-image: "https://images.unsplash.com/photo-1515054788900-574580f821ad?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxib3N0b24lMjBmZXJufGVufDB8MHx8fDE3NzYxMDk1NzJ8MA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop"
-imageAlt: "Boston Fern houseplant"
-imageCredit: "Unknown Wong"
-imageCreditUrl: "https://unsplash.com/@goodchinese?utm_source=plantcare_guide&utm_medium=referral"
+title: 'Boston Fern Care Guide: Expert Tips for a Thriving Plant'
+slug: boston-fern
+commonName: Boston Fern
+scientificName: Nephrolepis exaltata
+category: ferns
+tags:
+  - indoor plants
+  - houseplants
+  - low-maintenance
+  - air-purifying
+  - tropical
+secondaryFunctions:
+  - humidity-boosting
+  - air-purifying
+  - pet-safe
+difficulty: easy
+light: indirect-bright
+water: every-2-3-days
+humidity: high
+temperature: 65–75°F (18–24°C)
+toxicity: non-toxic
+growthRate: moderate
+description: >-
+  The Boston Fern is a popular, low-maintenance houseplant known for its lush,
+  green foliage and air-purifying properties. With proper care, this tropical
+  plant can thrive in indoor conditions, bringing a touch of natural beauty to
+  any room.
+datePublished: '2026-02-17T00:00:00.000Z'
+dateModified: '2026-03-03T00:00:00.000Z'
+image: >-
+  https://images.unsplash.com/photo-1515054788900-574580f821ad?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxib3N0b24lMjBmZXJufGVufDB8MHx8fDE3NzYxMDk1NzJ8MA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
+imageAlt: Boston Fern houseplant
+imageCredit: Unknown Wong
+imageCreditUrl: >-
+  https://unsplash.com/@goodchinese?utm_source=plantcare_guide&utm_medium=referral
 ---
 
 ## Overview

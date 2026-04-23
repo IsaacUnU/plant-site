@@ -9,7 +9,9 @@ tags:
   - easy care
   - low maintenance
   - indoor
-secondaryFunctions: ["air-purifying", "pet-safe"]
+secondaryFunctions:
+  - air-purifying
+  - pet-safe
 difficulty: easy
 light: indirect
 water: weekly
@@ -24,8 +26,8 @@ description: >-
   ability to tolerate low light and infrequent watering, this plant is a great
   choice for anyone looking to add some greenery to their space without
   requiring a lot of fuss.
-datePublished: 2026-04-14T00:00:00.000Z
-dateModified: 2026-04-14T00:00:00.000Z
+datePublished: '2026-02-19T00:00:00.000Z'
+dateModified: '2026-02-19T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1714507767653-bacd7af67d15?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxDYXN0JTIwSXJvbiUyMFBsYW50JTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2MTcwODAwfDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Cast Iron Plant houseplant

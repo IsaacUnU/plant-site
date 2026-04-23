@@ -1,11 +1,16 @@
 ---
-title: "Rubber Plant Care Guide: Tips and Tricks for Healthy Growth"
+title: 'Rubber Plant Care Guide: Tips and Tricks for Healthy Growth'
 slug: rubber-plant
 commonName: Rubber Plant
 scientificName: Ficus elastica
 category: tropical
-tags: ["indoor plants", "low-maintenance", "air-purifying", "houseplants"]
-secondaryFunctions: ["air-purifying"]
+tags:
+  - indoor plants
+  - low-maintenance
+  - air-purifying
+  - houseplants
+secondaryFunctions:
+  - air-purifying
 difficulty: easy
 light: indirect-bright
 water: weekly
@@ -13,13 +18,18 @@ humidity: medium
 temperature: 65–80°F (18–27°C)
 toxicity: mildly-toxic
 growthRate: moderate
-description: The Rubber Plant is a stunning and low-maintenance houseplant known for its large, dark green leaves and ability to purify the air. With proper care, it can grow up to 8 feet tall, making it a great addition to any room, and its attractive foliage can add a touch of tropical elegance to your home decor.
-datePublished: 2026-04-13
-dateModified: 2026-04-13
-image: "https://images.unsplash.com/photo-1616143662631-7a0e4751f362?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxSdWJiZXIlMjBQbGFudCUyMGhvdXNlcGxhbnQlMjBpbmRvb3J8ZW58MHwwfHx8MTc3NjA2NzU3NHww&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop"
+description: >-
+  The Rubber Plant is a stunning and low-maintenance houseplant known for its
+  large, dark green leaves and ability to purify the air. With proper care, it
+  can grow up to 8 feet tall, making it a great addition to any room, and its
+  attractive foliage can add a touch of tropical elegance to your home decor.
+datePublished: '2026-03-12T00:00:00.000Z'
+dateModified: '2026-03-12T00:00:00.000Z'
+image: >-
+  https://images.unsplash.com/photo-1616143662631-7a0e4751f362?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxSdWJiZXIlMjBQbGFudCUyMGhvdXNlcGxhbnQlMjBpbmRvb3J8ZW58MHwwfHx8MTc3NjA2NzU3NHww&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Rubber Plant houseplant
 imageCredit: Scott Webb
-imageCreditUrl: "https://unsplash.com/@scottwebb?utm_source=plantcare_guide&utm_medium=referral"
+imageCreditUrl: 'https://unsplash.com/@scottwebb?utm_source=plantcare_guide&utm_medium=referral'
 ---
 
 ## Overview

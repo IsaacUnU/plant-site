@@ -23,8 +23,8 @@ description: >-
   delicate, exotic-looking flowers and attractive, fuzzy leaves. With proper
   care, it can thrive in indoor conditions, providing a beautiful display of
   color and air-purifying benefits.
-datePublished: 2026-04-16T00:00:00.000Z
-dateModified: 2026-04-16T00:00:00.000Z
+datePublished: '2026-02-12T00:00:00.000Z'
+dateModified: '2026-02-12T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1644151128831-09487a6b746a?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxBZnJpY2FuJTIwVmlvbGV0JTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2MzM1Nzk3fDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: African Violet houseplant

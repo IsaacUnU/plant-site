@@ -10,8 +10,8 @@ tags:
 description: >-
   Discover the best water for your plants and boost their health with our expert
   guide
-datePublished: 2026-04-18T00:00:00.000Z
-dateModified: 2026-04-18T00:00:00.000Z
+datePublished: '2026-04-07T00:00:00.000Z'
+dateModified: '2026-04-07T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1571752043852-c75d98334e18?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxUYXAlMjBXYXRlciUyMHZzJTIwRmlsdGVyZWQlMjBXYXRlciUyMGZvciUyMFBsYW50cyUzQSUyMFdoYXQlMjdzJTIwQmVzdCUzRiUyMGhvdXNlcGxhbnRzJTIwcGxhbnQlMjBjYXJlJTIwaG91c2VwbGFudCUyMGluZG9vciUyMGdhcmRlbiUyMGxpZmVzdHlsZXxlbnwwfDB8fHwxNzc2NTQ1MTM1fDA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
 imageAlt: 'Tap Water vs Filtered Water for Plants: What''s Best?'

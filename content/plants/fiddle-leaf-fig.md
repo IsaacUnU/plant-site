@@ -1,11 +1,18 @@
 ---
-title: "Fiddle Leaf Fig Care Guide: Expert Tips for a Thriving Plant"
+title: 'Fiddle Leaf Fig Care Guide: Expert Tips for a Thriving Plant'
 slug: fiddle-leaf-fig
 commonName: Fiddle Leaf Fig
 scientificName: Ficus lyrata
 category: tropical
-tags: ["indoor plants", "houseplants", "fig trees", "low-maintenance", "air-purifying"]
-secondaryFunctions: ["humidity-boosting", "air-purifying"]
+tags:
+  - indoor plants
+  - houseplants
+  - fig trees
+  - low-maintenance
+  - air-purifying
+secondaryFunctions:
+  - humidity-boosting
+  - air-purifying
 difficulty: medium
 light: indirect-bright
 water: weekly
@@ -13,13 +20,18 @@ humidity: medium
 temperature: 65–80°F (18–27°C)
 toxicity: mildly-toxic
 growthRate: moderate
-description: The Fiddle Leaf Fig is a stunning, low-maintenance houseplant known for its large, violin-shaped leaves and ability to purify the air, making it a popular choice for indoor spaces. With proper care, this plant can grow up to 10 feet tall, providing a touch of tropical elegance to any room.
-datePublished: 2026-04-12
-dateModified: 2026-04-12
-image: "https://images.unsplash.com/photo-1616173976697-efef88b2e860?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxGaWRkbGUlMjBMZWFmJTIwRmlnJTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2MDIyMjM0fDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop"
+description: >-
+  The Fiddle Leaf Fig is a stunning, low-maintenance houseplant known for its
+  large, violin-shaped leaves and ability to purify the air, making it a popular
+  choice for indoor spaces. With proper care, this plant can grow up to 10 feet
+  tall, providing a touch of tropical elegance to any room.
+datePublished: '2026-02-26T00:00:00.000Z'
+dateModified: '2026-02-26T00:00:00.000Z'
+image: >-
+  https://images.unsplash.com/photo-1616173976697-efef88b2e860?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxGaWRkbGUlMjBMZWFmJTIwRmlnJTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2MDIyMjM0fDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Fiddle Leaf Fig houseplant
 imageCredit: Scott Webb
-imageCreditUrl: "https://unsplash.com/@scottwebb?utm_source=plantcare_guide&utm_medium=referral"
+imageCreditUrl: 'https://unsplash.com/@scottwebb?utm_source=plantcare_guide&utm_medium=referral'
 ---
 
 ## Overview

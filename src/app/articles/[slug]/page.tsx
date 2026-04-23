@@ -143,6 +143,15 @@ export default async function ArticlePage({ params }: Props) {
               )}
             </article>
 
+            {/* About This Guide */}
+            <div className="bg-white border border-[#E2EFE7] rounded-3xl p-6 mt-10">
+              <div className="h-0.5 w-12 bg-[#15803D] rounded-full mb-4" />
+              <p className="font-semibold text-[#0F172A] mb-2">PlantCare Central — About This Guide</p>
+              <p className="text-sm text-[#475569] leading-relaxed">
+                PlantCare Central publishes structured houseplant care content built around specific measurements and actionable guidance. All guides follow a consistent research framework covering light requirements, watering schedules, soil composition, and seasonal care.
+              </p>
+            </div>
+
             {/* Bottom Ad / Footer Slot */}
             {process.env.NODE_ENV === 'development' && (
               <div className="mt-12 py-6 border-t border-[#E2EFE7]">

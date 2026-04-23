@@ -23,8 +23,8 @@ description: >-
   drooping branches and ability to purify the air. With proper care, it can
   thrive in a variety of indoor environments, making it a great choice for plant
   enthusiasts of all levels.
-datePublished: 2026-04-22T00:00:00.000Z
-dateModified: 2026-04-22T00:00:00.000Z
+datePublished: '2026-03-17T00:00:00.000Z'
+dateModified: '2026-03-17T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1765032822101-6f7bae24e544?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxXZWVwaW5nJTIwRmlnJTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2ODU0NTY0fDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Weeping Fig houseplant

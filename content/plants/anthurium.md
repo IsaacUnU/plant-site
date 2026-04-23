@@ -25,8 +25,8 @@ description: >-
   long-lasting, heart-shaped flowers. With proper care, this plant can thrive
   and provide beautiful blooms for months, making it a great choice for indoor
   gardening enthusiasts.
-datePublished: 2026-04-16T00:00:00.000Z
-dateModified: 2026-04-16T00:00:00.000Z
+datePublished: '2026-02-14T00:00:00.000Z'
+dateModified: '2026-02-14T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1764249455089-a7c7d8ad3a07?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxGbGFtaW5nbyUyMEZsb3dlciUyMGhvdXNlcGxhbnQlMjBpbmRvb3J8ZW58MHwwfHx8MTc3NjMzNjQwOXww&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Flamingo Flower houseplant

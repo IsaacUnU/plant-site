@@ -24,8 +24,8 @@ description: >-
   that add a pop of color to any room. With proper care, this low-maintenance
   plant can thrive indoors, providing a beautiful display of foliage and
   air-purifying benefits.
-datePublished: 2026-04-19T00:00:00.000Z
-dateModified: 2026-04-19T00:00:00.000Z
+datePublished: '2026-02-19T00:00:00.000Z'
+dateModified: '2026-02-19T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1755668739702-fc00c9701cc9?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxDYWxhZGl1bSUyMGhvdXNlcGxhbnQlMjBpbmRvb3J8ZW58MHwwfHx8MTc3NjU5NDA5NHww&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Caladium houseplant

@@ -24,8 +24,8 @@ description: >-
   low-maintenance houseplant that adds a pop of color and elegance to any room.
   With its unique, triangular leaves and delicate white flowers, this plant is a
   great choice for beginners and experienced plant enthusiasts alike.
-datePublished: 2026-04-17T00:00:00.000Z
-dateModified: 2026-04-17T00:00:00.000Z
+datePublished: '2026-03-05T00:00:00.000Z'
+dateModified: '2026-03-05T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1775383659436-20e4d4423ff4?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxQdXJwbGUlMjBTaGFtcm9jayUyMGhvdXNlcGxhbnQlMjBpbmRvb3J8ZW58MHwwfHx8MTc3NjQyOTUyNXww&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Purple Shamrock houseplant

@@ -24,8 +24,8 @@ description: >-
   dark green leaves that add a touch of tropical elegance to any room. It's an
   excellent choice for beginners, as it's easy to care for and can thrive in a
   variety of conditions.
-datePublished: 2026-04-19T00:00:00.000Z
-dateModified: 2026-04-19T00:00:00.000Z
+datePublished: '2026-02-16T00:00:00.000Z'
+dateModified: '2026-02-16T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1759579722080-a4a8714669d6?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxCYWJ5JTIwUnViYmVyJTIwUGxhbnQlMjBob3VzZXBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzY1OTQ3MDh8MA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Baby Rubber Plant houseplant

@@ -1,29 +1,38 @@
 ---
-title: "Pothos marble queen Complete Care Guide"
+title: Pothos marble queen Complete Care Guide
 slug: pothos-marble-queen
-commonName: "Marble Queen Pothos"
-scientificName: "Epipremnum aureum"
+commonName: Marble Queen Pothos
+scientificName: Epipremnum aureum
 category: tropical
 tags:
   - houseplant
   - easy care
   - low maintenance
   - indoor
-secondaryFunctions: ["air-purifying", "pet-safe"]
+secondaryFunctions:
+  - air-purifying
+  - pet-safe
 difficulty: easy
 light: indirect
 water: weekly
 humidity: medium
-temperature: "65-80°F (18-27°C)"
+temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
-description: "The Pothos marble queen is a stunning, low-maintenance houseplant known for its heart-shaped leaves with beautiful marble-like variegation, making it a perfect addition to any indoor space. Its ability to thrive in a variety of lighting conditions and its air-purifying qualities have made it a favorite among plant enthusiasts and beginners alike."
-datePublished: 2026-04-14
-dateModified: 2026-04-14
-image: "https://images.unsplash.com/photo-1611092204158-07c509e59b50?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxtYXJibGUlMjBxdWVlbiUyMHBvdGhvc3xlbnwwfDB8fHwxNzc2MTkzNzY2fDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop"
+description: >-
+  The Pothos marble queen is a stunning, low-maintenance houseplant known for
+  its heart-shaped leaves with beautiful marble-like variegation, making it a
+  perfect addition to any indoor space. Its ability to thrive in a variety of
+  lighting conditions and its air-purifying qualities have made it a favorite
+  among plant enthusiasts and beginners alike.
+datePublished: '2026-03-09T00:00:00.000Z'
+dateModified: '2026-03-21T00:00:00.000Z'
+image: >-
+  https://images.unsplash.com/photo-1611092204158-07c509e59b50?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxtYXJibGUlMjBxdWVlbiUyMHBvdGhvc3xlbnwwfDB8fHwxNzc2MTkzNzY2fDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Marble Queen Pothos houseplant
 imageCredit: Suri Huang
-imageCreditUrl: "https://unsplash.com/@fukayamamo?utm_source=plantcare_guide&utm_medium=referral"
+imageCreditUrl: >-
+  https://unsplash.com/@fukayamamo?utm_source=plantcare_guide&utm_medium=referral
 ---
 
 ## Overview

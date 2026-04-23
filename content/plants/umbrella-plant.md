@@ -23,8 +23,8 @@ description: >-
   unique, umbrella-like foliage and ability to thrive in a variety of lighting
   conditions. With proper care, it can grow up to 6 feet tall and provide a
   touch of tropical elegance to any room.
-datePublished: 2026-04-20T00:00:00.000Z
-dateModified: 2026-04-20T00:00:00.000Z
+datePublished: '2026-03-17T00:00:00.000Z'
+dateModified: '2026-03-27T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1639714795430-f96b8957a793?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxVbWJyZWxsYSUyMFBsYW50JTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2NjgyMDI5fDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Umbrella Plant houseplant

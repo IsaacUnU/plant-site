@@ -23,8 +23,8 @@ description: >-
   vibrant blue-green stems and striking yellow or red flowers. Its unique,
   barrel-shaped appearance makes it a popular choice for indoor gardens, adding
   a touch of desert charm to any room.
-datePublished: 2026-04-15T00:00:00.000Z
-dateModified: 2026-04-15T00:00:00.000Z
+datePublished: '2026-02-17T00:00:00.000Z'
+dateModified: '2026-02-17T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1509221625996-2f06de32cab8?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxCbHVlJTIwQmFycmVsJTIwQ2FjdHVzJTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2MjQ5OTYwfDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Blue Barrel Cactus houseplant

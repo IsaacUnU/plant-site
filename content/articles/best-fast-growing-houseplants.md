@@ -15,8 +15,8 @@ featuredPlants:
   - golden-pothos
   - monstera-deliciosa
   - spider-plant
-datePublished: 2026-04-22T00:00:00.000Z
-dateModified: 2026-04-22T00:00:00.000Z
+datePublished: '2026-03-18T00:00:00.000Z'
+dateModified: '2026-03-25T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1515329057069-e97b7d9da925?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxUaGUlMjA0JTIwQmVzdCUyMEZhc3QtR3Jvd2luZyUyMEhvdXNlcGxhbnRzJTIwRXZlcnklMjBQbGFudCUyMExvdmVyJTIwU2hvdWxkJTIwT3duJTIwaG91c2VwbGFudHMlMjBpbmRvb3IlMjBnYXJkZW5pbmclMjBob3VzZXBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzY4NTQ4NzV8MA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
 imageAlt: The 4 Best Fast-Growing Houseplants Every Plant Lover Should Own

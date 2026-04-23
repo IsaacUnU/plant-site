@@ -8,7 +8,7 @@ import AdSlot from '@/components/AdSlot';
 import PlantImage from '@/components/PlantImage';
 import PlantCard from '@/components/PlantCard';
 import { formatDate } from '@/lib/utils';
-import { Calendar, Clock } from 'lucide-react';
+import { Calendar, Clock, Leaf } from 'lucide-react';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -135,6 +135,14 @@ export default async function PlantPage({ params }: Props) {
                 </span>
               </div>
             </header>
+
+            {/* Editorial note */}
+            <div className="flex items-start gap-3 bg-[#F0FDF4] border border-[#E2EFE7] rounded-2xl px-4 py-3 mb-8">
+              <Leaf className="w-4 h-4 text-[#15803D] mt-0.5 shrink-0" />
+              <p className="text-sm text-[#475569] leading-snug">
+                Our plant guides are structured around verified horticultural data: light measurements (foot-candles), temperature ranges (°F/°C), seasonal watering schedules, and soil composition ratios.
+              </p>
+            </div>
 
             <AdSlot slot="in-content" className="mb-8" />
 

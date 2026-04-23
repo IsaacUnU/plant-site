@@ -24,8 +24,8 @@ description: >-
   leaves, making it a popular choice for indoor spaces. With its ability to
   purify the air and thrive in a variety of lighting conditions, this plant is
   perfect for beginners and experienced plant enthusiasts alike.
-datePublished: 2026-04-15T00:00:00.000Z
-dateModified: 2026-04-15T00:00:00.000Z
+datePublished: '2026-02-27T00:00:00.000Z'
+dateModified: '2026-02-27T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1667395941567-9892435d0240?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxaZWJyYSUyMFBsYW50JTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2MjQ5MDQxfDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Zebra Plant houseplant

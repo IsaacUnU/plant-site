@@ -25,8 +25,8 @@ description: >-
   leaves and a compact growth habit, making it perfect for indoor spaces. With
   its ability to purify the air and boost humidity, this plant is an excellent
   addition to any home or office.
-datePublished: 2026-04-17T00:00:00.000Z
-dateModified: 2026-04-17T00:00:00.000Z
+datePublished: '2026-03-14T00:00:00.000Z'
+dateModified: '2026-03-14T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1771814121521-7e77bbd5b4d7?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxXYW5kZXJpbmclMjBKZXclMjBob3VzZXBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzY0MjI2NjB8MA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Wandering Jew houseplant

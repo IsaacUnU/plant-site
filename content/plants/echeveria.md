@@ -24,12 +24,12 @@ description: >-
   With its beautiful rosettes and vibrant colors, this plant is perfect for
   beginners and experienced gardeners alike, offering a unique combination of
   beauty and air-purifying benefits.
-datePublished: 2026-04-15T00:00:00.000Z
-dateModified: 2026-04-15T00:00:00.000Z
-image: "https://images.unsplash.com/photo-1618745281824-cf7113712e8e"
-imageAlt: "Green plant with white variegated leaves on dark background"
-imageCredit: "Pach Visuals"
-imageCreditUrl: "https://unsplash.com/@pach_visuals"
+datePublished: '2026-02-25T00:00:00.000Z'
+dateModified: '2026-02-25T00:00:00.000Z'
+image: 'https://images.unsplash.com/photo-1618745281824-cf7113712e8e'
+imageAlt: Green plant with white variegated leaves on dark background
+imageCredit: Pach Visuals
+imageCreditUrl: 'https://unsplash.com/@pach_visuals'
 ---
 
 ## Overview

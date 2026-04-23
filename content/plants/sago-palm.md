@@ -24,8 +24,8 @@ description: >-
   conditions. With proper care, this plant can bring a touch of tropical
   elegance to any room, while also helping to purify the air and promote a sense
   of well-being.
-datePublished: 2026-04-21T00:00:00.000Z
-dateModified: 2026-04-21T00:00:00.000Z
+datePublished: '2026-03-12T00:00:00.000Z'
+dateModified: '2026-03-12T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1604762512566-f0be0fd668ff?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxTYWdvJTIwUGFsbSUyMGhvdXNlcGxhbnQlMjBpbmRvb3J8ZW58MHwwfHx8MTc3NjY4NTQwNHww&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Sago Palm houseplant

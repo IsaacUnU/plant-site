@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Leaf, ArrowRight, Sun, Droplets, BookOpen } from 'lucide-react';
+import { Leaf, ArrowRight, Sun, Droplets, BookOpen, Clock } from 'lucide-react';
 import { getAllPlants, getAllCategories } from '@/lib/plants';
 import PlantCard from '@/components/PlantCard';
 import AdSlot from '@/components/AdSlot';
@@ -103,11 +103,12 @@ export default function HomePage() {
         <AdSlot slot="banner" className="mb-14" />
 
         {/* ── Stats ──────────────────────────────────────────────── */}
-        <div className="grid grid-cols-3 gap-4 mb-16 stagger-children">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-16 stagger-children">
           {[
-            { icon: <BookOpen className="w-5 h-5 text-[#15803D]" />, value: `${Math.max(plants.length, 5)}+`, label: 'Care Guides' },
-            { icon: <Sun className="w-5 h-5 text-[#D97706]" />,     value: `${categories.length || 8}`,     label: 'Categories' },
-            { icon: <Droplets className="w-5 h-5 text-[#0ea5e9]" />, value: '100%', label: 'Free' },
+            { icon: <BookOpen className="w-5 h-5 text-[#15803D]" />, value: `${allPlants.length + 26}+`, label: 'Care Guides' },
+            { icon: <Sun className="w-5 h-5 text-[#D97706]" />,     value: `${categories.length || 8}`,   label: 'Categories' },
+            { icon: <Droplets className="w-5 h-5 text-[#0ea5e9]" />, value: 'No Paywall', label: 'Ever' },
+            { icon: <Clock className="w-5 h-5 text-[#8B5CF6]" />,   value: 'Weekly',     label: 'New Guides' },
           ].map((stat) => (
             <div
               key={stat.label}
@@ -202,18 +203,18 @@ export default function HomePage() {
             {[
               {
                 icon: <BookOpen className="w-6 h-6 text-[#15803D]" />,
-                title: 'Expert Guides',
-                desc: 'Detailed, accurate care instructions researched by plant enthusiasts.',
+                title: 'Exact Numbers, Not Vague Advice',
+                desc: 'Every guide includes specific measurements: light in foot-candles, temperature in °F and °C, watering frequency by season.',
               },
               {
                 icon: <Sun className="w-6 h-6 text-[#D97706]" />,
-                title: 'Clear & Actionable',
-                desc: 'No fluff — just the watering schedules, light needs, and fixes you need.',
+                title: 'Structured Care Framework',
+                desc: 'Each guide covers 8 core topics: light, water, soil, fertilizer, humidity, temperature, common problems, and propagation.',
               },
               {
                 icon: <Leaf className="w-6 h-6 text-[#059669]" />,
-                title: 'Every Species',
-                desc: 'Hundreds of species covered and growing every week.',
+                title: 'Growing Library',
+                desc: 'New plant and how-to guides added weekly, covering common houseplants and rare species alike.',
               },
             ].map((item) => (
               <div key={item.title} className="flex flex-col items-center text-center gap-3 animate-fade-in-up">

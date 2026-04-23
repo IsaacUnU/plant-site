@@ -26,8 +26,8 @@ description: >-
   prized for its fragrant flowers, beautiful foliage, and delicious fruit. With
   proper care, this plant can thrive indoors, providing a touch of warmth and
   elegance to any room.
-datePublished: 2026-04-14T00:00:00.000Z
-dateModified: 2026-04-14T00:00:00.000Z
+datePublished: '2026-02-23T00:00:00.000Z'
+dateModified: '2026-02-23T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1765032822101-6f7bae24e544?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxMZW1vbiUyMFRyZWUlMjBob3VzZXBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzYxOTgzNjh8MA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Lemon Tree houseplant

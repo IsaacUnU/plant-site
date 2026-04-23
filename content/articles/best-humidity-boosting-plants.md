@@ -21,8 +21,8 @@ featuredPlants:
   - caladium
   - calathea-orbifolia
   - dumb-cane
-datePublished: 2026-04-21T00:00:00.000Z
-dateModified: 2026-04-21T00:00:00.000Z
+datePublished: '2026-03-18T00:00:00.000Z'
+dateModified: '2026-03-18T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1571028557446-2965a546c3a9?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxUb3AlMjAxMCUyMEJlc3QlMjBIdW1pZGl0eS1Cb29zdGluZyUyMEhvdXNlcGxhbnRzJTIwZm9yJTIwWW91ciUyMEhvbWUlMjBob3VzZXBsYW50cyUyMGluZG9vciUyMGdhcmRlbmluZyUyMGhvdXNlcGxhbnQlMjBpbmRvb3J8ZW58MHwwfHx8MTc3Njc2ODQ5NHww&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
 imageAlt: Top 10 Best Humidity-Boosting Houseplants for Your Home

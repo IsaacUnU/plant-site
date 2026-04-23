@@ -1,11 +1,18 @@
 ---
-title: "Peace Lily Care Guide: How to Grow Spathiphyllum Indoors"
+title: 'Peace Lily Care Guide: How to Grow Spathiphyllum Indoors'
 slug: peace-lily
 commonName: Peace Lily
 scientificName: Spathiphyllum wallisii
 category: low-light
-tags: ["flowering", "low-light", "air-purifying", "shade-tolerant"]
-secondaryFunctions: ["humidity-boosting", "air-purifying", "pleasant-scent"]
+tags:
+  - flowering
+  - low-light
+  - air-purifying
+  - shade-tolerant
+secondaryFunctions:
+  - humidity-boosting
+  - air-purifying
+  - pleasant-scent
 difficulty: easy
 light: low
 water: weekly
@@ -13,13 +20,18 @@ humidity: medium
 temperature: 65–80°F (18–27°C)
 toxicity: toxic-to-pets
 growthRate: moderate
-description: The Peace Lily is one of the few flowering plants that thrives in low light. With elegant white blooms and glossy dark leaves, it's a popular choice for offices, bedrooms, and shaded corners — and it communicates clearly when it needs water.
-datePublished: 2026-04-12
-dateModified: 2026-04-12
-image: "https://images.unsplash.com/photo-1616694547693-b0f829a6cf30?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxQZWFjZSUyMExpbHklMjBob3VzZXBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzYwMTg4ODB8MA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop"
+description: >-
+  The Peace Lily is one of the few flowering plants that thrives in low light.
+  With elegant white blooms and glossy dark leaves, it's a popular choice for
+  offices, bedrooms, and shaded corners — and it communicates clearly when it
+  needs water.
+datePublished: '2026-03-05T00:00:00.000Z'
+dateModified: '2026-03-05T00:00:00.000Z'
+image: >-
+  https://images.unsplash.com/photo-1616694547693-b0f829a6cf30?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxQZWFjZSUyMExpbHklMjBob3VzZXBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzYwMTg4ODB8MA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Peace Lily houseplant
 imageCredit: Lan Gao
-imageCreditUrl: "https://unsplash.com/@langao?utm_source=plantcare_guide&utm_medium=referral"
+imageCreditUrl: 'https://unsplash.com/@langao?utm_source=plantcare_guide&utm_medium=referral'
 ---
 
 ## Overview

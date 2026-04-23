@@ -24,8 +24,8 @@ description: >-
   color to any room. With its relatively low maintenance requirements and
   ability to purify the air, it's a popular choice for indoor gardeners of all
   skill levels.
-datePublished: 2026-04-17T00:00:00.000Z
-dateModified: 2026-04-17T00:00:00.000Z
+datePublished: '2026-02-24T00:00:00.000Z'
+dateModified: '2026-02-24T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1766736702134-8bf26e5c216a?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxDcm90b24lMjBob3VzZXBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzY0MzAxNDF8MA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Croton houseplant

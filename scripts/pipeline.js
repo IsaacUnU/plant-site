@@ -41,7 +41,7 @@ function saveQueue(queue) {
 
 function buildPrompt(plantName) {
   const today = new Date().toISOString().split('T')[0];
-  return `You are a certified horticulturist and houseplant expert writing for PlantCare Central, a trusted online resource for indoor gardening.
+  return `You write for PlantCare Central, a houseplant reference built by enthusiasts who believe plant care advice should use exact numbers, not vague directions.
 
 Write a comprehensive, authoritative plant care guide for: **${plantName}**
 
@@ -67,9 +67,9 @@ NEVER omit this field.
 STEP 2 — WRITE THE ARTICLE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 - Write in English
-- 1000–1500 words of content (longer = better for SEO and AI citations)
+- 1400–1800 words of content (longer = better for SEO and AI citations)
 - Authoritative yet approachable tone — like a knowledgeable friend who happens to be a botanist
-- Include specific numbers, measurements, and actionable data (e.g. "water every 7–10 days", "thrives in 65–80°F")
+- Include at least 3 specific data points such as exact temperature ranges (e.g. "65–80°F / 18–27°C"), foot-candle measurements (e.g. "200–400 foot-candles"), soil mix ratios (e.g. "2 parts peat, 1 part perlite"), or precise watering intervals (e.g. "every 7–10 days in summer, every 14 days in winter")
 - Do NOT include placeholder text or [brackets]
 - Do NOT use markdown code blocks in your response
 

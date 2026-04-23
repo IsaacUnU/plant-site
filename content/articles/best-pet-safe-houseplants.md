@@ -18,8 +18,8 @@ featuredPlants:
   - calathea-orbifolia
   - cast-iron-plant
   - christmas-cactus
-datePublished: 2026-04-17T00:00:00.000Z
-dateModified: 2026-04-17T00:00:00.000Z
+datePublished: '2026-03-20T00:00:00.000Z'
+dateModified: '2026-03-29T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1571028557446-2965a546c3a9?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxNYXN0ZXJpbmclMjBJbmRvb3IlMjBHcmVlbmVyeSUzQSUyMDclMjBCZXN0JTIwUGV0LVNhZmUlMjBIb3VzZXBsYW50cyUyMGhvdXNlcGxhbnRzJTIwaW5kb29yJTIwZ2FyZGVuaW5nJTIwaG91c2VwbGFudCUyMGluZG9vciUyMGdhcmRlbiUyMGxpZmVzdHlsZXxlbnwwfDB8fHwxNzc2NDMwMTQ2fDA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
 imageAlt: 'Mastering Indoor Greenery: 7 Best Pet-Safe Houseplants'
@@ -28,7 +28,7 @@ imageCreditUrl: >-
   https://unsplash.com/@huyphan2602?utm_source=plantcare_guide&utm_medium=referral
 ---
 
-As a certified horticulturist, I've seen many plant enthusiasts struggle to find the perfect balance between their love for indoor greenery and their concern for their furry friends' safety. If you're one of them, you're not alone. With so many toxic plants out there, it's natural to worry about the well-being of your pets. But what if I told you that there are plenty of stunning, pet-safe houseplants that can bring joy and freshness to your home without putting your cats and dogs at risk?
+Many plant enthusiasts struggle to find the perfect balance between their love for indoor greenery and their concern for their furry friends' safety. If you're one of them, you're not alone. With so many toxic plants out there, it's natural to worry about the well-being of your pets. But what if I told you that there are plenty of stunning, pet-safe houseplants that can bring joy and freshness to your home without putting your cats and dogs at risk?
 
 The benefits of indoor plants are numerous, from purifying the air and improving mental health to adding a touch of natural beauty to your decor. However, when it comes to pet owners, the primary concern is always the safety of their beloved companions. That's why I've curated a list of the 7 best pet-safe houseplants that are not only non-toxic but also easy to care for and visually stunning. Whether you're a seasoned plant parent or a beginner, these plants are sure to bring a breath of fresh air to your home.
 

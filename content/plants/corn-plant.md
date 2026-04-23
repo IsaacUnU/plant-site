@@ -23,8 +23,8 @@ description: >-
   houseplant that brings a touch of tropical elegance to any room. With its
   slender leaves and fragrant flowers, it's a great choice for those looking for
   a low-maintenance yet stylish addition to their indoor space.
-datePublished: 2026-04-22T00:00:00.000Z
-dateModified: 2026-04-22T00:00:00.000Z
+datePublished: '2026-02-23T00:00:00.000Z'
+dateModified: '2026-02-23T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1768768170899-cf0c92ee54a0?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxDb3JuJTIwUGxhbnQlMjBob3VzZXBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzY4NTM5NDl8MA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Corn Plant houseplant

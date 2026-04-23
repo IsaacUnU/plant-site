@@ -1,11 +1,17 @@
 ---
-title: "Snake Plant Care Guide: How to Grow Sansevieria Indoors"
+title: 'Snake Plant Care Guide: How to Grow Sansevieria Indoors'
 slug: snake-plant
 commonName: Snake Plant
 scientificName: Dracaena trifasciata
 category: low-light
-tags: ["low-light", "drought-tolerant", "air-purifying", "beginner-friendly"]
-secondaryFunctions: ["air-purifying", "insect-repelling"]
+tags:
+  - low-light
+  - drought-tolerant
+  - air-purifying
+  - beginner-friendly
+secondaryFunctions:
+  - air-purifying
+  - insect-repelling
 difficulty: easy
 light: low
 water: monthly
@@ -13,13 +19,18 @@ humidity: low
 temperature: 60–80°F (15–27°C)
 toxicity: mildly-toxic
 growthRate: slow
-description: The Snake Plant is nearly impossible to kill — it tolerates neglect, low light, and infrequent watering better than almost any other houseplant. Its upright, architectural leaves make it a stylish choice for any room.
-datePublished: 2026-04-12
-dateModified: 2026-04-12
-image: "https://images.unsplash.com/photo-1764249454220-ce25a9153805?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxTbmFrZSUyMFBsYW50JTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2MDE4ODgwfDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop"
+description: >-
+  The Snake Plant is nearly impossible to kill — it tolerates neglect, low
+  light, and infrequent watering better than almost any other houseplant. Its
+  upright, architectural leaves make it a stylish choice for any room.
+datePublished: '2026-03-12T00:00:00.000Z'
+dateModified: '2026-03-17T00:00:00.000Z'
+image: >-
+  https://images.unsplash.com/photo-1764249454220-ce25a9153805?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxTbmFrZSUyMFBsYW50JTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2MDE4ODgwfDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Snake Plant houseplant
 imageCredit: Rafael Rodrigues
-imageCreditUrl: "https://unsplash.com/@rrodriguesim?utm_source=plantcare_guide&utm_medium=referral"
+imageCreditUrl: >-
+  https://unsplash.com/@rrodriguesim?utm_source=plantcare_guide&utm_medium=referral
 ---
 
 ## Overview

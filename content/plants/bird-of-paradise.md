@@ -1,11 +1,19 @@
 ---
-title: "Bird of Paradise Care Guide: Unlocking the Secrets of Strelitzia reginae"
+title: 'Bird of Paradise Care Guide: Unlocking the Secrets of Strelitzia reginae'
 slug: bird-of-paradise
 commonName: Bird of Paradise
 scientificName: Strelitzia reginae
 category: tropical
-tags: ["flowering", "indoor-plants", "exotic", "low-maintenance", "bird-attracting"]
-secondaryFunctions: ["humidity-boosting", "air-purifying", "pleasant-scent"]
+tags:
+  - flowering
+  - indoor-plants
+  - exotic
+  - low-maintenance
+  - bird-attracting
+secondaryFunctions:
+  - humidity-boosting
+  - air-purifying
+  - pleasant-scent
 difficulty: medium
 light: indirect-bright
 water: weekly
@@ -13,13 +21,19 @@ humidity: medium
 temperature: 65–80°F (18–27°C)
 toxicity: mildly-toxic
 growthRate: moderate
-description: The Bird of Paradise is a stunning, flowering plant known for its unique, bird-like blooms and lush, green foliage, making it a popular choice for indoor gardens and outdoor landscapes. With proper care, this tropical plant can thrive and provide year-round beauty and interest, attracting birds and other pollinators to its vibrant, orange and purple flowers.
-datePublished: 2026-04-14
-dateModified: 2026-04-14
-image: "https://images.unsplash.com/photo-1767106602347-51d2bc81b2f1?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxCaXJkJTIwb2YlMjBQYXJhZGlzZSUyMGhvdXNlcGxhbnQlMjBpbmRvb3J8ZW58MHwwfHx8MTc3NjE2MjY4OHww&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop"
+description: >-
+  The Bird of Paradise is a stunning, flowering plant known for its unique,
+  bird-like blooms and lush, green foliage, making it a popular choice for
+  indoor gardens and outdoor landscapes. With proper care, this tropical plant
+  can thrive and provide year-round beauty and interest, attracting birds and
+  other pollinators to its vibrant, orange and purple flowers.
+datePublished: '2026-02-17T00:00:00.000Z'
+dateModified: '2026-02-17T00:00:00.000Z'
+image: >-
+  https://images.unsplash.com/photo-1767106602347-51d2bc81b2f1?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxCaXJkJTIwb2YlMjBQYXJhZGlzZSUyMGhvdXNlcGxhbnQlMjBpbmRvb3J8ZW58MHwwfHx8MTc3NjE2MjY4OHww&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Bird of Paradise houseplant
 imageCredit: Antonia Glaskova
-imageCreditUrl: "https://unsplash.com/@glaskova?utm_source=plantcare_guide&utm_medium=referral"
+imageCreditUrl: 'https://unsplash.com/@glaskova?utm_source=plantcare_guide&utm_medium=referral'
 ---
 
 ## Overview

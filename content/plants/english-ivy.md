@@ -1,11 +1,18 @@
 ---
-title: "English Ivy Care Guide: Tips for Growing and Maintaining Hedera helix"
+title: 'English Ivy Care Guide: Tips for Growing and Maintaining Hedera helix'
 slug: english-ivy
 commonName: English Ivy
 scientificName: Hedera helix
 category: vines
-tags: ["houseplants", "indoor gardening", "easy to care for", "air purifying", "versatile"]
-secondaryFunctions: ["air-purifying", "insect-repelling"]
+tags:
+  - houseplants
+  - indoor gardening
+  - easy to care for
+  - air purifying
+  - versatile
+secondaryFunctions:
+  - air-purifying
+  - insect-repelling
 difficulty: easy
 light: indirect-bright
 water: every-2-3-days
@@ -13,13 +20,19 @@ humidity: medium
 temperature: 65–75°F (18–24°C)
 toxicity: mildly-toxic
 growthRate: fast
-description: English Ivy is a versatile, low-maintenance houseplant that can thrive in a variety of lighting conditions, making it perfect for indoor spaces. With its attractive, trailing vines and air-purifying properties, English Ivy is a popular choice for homeowners and gardeners alike.
-datePublished: 2026-04-14
-dateModified: 2026-04-14
-image: "https://images.unsplash.com/photo-1720026253331-7cd25244273e?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxFbmdsaXNoJTIwSXZ5JTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2MTY0NzY4fDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop"
+description: >-
+  English Ivy is a versatile, low-maintenance houseplant that can thrive in a
+  variety of lighting conditions, making it perfect for indoor spaces. With its
+  attractive, trailing vines and air-purifying properties, English Ivy is a
+  popular choice for homeowners and gardeners alike.
+datePublished: '2026-02-25T00:00:00.000Z'
+dateModified: '2026-02-25T00:00:00.000Z'
+image: >-
+  https://images.unsplash.com/photo-1720026253331-7cd25244273e?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxFbmdsaXNoJTIwSXZ5JTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2MTY0NzY4fDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: English Ivy houseplant
 imageCredit: JW K
-imageCreditUrl: "https://unsplash.com/@kootograph?utm_source=plantcare_guide&utm_medium=referral"
+imageCreditUrl: >-
+  https://unsplash.com/@kootograph?utm_source=plantcare_guide&utm_medium=referral
 ---
 
 ## Overview

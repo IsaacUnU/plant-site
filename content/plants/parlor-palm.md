@@ -24,8 +24,8 @@ description: >-
   elegant, feathery leaves and ability to purify the air. Native to the tropical
   regions of Central and South America, it's a versatile and attractive addition
   to any indoor space.
-datePublished: 2026-04-21T00:00:00.000Z
-dateModified: 2026-04-21T00:00:00.000Z
+datePublished: '2026-03-05T00:00:00.000Z'
+dateModified: '2026-03-05T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1759579726639-4d0b89a5bf9b?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxQYXJsb3IlMjBQYWxtJTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2Njg0NDgyfDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Parlor Palm houseplant

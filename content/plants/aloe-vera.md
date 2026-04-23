@@ -1,11 +1,18 @@
 ---
-title: "Aloe Vera Care Guide: How to Grow and Harvest Aloe Indoors"
+title: 'Aloe Vera Care Guide: How to Grow and Harvest Aloe Indoors'
 slug: aloe-vera
 commonName: Aloe Vera
 scientificName: Aloe barbadensis miller
 category: succulents
-tags: ["succulent", "medicinal", "drought-tolerant", "beginner-friendly"]
-secondaryFunctions: ["medicinal", "insect-repelling", "air-purifying"]
+tags:
+  - succulent
+  - medicinal
+  - drought-tolerant
+  - beginner-friendly
+secondaryFunctions:
+  - medicinal
+  - insect-repelling
+  - air-purifying
 difficulty: easy
 light: indirect-bright
 water: every-2-weeks
@@ -13,13 +20,18 @@ humidity: low
 temperature: 55–80°F (13–27°C)
 toxicity: mildly-toxic
 growthRate: moderate
-description: Aloe Vera is one of the world's most useful plants — not only beautiful and easy to grow, but also a natural first-aid kit for minor burns and skin irritations. It thrives on neglect and is perfect for sunny windowsills.
-datePublished: 2026-04-12
-dateModified: 2026-04-12
-image: "https://images.unsplash.com/photo-1775204059302-75ec99ac79eb?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxBbG9lJTIwVmVyYSUyMGhvdXNlcGxhbnQlMjBpbmRvb3J8ZW58MHwwfHx8MTc3NjAxODg3OHww&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop"
+description: >-
+  Aloe Vera is one of the world's most useful plants — not only beautiful and
+  easy to grow, but also a natural first-aid kit for minor burns and skin
+  irritations. It thrives on neglect and is perfect for sunny windowsills.
+datePublished: '2026-02-12T00:00:00.000Z'
+dateModified: '2026-02-17T00:00:00.000Z'
+image: >-
+  https://images.unsplash.com/photo-1775204059302-75ec99ac79eb?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxBbG9lJTIwVmVyYSUyMGhvdXNlcGxhbnQlMjBpbmRvb3J8ZW58MHwwfHx8MTc3NjAxODg3OHww&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Aloe Vera houseplant
 imageCredit: Mohammad Zeeshan
-imageCreditUrl: "https://unsplash.com/@mohammad_zeeshan?utm_source=plantcare_guide&utm_medium=referral"
+imageCreditUrl: >-
+  https://unsplash.com/@mohammad_zeeshan?utm_source=plantcare_guide&utm_medium=referral
 ---
 
 ## Overview

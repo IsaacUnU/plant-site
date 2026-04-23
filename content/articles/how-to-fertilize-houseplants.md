@@ -8,8 +8,8 @@ tags:
   - plant care
   - indoor gardening
 description: Boost your houseplants' health with expert fertilization tips
-datePublished: 2026-04-18T00:00:00.000Z
-dateModified: 2026-04-18T00:00:00.000Z
+datePublished: '2026-03-26T00:00:00.000Z'
+dateModified: '2026-03-26T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1691290123815-cba16d4ed917?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxIb3clMjBhbmQlMjBXaGVuJTIwdG8lMjBGZXJ0aWxpemUlMjBIb3VzZXBsYW50cyUyMGhvdXNlcGxhbnRzJTIwcGxhbnQlMjBjYXJlJTIwaG91c2VwbGFudCUyMGluZG9vciUyMGdhcmRlbiUyMGxpZmVzdHlsZXxlbnwwfDB8fHwxNzc2NTQ1MDI1fDA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
 imageAlt: How and When to Fertilize Houseplants

@@ -25,8 +25,8 @@ description: >-
   size and adaptability make it perfect for indoor spaces, from desks to
   shelves, and it's also a great air-purifying plant that helps remove toxins
   from the air.
-datePublished: 2026-04-19T00:00:00.000Z
-dateModified: 2026-04-19T00:00:00.000Z
+datePublished: '2026-03-03T00:00:00.000Z'
+dateModified: '2026-03-03T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1575032558058-683487d88fb1?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxOZXJ2ZSUyMFBsYW50JTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2NTk0NDAxfDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Nerve Plant houseplant

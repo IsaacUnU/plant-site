@@ -24,8 +24,8 @@ description: >-
   heart-shaped leaves with intricate vein patterns. With proper care, it can
   thrive in indoor environments, providing a touch of tropical elegance and
   helping to purify the air.
-datePublished: 2026-04-19T00:00:00.000Z
-dateModified: 2026-04-19T00:00:00.000Z
+datePublished: '2026-02-12T00:00:00.000Z'
+dateModified: '2026-02-12T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1763518821406-55caf89c01fb?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwyfHxBbG9jYXNpYSUyMHBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzY2MzI4NjV8MA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Alocasia Polly houseplant

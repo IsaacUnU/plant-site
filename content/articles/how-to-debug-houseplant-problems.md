@@ -8,8 +8,8 @@ tags:
   - plant care
   - indoor gardening
 description: Solve common houseplant problems with expert tips and tricks
-datePublished: 2026-04-18T00:00:00.000Z
-dateModified: 2026-04-18T00:00:00.000Z
+datePublished: '2026-03-26T00:00:00.000Z'
+dateModified: '2026-03-26T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1680983468499-7e6690652f83?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxIb3VzZXBsYW50JTIwVHJvdWJsZXNob290aW5nJTNBJTIwRml4JTIwQW55JTIwUGxhbnQlMjBQcm9ibGVtJTIwRmFzdCUyMGhvdXNlcGxhbnRzJTIwcGxhbnQlMjBjYXJlJTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2NjMyNzEzfDA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
 imageAlt: 'Houseplant Troubleshooting: Fix Any Plant Problem Fast'

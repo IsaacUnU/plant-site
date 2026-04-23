@@ -25,8 +25,8 @@ description: >-
   making it a popular choice for indoor gardening. Its ability to thrive in
   medium to high humidity and indirect light conditions makes it perfect for
   rooms with limited natural light.
-datePublished: 2026-04-17T00:00:00.000Z
-dateModified: 2026-04-17T00:00:00.000Z
+datePublished: '2026-03-02T00:00:00.000Z'
+dateModified: '2026-03-05T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1772714037381-cf6a20be3152?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxQcmF5ZXIlMjBQbGFudCUyMGhvdXNlcGxhbnQlMjBpbmRvb3J8ZW58MHwwfHx8MTc3NjQyMjA0Nnww&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Prayer Plant houseplant

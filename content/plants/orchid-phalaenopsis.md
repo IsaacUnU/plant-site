@@ -25,8 +25,8 @@ description: >-
   pink, or purple blooms that can last for months. With proper care, this plant
   can thrive in indoor conditions, providing a touch of elegance and freshness
   to any room.
-datePublished: 2026-04-16T00:00:00.000Z
-dateModified: 2026-04-16T00:00:00.000Z
+datePublished: '2026-03-03T00:00:00.000Z'
+dateModified: '2026-03-03T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1594749911971-5070cb757244?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxNb3RoJTIwT3JjaGlkJTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2MzM2MTAzfDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Moth Orchid houseplant

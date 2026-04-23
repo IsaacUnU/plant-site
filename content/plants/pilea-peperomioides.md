@@ -25,8 +25,8 @@ description: >-
   the air. Native to China, this plant has become a popular choice among indoor
   gardeners due to its ease of care and its ability to thrive in a variety of
   environments.
-datePublished: 2026-04-17T00:00:00.000Z
-dateModified: 2026-04-17T00:00:00.000Z
+datePublished: '2026-03-07T00:00:00.000Z'
+dateModified: '2026-03-07T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1723650879990-dae890387cff?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxDaGluZXNlJTIwTW9uZXklMjBQbGFudCUyMGhvdXNlcGxhbnQlMjBpbmRvb3J8ZW58MHwwfHx8MTc3NjQyMjM1M3ww&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Chinese Money Plant houseplant

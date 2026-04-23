@@ -1,11 +1,16 @@
 ---
-title: "ZZ Plant Care Guide: How to Keep Your Low-Maintenance Houseplant Thriving"
+title: 'ZZ Plant Care Guide: How to Keep Your Low-Maintenance Houseplant Thriving'
 slug: zz-plant
 commonName: ZZ Plant
 scientificName: Zamioculcas zamiifolia
 category: low-light
-tags: ["low-maintenance", "indoor-plants", "air-purifying", "shade-tolerant"]
-secondaryFunctions: ["air-purifying"]
+tags:
+  - low-maintenance
+  - indoor-plants
+  - air-purifying
+  - shade-tolerant
+secondaryFunctions:
+  - air-purifying
 difficulty: easy
 light: low
 water: every-2-weeks
@@ -13,13 +18,20 @@ humidity: low
 temperature: 65–80°F (18–27°C)
 toxicity: toxic-to-pets
 growthRate: slow
-description: The ZZ Plant is a low-maintenance, shade-tolerant houseplant known for its glossy leaves and air-purifying properties, making it perfect for busy people or those new to plant parenthood. With its ability to survive in low-light conditions and infrequent watering, the ZZ Plant is a great choice for anyone looking to bring some greenery into their home or office.
-datePublished: 2026-04-12
-dateModified: 2026-04-12
-image: "https://images.unsplash.com/photo-1763741186493-509db18f6a6a?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxaWiUyMFBsYW50JTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2MDIyMTk3fDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop"
+description: >-
+  The ZZ Plant is a low-maintenance, shade-tolerant houseplant known for its
+  glossy leaves and air-purifying properties, making it perfect for busy people
+  or those new to plant parenthood. With its ability to survive in low-light
+  conditions and infrequent watering, the ZZ Plant is a great choice for anyone
+  looking to bring some greenery into their home or office.
+datePublished: '2026-03-17T00:00:00.000Z'
+dateModified: '2026-03-17T00:00:00.000Z'
+image: >-
+  https://images.unsplash.com/photo-1763741186493-509db18f6a6a?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxaWiUyMFBsYW50JTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2MDIyMTk3fDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: ZZ Plant houseplant
 imageCredit: Phuong Nguyen
-imageCreditUrl: "https://unsplash.com/@phuongtography?utm_source=plantcare_guide&utm_medium=referral"
+imageCreditUrl: >-
+  https://unsplash.com/@phuongtography?utm_source=plantcare_guide&utm_medium=referral
 ---
 
 ## Overview

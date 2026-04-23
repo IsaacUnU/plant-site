@@ -24,8 +24,8 @@ description: >-
   making it perfect for beginners and experienced plant enthusiasts alike. With
   its attractive foliage and ability to purify the air, it's an excellent choice
   for anyone looking to bring some greenery into their home.
-datePublished: 2026-04-22T00:00:00.000Z
-dateModified: 2026-04-22T00:00:00.000Z
+datePublished: '2026-02-26T00:00:00.000Z'
+dateModified: '2026-03-08T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1642655979030-d0c209c42680?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxDaGluZXNlJTIwQmFueWFuJTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc2ODU0ODcxfDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Chinese Banyan houseplant

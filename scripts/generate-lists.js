@@ -301,14 +301,14 @@ function buildListPrompt(topic, matchingPlants) {
     .map((p) => `- ${p.commonName} (${p.scientificName}) [SLUG: ${p.slug}] — ${p.difficulty} care, ${p.light} light, ${p.water} watering`)
     .join('\n');
 
-  return `You are a certified horticulturist writing for PlantCare Central.
+  return `You write for PlantCare Central, a houseplant reference built by enthusiasts who believe plant care advice should use exact numbers, not vague directions.
 Write a high-converting, click-worthy listicle article: "${selectedTitle}"
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ARTICLE STRUCTURE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 1. INTRODUCTION: 2-3 engaging paragraphs addressing the reader's pain points.
-2. PLANT LIST: For each of the ${maxPlants} plants below, write a 2-3 paragraph review with "Catchy" H2 headings (e.g. "{Name}: The low-light superstar").
+2. PLANT LIST: For each of the ${maxPlants} plants below, write a 2-3 paragraph review with "Catchy" H2 headings (e.g. "{Name}: The low-light superstar"). Each plant entry MUST include a "Why we recommend it" paragraph containing at least one concrete differentiating fact (e.g. a specific measurement, a unique trait, or a direct comparison to other plants).
 3. QUICK STATS: Include Light, Water, Difficulty, and Pet Safe stats for each.
 4. LINKS: Include [Read our full {Plant Name} care guide](/plants/{plant-slug}) for each.
 5. CLOSING: "How We Chose These Plants" and "Frequently Asked Questions" (3 Q&A pairs).
@@ -342,7 +342,7 @@ dateModified: ${today}
 
 - Do NOT write any conversational text before the "---".
 - Do NOT use markdown code blocks ( \`\`\` ) to wrap the entire response.
-- Word count: 1200–2000 words.
+- Word count: 1200–1600 words minimum.
 - Tone: Authoritative yet EXTREMELY engaging.
 `;
 }

@@ -24,8 +24,8 @@ description: >-
   shades of pink, red, and white around the holiday season. With proper care,
   this plant can thrive indoors and provide a stunning display of color during
   the winter months.
-datePublished: 2026-04-16T00:00:00.000Z
-dateModified: 2026-04-16T00:00:00.000Z
+datePublished: '2026-02-23T00:00:00.000Z'
+dateModified: '2026-02-23T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1774182092683-746bcec16ff4?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxDaHJpc3RtYXMlMjBDYWN0dXMlMjBob3VzZXBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzYzMzU0OTF8MA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Christmas Cactus houseplant

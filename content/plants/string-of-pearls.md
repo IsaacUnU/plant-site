@@ -27,8 +27,8 @@ description: >-
   water their plants. Its small size and ability to thrive in a variety of
   lighting conditions make it a popular choice for desks, shelves, and hanging
   baskets.
-datePublished: 2026-04-15T00:00:00.000Z
-dateModified: 2026-04-15T00:00:00.000Z
+datePublished: '2026-03-13T00:00:00.000Z'
+dateModified: '2026-03-13T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1772795632700-ccf99a2e6103?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxTdHJpbmclMjBvZiUyMFBlYXJscyUyMGhvdXNlcGxhbnQlMjBpbmRvb3J8ZW58MHwwfHx8MTc3NjI0OTM0OHww&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: String of Pearls houseplant
