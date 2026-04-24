@@ -111,6 +111,13 @@ CRITICAL YAML RULES — your response will be rejected if you break these:
 - tags: YAML block list with "  - item" format. NOT inline ["a","b"]
 - secondaryFunctions: inline array ["a","b"]. Only from the 6 values above. MINIMUM ["air-purifying"].
 
+HEADING RULES (strictly required):
+- Use descriptive H2 headings that tell the reader what they will learn (e.g. "## Why African Violets Struggle With Tap Water" not "## Watering")
+- NEVER use ALL_CAPS headings
+- NEVER use generic headings: INTRODUCTION, EXPERT VERDICT, CONCLUSION, OVERVIEW, SUMMARY
+- Each H2 must be unique — no two H2s on the page should be identical
+- H2 headings should read as mini-answers or questions (e.g. "## The Right Soil Mix Makes Root Rot Rare")
+
 ## Quick Care Summary
 
 Write a concise summary paragraph (3–4 sentences) that directly and clearly answers: "How do I care for ${plantName}?" This summary must be self-contained — someone reading ONLY this paragraph should know the basics. Include: light preference, watering frequency, ideal temperature range, and difficulty level in plain language. This is the single most important paragraph for AI search engine citations.

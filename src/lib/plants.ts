@@ -263,12 +263,6 @@ export function autoLinkPlantNames(htmlContent: string, currentSlug: string): st
     const makeLink = (name: string) =>
       `<a href="/plants/${plant.slug}" class="text-[#15803D] font-semibold hover:underline">${name}</a>`;
 
-    // Pass 1: always link inside h2/h3 headings regardless of body occurrences
-    linkedHtml = linkedHtml.replace(
-      new RegExp(`(<h[23][^>]*>(?:(?!<\\/h[23]>).)*?)\\b(${escapedName})\\b`, 'gi'),
-      (_, before, name) => `${before}${makeLink(name)}`
-    );
-
     // Pass 2: link first occurrence per H2 section in body text.
     // Each H2 is a distinct subtopic, so the first mention per section is natural
     // and consistent — avoids the intro-paragraph "used up" problem.

@@ -164,6 +164,15 @@ ARTICLE STRUCTURE (follow this exactly)
 4. EXPERT VERDICT: A short closing paragraph (3-5 sentences) with your expert summary and most important takeaway.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+HEADING RULES (strictly required)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- Use descriptive H2 headings that tell the reader what they will learn (e.g. "## Why African Violets Struggle With Tap Water" not "## Watering")
+- NEVER use ALL_CAPS headings
+- NEVER use generic headings: INTRODUCTION, EXPERT VERDICT, CONCLUSION, OVERVIEW, SUMMARY
+- Each H2 must be unique — no two H2s on the page should be identical
+- H2 headings should read as mini-answers or questions (e.g. "## The Right Soil Mix Makes Root Rot Rare")
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 STRICT FORMATTING RULES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 - Return ONLY valid Markdown.
