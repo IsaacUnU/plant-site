@@ -62,6 +62,22 @@ jobs:
           NEXT_PUBLIC_SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL }}
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
 
+      - name: Generate Spanish content (same plants as above)
+        run: |
+          if [ -n "${{ github.event.inputs.plant_name }}" ]; then
+            node scripts/pipeline-es.js "${{ github.event.inputs.plant_name }}"
+          else
+            node scripts/pipeline-es.js
+            sleep 35
+            node scripts/pipeline-es.js
+            sleep 35
+            node scripts/pipeline-es.js
+            sleep 35
+            node scripts/pipeline-es.js
+          fi
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+
       - name: Create Pinterest pins (Weekly — Mondays only)
         # Only runs on the Monday cron trigger, not the daily one or manual dispatch
         if: github.event.schedule == '0 11 * * 1'
@@ -74,7 +90,7 @@ jobs:
         run: |
           git config --local user.email "pipeline@plantcareguide.com"
           git config --local user.name "Content Pipeline"
-          git add content/plants/ content/articles/ scripts/plants-queue.json public/images/plants/
+          git add content/plants/ content/articles/ content/es/ scripts/plants-queue.json public/images/plants/
           [ -f scripts/pinterest-pinned.json ] && git add scripts/pinterest-pinned.json || true
           if git diff --staged --quiet; then
             echo "No new content to commit"

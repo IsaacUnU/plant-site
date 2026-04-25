@@ -282,34 +282,50 @@ function saveArticle(plantName, content) {
 
 // --- Main ---
 
+// Find EN plants that don't yet have an ES version
+function findMissingEsPlant() {
+  const EN_DIR = path.join(__dirname, '..', 'content', 'plants');
+  if (!fs.existsSync(EN_DIR)) return null;
+  const enFiles = fs.readdirSync(EN_DIR).filter(f => f.endsWith('.md'));
+  for (const file of enFiles) {
+    const esPath = path.join(CONTENT_DIR, file);
+    if (!fs.existsSync(esPath)) {
+      // Derive plant name from slug (best effort — used only for logging)
+      const slug = file.replace(/\.md$/, '');
+      return slug;
+    }
+  }
+  return null;
+}
+
 async function main() {
   const specificPlant = process.argv[2];
-  const queue = loadQueue();
 
+  let slug;
   let plantName;
 
   if (specificPlant) {
+    slug = slugify(specificPlant);
     plantName = specificPlant;
     console.log(`[pipeline-es] Generating Spanish article for: ${plantName}`);
   } else {
-    if (queue.pending.length === 0) {
-      console.log('[pipeline-es] Queue is empty. Add more plants to plants-queue-es.json');
+    // Auto-detect: find next EN plant without ES version
+    slug = findMissingEsPlant();
+    if (!slug) {
+      console.log('[pipeline-es] All EN plants already have ES versions — nothing to do.');
       process.exit(0);
     }
-    plantName = queue.pending[0];
-    console.log(`[pipeline-es] Next in queue: ${plantName} (${queue.pending.length} remaining)`);
+    // Read commonName from the EN file for a better plant name
+    const enPath = path.join(__dirname, '..', 'content', 'plants', `${slug}.md`);
+    const enData = require('gray-matter')(fs.readFileSync(enPath, 'utf8')).data;
+    plantName = enData.commonName || slug;
+    console.log(`[pipeline-es] Auto-detected missing ES: ${slug} (${plantName})`);
   }
 
-  const slug = slugify(plantName);
   const outputPath = path.join(CONTENT_DIR, `${slug}.md`);
 
   if (fs.existsSync(outputPath)) {
     console.log(`[pipeline-es] Already exists: ${slug}.md — skipping`);
-    if (!specificPlant) {
-      queue.pending = queue.pending.filter((p) => p !== plantName);
-      if (!queue.completed.includes(plantName)) queue.completed.push(plantName);
-      saveQueue(queue);
-    }
     process.exit(0);
   }
 
@@ -321,13 +337,6 @@ async function main() {
 
   const filePath = saveArticle(plantName, content);
   console.log(`[pipeline-es] ✓ Saved: ${filePath}`);
-
-  if (!specificPlant) {
-    queue.pending = queue.pending.filter((p) => p !== plantName);
-    if (!queue.completed.includes(plantName)) queue.completed.push(plantName);
-    saveQueue(queue);
-    console.log(`[pipeline-es] Queue updated: ${queue.pending.length} plants remaining`);
-  }
 
   // Ping IndexNow for the new ES page
   await pingIndexNow(slug);
