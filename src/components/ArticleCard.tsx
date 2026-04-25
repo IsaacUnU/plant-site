@@ -6,15 +6,17 @@ import { ArticleCardData } from '@/types/article';
 interface ArticleCardProps {
   article: ArticleCardData;
   className?: string;
+  hrefBase?: string;
 }
 
-export default function ArticleCard({ article, className }: ArticleCardProps) {
+export default function ArticleCard({ article, className, hrefBase = '/articles' }: ArticleCardProps) {
+  const href = `${hrefBase}/${article.slug}`;
   return (
     <article className={`plant-card group relative bg-white rounded-3xl border border-[#E2EFE7] overflow-hidden h-full flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1${className ? ` ${className}` : ''}`}>
         
         {/* Cover Image */}
         <div className="relative h-56 w-full shrink-0 bg-[#F0FDF4] overflow-hidden">
-          <Link href={`/articles/${article.slug}`} className="block relative h-full w-full" aria-label={`Read guide: ${article.title}`}>
+          <Link href={href} className="block relative h-full w-full" aria-label={`Read guide: ${article.title}`}>
             {article.image ? (
               <Image
                 src={article.image}
@@ -55,7 +57,7 @@ export default function ArticleCard({ article, className }: ArticleCardProps) {
             </span>
           </div>
 
-          <Link href={`/articles/${article.slug}`} className="hover:no-underline">
+          <Link href={href} className="hover:no-underline">
             <h2 
               className="font-bold text-xl text-[#0F172A] group-hover:text-[#15803D] transition-colors duration-200 leading-tight mb-3 after:absolute after:inset-0 after:z-10"
               style={{ fontFamily: 'var(--font-display)' }}

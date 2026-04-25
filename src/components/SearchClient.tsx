@@ -5,10 +5,12 @@ import Link from 'next/link';
 import Fuse from 'fuse.js';
 import { Search, X, Leaf, Sun, Droplets } from 'lucide-react';
 import { PlantCardData } from '@/types/plant';
-import { DIFFICULTY_LABELS, DIFFICULTY_STYLES_CLIENT, LIGHT_LABELS, WATER_LABELS } from '@/lib/utils';
+import { DIFFICULTY_LABELS, DIFFICULTY_LABELS_ES, DIFFICULTY_STYLES_CLIENT, LIGHT_LABELS, LIGHT_LABELS_ES, WATER_LABELS, WATER_LABELS_ES } from '@/lib/utils';
 
 interface SearchClientProps {
   plants: PlantCardData[];
+  hrefBase?: string;
+  lang?: 'en' | 'es';
 }
 
 function normalizeSearchValue(value: string): string {
@@ -30,7 +32,35 @@ function matchesAllQueryTokens(plant: PlantCardData, query: string): boolean {
   return tokens.every((token) => plant.searchText.includes(token));
 }
 
-export default function SearchClient({ plants }: SearchClientProps) {
+const UI = {
+  en: {
+    placeholder: "Search plants — try 'monstera', 'easy', 'low light'...",
+    clearLabel: 'Clear search',
+    resultCount: (n: number, q: string) =>
+      `${n} plant${n !== 1 ? 's' : ''} found${q ? ` for "${q}"` : ''}`,
+    noResultsTitle: (q: string) => `No plants found for "${q}"`,
+    noResultsHint: 'Try a different name, category, or care level.',
+    quickFiltersLabel: 'Quick filters',
+    quickFilters: ['easy', 'low light', 'tropical', 'succulents', 'pet safe', 'fast growing'],
+    showMoreHint: (shown: number, total: number) =>
+      `Showing ${shown} of ${total} plants — search to filter`,
+  },
+  es: {
+    placeholder: "Busca plantas — prueba 'monstera', 'fácil', 'poca luz'...",
+    clearLabel: 'Limpiar búsqueda',
+    resultCount: (n: number, q: string) =>
+      `${n} planta${n !== 1 ? 's' : ''} encontrada${n !== 1 ? 's' : ''}${q ? ` para "${q}"` : ''}`,
+    noResultsTitle: (q: string) => `No se encontraron plantas para "${q}"`,
+    noResultsHint: 'Prueba con otro nombre, categoría o nivel de cuidado.',
+    quickFiltersLabel: 'Filtros rápidos',
+    quickFilters: ['fácil', 'poca luz', 'tropical', 'suculentas', 'segura para mascotas', 'crecimiento rápido'],
+    showMoreHint: (shown: number, total: number) =>
+      `Mostrando ${shown} de ${total} plantas — busca para filtrar`,
+  },
+} as const;
+
+export default function SearchClient({ plants, hrefBase = '/plants', lang = 'en' }: SearchClientProps) {
+  const t = UI[lang];
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<PlantCardData[]>([]);
   const [hasSearched, setHasSearched] = useState(false);
@@ -107,7 +137,7 @@ export default function SearchClient({ plants }: SearchClientProps) {
           type="search"
           value={query}
           onChange={(e) => handleSearch(e.target.value)}
-          placeholder="Search plants — try 'monstera', 'easy', 'low light'..."
+          placeholder={t.placeholder}
           className="w-full bg-white border border-[#E2EFE7] rounded-2xl pl-12 pr-12 py-4 text-[#0F172A] text-base placeholder:text-[#94a3b8] focus:outline-none focus:ring-2 focus:ring-[#15803D]/30 focus:border-[#15803D] transition-all duration-200"
           style={{ boxShadow: '0 2px 12px 0 rgba(21,128,61,0.07)' }}
           autoComplete="off"
@@ -117,7 +147,7 @@ export default function SearchClient({ plants }: SearchClientProps) {
           <button
             onClick={clearSearch}
             className="absolute right-4 top-1/2 -translate-y-1/2 p-1 rounded-full text-[#94a3b8] hover:text-[#475569] hover:bg-[#F0FDF4] transition-colors duration-200 cursor-pointer"
-            aria-label="Clear search"
+            aria-label={t.clearLabel}
           >
             <X className="w-4 h-4" />
           </button>
@@ -127,8 +157,7 @@ export default function SearchClient({ plants }: SearchClientProps) {
       {/* Result count */}
       {showResults && (
         <p className="text-sm text-[#64748b] mb-5 font-medium">
-          {results.length} plant{results.length !== 1 ? 's' : ''} found
-          {query && <span className="text-[#15803D]"> for &ldquo;{query}&rdquo;</span>}
+          {t.resultCount(results.length, query)}
         </p>
       )}
 
@@ -139,18 +168,18 @@ export default function SearchClient({ plants }: SearchClientProps) {
             <Search className="w-6 h-6 text-[#94a3b8]" />
           </div>
           <p className="text-[#0F172A] font-semibold mb-1" style={{ fontFamily: 'var(--font-display)' }}>
-            No plants found for &ldquo;{query}&rdquo;
+            {t.noResultsTitle(query)}
           </p>
-          <p className="text-sm text-[#64748b]">Try a different name, category, or care level.</p>
+          <p className="text-sm text-[#64748b]">{t.noResultsHint}</p>
         </div>
       )}
 
       {/* Default state — quick filters */}
       {showAll && (
         <div className="mb-8">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#64748b] mb-3">Quick filters</p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#64748b] mb-3">{t.quickFiltersLabel}</p>
           <div className="flex flex-wrap gap-2">
-            {['easy', 'low light', 'tropical', 'succulents', 'pet safe', 'fast growing'].map((tag) => (
+            {t.quickFilters.map((tag) => (
               <button
                 key={tag}
                 onClick={() => handleSearch(tag)}
@@ -168,10 +197,13 @@ export default function SearchClient({ plants }: SearchClientProps) {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {(showResults ? results : plants.slice(0, 12)).map((plant) => {
             const diff = DIFFICULTY_STYLES_CLIENT[plant.difficulty] ?? DIFFICULTY_STYLES_CLIENT.easy;
+            const diffLabel = lang === 'es' ? (DIFFICULTY_LABELS_ES[plant.difficulty] ?? DIFFICULTY_LABELS[plant.difficulty]) : DIFFICULTY_LABELS[plant.difficulty];
+            const lightLabel = lang === 'es' ? (LIGHT_LABELS_ES[plant.light] ?? LIGHT_LABELS[plant.light]) : LIGHT_LABELS[plant.light];
+            const waterLabel = lang === 'es' ? (WATER_LABELS_ES[plant.water] ?? WATER_LABELS[plant.water]) : WATER_LABELS[plant.water];
             return (
               <Link
                 key={plant.slug}
-                href={`/plants/${plant.slug}`}
+                href={`${hrefBase}/${plant.slug}`}
                 className="group flex items-start gap-4 bg-white rounded-2xl border border-[#E2EFE7] p-4 hover:border-[#86efac] hover:shadow-[0_4px_20px_rgba(21,128,61,0.1)] transition-all duration-200 cursor-pointer"
               >
                 {/* Icon */}
@@ -192,17 +224,17 @@ export default function SearchClient({ plants }: SearchClientProps) {
                       <p className="text-xs text-[#94a3b8] italic truncate">{plant.scientificName}</p>
                     </div>
                     <span className={`shrink-0 text-xs font-semibold px-2 py-0.5 rounded-full ${diff.bg} ${diff.text}`}>
-                      {DIFFICULTY_LABELS[plant.difficulty]}
+                      {diffLabel}
                     </span>
                   </div>
                   <div className="flex gap-3 mt-2">
                     <span className="flex items-center gap-1 text-xs text-[#64748b]">
                       <Sun className="w-3 h-3 text-[#D97706]" />
-                      {LIGHT_LABELS[plant.light]}
+                      {lightLabel}
                     </span>
                     <span className="flex items-center gap-1 text-xs text-[#64748b]">
                       <Droplets className="w-3 h-3 text-[#0ea5e9]" />
-                      {WATER_LABELS[plant.water]}
+                      {waterLabel}
                     </span>
                   </div>
                 </div>
@@ -215,7 +247,7 @@ export default function SearchClient({ plants }: SearchClientProps) {
       {/* Show more hint */}
       {showAll && plants.length > 12 && (
         <p className="text-center text-sm text-[#64748b] mt-6">
-          Showing 12 of {plants.length} plants — search to filter
+          {t.showMoreHint(12, plants.length)}
         </p>
       )}
     </div>

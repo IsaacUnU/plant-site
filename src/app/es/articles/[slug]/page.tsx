@@ -1,0 +1,240 @@
+import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import { getArticle, getAllArticleSlugs } from '@/lib/articles';
+import { getPlantCard, autoLinkPlantNames } from '@/lib/plants';
+import AdSlot from '@/components/AdSlot';
+import FeaturedPlantsCarousel from '@/components/FeaturedPlantsCarousel';
+import { Calendar, Clock } from 'lucide-react';
+import ArticleActionButtons from '@/components/ArticleActionButtons';
+import Link from 'next/link';
+import Image from 'next/image';
+import Breadcrumb from '@/components/Breadcrumb';
+import ArticleImageCarousel, { CarouselImage } from '@/components/ArticleImageCarousel';
+
+interface Props {
+  params: Promise<{ slug: string }>;
+}
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://plantcarecentral.com';
+
+export async function generateStaticParams() {
+  const slugs = getAllArticleSlugs('es');
+  return slugs.map((slug) => ({ slug }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const article = await getArticle(slug, 'es');
+  if (!article) return { title: 'Artículo no encontrado' };
+
+  return {
+    title: article.title,
+    description: article.description,
+    alternates: {
+      canonical: `${SITE_URL}/es/articles/${slug}`,
+      languages: {
+        'en': `${SITE_URL}/articles/${slug}`,
+        'es': `${SITE_URL}/es/articles/${slug}`,
+      },
+    },
+    openGraph: {
+      images: article.image ? [article.image] : [],
+    },
+  };
+}
+
+export default async function EsArticlePage({ params }: Props) {
+  const { slug } = await params;
+  const article = await getArticle(slug, 'es');
+  if (!article) notFound();
+
+  const linkedDescription = autoLinkPlantNames(article.description, '', 'es');
+  const linkedContent = autoLinkPlantNames(article.content, '', 'es');
+
+  // Load featured plants if any
+  const featuredPlants = article.featuredPlants
+    ? article.featuredPlants.map(s => getPlantCard(s, 'es')).filter((p): p is NonNullable<typeof p> => p !== null)
+    : [];
+
+  const carouselImages: CarouselImage[] = [];
+  if (article.image) {
+    carouselImages.push({ src: article.image, alt: article.imageAlt || article.title, caption: article.title });
+  }
+  featuredPlants.forEach(plant => {
+    if (plant.image) {
+      carouselImages.push({
+        src: plant.image,
+        alt: plant.imageAlt || plant.commonName,
+        caption: `${plant.commonName} — ${plant.scientificName}`,
+      });
+    }
+  });
+
+  // Auto-inject beautiful plant photos directly into the HTML prose right under their H3 headings!
+  let finalContent = linkedContent;
+  featuredPlants.forEach(plant => {
+    if (plant.image) {
+      const escapedName = plant.commonName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      // Match the h3 tag, then inject the image right after it
+      const regex = new RegExp(`(<h3[^>]*>.*?${escapedName}.*?</h3>)`, 'i');
+      finalContent = finalContent.replace(regex, `$1\n<figure class="my-8 rounded-[2rem] overflow-hidden ring-1 ring-slate-100 shadow-xl bg-white"><img src="${plant.image}" alt="${plant.commonName}" class="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-700" /><figcaption class="p-4 text-center text-sm font-medium text-slate-500 bg-white">${plant.commonName} <span class="italic font-light opacity-80">— ${plant.scientificName}</span></figcaption></figure>`);
+    }
+  });
+
+  // Split content for ad injection (after 4th paragraph)
+  const paragraphs = finalContent.split('</p>');
+  let contentBeforeAd = finalContent;
+  let contentAfterAd = '';
+
+  if (paragraphs.length > 6) {
+    contentBeforeAd = paragraphs.slice(0, 4).join('</p>') + '</p>';
+    contentAfterAd = paragraphs.slice(4).join('</p>');
+  }
+
+  return (
+    <>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <Breadcrumb
+          items={[
+            { label: 'Guías', href: '/es/articles' },
+            { label: article.title },
+          ]}
+        />
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-6">
+          {/* ── Main content ── */}
+          <div className="lg:col-span-2">
+
+            {/* Hero Carousel */}
+            <ArticleImageCarousel images={carouselImages} />
+
+            {/* Article header */}
+            <header className="mb-8">
+              <div className="flex flex-wrap items-center gap-2 mb-4">
+                <span className="text-xs font-semibold bg-[#F0FDF4] text-[#15803D] border border-[#E2EFE7] px-3 py-1 rounded-full capitalize">
+                  Guía Experta {article.type || ''}
+                </span>
+              </div>
+
+              <h1
+                className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0F172A] mb-4 leading-tight"
+                style={{ fontFamily: 'var(--font-display)' }}
+              >
+                {article.title}
+              </h1>
+
+              <div className="flex items-center gap-5 mt-5 text-sm text-[#64748B] border-b border-[#E2EFE7] pb-6">
+                <span className="flex items-center gap-1.5">
+                  <Calendar className="w-4 h-4" />
+                  {new Date(article.datePublished).toLocaleDateString('es-ES', { month: 'long', day: 'numeric', year: 'numeric' })}
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <Clock className="w-4 h-4" />
+                  {article.readingTime}
+                </span>
+                <ArticleActionButtons />
+              </div>
+            </header>
+
+            <article
+              className="prose max-w-none"
+            >
+              <div dangerouslySetInnerHTML={{ __html: contentBeforeAd }} />
+
+              {contentAfterAd && (
+                <>
+                  {process.env.NODE_ENV === 'development' && (
+                    <div className="my-12 py-8 border-y border-[#E2EFE7] bg-slate-50/50 -mx-4 px-4 sm:mx-0 sm:px-0 sm:rounded-xl">
+                      <p className="text-[10px] text-slate-400 uppercase tracking-[0.2em] font-bold mb-4 text-center">Contenido Patrocinado</p>
+                      <AdSlot slot="in-content" className="!h-32" />
+                    </div>
+                  )}
+                  <div dangerouslySetInnerHTML={{ __html: contentAfterAd }} />
+                </>
+              )}
+            </article>
+
+            {/* About This Guide */}
+            <div className="bg-white border border-[#E2EFE7] rounded-3xl p-6 mt-10">
+              <div className="h-0.5 w-12 bg-[#15803D] rounded-full mb-4" />
+              <p className="font-semibold text-[#0F172A] mb-2">PlantCare Central — Sobre esta guía</p>
+              <p className="text-sm text-[#475569] leading-relaxed">
+                PlantCare Central publica contenido estructurado de cuidado de plantas de interior basado en medidas específicas y orientación práctica. Todas las guías siguen un marco de investigación coherente que cubre requisitos de luz, calendarios de riego, composición del suelo y cuidados estacionales.
+              </p>
+            </div>
+
+            {/* Bottom Ad / Footer Slot */}
+            {process.env.NODE_ENV === 'development' && (
+              <div className="mt-12 py-6 border-t border-[#E2EFE7]">
+                <AdSlot slot="footer" className="!h-32 mb-4" />
+                <p className="text-center text-[10px] text-slate-300 uppercase tracking-widest">Publicidad</p>
+              </div>
+            )}
+          </div>
+
+          {/* ── Sidebar ── */}
+          <aside className="lg:col-span-1 space-y-6">
+            <div className="sticky top-24 space-y-6">
+              <AdSlot slot="sidebar" className="mb-6" />
+
+              {/* Social / Instagram CTA */}
+              <a
+                href="https://www.instagram.com/plant_care_central/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block rounded-3xl p-[1px] relative overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 bg-[#E2EFE7]"
+              >
+                <div className="bg-white rounded-[23px] p-6 h-full text-center flex flex-col items-center border border-white">
+                  <div className="w-12 h-12 bg-[#F0FDF4] text-[#15803D] rounded-2xl flex items-center justify-center mb-3 shadow-sm group-hover:scale-110 transition-transform duration-300">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                    </svg>
+                  </div>
+                  <h3 className="text-lg font-bold text-[#0F172A] mb-1.5" style={{ fontFamily: 'var(--font-display)' }}>
+                    Inspiración diaria
+                  </h3>
+                  <p className="text-[#475569] text-sm mb-4 leading-relaxed">
+                    Únete a nuestra comunidad en Instagram para consejos diarios, plantas raras y setups de jardín interior.
+                  </p>
+                  <span className="text-[#15803D] font-bold text-sm bg-[#F0FDF4] px-4 py-2 rounded-full group-hover:bg-[#DCFCE7] transition-colors border border-[#E2EFE7]">
+                    Seguir @plant_care_central
+                  </span>
+                </div>
+              </a>
+
+              {/* Sticky Sidebar Ad - Second slot for long content */}
+              {process.env.NODE_ENV === 'development' && (
+                <div className="pt-6">
+                  <AdSlot slot="sidebar" className="!h-[400px]" />
+                  <p className="text-[10px] text-slate-300 uppercase tracking-widest mt-2 text-center">Publicidad</p>
+                </div>
+              )}
+            </div>
+          </aside>
+        </div>
+
+        {/* ── Featured Plants Carousel ── */}
+        {featuredPlants.length > 0 && (
+          <section className="mt-16 pt-10 border-t border-[#E2EFE7] overflow-hidden">
+            <div className="flex items-end justify-between mb-8 pr-4">
+              <h2
+                className="text-2xl lg:text-3xl font-bold text-[#0F172A]"
+                style={{ fontFamily: 'var(--font-display)' }}
+              >
+                Plantas destacadas<br/>en esta guía
+              </h2>
+              <span className="text-xs text-slate-400 font-bold tracking-widest uppercase hidden sm:block mb-2">
+                Desliza para explorar →
+              </span>
+            </div>
+
+            {/* Native smooth horizontal scroll container with desktop buttons */}
+            <FeaturedPlantsCarousel plants={featuredPlants} hrefBase="/es/plants" lang="es" />
+          </section>
+        )}
+      </div>
+    </>
+  );
+}

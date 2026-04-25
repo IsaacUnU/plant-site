@@ -6,6 +6,7 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://plantcarecentral.c
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const slugs = getAllPlantSlugs();
+  const esSlugs = getAllPlantSlugs('es');
   const categories = getAllCategories();
   const articles = getAllArticles();
   const now = new Date().toISOString();
@@ -16,12 +17,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${SITE_URL}/articles`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${SITE_URL}/about`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${SITE_URL}/contact`, lastModified: now, changeFrequency: 'monthly', priority: 0.4 },
+    { url: `${SITE_URL}/es/plants`, lastModified: now, changeFrequency: 'daily', priority: 0.9 },
   ];
 
   const plantData = await Promise.all(slugs.map((slug) => getPlant(slug)));
   const plantPages: MetadataRoute.Sitemap = slugs.map((slug, i) => ({
     url: `${SITE_URL}/plants/${slug}`,
     lastModified: plantData[i]?.dateModified ?? now,
+    changeFrequency: 'monthly',
+    priority: 0.85,
+  }));
+
+  const esPlantData = await Promise.all(esSlugs.map((slug) => getPlant(slug, 'es')));
+  const esPlantPages: MetadataRoute.Sitemap = esSlugs.map((slug, i) => ({
+    url: `${SITE_URL}/es/plants/${slug}`,
+    lastModified: esPlantData[i]?.dateModified ?? now,
     changeFrequency: 'monthly',
     priority: 0.85,
   }));
@@ -40,5 +50,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.75,
   }));
 
-  return [...staticPages, ...plantPages, ...categoryPages, ...articlePages];
+  return [...staticPages, ...plantPages, ...esPlantPages, ...categoryPages, ...articlePages];
 }

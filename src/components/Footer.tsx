@@ -1,10 +1,47 @@
 import Link from 'next/link';
+import { headers } from 'next/headers';
 import { LogoMark } from './Logo';
 
 const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'PlantCare Central';
 
-export default function Footer() {
+export default async function Footer() {
+  const pathname = (await headers()).get('x-pathname') || '/';
+  const isEs = pathname.startsWith('/es');
   const year = new Date().getFullYear();
+
+  const browseLinks = isEs
+    ? [
+        { href: '/es/plants', label: 'Todas las Plantas' },
+        { href: '/es/category/tropical', label: 'Plantas Tropicales' },
+        { href: '/es/category/succulents', label: 'Suculentas' },
+        { href: '/es/category/low-light', label: 'Poca Luz' },
+      ]
+    : [
+        { href: '/plants', label: 'All Plants' },
+        { href: '/category/tropical', label: 'Tropical Plants' },
+        { href: '/category/succulents', label: 'Succulents' },
+        { href: '/category/low-light', label: 'Low Light' },
+      ];
+
+  const infoLinks = isEs
+    ? [
+        { href: '/es/about', label: 'Sobre Nosotros' },
+        { href: '/es/contact', label: 'Contacto' },
+        { href: '/privacy-policy', label: 'Política de Privacidad' },
+        { href: '/terms', label: 'Términos y Condiciones' },
+      ]
+    : [
+        { href: '/about', label: 'About Us' },
+        { href: '/contact', label: 'Contact' },
+        { href: '/privacy-policy', label: 'Privacy Policy' },
+        { href: '/terms', label: 'Terms & Conditions' },
+      ];
+
+  const logoHref = isEs ? '/es' : '/';
+  const browseHeading = isEs ? 'Explorar' : 'Browse';
+  const infoHeading = isEs ? 'Información' : 'Info';
+  const rights = isEs ? 'Todos los derechos reservados.' : 'All rights reserved.';
+
   return (
     <footer className="bg-[#0F172A] text-white mt-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
@@ -12,18 +49,20 @@ export default function Footer() {
 
           {/* Brand */}
           <div className="md:col-span-2">
-            <Link href="/" className="flex items-center mb-4 cursor-pointer group w-fit" aria-label={SITE_NAME}>
+            <Link href={logoHref} className="flex items-center mb-4 cursor-pointer group w-fit" aria-label={SITE_NAME}>
               <LogoMark size={36} className="group-hover:scale-105 transition-transform duration-200" />
               <span className="sr-only">{SITE_NAME}</span>
             </Link>
             <p className="text-sm text-slate-400 leading-relaxed max-w-xs mb-6">
-              Expert plant care guides for every level of gardener.
-              Grow with confidence — one plant at a time.
+              {isEs
+                ? 'Guías expertas de cuidado de plantas para todo nivel de jardinero.'
+                : <>Expert plant care guides for every level of gardener.<br />Grow with confidence — one plant at a time.</>
+              }
             </p>
             <div className="flex items-center gap-4">
-              <a 
-                href="https://www.instagram.com/plant_care_central/" 
-                target="_blank" 
+              <a
+                href="https://www.instagram.com/plant_care_central/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-400 hover:text-pink-500 transition-colors"
                 aria-label="Follow us on Instagram"
@@ -39,14 +78,9 @@ export default function Footer() {
 
           {/* Browse */}
           <div>
-            <h3 className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-4">Browse</h3>
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-4">{browseHeading}</h3>
             <ul className="space-y-2.5">
-              {[
-                { href: '/plants', label: 'All Plants' },
-                { href: '/category/tropical', label: 'Tropical Plants' },
-                { href: '/category/succulents', label: 'Succulents' },
-                { href: '/category/low-light', label: 'Low Light' },
-              ].map((link) => (
+              {browseLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -61,14 +95,9 @@ export default function Footer() {
 
           {/* Info */}
           <div>
-            <h3 className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-4">Info</h3>
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-4">{infoHeading}</h3>
             <ul className="space-y-2.5">
-              {[
-                { href: '/about', label: 'About Us' },
-                { href: '/contact', label: 'Contact' },
-                { href: '/privacy-policy', label: 'Privacy Policy' },
-                { href: '/terms', label: 'Terms & Conditions' },
-              ].map((link) => (
+              {infoLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -84,7 +113,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-slate-400">
-            © {year} {SITE_NAME}. All rights reserved.
+            © {year} {SITE_NAME}. {rights}
           </p>
           <p className="text-xs text-slate-400">
             Making plant parents since {year}.

@@ -3,8 +3,9 @@
 import { useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import PlantCard from './PlantCard';
+import type { Lang } from '@/lib/plants';
 
-export default function FeaturedPlantsCarousel({ plants }: { plants: any[] }) {
+export default function FeaturedPlantsCarousel({ plants, hrefBase, lang = 'en' }: { plants: any[]; hrefBase?: string; lang?: Lang }) {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const scroll = (direction: 'left' | 'right') => {
@@ -47,7 +48,7 @@ export default function FeaturedPlantsCarousel({ plants }: { plants: any[] }) {
             key={plant.slug} 
             className="min-w-[280px] sm:min-w-[320px] max-w-[320px] flex-none snap-start hover:-translate-y-2 transition-transform duration-300 relative z-0"
           >
-            <PlantCard plant={plant} />
+            <PlantCard plant={plant} hrefBase={hrefBase} lang={lang} />
           </div>
         ))}
       </div>

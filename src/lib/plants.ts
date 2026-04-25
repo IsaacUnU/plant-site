@@ -17,7 +17,12 @@ import {
 
 const VALID_SECONDARY_FUNCTIONS = new Set<string>(Object.keys(SECONDARY_FUNCTION_META));
 
-const PLANTS_DIR = path.join(process.cwd(), 'content', 'plants');
+export type Lang = 'en' | 'es';
+
+function getPlantsDir(lang: Lang = 'en'): string {
+  if (lang === 'es') return path.join(process.cwd(), 'content', 'es', 'plants');
+  return path.join(process.cwd(), 'content', 'plants');
+}
 
 function normalizeSearchValue(value: string | undefined | null): string {
   if (!value) return '';
@@ -105,20 +110,21 @@ function getDerivedSearchTerms(fm: PlantFrontmatter): string[] {
   return Array.from(terms);
 }
 
-export function getAllPlantSlugs(): string[] {
-  if (!fs.existsSync(PLANTS_DIR)) return [];
+export function getAllPlantSlugs(lang: Lang = 'en'): string[] {
+  const dir = getPlantsDir(lang);
+  if (!fs.existsSync(dir)) return [];
   return fs
-    .readdirSync(PLANTS_DIR)
+    .readdirSync(dir)
     .filter((f) => f.endsWith('.md'))
     .map((f) => f.replace(/\.md$/, ''));
 }
 
-export function getAllPlants(): PlantCardData[] {
-  const slugs = getAllPlantSlugs();
+export function getAllPlants(lang: Lang = 'en'): PlantCardData[] {
+  const slugs = getAllPlantSlugs(lang);
   return slugs
     .map((slug) => {
       try {
-        return getPlantCard(slug);
+        return getPlantCard(slug, lang);
       } catch (err) {
         console.warn(`[plants] Skipping ${slug}.md — parse error:`, err);
         return null;
@@ -128,8 +134,8 @@ export function getAllPlants(): PlantCardData[] {
     .sort((a, b) => (a.commonName ?? '').localeCompare(b.commonName ?? ''));
 }
 
-export function getPlantCard(slug: string): PlantCardData | null {
-  const filePath = path.join(PLANTS_DIR, `${slug}.md`);
+export function getPlantCard(slug: string, lang: Lang = 'en'): PlantCardData | null {
+  const filePath = path.join(getPlantsDir(lang), `${slug}.md`);
   if (!fs.existsSync(filePath)) return null;
   const { data } = matter(fs.readFileSync(filePath, 'utf8'));
   const fm = data as PlantFrontmatter;
@@ -179,8 +185,8 @@ function extractFaqs(content: string): { question: string; answer: string }[] {
   return faqs;
 }
 
-export async function getPlant(slug: string): Promise<Plant | null> {
-  const filePath = path.join(PLANTS_DIR, `${slug}.md`);
+export async function getPlant(slug: string, lang: Lang = 'en'): Promise<Plant | null> {
+  const filePath = path.join(getPlantsDir(lang), `${slug}.md`);
   if (!fs.existsSync(filePath)) return null;
   try {
     const fileContent = fs.readFileSync(filePath, 'utf8');
@@ -191,7 +197,7 @@ export async function getPlant(slug: string): Promise<Plant | null> {
     return {
       ...(data as PlantFrontmatter),
       content: processed.toString(),
-      readingTime: `${Math.ceil(stats.minutes)} min read`,
+      readingTime: `${Math.ceil(stats.minutes)} min ${lang === 'es' ? 'de lectura' : 'read'}`,
       faqs: faqs.length > 0 ? faqs : undefined,
     };
   } catch (err) {
@@ -200,9 +206,9 @@ export async function getPlant(slug: string): Promise<Plant | null> {
   }
 }
 
-export function getPlantsByCategory(category: string | undefined): PlantCardData[] {
+export function getPlantsByCategory(category: string | undefined, lang: Lang = 'en'): PlantCardData[] {
   if (!category) return [];
-  return getAllPlants().filter(
+  return getAllPlants(lang).filter(
     (p) => p.category?.toLowerCase() === category.toLowerCase()
   );
 }
@@ -221,47 +227,39 @@ export function getAllCategories(): { name: string; slug: string; count: number 
   }));
 }
 
-export function getPlantsBySecondaryFunction(slug: SecondaryFunction | string): PlantCardData[] {
-  return getAllPlants().filter((p) =>
+export function getPlantsBySecondaryFunction(slug: SecondaryFunction | string, lang: Lang = 'en'): PlantCardData[] {
+  return getAllPlants(lang).filter((p) =>
     (p.secondaryFunctions ?? []).includes(slug as SecondaryFunction)
   );
 }
 
-export function getAllSecondaryFunctions(): { slug: SecondaryFunction; name: string; emoji: string; description: string; count: number }[] {
+export function getAllSecondaryFunctions(): { slug: SecondaryFunction; name: string; nameEs?: string; emoji: string; description: string; descriptionEs?: string; count: number }[] {
   const plants = getAllPlants();
   return (Object.keys(SECONDARY_FUNCTION_META) as SecondaryFunction[]).map((slug) => {
     const count = plants.filter((p) =>
       (p.secondaryFunctions ?? []).includes(slug)
     ).length;
     const meta = SECONDARY_FUNCTION_META[slug];
-    return { slug, name: meta.name, emoji: meta.emoji, description: meta.description, count };
+    return { slug, name: meta.name, nameEs: meta.nameEs, emoji: meta.emoji, description: meta.description, descriptionEs: meta.descriptionEs, count };
   });
 }
 
-export function autoLinkPlantNames(htmlContent: string, currentSlug: string): string {
+export function autoLinkPlantNames(htmlContent: string, currentSlug: string, lang: Lang = 'en'): string {
   // 1. Get all plant names and slugs
-  const plants = getAllPlants();
-  
+  const plants = getAllPlants(lang);
+
   // Sort by name length descending so 'Snake Plant' matches before 'Snake'
   const sortedPlants = [...plants].sort((a, b) => b.commonName.length - a.commonName.length);
-  
+
   let linkedHtml = htmlContent;
+  const linkBase = lang === 'es' ? '/es/plants' : '/plants';
 
   for (const plant of sortedPlants) {
     if (plant.slug === currentSlug) continue; // Don't link to self
 
-    // Regex explanation:
-    // (?<!<a[^>]*?>.*?)  -> Negative lookbehind: not preceded by an open <a tag (simple check)
-    // \b(${name})\b      -> Match the name as a whole word
-    // (?![^<]*?<\/a>)    -> Negative lookahead: not followed by a closing </a> before another tag
-    // This is a simplified approach because proper HTML parsing with Regex is hard, 
-    // but for markdown-generated standard HTML it works well.
-    
-    // Better logic: only replace in text nodes. 
-    // Since we are server-side and want performance, we'll use a slightly safer regex:
     const escapedName = plant.commonName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const makeLink = (name: string) =>
-      `<a href="/plants/${plant.slug}" class="text-[#15803D] font-semibold hover:underline">${name}</a>`;
+      `<a href="${linkBase}/${plant.slug}" class="text-[#15803D] font-semibold hover:underline">${name}</a>`;
 
     // Pass 2: link first occurrence per H2 section in body text.
     // Each H2 is a distinct subtopic, so the first mention per section is natural

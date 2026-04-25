@@ -1,59 +1,79 @@
 import { Sun, Droplets, Wind, Thermometer, Leaf, AlertTriangle, TrendingUp } from 'lucide-react';
 import { Plant } from '@/types/plant';
+import type { Lang } from '@/lib/plants';
 import {
-  DIFFICULTY_LABELS, DIFFICULTY_COLORS,
-  LIGHT_LABELS, WATER_LABELS,
-  HUMIDITY_LABELS, TOXICITY_LABELS, TOXICITY_COLORS,
+  DIFFICULTY_LABELS, DIFFICULTY_COLORS, DIFFICULTY_LABELS_ES,
+  LIGHT_LABELS, LIGHT_LABELS_ES,
+  WATER_LABELS, WATER_LABELS_ES,
+  HUMIDITY_LABELS, HUMIDITY_LABELS_ES,
+  TOXICITY_LABELS, TOXICITY_LABELS_ES, TOXICITY_COLORS,
 } from '@/lib/utils';
+
+const GROWTH_RATE_ES: Record<string, string> = { slow: 'Lento', moderate: 'Moderado', fast: 'Rápido' };
 
 interface CareTableProps {
   plant: Plant;
+  lang?: Lang;
 }
 
-export default function CareTable({ plant }: CareTableProps) {
+export default function CareTable({ plant, lang = 'en' }: CareTableProps) {
+  const es = lang === 'es';
+  const L = {
+    title: es ? 'Resumen de Cuidados' : 'Quick Care Guide',
+    light: es ? 'Luz' : 'Light',
+    watering: es ? 'Riego' : 'Watering',
+    humidity: es ? 'Humedad' : 'Humidity',
+    temperature: es ? 'Temperatura' : 'Temperature',
+    difficulty: es ? 'Dificultad' : 'Difficulty',
+    toxicity: es ? 'Toxicidad' : 'Toxicity',
+    growth: es ? 'Crecimiento' : 'Growth Rate',
+  };
+
   const rows = [
     {
       icon: <Sun className="w-4 h-4 text-[#D97706]" />,
-      label: 'Light',
-      value: LIGHT_LABELS[plant.light],
+      label: L.light,
+      value: es ? LIGHT_LABELS_ES[plant.light] : LIGHT_LABELS[plant.light],
     },
     {
       icon: <Droplets className="w-4 h-4 text-[#0ea5e9]" />,
-      label: 'Watering',
-      value: WATER_LABELS[plant.water],
+      label: L.watering,
+      value: es ? WATER_LABELS_ES[plant.water] : WATER_LABELS[plant.water],
     },
     {
       icon: <Wind className="w-4 h-4 text-[#06b6d4]" />,
-      label: 'Humidity',
-      value: HUMIDITY_LABELS[plant.humidity],
+      label: L.humidity,
+      value: es ? HUMIDITY_LABELS_ES[plant.humidity] : HUMIDITY_LABELS[plant.humidity],
     },
     {
       icon: <Thermometer className="w-4 h-4 text-[#f97316]" />,
-      label: 'Temperature',
+      label: L.temperature,
       value: plant.temperature,
     },
     {
       icon: <Leaf className="w-4 h-4 text-[#15803D]" />,
-      label: 'Difficulty',
+      label: L.difficulty,
       value: (
         <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${DIFFICULTY_COLORS[plant.difficulty]}`}>
-          {DIFFICULTY_LABELS[plant.difficulty]}
+          {es ? DIFFICULTY_LABELS_ES[plant.difficulty] : DIFFICULTY_LABELS[plant.difficulty]}
         </span>
       ),
     },
     {
       icon: <AlertTriangle className="w-4 h-4 text-[#DC2626]" />,
-      label: 'Toxicity',
+      label: L.toxicity,
       value: (
         <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${TOXICITY_COLORS[plant.toxicity]}`}>
-          {TOXICITY_LABELS[plant.toxicity]}
+          {es ? TOXICITY_LABELS_ES[plant.toxicity] : TOXICITY_LABELS[plant.toxicity]}
         </span>
       ),
     },
     {
       icon: <TrendingUp className="w-4 h-4 text-[#8b5cf6]" />,
-      label: 'Growth Rate',
-      value: plant.growthRate ? plant.growthRate.charAt(0).toUpperCase() + plant.growthRate.slice(1) : '—',
+      label: L.growth,
+      value: plant.growthRate
+        ? es ? (GROWTH_RATE_ES[plant.growthRate] ?? plant.growthRate) : plant.growthRate.charAt(0).toUpperCase() + plant.growthRate.slice(1)
+        : '—',
     },
   ];
 
@@ -68,7 +88,7 @@ export default function CareTable({ plant }: CareTableProps) {
           className="text-white font-semibold text-sm tracking-wide"
           style={{ fontFamily: 'var(--font-display)' }}
         >
-          Quick Care Guide
+          {L.title}
         </h2>
       </div>
 

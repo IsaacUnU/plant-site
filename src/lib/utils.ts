@@ -87,6 +87,51 @@ export const TOXICITY_COLORS: Record<ToxicityLevel, string> = {
   toxic: 'bg-red-100 text-red-800',
 };
 
+export const DIFFICULTY_LABELS_ES: Record<Difficulty, string> = {
+  easy: 'Fácil',
+  medium: 'Moderado',
+  hard: 'Experto',
+};
+
+export const LIGHT_LABELS_ES: Record<Light, string> = {
+  low: 'Poca Luz',
+  indirect: 'Luz Indirecta',
+  'indirect-bright': 'Luz Brillante',
+  direct: 'Luz Directa',
+};
+
+export const WATER_LABELS_ES: Record<WaterFrequency, string> = {
+  daily: 'Diario',
+  'every-2-3-days': 'Cada 2-3 días',
+  weekly: 'Semanal',
+  'every-2-weeks': 'Cada 2 semanas',
+  monthly: 'Mensual',
+};
+
+export const HUMIDITY_LABELS_ES: Record<Humidity, string> = {
+  low: 'Baja (<40%)',
+  medium: 'Media (40-60%)',
+  high: 'Alta (>60%)',
+};
+
+export const TOXICITY_LABELS_ES: Record<ToxicityLevel, string> = {
+  'non-toxic': 'Segura para Mascotas',
+  'mildly-toxic': 'Ligeramente Tóxica',
+  'toxic-to-pets': 'Tóxica para Mascotas',
+  toxic: 'Tóxica',
+};
+
+export const CATEGORY_LABELS_ES: Record<string, string> = {
+  tropical: 'Tropical',
+  succulents: 'Suculentas',
+  cacti: 'Cactus',
+  ferns: 'Helechos',
+  'low-light': 'Poca Luz',
+  vines: 'Trepadoras',
+  palms: 'Palmeras',
+  flowering: 'Flores',
+};
+
 export const CATEGORY_DESCRIPTIONS: Record<string, string> = {
   tropical: 'Lush tropical plants that bring exotic beauty to any indoor space.',
   succulents: 'Drought-tolerant plants perfect for low-maintenance gardeners.',
@@ -96,4 +141,15 @@ export const CATEGORY_DESCRIPTIONS: Record<string, string> = {
   ferns: 'Delicate, feathery plants that love moisture and shade.',
   cacti: 'Striking desert plants requiring minimal water and care.',
   vines: 'Trailing and climbing plants ideal for shelves and hanging baskets.',
+};
+
+export const CATEGORY_DESCRIPTIONS_ES: Record<string, string> = {
+  tropical: 'Plantas tropicales exuberantes que aportan belleza exótica a cualquier espacio interior.',
+  succulents: 'Plantas resistentes a la sequía, perfectas para quienes buscan bajo mantenimiento.',
+  'low-light': 'Plantas que prosperan en ambientes con poca luz o semisombra.',
+  flowering: 'Plantas con flores coloridas que añaden vivacidad a tu hogar.',
+  herbs: 'Plantas comestibles y aromáticas para tu jardín de cocina.',
+  ferns: 'Plantas delicadas y frondosas que aman la humedad y la sombra.',
+  cacti: 'Plantas del desierto que requieren mínimo riego y cuidado.',
+  vines: 'Plantas trepadoras y colgantes ideales para estantes y maceteros colgantes.',
 };

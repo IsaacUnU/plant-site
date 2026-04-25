@@ -26,8 +26,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!article) return { title: 'Article Not Found' };
 
   return {
-    title: `${article.title} | PlantCare Guide`,
+    title: article.title,
     description: article.description,
+    alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://plantcarecentral.com'}/articles/${slug}`,
+    },
     openGraph: {
       images: article.image ? [article.image] : [],
     },

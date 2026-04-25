@@ -10,7 +10,7 @@ interface NavLink {
   label: string;
 }
 
-export default function MobileMenu({ navLinks }: { navLinks: NavLink[] }) {
+export default function MobileMenu({ navLinks, searchHref = '/search' }: { navLinks: NavLink[]; searchHref?: string }) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
@@ -48,7 +48,7 @@ export default function MobileMenu({ navLinks }: { navLinks: NavLink[] }) {
               </Link>
             ))}
             <Link
-              href="/search"
+              href={searchHref}
               className="flex items-center gap-2.5 px-4 py-3 rounded-xl text-sm font-medium text-[#475569] hover:text-[#15803D] hover:bg-[#F0FDF4] transition-all duration-200 cursor-pointer"
             >
               <Search className="w-4 h-4" />

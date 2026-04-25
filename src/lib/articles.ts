@@ -6,7 +6,12 @@ import remarkHtml from 'remark-html';
 import readingTime from 'reading-time';
 import { Article, ArticleCardData, ArticleFrontmatter } from '@/types/article';
 
-const ARTICLES_DIR = path.join(process.cwd(), 'content', 'articles');
+import type { Lang } from '@/lib/plants';
+
+function getArticlesDir(lang: Lang = 'en'): string {
+  if (lang === 'es') return path.join(process.cwd(), 'content', 'es', 'articles');
+  return path.join(process.cwd(), 'content', 'articles');
+}
 
 function extractFaqs(content: string): { question: string; answer: string }[] {
   const faqs: { question: string; answer: string }[] = [];
@@ -26,20 +31,21 @@ function extractFaqs(content: string): { question: string; answer: string }[] {
   return faqs;
 }
 
-export function getAllArticleSlugs(): string[] {
-  if (!fs.existsSync(ARTICLES_DIR)) return [];
+export function getAllArticleSlugs(lang: Lang = 'en'): string[] {
+  const dir = getArticlesDir(lang);
+  if (!fs.existsSync(dir)) return [];
   return fs
-    .readdirSync(ARTICLES_DIR)
+    .readdirSync(dir)
     .filter((f) => f.endsWith('.md'))
     .map((f) => f.replace(/\.md$/, ''));
 }
 
-export function getAllArticles(): ArticleCardData[] {
-  const slugs = getAllArticleSlugs();
+export function getAllArticles(lang: Lang = 'en'): ArticleCardData[] {
+  const slugs = getAllArticleSlugs(lang);
   return slugs
     .map((slug) => {
       try {
-        return getArticleCard(slug);
+        return getArticleCard(slug, lang);
       } catch (err) {
         console.warn(`[articles] Skipping ${slug}.md — parse error:`, err);
         return null;
@@ -49,8 +55,8 @@ export function getAllArticles(): ArticleCardData[] {
     .sort((a, b) => new Date(b.datePublished).getTime() - new Date(a.datePublished).getTime());
 }
 
-export function getArticleCard(slug: string): ArticleCardData | null {
-  const filePath = path.join(ARTICLES_DIR, `${slug}.md`);
+export function getArticleCard(slug: string, lang: Lang = 'en'): ArticleCardData | null {
+  const filePath = path.join(getArticlesDir(lang), `${slug}.md`);
   if (!fs.existsSync(filePath)) return null;
   const { data } = matter(fs.readFileSync(filePath, 'utf8'));
   const fm = data as ArticleFrontmatter;
@@ -70,8 +76,8 @@ export function getArticleCard(slug: string): ArticleCardData | null {
   };
 }
 
-export async function getArticle(slug: string): Promise<Article | null> {
-  const filePath = path.join(ARTICLES_DIR, `${slug}.md`);
+export async function getArticle(slug: string, lang: Lang = 'en'): Promise<Article | null> {
+  const filePath = path.join(getArticlesDir(lang), `${slug}.md`);
   if (!fs.existsSync(filePath)) return null;
   try {
     const fileContent = fs.readFileSync(filePath, 'utf8');
