@@ -17,8 +17,10 @@ const matter = require('gray-matter');
 
 const QUEUE_FILE = path.join(__dirname, 'plants-queue-es.json');
 const CONTENT_DIR = path.join(__dirname, '..', 'content', 'es', 'plants');
+const OPENROUTER_API_URL = 'https://openrouter.ai/api/v1/chat/completions';
 const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
-const MODEL = 'llama-3.3-70b-versatile';
+const OR_MODEL = 'openai/gpt-oss-20b:free';
+const GROQ_MODEL = 'llama-3.3-70b-versatile';
 
 // --- Helpers ---
 
@@ -181,33 +183,58 @@ Guía paso a paso numerada. Mejor época del año y tiempo esperado de enraizami
 `;
 }
 
-async function callGroq(prompt) {
-  const apiKey = process.env.GROQ_API_KEY;
-  if (!apiKey || apiKey === 'your_groq_api_key_here') {
-    throw new Error('GROQ_API_KEY is not set. Add it to .env.local or as an environment variable.');
-  }
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
-  const response = await fetch(GROQ_API_URL, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${apiKey}`,
-    },
-    body: JSON.stringify({
-      model: MODEL,
-      messages: [{ role: 'user', content: prompt }],
-      temperature: 0.7,
-      max_tokens: 2500,
-    }),
-  });
+function parseRetryAfter(errText) {
+  const match = errText.match(/try again in ([\d.]+)s/i);
+  return match ? Math.ceil(parseFloat(match[1]) * 1000) + 2000 : 20000;
+}
 
-  if (!response.ok) {
+async function callGroq(prompt, retries = 4) {
+  const orKey = process.env.OPENROUTER_API_KEY;
+  const groqKey = process.env.GROQ_API_KEY;
+  const useOR = orKey && orKey.startsWith('sk-or-');
+
+  const apiUrl = useOR ? OPENROUTER_API_URL : GROQ_API_URL;
+  const model  = useOR ? OR_MODEL : GROQ_MODEL;
+  const apiKey = useOR ? orKey : groqKey;
+
+  if (!apiKey) throw new Error('Set OPENROUTER_API_KEY or GROQ_API_KEY in environment.');
+
+  const headers = {
+    'Content-Type': 'application/json',
+    'Authorization': `Bearer ${apiKey}`,
+    ...(useOR && { 'HTTP-Referer': 'https://plantcarecentral.com', 'X-Title': 'PlantCare Central' }),
+  };
+
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    const response = await fetch(apiUrl, {
+      method: 'POST',
+      headers,
+      body: JSON.stringify({
+        model,
+        messages: [{ role: 'user', content: prompt }],
+        temperature: 0.7,
+        max_tokens: 2500,
+      }),
+    });
+
+    if (response.ok) {
+      const data = await response.json();
+      return data.choices[0].message.content;
+    }
+
     const err = await response.text();
-    throw new Error(`Groq API error ${response.status}: ${err}`);
+    if (response.status === 429 && attempt < retries) {
+      const waitMs = parseRetryAfter(err);
+      console.log(`[pipeline-es] ⏳ Rate limit — waiting ${(waitMs/1000).toFixed(0)}s (attempt ${attempt}/${retries})...`);
+      await sleep(waitMs);
+      continue;
+    }
+    throw new Error(`API error ${response.status}: ${err.slice(0, 200)}`);
   }
-
-  const data = await response.json();
-  return data.choices[0].message.content;
 }
 
 function validateContent(content) {
