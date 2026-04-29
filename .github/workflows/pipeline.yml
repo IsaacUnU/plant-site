@@ -65,16 +65,14 @@ jobs:
       - name: Generate Spanish content (same plants as above)
         continue-on-error: true
         run: |
+          run_es() { node scripts/pipeline-es.js "$@" || echo "[pipeline-es] attempt failed, continuing..."; }
           if [ -n "${{ github.event.inputs.plant_name }}" ]; then
-            node scripts/pipeline-es.js "${{ github.event.inputs.plant_name }}"
+            run_es "${{ github.event.inputs.plant_name }}"
           else
-            node scripts/pipeline-es.js
-            sleep 35
-            node scripts/pipeline-es.js
-            sleep 35
-            node scripts/pipeline-es.js
-            sleep 35
-            node scripts/pipeline-es.js
+            run_es && sleep 65
+            run_es && sleep 65
+            run_es && sleep 65
+            run_es
           fi
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}

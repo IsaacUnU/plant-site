@@ -1,7 +1,7 @@
 ---
 title: Alocasia zebrina Complete Care Guide
 slug: alocasia-zebrina
-commonName: Zebra Plant
+commonName: Alocasia Zebrina
 scientificName: Alocasia zebrina
 category: tropical
 tags:

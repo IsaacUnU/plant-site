@@ -1,7 +1,7 @@
 ---
 title: Haworthia fasciata Complete Care Guide
 slug: haworthia-fasciata
-commonName: Zebra Plant
+commonName: Haworthia Fasciata
 scientificName: Haworthia fasciata
 category: succulents
 tags:

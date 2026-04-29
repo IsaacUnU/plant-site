@@ -1,7 +1,7 @@
 ---
 title: Calathea zebrina Complete Care Guide
 slug: calathea-zebrina
-commonName: Zebra Plant
+commonName: Calathea Zebrina
 scientificName: Calathea zebrina
 category: tropical
 tags:

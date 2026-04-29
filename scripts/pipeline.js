@@ -306,6 +306,24 @@ async function main() {
   const slug = slugify(plantName);
   const outputPath = path.join(CONTENT_DIR, `${slug}.md`);
 
+  // Guard: check for duplicate commonName across all existing EN plants
+  const allFiles = fs.existsSync(CONTENT_DIR) ? fs.readdirSync(CONTENT_DIR).filter(f => f.endsWith('.md')) : [];
+  for (const file of allFiles) {
+    if (file === `${slug}.md`) continue; // same file — handled below
+    try {
+      const existing = matter(fs.readFileSync(path.join(CONTENT_DIR, file), 'utf8')).data;
+      if (existing.commonName && existing.commonName.toLowerCase() === plantName.toLowerCase()) {
+        console.log(`[pipeline] Duplicate: "${plantName}" already exists as ${file} (commonName match) — skipping`);
+        if (!specificPlant) {
+          queue.pending = queue.pending.filter(p => p !== plantName);
+          if (!queue.completed.includes(plantName)) queue.completed.push(plantName);
+          saveQueue(queue);
+        }
+        process.exit(0);
+      }
+    } catch { /* ignore parse errors */ }
+  }
+
   if (fs.existsSync(outputPath)) {
     console.log(`[pipeline] Already exists: ${slug}.md — skipping`);
     if (!specificPlant) {

@@ -296,14 +296,35 @@ function sanitizeSecondaryFunctions(content) {
   return matter.stringify(body, fm);
 }
 
-function saveArticle(plantName, content) {
+function copyImagesFromEn(slug, esContent) {
+  // Copy image fields from the EN plant file so ES has the same real photo
+  const enPath = path.join(__dirname, '..', 'content', 'plants', `${slug}.md`);
+  if (!fs.existsSync(enPath)) return esContent;
+  const enFm = matter(fs.readFileSync(enPath, 'utf8')).data;
+  if (!enFm.image) return esContent;
+
+  const { data: fm, content: body } = matter(esContent);
+  fm.image = enFm.image;
+  fm.imageAlt = enFm.imageAlt ?? fm.imageAlt;
+  fm.imageCredit = enFm.imageCredit ?? fm.imageCredit;
+  fm.imageCreditUrl = enFm.imageCreditUrl ?? fm.imageCreditUrl;
+  return matter.stringify(body, fm);
+}
+
+function saveArticle(plantName, content, forceSlug) {
   if (!fs.existsSync(CONTENT_DIR)) {
     fs.mkdirSync(CONTENT_DIR, { recursive: true });
   }
-  const slug = slugify(plantName);
+  // Always use forceSlug when provided (EN filename slug) to prevent ghost files
+  const slug = forceSlug || slugify(plantName);
   const filePath = path.join(CONTENT_DIR, `${slug}.md`);
   const sanitized = sanitizeSecondaryFunctions(content);
-  fs.writeFileSync(filePath, sanitized.trim() + '\n');
+  // Overwrite the generated slug in frontmatter to match EN
+  const { data: fm, content: body } = matter(sanitized);
+  fm.slug = slug;
+  const fixed = matter.stringify(body, fm);
+  const withImages = copyImagesFromEn(slug, fixed);
+  fs.writeFileSync(filePath, withImages.trim() + '\n');
   return filePath;
 }
 
@@ -362,7 +383,7 @@ async function main() {
 
   validateContent(content);
 
-  const filePath = saveArticle(plantName, content);
+  const filePath = saveArticle(plantName, content, slug);
   console.log(`[pipeline-es] ✓ Saved: ${filePath}`);
 
   // Ping IndexNow for the new ES page
