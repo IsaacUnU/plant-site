@@ -2,7 +2,7 @@
 title: Guía Completa de Cuidado de Chinese Hood
 slug: chinese-hood
 commonName: Chinese Hood
-scientificName: Bauhinia blakeana
+scientificName: Acanthocarpus chinensis
 category: tropical
 tags:
   - planta de interior
@@ -18,111 +18,133 @@ temperature: 18-27°C (65-80°F)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  Esta elegante planta de hoja en forma de corazón aporta un toque exótico a
-  cualquier espacio, y su follaje grueso ayuda a purificar el aire.
-datePublished: 2026-04-28T00:00:00.000Z
-dateModified: 2026-04-28T00:00:00.000Z
+  Una elegante planta con hojas verdes brillantes que mejora la calidad del aire
+  y aporta un toque exótico a cualquier espacio interior. Su bajo requerimiento
+  de luz y riego la convierten en la opción perfecta para principiantes.
+datePublished: 2026-04-29T00:00:00.000Z
+dateModified: 2026-04-29T00:00:00.000Z
 ---
 
-## Resumen Rápido de Cuidados  
-Para mantener al Chinese Hood saludable, colócalo en una ventana con luz indirecta brillante, riega una vez a la semana cuando el sustrato esté casi seco, y mantén la temperatura entre 18 °C y 27 °C. Su nivel de dificultad es bajo, lo que lo convierte en una opción ideal para principiantes.
+## Resumen Rápido de Cuidados
 
-## Descripción General  
-El Chinese Hood, también conocido como Bauhinia blakeana, es una especie endémica de la región del río Yangtze en China. Originalmente crece en bosques húmedos donde la luz se filtra a través de la copa de los árboles, lo que explica su preferencia por la luz indirecta. Su distintivo follaje en forma de corazón, de color verde oscuro y con bordes ligeramente ondulados, ofrece una textura única que añade profundidad visual a cualquier interior. Su popularidad surge de su combinación de estética, facilidad de cuidado y capacidad para purificar el aire, lo que lo convierte en un favorito entre decoradores y amantes de las plantas.
+El **Chinese Hood** se adapta a la mayoría de los ambientes interiores gracias a su tolerancia a la luz indirecta y su necesidad de riego semanal. Mantén la temperatura entre **18 y 27 °C** y evita corrientes de aire frío. Su nivel de dificultad es **fácil**, lo que la hace ideal para quienes están empezando en el mundo de las plantas de interior.
 
-## Ventajas y Desventajas  
+## Descripción General
 
-**Ventajas:**  
-- Follaje atractivo y denso que mejora la decoración interior.  
-- Baja exigencia de luz, tolera sombra parcial.  
-- Riego semanal, reduciendo la frecuencia de mantenimiento.  
-- No tóxico para mascotas, seguro para hogares con animales.  
+Originaria de los trópicos asiáticos, la *Acanthocarpus chinensis* es una planta que, a diferencia de otras con nombres similares, presenta un follaje compacto y brillante. Sus hojas son ovaladas, de color verde intenso con una ligera translúcida, y se agrupan en rosetas que le dan una apariencia casi de mini arbusto. Se suele cultivar como planta de interior debido a su tolerancia a la luz indirecta y a su capacidad de prosperar en macetas pequeñas.
 
-**Desventajas:**  
-- Requiere un ambiente con humedad moderada; puede secar en climas secos.  
-- Sus semillas son difíciles de germinar y la propagación por esquejes puede ser lenta.
+En los últimos años, el Chinese Hood ha ganado popularidad en los hogares y oficinas por su estética minimalista y su habilidad para purificar el aire. Además, su exigencia de cuidados moderada la convierte en una opción atractiva para quienes buscan una planta que no requiera una atención constante.
 
-## Requisitos de Luz  
-El Chinese Hood prospera con **luz indirecta brillante**; idealmente, colócalo frente a una ventana norte o este que reciba 400–600 lux (o 20–30 foot‑candles). Mantén una distancia de 30–45 cm entre la planta y la ventana para evitar quemaduras. Si las hojas se vuelven amarillas o presentan manchas marrones, es señal de exceso de luz; si se vuelven pálidas y se alargan, indica falta de luz.
+## Ventajas y Desventajas
 
-## Riego  
-1. **Comprobar la humedad:** inserta un dedo a 2–3 cm de profundidad; si el suelo está seco, es hora de regar.  
-2. **Frecuencia por estación:**  
-   - Primavera y verano: riega cada 7–10 días.  
-   - Otoño e invierno: riega cada 10–14 días.  
-3. **Cantidad:** aplica agua hasta que el drenaje deje salir 0,5 cm de agua; evita dejar el recipiente sin drenaje.  
-4. **Síntomas de exceso:** hojas marrones y caídas; **síntomas de falta:** hojas amarillas y flácidas. Ajusta la frecuencia según la humedad ambiental.
+**Ventajas:**
+- Fácil de cuidar, ideal para principiantes.
+- Purifica el aire de manera efectiva.
+- Requiere poca luz, puede crecer en habitaciones con luz filtrada.
+- Sus hojas brillantes añaden un toque de elegancia a cualquier espacio.
 
-## Sustrato y Maceta  
-- **Sustrato recomendado:** mezcla 60 % de tierra de jardín, 30 % de perlita y 10 % de turba, garantizando buen drenaje y aireación.  
-- **Maceta:** elige una de terracota o plástico con agujeros de drenaje; tamaño 20–25 cm de diámetro.  
-- **Trasplante:** cada 2 años o cuando las raíces llenen el contenedor; hazlo en primavera para minimizar estrés.
+**Desventajas:**
+- La humedad debe mantenerse moderada; la planta tiende a desarrollar manchas si el aire es demasiado seco.
+- No tolera bien los cambios bruscos de temperatura.
 
-## Fertilización  
-- **Frecuencia:** fertiliza cada 4 semanas durante la temporada de crecimiento (marzo–octubre).  
-- **Tipo de fertilizante:** solución acuosa 1 ml/L de abono equilibrado (10 % NPK).  
-- **Método:** aplica al principio de la mañana para evitar quemaduras. Evita fertilizar en invierno cuando el crecimiento se ralentiza.
+## Requisitos de Luz
 
-## Humedad y Temperatura  
-- **Temperatura ideal:** 18 °C a 27 °C; evita temperaturas por debajo de 15 °C o superiores a 30 °C.  
-- **Humedad:** 40–60 %.  
-  1. **Humidificador** portátil en la habitación.  
-  2. **Bandeja de guijarros** con agua bajo la maceta.  
-  3. **Rociar** las hojas 2–3 veces por semana.  
-  4. **Ventilación parcial** para evitar moho.
+El **Chinese Hood** prefiere luz indirecta brillante. Se recomienda ubicarla frente a una ventana orientada al norte o al este, garantizando que no reciba luz solar directa durante más de 30 minutos al día. Si la planta se coloca demasiado cerca de una ventana soleada, las hojas pueden presentar manchas amarillas o quemaduras. A la inversa, si la luz es insuficiente, las hojas perderán su brillo y la planta disminuirá su tasa de crecimiento.
 
-## Problemas Comunes  
+Para comprobar la adecuación de la luz, observa la densidad del follaje: hojas opacas y transparentes indican falta de luz, mientras que hojas verdes y brillantes sugieren una exposición adecuada.
 
-### Manchas amarillas en las hojas  
-- **Síntoma:** áreas amarillas con bordes marrones.  
-- **Causa:** exceso de agua o falta de nutrientes.  
-- **Solución:** reduce el riego, aplica fertilizante equilibrado.
+## Riego
 
-### Puntas marrones y secas  
-- **Síntoma:** extremos de hoja secos.  
-- **Causa:** baja humedad.  
-- **Solución:** aumenta la humedad con humidificador o riego más frecuente.
+**Paso 1:** Antes de regar, verifica la humedad del suelo con el dedo a 2 cm de profundidad. Si el sustrato se siente húmedo, espera 7 días antes de volver a regar.
 
-### Deformación de hojas  
-- **Síntoma:** hojas torcidas o con doble filo.  
-- **Causa:** falta de luz.  
-- **Solución:** mueve la planta a un lugar con más luz indirecta.
+**Paso 2:** Riega con agua a temperatura ambiente (20 °C) hasta que el exceso salga por las agujetas de drenaje. Evita dejar agua en la bandeja.
 
-### Brotes secos y apretados  
-- **Síntoma:** nuevos brotes que se secan rápidamente.  
-- **Causa:** riego insuficiente o sol directo.  
-- **Solución:** ajusta la frecuencia de riego y protege del sol directo.
+**Paso 3:** Durante la temporada de crecimiento (primavera y verano), riega semanalmente. En otoño e invierno, reduce la frecuencia a cada 10–14 días.
 
-### Insectos (cochinillas)  
-- **Síntoma:** pequeñas manchas negras o presencia de cochinillas.  
-- **Causa:** infestación leve.  
-- **Solución:** limpia con alcohol isopropílico 70 % y repite cada 5 días.
+**Signos de exceso de riego:** Hojas amarillas, raíz podrida, olor a moho en el suelo.
 
-## Propagación  
-1. **Selecciona** un brote sano de 5–8 cm de largo.  
-2. **Corta** con tijeras esterilizadas a nivel justo bajo una hoja.  
-3. **Seca** el esqueje durante 24 h para formar un callo.  
-4. **Planta** en sustrato húmedo y cubre con una bolsa de plástico transparente.  
-5. **Ventila** parcialmente para evitar exceso de humedad.  
-6. **Tiempo de enraizamiento:** 6–8 semanas a 22 °C.  
-7. **Trasplanta** al maceta definitiva cuando las raíces llenen el recipiente.
+**Signos de insuficiente riego:** Hojas marchitas, bordes fruncidos, rápido secado del sustrato.
 
-## Veredicto Experto  
-El Chinese Hood es una de las mejores opciones para quienes buscan una planta de interior elegante y de bajo mantenimiento. Su tolerancia a la luz indirecta y su riego semanal lo hacen perfecto para oficinas y hogares con horarios ocupados. **Puntuación para principiantes:** 4/5.
+## Sustrato y Maceta
 
-## Preguntas Frecuentes  
+La mezcla recomendada es 60 % de tierra para macetas bien drenada, 30 % de perlita y 10 % de turba. Esta proporción asegura un drenaje rápido y aireación adecuada para las raíces.
 
-**¿Cuánto tiempo tarda el Chinese Hood en crecer?**  
-El crecimiento es moderado; suele aumentar 5–10 cm cada mes cuando recibe luz adecuada y fertilización regular.
+Selecciona una maceta de barro o cerámica porosa con agujeros de drenaje. Cambia la maceta cuando la planta haya sobrepasado el 80 % del volumen de la maceta actual, lo que suele ocurrir cada 12–18 meses.
 
-**¿Puedo colocar el Chinese Hood cerca de la ventana de la cocina?**  
-Sí, siempre que la luz sea indirecta y la temperatura no supere los 27 °C; evita la radiación directa del horno.
+## Fertilización
 
-**¿Qué pasa si dejo la planta en un lugar con poca luz?**  
-Se producirá un crecimiento lento, hojas más delgadas y mayor riesgo de manchas amarillas; la planta también puede volverse más susceptible a plagas.
+Aplica un fertilizante líquido equilibrado (10-10-10) diluido a la mitad de su concentración habitual cada 4 semanas durante la primavera y el verano. En otoño e invierno, reduce la fertilización a una vez cada 6 semanas o deténla por completo, ya que la planta entra en un periodo de reposo vegetativo.
 
-**¿Es necesario cambiar el sustrato cada año?**  
-No, el sustrato se puede renovar cada 2 años o cuando notes una compactación que impida el drenaje.
+## Humedad y Temperatura
 
-**¿Se puede alimentar al Chinese Hood con abono líquido de hoja verde?**  
-Sí, pero solo en cantidades mínimas (1 ml/L) y durante la temporada de crecimiento; evita el uso de fertilizantes con alto contenido de nitrógeno en invierno.
+- **Temperatura:** 18–27 °C (65–80 °F). Evita fluctuaciones superiores a 5 °C entre día y noche.
+- **Humedad:** 40–60 %. Puedes usar un higrómetro para monitorear el nivel.
+
+**Consejos para mantener la humedad:**
+1. Coloca la maceta sobre una bandeja con guijarros y agua, sin que la base de la maceta toque el agua.
+2. Rocía las hojas con agua destilada o filtrada cada 3–4 días.
+3. Si el ambiente es muy seco, utiliza un humidificador en la habitación.
+
+## Problemas Comunes
+
+### Manchas amarillas en las hojas
+
+**Síntoma:** Pequeñas manchas amarillas extendidas a lo largo de la hoja.  
+**Causa:** Exceso de riego o falta de nutrientes.  
+**Solución:** Reduce la frecuencia de riego y aplica fertilizante equilibrado en la próxima temporada de crecimiento.
+
+### Puntos negros en la base de las hojas
+
+**Síntoma:** Pequeños puntos negros que se expanden.  
+**Causa:** Hongos del suelo debido a agua estancada.  
+**Solución:** Cambia la mezcla de sustrato con mayor drenaje y retira la maceta de la bandeja de agua.
+
+### Hojas fruncidas
+
+**Síntoma:** Hojas que se pliegan hacia abajo.  
+**Causa:** Falta de agua o baja humedad.  
+**Solución:** Riega más seguido y aumenta la humedad ambiental.
+
+### Pérdida de follaje
+
+**Síntoma:** Reducción visible del número de hojas.  
+**Causa:** Cambio brusco de temperatura o exceso de luz solar directa.  
+**Solución:** Mueve la planta a una ubicación con luz indirecta y estabiliza la temperatura.
+
+### Raíces deterioradas
+
+**Síntoma:** Olor desagradable del sustrato y raíces blandas.  
+**Causa:** Enferrujamiento por exceso de agua.  
+**Solución:** Cambia el sustrato, corta las raíces afectadas y revisa la drenaje de la maceta.
+
+## Propagación
+
+1. **Selecciona** una rama sana con al menos 3 hojas.  
+2. **Corta** con un cuchillo esterilizado a 45° justo debajo de un nodo.  
+3. **Deja secar** el esqueje por 24 h para formar una capa de callo.  
+4. **Planta** el esqueje en un sustrato ligero (mezcla 70 % perlita, 30 % turba).  
+5. **Mantén** la humedad con una cubierta de plástico transparente.  
+6. **Regula** la luz indirecta brillante y evita riegos excesivos.  
+7. **Tiempo de enraizamiento:** 6–8 semanas.  
+La mejor época para propagar es la primavera, cuando la planta está en fase activa de crecimiento.
+
+## Veredicto Experto
+
+Como especialista en cuidado de plantas de interior, considero que el **Chinese Hood** es una opción sobresaliente para quienes buscan una planta estética y de bajo mantenimiento. Su resistencia a la luz indirecta y su requerimiento moderado de riego lo convierten en una opción segura para principiantes. **Calificación para principiantes:** 5/5.
+
+## Preguntas Frecuentes
+
+**¿Cuánto tiempo tarda en crecer el Chinese Hood?**  
+Con luz indirecta brillante y riego semanal, el Chinese Hood crece aproximadamente 2–3 cm por mes durante la temporada de crecimiento.
+
+**¿Puedo usar agua de lluvia para regar mi Chinese Hood?**  
+Sí, el agua de lluvia es ideal siempre y cuando no contenga cloro ni sales excesivas.
+
+**¿Cuándo es el mejor momento para trasplantar el Chinese Hood?**  
+El trasplante se recomienda en primavera cuando la planta muestra nuevas brotes; evita hacerlo en invierno.
+
+**¿Necesito fertilizar mi Chinese Hood durante el invierno?**  
+No es necesario fertilizar en invierno; la planta entra en un periodo de reposo y reduce su consumo de nutrientes.
+
+**¿Qué hago si las hojas de mi Chinese Hood se vuelven amarillas?**  
+Verifica el riego y la humedad; las hojas amarillas suelen indicar exceso de agua o falta de nutrientes. Ajusta el riego y aplica fertilizante equilibrado en la próxima temporada de crecimiento.

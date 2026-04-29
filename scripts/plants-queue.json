@@ -1,9 +1,5 @@
 {
   "pending": [
-    "Syngonium podophyllum",
-    "Syngonium pink",
-    "Calathea lancifolia",
-    "Calathea zebrina",
     "Calathea roseopicta",
     "Stromanthe sanguinea",
     "Ctenanthe setosa",
@@ -213,6 +209,10 @@
     "Alocasia zebrina",
     "Alocasia dragon scale",
     "Alocasia silver dragon",
-    "Alocasia cucullata"
+    "Alocasia cucullata",
+    "Syngonium podophyllum",
+    "Syngonium pink",
+    "Calathea lancifolia",
+    "Calathea zebrina"
   ]
 }
