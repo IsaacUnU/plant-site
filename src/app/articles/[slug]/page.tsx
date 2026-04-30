@@ -10,6 +10,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Breadcrumb from '@/components/Breadcrumb';
 import ArticleImageCarousel, { CarouselImage } from '@/components/ArticleImageCarousel';
+import { articleContentSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
+import { buildAlternates, getSiteUrl } from '@/lib/seo';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -28,9 +30,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: article.title,
     description: article.description,
-    alternates: {
-      canonical: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://plantcarecentral.com'}/articles/${slug}`,
-    },
+    alternates: buildAlternates(`/articles/${slug}`, {
+      en: `/articles/${slug}`,
+      es: `/es/articles/${slug}`,
+    }),
     openGraph: {
       images: article.image ? [article.image] : [],
     },
@@ -41,6 +44,7 @@ export default async function ArticlePage({ params }: Props) {
   const { slug } = await params;
   const article = await getArticle(slug);
   if (!article) notFound();
+  const siteUrl = getSiteUrl();
 
   const linkedDescription = autoLinkPlantNames(article.description, '');
   const linkedContent = autoLinkPlantNames(article.content, '');
@@ -83,6 +87,19 @@ export default async function ArticlePage({ params }: Props) {
   if (paragraphs.length > 6) {
     contentBeforeAd = paragraphs.slice(0, 4).join('</p>') + '</p>';
     contentAfterAd = paragraphs.slice(4).join('</p>');
+  }
+
+  const jsonLd: any[] = [
+    articleContentSchema(article, `/articles/${article.slug}`),
+    breadcrumbSchema([
+      { name: 'Home', url: siteUrl },
+      { name: 'Guides', url: `${siteUrl}/articles` },
+      { name: article.title, url: `${siteUrl}/articles/${article.slug}` },
+    ]),
+  ];
+
+  if (article.faqs) {
+    jsonLd.push(faqSchema(article.faqs));
   }
 
   return (
@@ -228,6 +245,14 @@ export default async function ArticlePage({ params }: Props) {
             <FeaturedPlantsCarousel plants={featuredPlants} />
           </section>
         )}
+
+        {jsonLd.map((schema, index) => (
+          <script
+            key={`ldjson-article-${index}`}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          />
+        ))}
       </div>
     </>
   );

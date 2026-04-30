@@ -1,9 +1,14 @@
 import type { Metadata } from 'next';
 import ContactForm from './ContactForm';
+import { buildAlternates } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Contact Us',
   description: 'Get in touch with the PlantCare Central team.',
+  alternates: buildAlternates('/contact', {
+    en: '/contact',
+    es: '/es/contact',
+  }),
 };
 
 export default function ContactPage() {

@@ -3,9 +3,14 @@ import Link from 'next/link';
 import { getAllSecondaryFunctions } from '@/lib/plants';
 import Breadcrumb from '@/components/Breadcrumb';
 import AdSlot from '@/components/AdSlot';
+import { buildAlternates } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Plant Uses & Benefits',
+  alternates: buildAlternates('/uses', {
+    en: '/uses',
+    es: '/es/uses',
+  }),
   description:
     'Discover houseplants by their secondary benefits — from purifying the air and boosting humidity to repelling insects and healing minor ailments.',
 };

@@ -10,6 +10,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Breadcrumb from '@/components/Breadcrumb';
 import ArticleImageCarousel, { CarouselImage } from '@/components/ArticleImageCarousel';
+import { articleContentSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
+import { getSiteUrl } from '@/lib/seo';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -47,6 +49,7 @@ export default async function EsArticlePage({ params }: Props) {
   const { slug } = await params;
   const article = await getArticle(slug, 'es');
   if (!article) notFound();
+  const siteUrl = getSiteUrl();
 
   const linkedDescription = autoLinkPlantNames(article.description, '', 'es');
   const linkedContent = autoLinkPlantNames(article.content, '', 'es');
@@ -89,6 +92,19 @@ export default async function EsArticlePage({ params }: Props) {
   if (paragraphs.length > 6) {
     contentBeforeAd = paragraphs.slice(0, 4).join('</p>') + '</p>';
     contentAfterAd = paragraphs.slice(4).join('</p>');
+  }
+
+  const jsonLd: any[] = [
+    articleContentSchema(article, `/es/articles/${article.slug}`),
+    breadcrumbSchema([
+      { name: 'Inicio', url: `${siteUrl}/es` },
+      { name: 'Guias', url: `${siteUrl}/es/articles` },
+      { name: article.title, url: `${siteUrl}/es/articles/${article.slug}` },
+    ]),
+  ];
+
+  if (article.faqs) {
+    jsonLd.push(faqSchema(article.faqs));
   }
 
   return (
@@ -234,6 +250,14 @@ export default async function EsArticlePage({ params }: Props) {
             <FeaturedPlantsCarousel plants={featuredPlants} hrefBase="/es/plants" lang="es" />
           </section>
         )}
+
+        {jsonLd.map((schema, index) => (
+          <script
+            key={`ldjson-article-es-${index}`}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          />
+        ))}
       </div>
     </>
   );

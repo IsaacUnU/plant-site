@@ -5,6 +5,7 @@ import PlantCard from '@/components/PlantCard';
 import Breadcrumb from '@/components/Breadcrumb';
 import AdSlot from '@/components/AdSlot';
 import { CATEGORY_DESCRIPTIONS } from '@/lib/utils';
+import { buildAlternates } from '@/lib/seo';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -24,6 +25,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description:
       CATEGORY_DESCRIPTIONS[slug] ||
       `Browse all ${capitalized} houseplant care guides.`,
+    alternates: buildAlternates(`/category/${slug}`, {
+      en: `/category/${slug}`,
+      es: `/es/category/${slug}`,
+    }),
   };
 }
 

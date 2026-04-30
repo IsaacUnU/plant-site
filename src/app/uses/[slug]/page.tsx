@@ -6,6 +6,7 @@ import { SecondaryFunction } from '@/types/plant';
 import PlantCard from '@/components/PlantCard';
 import Breadcrumb from '@/components/Breadcrumb';
 import AdSlot from '@/components/AdSlot';
+import { buildAlternates } from '@/lib/seo';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -23,6 +24,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${meta.name} Plants`,
     description: meta.longDescription,
+    alternates: buildAlternates(`/uses/${slug}`, {
+      en: `/uses/${slug}`,
+      es: `/es/uses/${slug}`,
+    }),
   };
 }
 

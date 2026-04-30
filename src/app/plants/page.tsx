@@ -3,10 +3,15 @@ import { getAllPlants, getAllCategories } from '@/lib/plants';
 import PlantCard from '@/components/PlantCard';
 import AdSlot from '@/components/AdSlot';
 import Link from 'next/link';
+import { buildAlternates } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'All Houseplants',
   description: 'Browse our complete collection of houseplant care guides. Find the perfect plant and learn how to keep it thriving.',
+  alternates: buildAlternates('/plants', {
+    en: '/plants',
+    es: '/es/plants',
+  }),
 };
 
 export default function PlantsPage() {

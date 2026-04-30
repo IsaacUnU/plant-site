@@ -5,10 +5,15 @@ import { getAllPlants, getAllCategories } from '@/lib/plants';
 import PlantCard from '@/components/PlantCard';
 import AdSlot from '@/components/AdSlot';
 import HeroCarousel, { type HeroPlant } from '@/components/HeroCarousel';
+import { buildAlternates } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Expert Houseplant Care Guides',
   description: 'Master houseplant care with our professional guides. From easy-care snake plants to exotic tropicals, discover how to make every indoor plant thrive.',
+  alternates: buildAlternates('/', {
+    en: '/',
+    es: '/es',
+  }),
 };
 
 export default function HomePage() {

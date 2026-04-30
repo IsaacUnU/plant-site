@@ -3,10 +3,15 @@ import type { Metadata } from 'next';
 import { getAllArticles } from '@/lib/articles';
 import ArticleCard from '@/components/ArticleCard';
 import AdSlot from '@/components/AdSlot';
+import { buildAlternates } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Plant Care Guides & Expert Tips',
   description: 'In-depth plant care guides, expert tips, and curated plant lists to help you grow a thriving indoor garden.',
+  alternates: buildAlternates('/articles', {
+    en: '/articles',
+    es: '/es/articles',
+  }),
 };
 
 export default function ArticlesPage() {

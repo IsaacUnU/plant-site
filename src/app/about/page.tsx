@@ -1,9 +1,14 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/seo';
 
 const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'PlantCare Central';
 
 export const metadata: Metadata = {
   title: 'About Us',
+  alternates: buildAlternates('/about', {
+    en: '/about',
+    es: '/es/about',
+  }),
   description: `${SITE_NAME} publishes precise, measurement-based plant care guides — exact watering volumes, real light readings, and specific schedules for every common houseplant.`,
 };
 

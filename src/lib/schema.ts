@@ -1,3 +1,4 @@
+import { Article } from '@/types/article';
 import { Plant } from '@/types/plant';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://plantcarecentral.com';
@@ -31,6 +32,38 @@ export function articleSchema(plant: Plant) {
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `${SITE_URL}/plants/${plant.slug}`,
+    },
+  };
+}
+
+export function articleContentSchema(article: Article, path: string) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: article.title,
+    description: article.description,
+    datePublished: article.datePublished,
+    dateModified: article.dateModified || article.datePublished,
+    author: {
+      '@type': 'Organization',
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    ...(article.image && {
+      image: {
+        '@type': 'ImageObject',
+        url: article.image.startsWith('http') ? article.image : `${SITE_URL}${article.image}`,
+        description: article.imageAlt ?? article.title,
+      },
+    }),
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${SITE_URL}${path}`,
     },
   };
 }
