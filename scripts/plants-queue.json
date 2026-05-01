@@ -1,9 +1,5 @@
 {
   "pending": [
-    "Aglaonema maria",
-    "Sansevieria cylindrica",
-    "Sansevieria moonshine",
-    "Hoya kerrii",
     "Hoya pubicalyx",
     "Hoya linearis",
     "Hoya obovata",
@@ -367,6 +363,10 @@
     "Calathea roseopicta",
     "Stromanthe sanguinea",
     "Ctenanthe setosa",
-    "Aglaonema red"
+    "Aglaonema red",
+    "Aglaonema maria",
+    "Sansevieria cylindrica",
+    "Sansevieria moonshine",
+    "Hoya kerrii"
   ]
 }
