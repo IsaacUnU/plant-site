@@ -1,9 +1,5 @@
 {
   "pending": [
-    "String of Bananas",
-    "Burro's Tail",
-    "Kalanchoe blossfeldiana",
-    "Kalanchoe tomentosa",
     "Aloe aristata",
     "Haworthia cooperi",
     "Gasteria bicolor",
@@ -367,6 +363,10 @@
     "Hoya pubicalyx",
     "Hoya linearis",
     "Hoya obovata",
-    "Ceropegia woodii"
+    "Ceropegia woodii",
+    "String of Bananas",
+    "Burro's Tail",
+    "Kalanchoe blossfeldiana",
+    "Kalanchoe tomentosa"
   ]
 }
