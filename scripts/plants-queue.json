@@ -1,9 +1,5 @@
 {
   "pending": [
-    "Aloe aristata",
-    "Haworthia cooperi",
-    "Gasteria bicolor",
-    "Crassula perforata",
     "Sempervivum",
     "Agave americana",
     "Euphorbia trigona",
@@ -367,6 +363,10 @@
     "String of Bananas",
     "Burro's Tail",
     "Kalanchoe blossfeldiana",
-    "Kalanchoe tomentosa"
+    "Kalanchoe tomentosa",
+    "Aloe aristata",
+    "Haworthia cooperi",
+    "Gasteria bicolor",
+    "Crassula perforata"
   ]
 }
