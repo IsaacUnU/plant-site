@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/seo';
 
 const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'PlantCare Central';
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://plantcarecentral.com';
@@ -6,6 +7,10 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://plantcarecentral.c
 export const metadata: Metadata = {
   title: 'Terms & Conditions',
   description: `Terms and conditions for using ${SITE_NAME}.`,
+  alternates: buildAlternates('/terms', {
+    en: '/terms',
+    es: '/es/terms',
+  }),
 };
 
 export default function TermsPage() {

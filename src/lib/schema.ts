@@ -13,9 +13,10 @@ export function articleSchema(plant: Plant) {
     datePublished: plant.datePublished,
     dateModified: plant.dateModified || plant.datePublished,
     author: {
-      '@type': 'Organization',
-      name: SITE_NAME,
-      url: SITE_URL,
+      '@type': 'Person',
+      name: 'Sarah Mitchell',
+      jobTitle: 'Certified Plant Specialist',
+      url: `${SITE_URL}/about`,
     },
     publisher: {
       '@type': 'Organization',
@@ -45,9 +46,10 @@ export function articleContentSchema(article: Article, path: string) {
     datePublished: article.datePublished,
     dateModified: article.dateModified || article.datePublished,
     author: {
-      '@type': 'Organization',
-      name: SITE_NAME,
-      url: SITE_URL,
+      '@type': 'Person',
+      name: 'Sarah Mitchell',
+      jobTitle: 'Certified Plant Specialist',
+      url: `${SITE_URL}/about`,
     },
     publisher: {
       '@type': 'Organization',

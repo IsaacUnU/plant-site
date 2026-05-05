@@ -9,9 +9,17 @@ export function getSiteUrl() {
 export function buildAlternates(canonicalPath: string, languages?: LanguageMap) {
   const normalizedCanonical = canonicalPath.startsWith('/') ? canonicalPath : `/${canonicalPath}`;
 
+  if (!languages) {
+    return { canonical: `${SITE_URL}${normalizedCanonical}` };
+  }
+
+  const mapped = mapLanguagePaths(languages);
+  // x-default points to the EN version (or canonical if no 'en' key provided)
+  const xDefault = mapped['en'] ?? `${SITE_URL}${normalizedCanonical}`;
+
   return {
     canonical: `${SITE_URL}${normalizedCanonical}`,
-    ...(languages ? { languages: mapLanguagePaths(languages) } : {}),
+    languages: { ...mapped, 'x-default': xDefault },
   };
 }
 

@@ -3,22 +3,26 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
+export type ConsentStatus = 'accepted' | 'declined' | null;
+export const CONSENT_KEY = 'cookie-consent';
+export const CONSENT_EVENT = 'consent-updated';
+
+export function getStoredConsent(): ConsentStatus {
+  if (typeof window === 'undefined') return null;
+  return (localStorage.getItem(CONSENT_KEY) as ConsentStatus) ?? null;
+}
+
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem('cookie-consent');
-    if (!consent) setVisible(true);
+    if (!getStoredConsent()) setVisible(true);
   }, []);
 
-  function accept() {
-    localStorage.setItem('cookie-consent', 'accepted');
+  function updateConsent(status: 'accepted' | 'declined') {
+    localStorage.setItem(CONSENT_KEY, status);
     setVisible(false);
-  }
-
-  function decline() {
-    localStorage.setItem('cookie-consent', 'declined');
-    setVisible(false);
+    window.dispatchEvent(new CustomEvent(CONSENT_EVENT, { detail: { status } }));
   }
 
   if (!visible) return null;
@@ -38,13 +42,13 @@ export default function CookieBanner() {
         </p>
         <div className="flex items-center gap-3 shrink-0">
           <button
-            onClick={decline}
+            onClick={() => updateConsent('declined')}
             className="text-sm text-slate-400 hover:text-white transition-colors px-3 py-2 cursor-pointer"
           >
             Decline
           </button>
           <button
-            onClick={accept}
+            onClick={() => updateConsent('accepted')}
             className="text-sm font-semibold bg-[#15803D] hover:bg-[#166534] text-white px-5 py-2 rounded-xl transition-colors cursor-pointer"
           >
             Accept

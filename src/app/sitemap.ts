@@ -28,6 +28,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${SITE_URL}/es/uses`, lastModified: now, changeFrequency: 'weekly', priority: 0.75 },
     { url: `${SITE_URL}/es/about`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${SITE_URL}/es/contact`, lastModified: now, changeFrequency: 'monthly', priority: 0.4 },
+    { url: `${SITE_URL}/es/privacy-policy`, lastModified: now, changeFrequency: 'yearly', priority: 0.2 },
+    { url: `${SITE_URL}/es/terms`, lastModified: now, changeFrequency: 'yearly', priority: 0.2 },
   ];
 
   const plantData = await Promise.all(slugs.map((slug) => getPlant(slug)));

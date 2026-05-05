@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
+import remarkGfm from 'remark-gfm';
 import remarkHtml from 'remark-html';
 import readingTime from 'reading-time';
 import { Article, ArticleCardData, ArticleFrontmatter } from '@/types/article';
@@ -82,7 +83,7 @@ export async function getArticle(slug: string, lang: Lang = 'en'): Promise<Artic
   try {
     const fileContent = fs.readFileSync(filePath, 'utf8');
     const { data, content } = matter(fileContent);
-    const processed = await remark().use(remarkHtml).process(content);
+    const processed = await remark().use(remarkGfm).use(remarkHtml, { sanitize: false }).process(content);
     const stats = readingTime(content);
     const faqs = extractFaqs(content);
     return {

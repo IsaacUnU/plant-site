@@ -33,6 +33,7 @@ export interface PlantFrontmatter {
   imageCredit?: string;     // photographer name for Unsplash attribution
   imageCreditUrl?: string;  // link to photographer's profile
   secondaryFunctions?: SecondaryFunction[];
+  additionalImages?: string[];
 }
 
 export interface Plant extends PlantFrontmatter {
@@ -62,4 +63,5 @@ export interface PlantCardData {
   imageCredit?: string;
   imageCreditUrl?: string;
   secondaryFunctions?: SecondaryFunction[];
+  additionalImages?: string[];
 }

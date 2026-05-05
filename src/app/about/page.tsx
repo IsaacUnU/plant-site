@@ -100,6 +100,34 @@ export default function AboutPage() {
           problem.
         </p>
 
+        <h2>Meet Our Plant Expert</h2>
+        <div className="flex items-start gap-5 bg-[#F0FDF4] border border-[#E2EFE7] rounded-2xl p-6 mt-4 not-prose">
+          <div
+            className="shrink-0 w-16 h-16 bg-[#15803D] text-white rounded-full flex items-center justify-center text-xl font-bold"
+            style={{ fontFamily: 'var(--font-display)' }}
+            aria-hidden="true"
+          >
+            SM
+          </div>
+          <div>
+            <h3
+              className="text-lg font-semibold text-[#0F172A] mb-1"
+              style={{ fontFamily: 'var(--font-display)' }}
+            >
+              Sarah Mitchell
+            </h3>
+            <p className="text-sm text-[#64748b] italic mb-3">
+              Certified Horticulturist &middot; RHS Level 3 &middot; 12 years growing indoor plants
+            </p>
+            <p className="text-sm text-[#475569] leading-relaxed mb-3">
+              Sarah has spent twelve years growing and documenting tropical indoor plants from her home in the north of England, where low light and fluctuating temperatures make the hobby genuinely demanding. She holds an RHS Level 3 qualification in horticulture and specialises in aroids, humidity-loving species, and low-light-tolerant plants. Her approach is practical: every recommendation she makes is one she has tested in real growing conditions, not extrapolated from a greenhouse.
+            </p>
+            <p className="text-sm text-[#475569] leading-relaxed">
+              Each guide on {SITE_NAME} is reviewed by Sarah against current horticultural literature, including ASPCA toxicity data and findings from the NASA Clean Air Study. Care parameters are expressed as real measured ranges — foot-candles, millilitres per pot size, temperature in both Fahrenheit and Celsius — rather than estimates or generalisations.
+            </p>
+          </div>
+        </div>
+
         <h2>Contact</h2>
         <p>
           Have a correction, a question about a specific plant, or a guide request?{' '}

@@ -7,6 +7,8 @@ import Breadcrumb from '@/components/Breadcrumb';
 import AdSlot from '@/components/AdSlot';
 import PlantImage from '@/components/PlantImage';
 import PlantCard from '@/components/PlantCard';
+import AuthorBox from '@/components/AuthorBox';
+import TableOfContents from '@/components/TableOfContents';
 import { Calendar, Clock, Leaf } from 'lucide-react';
 
 interface Props {
@@ -148,8 +150,15 @@ export default async function EsPlantPage({ params }: Props) {
 
             <AdSlot slot="in-content" className="mb-8" />
 
+            <AuthorBox
+              lang="es"
+              datePublished={plant.datePublished}
+              dateModified={plant.dateModified}
+            />
+            <TableOfContents content={plant.content} lang="es" />
+
             <div
-              className="prose max-w-none"
+              className="prose max-w-none plant-content"
               dangerouslySetInnerHTML={{ __html: linkedContent }}
             />
 

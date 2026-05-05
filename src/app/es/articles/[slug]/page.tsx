@@ -12,6 +12,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 import ArticleImageCarousel, { CarouselImage } from '@/components/ArticleImageCarousel';
 import { articleContentSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
 import { getSiteUrl } from '@/lib/seo';
+import TableOfContents from '@/components/TableOfContents';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -152,8 +153,10 @@ export default async function EsArticlePage({ params }: Props) {
               </div>
             </header>
 
+            <TableOfContents content={article.content} lang="es" />
+
             <article
-              className="prose max-w-none"
+              className="prose max-w-none article-content"
             >
               <div dangerouslySetInnerHTML={{ __html: contentBeforeAd }} />
 

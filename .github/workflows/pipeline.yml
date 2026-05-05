@@ -2,8 +2,8 @@ name: Content Pipeline
 
 on:
   schedule:
-    # Runs once per day at 10:00 UTC (12:00 Spain CEST)
-    - cron: '0 10 * * *'
+    # Generate 1 EN plant/day at 09:00 UTC
+    - cron: '0 9 * * *'
     # Pinterest pinning — every Monday at 11:00 UTC
     - cron: '0 11 * * 1'
   workflow_dispatch:
@@ -12,9 +12,14 @@ on:
         description: 'Specific plant to generate (leave empty for next in queue)'
         required: false
         type: string
+      rewrite_slug:
+        description: 'Slug to rewrite/enrich (leave empty to skip rewrite)'
+        required: false
+        type: string
 
 jobs:
   generate:
+    name: Generate EN plant
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -34,54 +39,67 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run content pipeline
+      - name: Generate EN plant (1/day with quality gate)
         run: |
           if [ -n "${{ github.event.inputs.plant_name }}" ]; then
             node scripts/pipeline.js "${{ github.event.inputs.plant_name }}"
           else
-            node scripts/pipeline.js
-            echo "[pipeline] Waiting 5 min before next generation..."
-            sleep 300
-            node scripts/pipeline.js
-            echo "[pipeline] Waiting 5 min before next generation..."
-            sleep 300
-            node scripts/pipeline.js
-            echo "[pipeline] Waiting 5 min before next generation..."
-            sleep 300
             node scripts/pipeline.js
           fi
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
 
-      - name: Run listicle generator (Daily)
+      - name: Run listicle generator
         run: node scripts/generate-lists.js
+        continue-on-error: true
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           NEXT_PUBLIC_SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL }}
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
 
-      - name: Generate Spanish content (same plants as above)
+      - name: Generate Spanish translation
         continue-on-error: true
         run: |
-          run_es() { node scripts/pipeline-es.js "$@" || echo "[pipeline-es] attempt failed, continuing..."; }
           if [ -n "${{ github.event.inputs.plant_name }}" ]; then
-            run_es "${{ github.event.inputs.plant_name }}"
+            node scripts/pipeline-es.js "${{ github.event.inputs.plant_name }}" || echo "[pipeline-es] failed, continuing"
           else
-            run_es && sleep 65
-            run_es && sleep 65
-            run_es && sleep 65
-            run_es
+            node scripts/pipeline-es.js || echo "[pipeline-es] failed, continuing"
           fi
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
 
+      - name: Rewrite/enrich existing plant (manual trigger)
+        if: github.event.inputs.rewrite_slug != ''
+        run: node scripts/rewrite-existing.js "${{ github.event.inputs.rewrite_slug }}"
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+
+      - name: Audit for new duplicates (blocks commit if found)
+        run: |
+          node scripts/audit-duplicates.js
+          # Fail if any new exact duplicate groups detected
+          DUPS=$(node -e "
+            const r = require('./audit-report.json');
+            const exact = Object.values(r.duplicates)
+              .flat()
+              .filter(g => g.type === 'exact_scientific_name' || g.type === 'exact_common_name');
+            console.log(exact.length);
+          ")
+          if [ "$DUPS" -gt "0" ]; then
+            echo "::error::$DUPS new duplicate group(s) detected. Fix before committing."
+            exit 1
+          fi
+          echo "No duplicates found."
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+
       - name: Create Pinterest pins (Weekly — Mondays only)
-        # Only runs on the Monday cron trigger, not the daily one or manual dispatch
         if: github.event.schedule == '0 11 * * 1'
         run: node scripts/pinterest-pins.js
+        continue-on-error: true
         env:
           PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
           PINTEREST_BOARD_ID: ${{ secrets.PINTEREST_BOARD_ID }}
@@ -90,11 +108,22 @@ jobs:
         run: |
           git config --local user.email "pipeline@plantcareguide.com"
           git config --local user.name "Content Pipeline"
-          git add content/plants/ content/articles/ content/es/ scripts/plants-queue.json public/images/plants/
+          git add content/plants/ content/articles/ content/es/ scripts/plants-queue.json scripts/rewrite-queue.json public/images/plants/ || true
           [ -f scripts/pinterest-pinned.json ] && git add scripts/pinterest-pinned.json || true
           if git diff --staged --quiet; then
             echo "No new content to commit"
           else
-            git commit -m "feat: add plant care guide + image via pipeline [skip ci]"
+            git commit -m "feat: add/update plant care content via pipeline [skip ci]"
             git push
+          fi
+
+      - name: Ping sitemaps after deploy
+        if: success()
+        continue-on-error: true
+        run: |
+          SITE_URL="${{ secrets.NEXT_PUBLIC_SITE_URL }}"
+          if [ -n "$SITE_URL" ]; then
+            curl -s "https://www.google.com/ping?sitemap=${SITE_URL}/sitemap.xml" || true
+            curl -s "https://www.bing.com/ping?sitemap=${SITE_URL}/sitemap.xml" || true
+            echo "Sitemaps pinged."
           fi

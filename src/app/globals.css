@@ -315,3 +315,146 @@ a:hover .plant-card {
 .prose tr:nth-child(even) td {
   background: #f9fffe;
 }
+
+/* ── Markdown tables ──────────────────────────────── */
+.plant-content table,
+.article-content table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 1rem;
+  overflow: hidden;
+  font-size: 0.875rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.06);
+}
+
+.plant-content table thead,
+.article-content table thead {
+  background-color: #15803D;
+  color: white;
+}
+
+.plant-content table thead th,
+.article-content table thead th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.plant-content table tbody tr:nth-child(even),
+.article-content table tbody tr:nth-child(even) {
+  background-color: #F0FDF4;
+}
+
+.plant-content table tbody tr:nth-child(odd),
+.article-content table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.plant-content table tbody tr:hover,
+.article-content table tbody tr:hover {
+  background-color: #dcfce7;
+  transition: background-color 0.15s;
+}
+
+.plant-content table td,
+.article-content table td,
+.plant-content table th,
+.article-content table th {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #E2EFE7;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.plant-content table td:first-child,
+.article-content table td:first-child {
+  font-weight: 600;
+  color: #0F172A;
+  white-space: nowrap;
+  width: 1%;
+}
+
+/* Responsive: scroll horizontal en móvil */
+.plant-content .table-wrapper,
+.article-content .table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 1rem;
+  border: 1px solid #E2EFE7;
+  margin: 1.5rem 0;
+}
+
+/* ── Prose content styles ─────────────────────────── */
+.plant-content h2,
+.article-content h2 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #0F172A;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #E2EFE7;
+}
+
+.plant-content h3,
+.article-content h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #15803D;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.plant-content p,
+.article-content p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+  color: #374151;
+}
+
+.plant-content ul,
+.article-content ul,
+.plant-content ol,
+.article-content ol {
+  margin: 1rem 0 1rem 1.5rem;
+  line-height: 1.75;
+}
+
+.plant-content li,
+.article-content li {
+  margin-bottom: 0.35rem;
+  color: #374151;
+}
+
+.plant-content strong,
+.article-content strong {
+  color: #0F172A;
+  font-weight: 600;
+}
+
+.plant-content blockquote,
+.article-content blockquote {
+  border-left: 4px solid #15803D;
+  background: #F0FDF4;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: 0 0.75rem 0.75rem 0;
+  color: #374151;
+  font-style: italic;
+}
+
+.plant-content a,
+.article-content a {
+  color: #15803D;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.plant-content a:hover,
+.article-content a:hover {
+  color: #166534;
+}

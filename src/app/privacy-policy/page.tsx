@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/seo';
 
 const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'PlantCare Central';
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://plantcarecentral.com';
@@ -7,6 +8,10 @@ export const metadata: Metadata = {
   title: 'Privacy Policy',
   description: `Privacy policy for ${SITE_NAME}.`,
   robots: { index: true, follow: true },
+  alternates: buildAlternates('/privacy-policy', {
+    en: '/privacy-policy',
+    es: '/es/privacy-policy',
+  }),
 };
 
 export default function PrivacyPolicyPage() {

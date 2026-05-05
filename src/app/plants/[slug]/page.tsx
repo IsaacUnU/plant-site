@@ -7,6 +7,9 @@ import Breadcrumb from '@/components/Breadcrumb';
 import AdSlot from '@/components/AdSlot';
 import PlantImage from '@/components/PlantImage';
 import PlantCard from '@/components/PlantCard';
+import AuthorBox from '@/components/AuthorBox';
+import TableOfContents from '@/components/TableOfContents';
+import PlantPhotoGallery from '@/components/PlantPhotoGallery';
 import { formatDate } from '@/lib/utils';
 import { Calendar, Clock, Leaf } from 'lucide-react';
 
@@ -150,8 +153,19 @@ export default async function PlantPage({ params }: Props) {
 
             <AdSlot slot="in-content" className="mb-8" />
 
+            <PlantPhotoGallery
+              plantName={plant.commonName}
+              slug={plant.slug}
+              mainImage={plant.image}
+              imageAlt={plant.imageAlt}
+              imageCredit={plant.imageCredit}
+            />
+
+            <AuthorBox datePublished={plant.datePublished} dateModified={plant.dateModified} />
+            <TableOfContents content={plant.content} />
+
             <div
-              className="prose max-w-none"
+              className="prose max-w-none plant-content"
               dangerouslySetInnerHTML={{ __html: linkedContent }}
             />
 

@@ -36,6 +36,9 @@ const CONTENT_DIR    = path.join(__dirname, '..', 'content', 'plants');
 const GENERATED_DIR  = path.join(__dirname, '..', 'public', 'images', 'generated');
 const UNSPLASH_API   = 'https://api.unsplash.com';
 const FAL_API        = 'https://fal.run/fal-ai/flux/schnell';
+const GROQ_API       = 'https://api.groq.com/openai/v1/chat/completions';
+const INAT_API       = 'https://api.inaturalist.org/v1';
+const VISION_MODEL   = 'meta-llama/llama-4-scout-17b-16e-instruct';
 const USED_IDS_FILE  = path.join(__dirname, 'used-photo-ids.json');
 
 // ── Used photo registry ───────────────────────────────────────
@@ -123,6 +126,63 @@ function pickUnusedPhoto(results, usedIds) {
   return results.find(p => !usedIds.has(p.id)) ?? results[0];
 }
 
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+// ── Llama 4 Scout vision verification ────────────────────────────────────────
+
+async function verifyImageUrl(imageUrl, plantName, scientificName, groqKey, attempt = 0) {
+  if (!groqKey) return true;
+  try {
+    const previewUrl = imageUrl.includes('unsplash.com')
+      ? `${imageUrl.split('?')[0]}?w=400&q=60&auto=format&fit=crop`
+      : imageUrl;
+
+    const res = await fetch(GROQ_API, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${groqKey}` },
+      body: JSON.stringify({
+        model: VISION_MODEL,
+        messages: [{ role: 'user', content: [
+          { type: 'image_url', image_url: { url: previewUrl } },
+          { type: 'text', text: `Does this image show a ${plantName} (${scientificName}) plant? Answer only YES or NO.` },
+        ]}],
+        max_tokens: 5,
+        temperature: 0,
+      }),
+    });
+
+    if (res.status === 429 && attempt < 3) {
+      const wait = 20 + attempt * 15;
+      process.stdout.write(` [rate limit ${wait}s]`);
+      await sleep(wait * 1000);
+      return verifyImageUrl(imageUrl, plantName, scientificName, groqKey, attempt + 1);
+    }
+    if (!res.ok) return true; // on error, accept
+
+    const data   = await res.json();
+    const answer = data.choices?.[0]?.message?.content?.trim().toUpperCase() || '';
+    const ok     = answer.startsWith('YES');
+    process.stdout.write(ok ? ' [✓ Scout]' : ' [✗ Scout — wrong]');
+    await sleep(3000);
+    return ok;
+  } catch { return true; }
+}
+
+// ── iNaturalist fallback ──────────────────────────────────────────────────────
+
+async function iNaturalistPhoto(scientificName) {
+  try {
+    const url = `${INAT_API}/taxa?q=${encodeURIComponent(scientificName)}&rank=species&per_page=1`;
+    const res = await httpsGet(url, { 'User-Agent': 'PlantCareCentral/1.0' });
+    if (res.status !== 200) return null;
+    const data  = JSON.parse(res.body.toString());
+    const taxon = data.results?.[0];
+    if (!taxon?.default_photo?.medium_url) return null;
+    console.log(`[images]    iNaturalist: ${taxon.name}`);
+    return { url: taxon.default_photo.medium_url, credit: `iNaturalist (${taxon.default_photo.attribution || 'CC BY-NC'})` };
+  } catch { return null; }
+}
+
 // ── fal.ai image generation ───────────────────────────────────
 
 function buildGenerationPrompt(fields) {
@@ -178,7 +238,7 @@ async function generateWithFal(slug, fields, falKey) {
 
 // ── Core logic ───────────────────────────────────────────────
 
-async function processPlant(slug, accessKey, falKey, usedIds) {
+async function processPlant(slug, accessKey, falKey, usedIds, groqKey) {
   const mdPath = path.join(CONTENT_DIR, `${slug}.md`);
   if (!fs.existsSync(mdPath)) {
     console.log(`[images] ⚠  Not found: ${slug}.md`);
@@ -205,26 +265,52 @@ async function processPlant(slug, accessKey, falKey, usedIds) {
     genus && genus.toLowerCase() !== plantName.toLowerCase() ? `${genus} plant indoor` : null,
   ].filter(Boolean);
 
-  let photo = null;
+  let chosenPhoto = null;
+  let chosenSource = null;
 
+  // Try each Unsplash query, verify top candidates with Scout
   for (const query of specificQueries) {
-    console.log(`[images] Searching Unsplash: "${query}"...`);
+    process.stdout.write(`[images] Searching Unsplash: "${query}"...`);
     try {
       const data = await unsplashGet(
-        `/search/photos?query=${encodeURIComponent(query)}&per_page=20&orientation=landscape`,
+        `/search/photos?query=${encodeURIComponent(query)}&per_page=10&orientation=landscape`,
         accessKey
       );
-      if (data.results?.length) {
-        photo = pickUnusedPhoto(data.results, usedIds);
-        break;
+      const candidates = (data.results || []).filter(p => !usedIds.has(p.id));
+      if (!candidates.length) { process.stdout.write(' no results\n'); continue; }
+
+      process.stdout.write(` ${candidates.length} candidates\n`);
+      for (const candidate of candidates.slice(0, 5)) {
+        const previewUrl = `${candidate.urls.raw}&w=400&q=60&auto=format&fit=crop`;
+        process.stdout.write(`[images]   Verifying: ${candidate.user?.name}...`);
+        const ok = await verifyImageUrl(previewUrl, plantName, scientificName, groqKey);
+        console.log('');
+        if (ok) { chosenPhoto = candidate; chosenSource = 'unsplash'; break; }
       }
+      if (chosenPhoto) break;
     } catch (err) {
       console.log(`[images] ⚠  Query failed: ${err.message}`);
     }
   }
 
-  // If Unsplash found nothing specific → generate with fal.ai
-  if (!photo) {
+  // iNaturalist fallback — scientifically verified photos
+  if (!chosenPhoto && scientificName) {
+    process.stdout.write(`[images] Trying iNaturalist for "${scientificName}"...`);
+    const inat = await iNaturalistPhoto(scientificName);
+    if (inat) {
+      fields.image          = inat.url;
+      fields.imageAlt       = `${plantName} houseplant`;
+      fields.imageCredit    = inat.credit;
+      fields.imageCreditUrl = 'https://www.inaturalist.org';
+      writeMarkdown(mdPath, fields, content);
+      console.log(`[images] ✓  ${slug} — iNaturalist`);
+      return;
+    }
+    console.log(' not found');
+  }
+
+  // fal.ai generation as last resort
+  if (!chosenPhoto) {
     if (falKey) {
       try {
         const generatedPath = await generateWithFal(slug, fields, falKey);
@@ -237,21 +323,20 @@ async function processPlant(slug, accessKey, falKey, usedIds) {
       } catch (err) {
         console.log(`[images] ⚠  AI generation failed: ${err.message}`);
       }
-    } else {
-      console.log(`[images] ✗  No Unsplash result for "${slug}". Set FAL_KEY in .env.local to enable AI generation.`);
-      return;
     }
+    console.log(`[images] ✗  No verified image found for: ${slug}`);
+    return;
   }
 
-  // Use Unsplash photo
-  const imageUrl   = `${photo.urls.raw}&w=900&q=80&auto=format&fit=crop`;
-  const creditName = photo.user?.name ?? 'Unknown';
-  const creditUrl  = photo.user?.links?.html
-    ? `${photo.user.links.html}?utm_source=plantcare_guide&utm_medium=referral`
+  // Save chosen Unsplash photo
+  const imageUrl   = `${chosenPhoto.urls.raw}&w=900&q=80&auto=format&fit=crop`;
+  const creditName = chosenPhoto.user?.name ?? 'Unknown';
+  const creditUrl  = chosenPhoto.user?.links?.html
+    ? `${chosenPhoto.user.links.html}?utm_source=plantcare_guide&utm_medium=referral`
     : '';
 
-  await triggerDownload(photo.id, accessKey);
-  usedIds.add(photo.id);
+  await triggerDownload(chosenPhoto.id, accessKey);
+  usedIds.add(chosenPhoto.id);
   saveUsedIds(usedIds);
 
   fields.image          = imageUrl;
@@ -270,19 +355,17 @@ async function main() {
     process.exit(1);
   }
 
-  const falKey  = process.env.FAL_KEY || null;
+  const falKey  = process.env.FAL_KEY  || null;
+  const groqKey = process.env.GROQ_API_KEY || null;
   const usedIds = loadUsedIds();
 
-  if (falKey) {
-    console.log(`[images] fal.ai AI generation: ENABLED`);
-  } else {
-    console.log(`[images] fal.ai AI generation: DISABLED (add FAL_KEY to .env.local to enable)`);
-  }
+  console.log(`[images] Vision verification: ${groqKey ? 'Llama 4 Scout ✓' : 'DISABLED (no GROQ_API_KEY)'}`);
+  console.log(`[images] fal.ai generation:   ${falKey  ? 'ENABLED' : 'DISABLED'}`);
   console.log(`[images] ${usedIds.size} photo IDs in registry`);
 
   const specificSlug = process.argv[2];
   if (specificSlug) {
-    await processPlant(specificSlug, accessKey, falKey, usedIds);
+    await processPlant(specificSlug, accessKey, falKey, usedIds, groqKey);
     return;
   }
 
@@ -293,7 +376,7 @@ async function main() {
 
   console.log(`[images] ${slugs.length} plants to check...`);
   for (const slug of slugs) {
-    await processPlant(slug, accessKey, falKey, usedIds);
+    await processPlant(slug, accessKey, falKey, usedIds, groqKey);
   }
   console.log('[images] Done.');
 }

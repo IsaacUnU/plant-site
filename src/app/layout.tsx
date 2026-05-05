@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import { Lora, Raleway } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
-import Script from 'next/script';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
+import ConsentScripts from '@/components/ConsentScripts';
 import { websiteSchema } from '@/lib/schema';
 
 const lora = Lora({
@@ -50,9 +50,6 @@ export const metadata: Metadata = {
     'peace lily care',
     'plant care for beginners',
   ],
-  alternates: {
-    canonical: SITE_URL,
-  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -76,42 +73,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://images.unsplash.com" />
-        {/* Google Tag Manager */}
-        <Script
-          id="gtm-script"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KV3PNKPG');`,
-          }}
-        />
-        {/* Google Analytics */}
-        <Script
-          id="ga-external"
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-SHVPECMB4K"
-        />
-        <Script
-          id="ga-config"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SHVPECMB4K');`,
-          }}
-        />
-        {/* Google AdSense */}
-        <Script
-          id="adsense"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7863265866651285"
-          strategy="lazyOnload"
-          crossOrigin="anonymous"
-        />
       </head>
       <body className={`${lora.variable} ${raleway.variable} font-body bg-[#F0FDF4] text-[#0F172A] antialiased`}>
-        {/* Google Tag Manager (noscript) */}
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KV3PNKPG" height="0" width="0" style={{ display: 'none', visibility: 'hidden' }}></iframe></noscript>
         <Header />
         <main>{children}</main>
         <Footer />
         <CookieBanner />
+        <ConsentScripts />
         <Analytics />
         <script
           key="ldjson-website"

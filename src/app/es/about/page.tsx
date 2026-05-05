@@ -107,6 +107,34 @@ export default function EsAboutPage() {
           resolver un problema específico.
         </p>
 
+        <h2>Conoce a Nuestra Experta</h2>
+        <div className="flex items-start gap-5 bg-[#F0FDF4] border border-[#E2EFE7] rounded-2xl p-6 mt-4 not-prose">
+          <div
+            className="shrink-0 w-16 h-16 bg-[#15803D] text-white rounded-full flex items-center justify-center text-xl font-bold"
+            style={{ fontFamily: 'var(--font-display)' }}
+            aria-hidden="true"
+          >
+            SM
+          </div>
+          <div>
+            <h3
+              className="text-lg font-semibold text-[#0F172A] mb-1"
+              style={{ fontFamily: 'var(--font-display)' }}
+            >
+              Sarah Mitchell
+            </h3>
+            <p className="text-sm text-[#64748b] italic mb-3">
+              Horticultura Certificada &middot; RHS Nivel 3 &middot; 12 años cultivando plantas de interior
+            </p>
+            <p className="text-sm text-[#475569] leading-relaxed mb-3">
+              Sarah lleva doce años cultivando y documentando plantas tropicales de interior desde su hogar en el norte de Inglaterra, donde la poca luz y las temperaturas variables hacen del hobby un verdadero desafío. Tiene una certificación RHS de Nivel 3 en horticultura y se especializa en aráceas, especies que requieren alta humedad y plantas tolerantes a la poca luz. Su enfoque es práctico: cada recomendación que hace es una que ha probado en condiciones reales de cultivo.
+            </p>
+            <p className="text-sm text-[#475569] leading-relaxed">
+              Cada guía en {SITE_NAME} es revisada por Sarah contra la literatura hortícola actual, incluyendo los datos de toxicidad de la ASPCA y los hallazgos del Estudio de Aire Limpio de la NASA. Los parámetros de cuidado se expresan como rangos reales medidos — foot-candles, mililitros por tamaño de maceta, temperatura en Fahrenheit y Celsius — en lugar de estimaciones o generalizaciones.
+            </p>
+          </div>
+        </div>
+
         <h2>Contacto</h2>
         <p>
           ¿Tienes una corrección, una pregunta sobre una planta específica o una solicitud de

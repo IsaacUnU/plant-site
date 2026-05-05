@@ -10,6 +10,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Breadcrumb from '@/components/Breadcrumb';
 import ArticleImageCarousel, { CarouselImage } from '@/components/ArticleImageCarousel';
+import TableOfContents from '@/components/TableOfContents';
 import { articleContentSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
 import { buildAlternates, getSiteUrl } from '@/lib/seo';
 
@@ -147,8 +148,10 @@ export default async function ArticlePage({ params }: Props) {
               </div>
             </header>
 
+            <TableOfContents content={article.content} lang="en" />
+
             <article
-              className="prose max-w-none"
+              className="prose max-w-none article-content"
             >
               <div dangerouslySetInnerHTML={{ __html: contentBeforeAd }} />
               

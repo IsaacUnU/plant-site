@@ -27,6 +27,7 @@ export default function CareTable({ plant, lang = 'en' }: CareTableProps) {
     difficulty: es ? 'Dificultad' : 'Difficulty',
     toxicity: es ? 'Toxicidad' : 'Toxicity',
     growth: es ? 'Crecimiento' : 'Growth Rate',
+    caption: es ? 'Resumen de requisitos de cuidado' : 'Care requirements summary',
   };
 
   const rows = [
@@ -78,10 +79,10 @@ export default function CareTable({ plant, lang = 'en' }: CareTableProps) {
   ];
 
   return (
-    <div className="bg-white rounded-3xl border border-[#E2EFE7] overflow-hidden"
-      style={{ boxShadow: '0 2px 12px 0 rgba(21,128,61,0.07)' }}>
-
-      {/* Header */}
+    <div
+      className="bg-white rounded-3xl border border-[#E2EFE7] overflow-hidden"
+      style={{ boxShadow: '0 2px 12px 0 rgba(21,128,61,0.07)' }}
+    >
       <div className="bg-[#15803D] px-5 py-4 flex items-center gap-2">
         <Leaf className="w-4 h-4 text-white/80" />
         <h2
@@ -92,18 +93,23 @@ export default function CareTable({ plant, lang = 'en' }: CareTableProps) {
         </h2>
       </div>
 
-      {/* Rows */}
-      <div className="divide-y divide-[#F0F7F3]">
-        {rows.map((row) => (
-          <div key={row.label} className="flex items-center px-5 py-3.5 gap-3 text-sm">
-            <span className="shrink-0">{row.icon}</span>
-            <span className="w-28 text-[#64748b] font-medium shrink-0 text-xs uppercase tracking-wide">
-              {row.label}
-            </span>
-            <span className="text-[#0F172A] font-medium">{row.value}</span>
-          </div>
-        ))}
-      </div>
+      <table role="table" className="w-full border-collapse">
+        <caption className="sr-only">{L.caption}</caption>
+        <tbody className="divide-y divide-[#F0F7F3]">
+          {rows.map((row) => (
+            <tr key={row.label} className="flex items-center px-5 py-3.5 gap-3 text-sm">
+              <td className="shrink-0">{row.icon}</td>
+              <th
+                scope="row"
+                className="w-28 text-[#64748b] font-medium shrink-0 text-xs uppercase tracking-wide text-left"
+              >
+                {row.label}
+              </th>
+              <td className="text-[#0F172A] font-medium">{row.value}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
