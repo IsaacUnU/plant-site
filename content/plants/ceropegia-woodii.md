@@ -32,10 +32,6 @@ description: >-
   Caring for your Ceropegia woodii, or String of Hearts, requires a bit more
   detail than just bright indirect light. To thrive, this plant needs 200-400
   foot-cand.
-additionalImages:
-  - /images/plants/ceropegia-woodii-2.jpg
-  - /images/plants/ceropegia-woodii-3.jpg
-  - /images/plants/ceropegia-woodii-detail.jpg
 author: Sarah Mitchell
 ---
 

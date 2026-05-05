@@ -33,8 +33,6 @@ description: >-
   Calathea orbifolia thrives in indirect light, with a minimum of 200-400
   foot-candles, ideally placed three to five feet from an east or south-facing
   window. Wat.
-additionalImages:
-  - /images/plants/calathea-orbifolia-detail.jpg
 author: Sarah Mitchell
 ---
 

@@ -29,9 +29,6 @@ imageAlt: Rattlesnake Plant houseplant
 imageCredit: Rebecca Matthews
 imageCreditUrl: >-
   https://unsplash.com/@rebeccamatthews?utm_source=plantcare_guide&utm_medium=referral
-additionalImages:
-  - /images/plants/calathea-lancifolia-2.jpg
-  - /images/plants/calathea-lancifolia-3.jpg
 description: >-
   To keep your Calathea lancifolia thriving, place it in a location that
   receives 200–400 foot-candles of light from an east or south window. Water the

@@ -27,9 +27,6 @@ imageAlt: Zebra Plant houseplant
 imageCredit: Steve DiMatteo
 imageCreditUrl: >-
   https://unsplash.com/@stevedimatteo?utm_source=plantcare_guide&utm_medium=referral
-additionalImages:
-  - /images/plants/alocasia-zebrina-3.jpg
-  - /images/plants/alocasia-zebrina-detail.jpg
 description: >-
   To care for your Alocasia zebrina, provide it with bright, indirect light
   (200–400 foot-candles, 3–5 feet from an east or south window), water it weekly

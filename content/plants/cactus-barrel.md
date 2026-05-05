@@ -26,9 +26,6 @@ imageAlt: Blue Barrel Cactus houseplant
 imageCredit: Stephanie Harvey
 imageCreditUrl: >-
   https://unsplash.com/@stephanieharvey?utm_source=plantcare_guide&utm_medium=referral
-additionalImages:
-  - /images/plants/cactus-barrel-2.jpg
-  - /images/plants/cactus-barrel-3.jpg
 description: >-
   The Blue Barrel Cactus, or Ferocactus glaucescens, requires indirect light
   (200–400 foot-candles) and thrives in a north-facing window. Water every 7–10

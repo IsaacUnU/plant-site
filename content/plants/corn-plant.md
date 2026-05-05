@@ -31,10 +31,6 @@ imageAlt: Corn Plant houseplant
 imageCredit: Markus Winkler
 imageCreditUrl: >-
   https://unsplash.com/@markuswinkler?utm_source=plantcare_guide&utm_medium=referral
-additionalImages:
-  - /images/plants/corn-plant-2.jpg
-  - /images/plants/corn-plant-3.jpg
-  - /images/plants/corn-plant-detail.jpg
 author: Sarah Mitchell
 ---
 ## Quick Care Summary

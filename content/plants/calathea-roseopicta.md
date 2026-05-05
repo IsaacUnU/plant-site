@@ -27,9 +27,6 @@ imageAlt: Rose-Painted Calathea houseplant
 imageCredit: Magali Merzougui
 imageCreditUrl: >-
   https://unsplash.com/@magali_merzougui?utm_source=plantcare_guide&utm_medium=referral
-additionalImages:
-  - /images/plants/calathea-roseopicta-3.jpg
-  - /images/plants/calathea-roseopicta-detail.jpg
 description: >-
   Caring for your Calathea roseopicta involves providing it with indirect light,
   watering once a week during summer and every 10-14 days in winter, maintaining

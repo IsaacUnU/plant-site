@@ -34,9 +34,6 @@ imageAlt: Alocasia Polly houseplant
 imageCredit: Jakayla Toney
 imageCreditUrl: >-
   https://unsplash.com/@thegardenstateexplorer?utm_source=plantcare_guide&utm_medium=referral
-additionalImages:
-  - /images/plants/alocasia-polly-detail.jpg
-  - /images/plants/alocasia-polly-2.jpg
 author: Sarah Mitchell
 ---
 

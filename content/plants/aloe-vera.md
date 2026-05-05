@@ -34,9 +34,6 @@ imageAlt: Aloe Vera houseplant
 imageCredit: Mohammad Zeeshan
 imageCreditUrl: >-
   https://unsplash.com/@mohammad_zeeshan?utm_source=plantcare_guide&utm_medium=referral
-additionalImages:
-  - /images/plants/aloe-vera-2.jpg
-  - /images/plants/aloe-vera-3.jpg
 ---
 
 ## Quick Care Summary

@@ -28,9 +28,6 @@ imageAlt: Burro's Tail houseplant
 imageCredit: Emanuel Haas
 imageCreditUrl: >-
   https://unsplash.com/@dermanuskript?utm_source=plantcare_guide&utm_medium=referral
-additionalImages:
-  - /images/plants/burros-tail-2.jpg
-  - /images/plants/burros-tail-3.jpg
 description: >-
   The Burro's Tail (Sedum morganianum) thrives in bright, indirect light with a
   minimum of 200–400 foot-candles. Water it every 7–10 days during the summer

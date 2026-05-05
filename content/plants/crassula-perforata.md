@@ -34,10 +34,6 @@ description: >-
   Place your Crassula perforata in a spot with bright, indirect light, ideally
   200-400 foot-candles, which corresponds to about 3-5 feet from an east or
   south win.
-additionalImages:
-  - /images/plants/crassula-perforata-2.jpg
-  - /images/plants/crassula-perforata-3.jpg
-  - /images/plants/crassula-perforata-detail.jpg
 author: Sarah Mitchell
 ---
 

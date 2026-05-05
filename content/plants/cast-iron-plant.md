@@ -34,10 +34,6 @@ imageAlt: Cast Iron Plant houseplant
 imageCredit: Gigi Visacri
 imageCreditUrl: >-
   https://unsplash.com/@georgia_vis?utm_source=plantcare_guide&utm_medium=referral
-additionalImages:
-  - /images/plants/cast-iron-plant-2.jpg
-  - /images/plants/cast-iron-plant-3.jpg
-  - /images/plants/cast-iron-plant-detail.jpg
 author: Sarah Mitchell
 ---
 

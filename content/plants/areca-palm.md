@@ -27,9 +27,6 @@ imageAlt: Golden Feather Palm houseplant
 imageCredit: vadim kaipov
 imageCreditUrl: >-
   https://unsplash.com/@vadimkaipov?utm_source=plantcare_guide&utm_medium=referral
-additionalImages:
-  - /images/plants/areca-palm-2.jpg
-  - /images/plants/areca-palm-detail.jpg
 description: >-
   The Golden Feather Palm, also known as Dypsis lutescens, thrives in indirect
   light with a measurement of approximately 200–400 foot-candles, ideally

@@ -27,9 +27,6 @@ imageAlt: Baby Rubber Plant houseplant
 imageCredit: Anna Kharkivska
 imageCreditUrl: >-
   https://unsplash.com/@anna_kharkivska?utm_source=plantcare_guide&utm_medium=referral
-additionalImages:
-  - /images/plants/baby-rubber-plant-2.jpg
-  - /images/plants/baby-rubber-plant-3.jpg
 description: >-
   The Baby Rubber Plant (Peperomia obtusifolia) thrives in a north-facing
   window, receiving indirect light that measures between 200 and 400

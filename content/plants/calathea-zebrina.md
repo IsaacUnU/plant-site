@@ -27,9 +27,6 @@ imageAlt: Zebra Plant houseplant
 imageCredit: Steve DiMatteo
 imageCreditUrl: >-
   https://unsplash.com/@stevedimatteo?utm_source=plantcare_guide&utm_medium=referral
-additionalImages:
-  - /images/plants/calathea-zebrina-2.jpg
-  - /images/plants/calathea-zebrina-3.jpg
 description: >-
   To care for your Calathea zebrina, provide it with bright, indirect light that
   measures between 200–400 foot-candles, placed about 3–5 feet from an east or

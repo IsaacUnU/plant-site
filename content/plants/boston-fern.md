@@ -29,9 +29,6 @@ imageAlt: Boston Fern houseplant
 imageCredit: Unknown Wong
 imageCreditUrl: >-
   https://unsplash.com/@goodchinese?utm_source=plantcare_guide&utm_medium=referral
-additionalImages:
-  - /images/plants/boston-fern-2.jpg
-  - /images/plants/boston-fern-detail.jpg
 description: >-
   The Boston Fern, Nephrolepis exaltata, requires a moderate growth rate (6
   inches per year) and thrives in high humidity (50–70%) at temperatures between

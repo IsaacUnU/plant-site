@@ -15,10 +15,6 @@ description: >-
   The Chinese Evergreen, Aglaonema modestum, thrives in indirect light with
   200-400 foot-candles of brightness. Water every 7-10 days by checking the soil
   depth a.
-additionalImages:
-  - /images/plants/chinese-evergreen-2.jpg
-  - /images/plants/chinese-evergreen-3.jpg
-  - /images/plants/chinese-evergreen-detail.jpg
 image: >-
   https://images.unsplash.com/photo-1504575749324-47f312846203?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwyfHxDaGluZXNlJTIwRXZlcmdyZWVuJTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc3OTY4MDI3fDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: Chinese Evergreen houseplant

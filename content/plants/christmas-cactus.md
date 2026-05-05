@@ -29,10 +29,6 @@ description: >-
   The Christmas Cactus (Schlumbergera bridgesii) thrives in indirect light,
   requiring 200-400 foot-candles of light, best placed 3-5 feet from an east or
   south-fa.
-additionalImages:
-  - /images/plants/christmas-cactus-2.jpg
-  - /images/plants/christmas-cactus-3.jpg
-  - /images/plants/christmas-cactus-detail.jpg
 author: Sarah Mitchell
 ---
 

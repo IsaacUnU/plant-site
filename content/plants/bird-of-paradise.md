@@ -28,9 +28,6 @@ image: >-
 imageAlt: Bird of Paradise houseplant
 imageCredit: Antonia Glaskova
 imageCreditUrl: 'https://unsplash.com/@glaskova?utm_source=plantcare_guide&utm_medium=referral'
-additionalImages:
-  - /images/plants/bird-of-paradise-2.jpg
-  - /images/plants/bird-of-paradise-3.jpg
 description: >-
   The Bird of Paradise, or Strelitzia reginae, requires a specific balance of
   light (200–400 foot-candles, 3–5 feet from an east or south window), watered

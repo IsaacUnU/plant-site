@@ -33,10 +33,6 @@ description: >-
   The Citrus limon, or lemon tree, thrives in bright indirect light (200-400
   foot-candles), requiring water every 7–10 days. Maintain a humidity level of
   50–70% a.
-additionalImages:
-  - /images/plants/citrus-limon-2.jpg
-  - /images/plants/citrus-limon-3.jpg
-  - /images/plants/citrus-limon-detail.jpg
 author: Sarah Mitchell
 ---
 

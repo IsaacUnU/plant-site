@@ -33,9 +33,6 @@ imageAlt: Bamboo Palm houseplant
 imageCredit: Annie Spratt
 imageCreditUrl: >-
   https://unsplash.com/@anniespratt?utm_source=plantcare_guide&utm_medium=referral
-additionalImages:
-  - /images/plants/bamboo-palm-2.jpg
-  - /images/plants/bamboo-palm-3.jpg
 author: Sarah Mitchell
 ---
 

@@ -28,10 +28,6 @@ imageAlt: Guinea-Fowl Aloe houseplant
 imageCredit: Arpita Ghosh
 imageCreditUrl: >-
   https://unsplash.com/@arpitamukh1?utm_source=plantcare_guide&utm_medium=referral
-additionalImages:
-  - /images/plants/aloe-aristata-2.jpg
-  - /images/plants/aloe-aristata-3.jpg
-  - /images/plants/aloe-aristata-detail.jpg
 description: >-
   To successfully care for your Aloe aristata, place it in a location that
   receives bright, indirect light with 200–400 foot-candles of light, ideally

@@ -30,11 +30,6 @@ image: >-
 imageAlt: African Violet houseplant
 imageCredit: Nikita Turkovich
 imageCreditUrl: 'https://unsplash.com/@nt_studio?utm_source=plantcare_guide&utm_medium=referral'
-additionalImages:
-  - /images/plants/african-violet-2.jpg
-  - /images/plants/african-violet-3.jpg
-  - /images/plants/african-violet-2.jpg
-  - /images/plants/african-violet-detail.jpg
 author: Sarah Mitchell
 ---
 
