@@ -17,6 +17,7 @@ image: >-
 imageAlt: 'Tap Water vs Filtered Water for Plants: What''s Best?'
 imageCredit: lilartsy
 imageCreditUrl: 'https://unsplash.com/@lilartsy?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## The Surprising Impact of Water Quality on Plants

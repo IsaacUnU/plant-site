@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Violeta Africana
 slug: african-violet
 commonName: Violeta Africana
@@ -19,7 +19,11 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Violeta Africana es una planta de interior popular y de bajo mantenimiento, conocida por sus flores delicadas y exóticas, y sus hojas atractivas y peludas. Con el cuidado adecuado, puede prosperar en condiciones interiores, proporcionando un hermoso espectáculo de color y beneficios de purificación del aire.
+  La Violeta Africana es una planta de interior popular y de bajo mantenimiento,
+  conocida por sus flores delicadas y exóticas, y sus hojas atractivas y
+  peludas. Con el cuidado adecuado, puede prosperar en condiciones interiores,
+  proporcionando un hermoso espectáculo de color y beneficios de purificación
+  del aire.
 datePublished: '2026-02-12T00:00:00.000Z'
 dateModified: '2026-02-12T00:00:00.000Z'
 image: >-
@@ -27,6 +31,7 @@ image: >-
 imageAlt: Planta de interior Violeta Africana
 imageCredit: Nikita Turkovich
 imageCreditUrl: 'https://unsplash.com/@nt_studio?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 ## Descripción General
 La Violeta Africana es una planta tropical pequeña originaria de Tanzania y otras partes de África Oriental. Pertenece al género Saintpaulia y se caracteriza por sus hojas delicadas y peludas, y sus flores vibrantes y de color púrpura-azul. Las Violetas Africanas se han convertido en un elemento básico en muchos hogares debido a su facilidad de cuidado, tamaño compacto y hermosas flores. Son perfectas para espacios interiores, como apartamentos, oficinas y dormitorios, donde pueden agregar un toque de belleza natural y frescura.

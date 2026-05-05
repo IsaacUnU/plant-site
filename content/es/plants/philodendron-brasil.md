@@ -20,7 +20,12 @@ temperature: 65-80°F (18-27°C)
 toxicity: mildly-toxic
 growthRate: moderate
 description: >-
-  El Philodendron Brasil es una planta de interior impresionante y de bajo mantenimiento conocida por sus hojas en forma de corazón con patrones variegados, lo que lo convierte en una opción popular para espacios interiores. Su capacidad para prosperar en una variedad de condiciones de iluminación y sus propiedades purificadoras del aire lo hacen una excelente adición a cualquier hogar u oficina.
+  El Philodendron Brasil es una planta de interior impresionante y de bajo
+  mantenimiento conocida por sus hojas en forma de corazón con patrones
+  variegados, lo que lo convierte en una opción popular para espacios
+  interiores. Su capacidad para prosperar en una variedad de condiciones de
+  iluminación y sus propiedades purificadoras del aire lo hacen una excelente
+  adición a cualquier hogar u oficina.
 datePublished: 2026-04-25T00:00:00.000Z
 dateModified: 2026-04-25T00:00:00.000Z
 image: >-
@@ -29,6 +34,7 @@ imageAlt: Philodendron Brasil planta de interior
 imageCredit: Rebecca Matthews
 imageCreditUrl: >-
   https://unsplash.com/@rebeccamatthews?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

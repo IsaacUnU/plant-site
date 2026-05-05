@@ -20,7 +20,12 @@ temperature: 65-80°F (18-27°C)
 toxicity: mildly-toxic
 growthRate: moderate
 description: >-
-  El Alocasia Dragón Plateado es una impresionante planta de interior de bajo mantenimiento conocida por sus hojas metálicas plateadas y su capacidad para prosperar en una variedad de condiciones de iluminación, lo que la hace perfecta para espacios interiores. Con el cuidado adecuado, esta planta puede crecer hasta 2 pies de altura y aportar un toque exótico y hermoso a cualquier habitación.
+  El Alocasia Dragón Plateado es una impresionante planta de interior de bajo
+  mantenimiento conocida por sus hojas metálicas plateadas y su capacidad para
+  prosperar en una variedad de condiciones de iluminación, lo que la hace
+  perfecta para espacios interiores. Con el cuidado adecuado, esta planta puede
+  crecer hasta 2 pies de altura y aportar un toque exótico y hermoso a cualquier
+  habitación.
 datePublished: 2026-04-28T00:00:00.000Z
 dateModified: 2026-04-28T00:00:00.000Z
 image: >-
@@ -28,6 +33,7 @@ image: >-
 imageAlt: Alocasia Dragón Plateado planta de interior
 imageCredit: Leonardo Iheme
 imageCreditUrl: 'https://unsplash.com/@leoeye?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

@@ -20,10 +20,10 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Alocasia zebrina, también conocida como la Planta Zebra, es una impresionante
-  planta de interior con tallos únicos con rayas de cebra y hojas grandes y verdes.
-  Sus requisitos de bajo mantenimiento y su apariencia hermosa la convierten en una
-  opción popular para jardines interiores.
+  La Alocasia zebrina, también conocida como la Planta Zebra, es una
+  impresionante planta de interior con tallos únicos con rayas de cebra y hojas
+  grandes y verdes. Sus requisitos de bajo mantenimiento y su apariencia hermosa
+  la convierten en una opción popular para jardines interiores.
 datePublished: 2026-04-28T00:00:00.000Z
 dateModified: 2026-04-28T00:00:00.000Z
 image: >-
@@ -32,6 +32,7 @@ imageAlt: Planta Zebra de interior
 imageCredit: Steve DiMatteo
 imageCreditUrl: >-
   https://unsplash.com/@stevedimatteo?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

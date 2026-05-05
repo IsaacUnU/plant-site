@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Palma de Bambú
 slug: bamboo-palm
 commonName: Palma de Bambú
@@ -20,7 +20,12 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Palma de Bambú es una planta de interior popular y de bajo mantenimiento, conocida por sus hojas plumosas y su capacidad para prosperar en una variedad de condiciones de iluminación, lo que la hace perfecta para espacios interiores. Con sus propiedades purificadoras del aire y su capacidad para aumentar la humedad, esta planta es una excelente opción para aquellos que buscan mejorar la calidad del aire y la estética de su hogar.
+  La Palma de Bambú es una planta de interior popular y de bajo mantenimiento,
+  conocida por sus hojas plumosas y su capacidad para prosperar en una variedad
+  de condiciones de iluminación, lo que la hace perfecta para espacios
+  interiores. Con sus propiedades purificadoras del aire y su capacidad para
+  aumentar la humedad, esta planta es una excelente opción para aquellos que
+  buscan mejorar la calidad del aire y la estética de su hogar.
 datePublished: 2026-04-23T00:00:00.000Z
 dateModified: 2026-04-23T00:00:00.000Z
 image: >-
@@ -29,6 +34,7 @@ imageAlt: Planta de interior Palma de Bambú
 imageCredit: Annie Spratt
 imageCreditUrl: >-
   https://unsplash.com/@anniespratt?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen de Cuidado Rápido

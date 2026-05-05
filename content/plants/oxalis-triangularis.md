@@ -30,6 +30,7 @@ description: >-
   To care for your Oxalis triangularis, provide it with 200-400 foot-candles of
   light, or place the plant 3-5 feet from an east or south-facing window. Water
   it e.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

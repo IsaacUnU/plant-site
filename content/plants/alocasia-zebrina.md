@@ -34,6 +34,7 @@ description: >-
   To care for your Alocasia zebrina, provide it with bright, indirect light
   (200–400 foot-candles, 3–5 feet from an east or south window), water it weekly
   du.
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 To care for your Alocasia zebrina, provide it with bright, indirect light (200–400 foot-candles, 3–5 feet from an east or south window), water it weekly during the summer months and every 10-14 days during the winter. Maintain a consistent temperature between 65-80°F (18-27°C) and keep the humidity level at around 50–70%. With its easy care requirements and non-toxic properties, the Alocasia zebrina is an excellent choice for beginners and experienced plant enthusiasts alike.

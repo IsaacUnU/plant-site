@@ -31,6 +31,7 @@ imageCreditUrl: 'https://unsplash.com/@axelfahr?utm_source=plantcare_guide&utm_m
 description: >-
   Caring for a String of Bananas is straightforward; provide it with 200-400
   foot-candles of light, ideally 3-5 feet from an east or south window.
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 

@@ -31,6 +31,7 @@ description: >-
   The Lady Palm (Rhapis excelsa) thrives in indirect light, requiring a minimum
   of 200-400 foot-candles. Water every 7–10 days during the summer and once
   every 10.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

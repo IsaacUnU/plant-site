@@ -20,6 +20,7 @@ image: >-
 imageAlt: Fiddle Leaf Fig houseplant
 imageCredit: Scott Webb
 imageCreditUrl: 'https://unsplash.com/@scottwebb?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 The Fiddle Leaf Fig, also known as *Ficus lyrata*, thrives in bright indirect light (200–400 foot-candles) and medium humidity. Water it every 7–10 days by checking the soil moisture level with your finger or using a pot weight test. Maintain temperatures between 65-80°F (18-27°C) and ensure well-draining, nutrient-rich soil. Fertilize monthly during spring and summer with a balanced 10-10-10 formula diluted to half strength.

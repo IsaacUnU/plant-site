@@ -8,7 +8,8 @@ tags:
   - cuidado de plantas
   - jardinería interior
 description: >-
-  Descubre las 5 señales claras para trasplantar tu planta de interior y lograr un crecimiento y salud óptimos
+  Descubre las 5 señales claras para trasplantar tu planta de interior y lograr
+  un crecimiento y salud óptimos
 datePublished: '2026-04-07T00:00:00.000Z'
 dateModified: '2026-04-07T00:00:00.000Z'
 image: >-
@@ -17,6 +18,7 @@ imageAlt: ¿Cuándo debes trasplantar una planta de interior? (5 señales claras
 imageCredit: ana popescu
 imageCreditUrl: >-
   https://unsplash.com/@annemarria__?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Introducción

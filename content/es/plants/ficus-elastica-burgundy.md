@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Planta de Caucho Burgundy
 slug: ficus-elastica-burgundy
 commonName: Planta de caucho
@@ -20,11 +20,11 @@ temperature: 65-80°F (18-27°C)
 toxicity: mildly-toxic
 growthRate: moderate
 description: >-
-  La Planta de caucho Burgundy, también conocida como Ficus elastica burgundy, es una
-  impresionante planta de interior de bajo mantenimiento con hojas verdes oscuras
-  hermosas y un hábito de crecimiento robusto. Su capacidad para purificar el aire
-  y aumentar la humedad la convierte en una excelente adición a cualquier espacio
-  interior.
+  La Planta de caucho Burgundy, también conocida como Ficus elastica burgundy,
+  es una impresionante planta de interior de bajo mantenimiento con hojas verdes
+  oscuras hermosas y un hábito de crecimiento robusto. Su capacidad para
+  purificar el aire y aumentar la humedad la convierte en una excelente adición
+  a cualquier espacio interior.
 datePublished: 2026-04-23T00:00:00.000Z
 dateModified: 2026-04-23T00:00:00.000Z
 image: >-
@@ -32,6 +32,7 @@ image: >-
 imageAlt: Planta de caucho en interior
 imageCredit: Scott Webb
 imageCreditUrl: 'https://unsplash.com/@scottwebb?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

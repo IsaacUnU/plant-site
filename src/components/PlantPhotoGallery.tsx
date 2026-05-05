@@ -1,44 +1,25 @@
-import fs from 'fs';
-import path from 'path';
 import Image from 'next/image';
 
 interface PlantPhotoGalleryProps {
   plantName: string;
-  slug: string;
   mainImage?: string;
   imageAlt?: string;
   imageCredit?: string;
+  additionalImages?: string[];
   lang?: 'en' | 'es';
-}
-
-function getExistingAdditionalImages(slug: string): string[] {
-  const suffixes = ['-2', '-3', '-detail'];
-  return suffixes
-    .map((s) => ({ web: `/images/plants/${slug}${s}.jpg`, fs: path.join(process.cwd(), 'public', 'images', 'plants', `${slug}${s}.jpg`) }))
-    .filter(({ fs: fsPath }) => {
-      try { return fs.existsSync(fsPath); } catch { return false; }
-    })
-    .map(({ web }) => web);
-}
-
-function buildCaption(credit?: string): string {
-  if (credit && credit !== 'AI Generated') return `Photo: ${credit}`;
-  return 'PlantCare Central';
 }
 
 export default function PlantPhotoGallery({
   plantName,
-  slug,
   mainImage,
   imageAlt,
   imageCredit,
+  additionalImages = [],
   lang = 'en',
 }: PlantPhotoGalleryProps) {
   if (!mainImage) return null;
 
-  const altText = imageAlt ?? `${plantName} houseplant`;
-  const caption = buildCaption(imageCredit);
-  const secondaryImages = getExistingAdditionalImages(slug);
+  const altText    = imageAlt ?? `${plantName} houseplant`;
   const photoLabel = lang === 'es' ? 'Foto' : 'Photo';
   const creditText = imageCredit && imageCredit !== 'AI Generated' ? imageCredit : 'PlantCare Central';
 
@@ -60,29 +41,25 @@ export default function PlantPhotoGallery({
         </div>
       </div>
 
-      {secondaryImages.length > 0 && (
+      {additionalImages.length > 0 && (
         <div
           className="grid gap-3 p-4"
-          style={{ gridTemplateColumns: `repeat(${secondaryImages.length}, minmax(0, 1fr))` }}
+          style={{ gridTemplateColumns: `repeat(${Math.min(additionalImages.length, 3)}, minmax(0, 1fr))` }}
         >
-          {secondaryImages.map((imgPath, i) => {
+          {additionalImages.slice(0, 3).map((imgUrl, i) => {
             const labels = ['close-up', 'detail', 'propagation'];
-            const imgAlt = `${plantName} ${labels[i] ?? 'photo'}`;
             return (
               <div
-                key={imgPath}
+                key={imgUrl}
                 className="relative aspect-square rounded-2xl overflow-hidden border border-[#E2EFE7] group"
               >
                 <Image
-                  src={imgPath}
-                  alt={imgAlt}
+                  src={imgUrl}
+                  alt={`${plantName} ${labels[i] ?? 'photo'}`}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 22vw"
                 />
-                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/50 to-transparent pb-2 pt-6 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-[10px] text-white/80 leading-none truncate">{caption}</p>
-                </div>
               </div>
             );
           })}

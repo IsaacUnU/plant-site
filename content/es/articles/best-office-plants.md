@@ -29,6 +29,7 @@ imageAlt: 'Selección de Expertos: Las 9 Mejores Plantas de Oficina'
 imageCredit: Sanni Sahil
 imageCreditUrl: >-
   https://unsplash.com/@sannisahil?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ¿Estás cansado de oficinas apagadas y sin vida que carecen de un toque de naturaleza? ¿Tienes dificultades para mantener vivas tus plantas de interior, a pesar de tus mejores esfuerzos? No estás solo. Muchos de nosotros queremos incorporar algo de verdor a nuestros espacios de trabajo, pero no sabemos por dónde empezar. Por eso hemos preparado una lista de las 9 mejores plantas de oficina, cuidadosamente seleccionadas por sus requisitos de bajo mantenimiento y su capacidad para prosperar en entornos interiores.

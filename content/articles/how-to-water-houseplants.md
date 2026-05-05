@@ -16,6 +16,7 @@ imageAlt: 'How to Water Houseplants: The Complete Guide'
 imageCredit: Vitaly Gariev
 imageCreditUrl: >-
   https://unsplash.com/@silverkblack?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Why Proper Watering Makes All the Difference

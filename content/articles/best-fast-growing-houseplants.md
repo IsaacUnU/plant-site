@@ -23,6 +23,7 @@ imageAlt: The 4 Best Fast-Growing Houseplants Every Plant Lover Should Own
 imageCredit: Anton Darius
 imageCreditUrl: >-
   https://unsplash.com/@thesollers?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Introduction to Fast-Growing Houseplants

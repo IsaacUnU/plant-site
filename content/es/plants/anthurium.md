@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Flor de Flamenco
 slug: anthurium
 commonName: Flor de Flamenco
@@ -20,7 +20,12 @@ temperature: 65-80°F (18-27°C)
 toxicity: mildly-toxic
 growthRate: moderate
 description: >-
-  La Flor de Flamenco, también conocida como Anthurium, es una planta de interior popular y de bajo mantenimiento que agrega un toque de elegancia a cualquier habitación con sus flores de forma de corazón y larga duración. Con el cuidado adecuado, esta planta puede prosperar y proporcionar hermosas flores durante meses, lo que la hace una excelente opción para los entusiastas de la jardinería interior.
+  La Flor de Flamenco, también conocida como Anthurium, es una planta de
+  interior popular y de bajo mantenimiento que agrega un toque de elegancia a
+  cualquier habitación con sus flores de forma de corazón y larga duración. Con
+  el cuidado adecuado, esta planta puede prosperar y proporcionar hermosas
+  flores durante meses, lo que la hace una excelente opción para los entusiastas
+  de la jardinería interior.
 datePublished: '2026-02-14T00:00:00.000Z'
 dateModified: '2026-02-14T00:00:00.000Z'
 image: >-
@@ -29,6 +34,7 @@ imageAlt: Planta de interior Flor de Flamenco
 imageCredit: Rafael Rodrigues
 imageCreditUrl: >-
   https://unsplash.com/@rrodriguesim?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Descripción General

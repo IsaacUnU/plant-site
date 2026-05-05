@@ -28,6 +28,7 @@ imageAlt: Sweetheart Hoya houseplant
 imageCredit: Rebecca Matthews
 imageCreditUrl: >-
   https://unsplash.com/@rebeccamatthews?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidados

@@ -20,7 +20,11 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Alocasia cucullata, también conocida como Capucha China, es una planta de interior impresionante y de bajo mantenimiento que cuenta con hermosas hojas en forma de corazón y puede prosperar en una variedad de condiciones de luz. Su capacidad para purificar el aire y aumentar la humedad la convierte en una opción popular para espacios interiores.
+  La Alocasia cucullata, también conocida como Capucha China, es una planta de
+  interior impresionante y de bajo mantenimiento que cuenta con hermosas hojas
+  en forma de corazón y puede prosperar en una variedad de condiciones de luz.
+  Su capacidad para purificar el aire y aumentar la humedad la convierte en una
+  opción popular para espacios interiores.
 datePublished: 2026-04-28T00:00:00.000Z
 dateModified: 2026-04-28T00:00:00.000Z
 image: >-
@@ -28,6 +32,7 @@ image: >-
 imageAlt: Alocasia cucullata en interior
 imageCredit: Nik A.
 imageCreditUrl: 'https://unsplash.com/@astasnik?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

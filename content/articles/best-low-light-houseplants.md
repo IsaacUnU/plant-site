@@ -29,6 +29,7 @@ imageAlt: 'Mastering Indoor Greenery: 10 Best Low-Light Houseplants'
 imageCredit: Huy Phan
 imageCreditUrl: >-
   https://unsplash.com/@huyphan2602?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Introduction

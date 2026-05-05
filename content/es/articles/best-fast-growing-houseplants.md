@@ -8,7 +8,9 @@ tags:
   - jardinería interior
   - plantas de interior
 description: >-
-  Descubre las 4 plantas de interior de crecimiento rápido que transformarán tu espacio en poco tiempo. Selecciones de expertos con consejos de cuidado, pros, contras y enlaces a guías completas.
+  Descubre las 4 plantas de interior de crecimiento rápido que transformarán tu
+  espacio en poco tiempo. Selecciones de expertos con consejos de cuidado, pros,
+  contras y enlaces a guías completas.
 featuredPlants:
   - english-ivy
   - golden-pothos
@@ -22,6 +24,7 @@ imageAlt: Las 4 Mejores Plantas de Interior de Crecimiento Rápido
 imageCredit: Anton Darius
 imageCreditUrl: >-
   https://unsplash.com/@thesollers?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Introducción a las Plantas de Interior de Crecimiento Rápido

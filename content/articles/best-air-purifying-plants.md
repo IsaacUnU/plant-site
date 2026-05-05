@@ -30,6 +30,7 @@ imageAlt: Top 10 Best Air-Purifying Indoor Plants for Your Home
 imageCredit: Sanni Sahil
 imageCreditUrl: >-
   https://unsplash.com/@sannisahil?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Introduction

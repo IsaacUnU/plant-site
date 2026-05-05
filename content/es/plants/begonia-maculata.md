@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Begonia maculata
 slug: begonia-maculata
 commonName: Begonia de Puntos
@@ -20,7 +20,12 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Begonia maculata, también conocida como la Begonia de Puntos, es una planta tropical impresionante conocida por sus hermosas hojas con puntos plateados y su facilidad de cuidado, lo que la hace una excelente adición a cualquier espacio interior. Con su tasa de crecimiento moderada y capacidad para prosperar en una variedad de condiciones, esta planta es ideal para principiantes y entusiastas de las plantas experimentados.
+  La Begonia maculata, también conocida como la Begonia de Puntos, es una planta
+  tropical impresionante conocida por sus hermosas hojas con puntos plateados y
+  su facilidad de cuidado, lo que la hace una excelente adición a cualquier
+  espacio interior. Con su tasa de crecimiento moderada y capacidad para
+  prosperar en una variedad de condiciones, esta planta es ideal para
+  principiantes y entusiastas de las plantas experimentados.
 datePublished: '2026-02-16T00:00:00.000Z'
 dateModified: '2026-02-16T00:00:00.000Z'
 image: >-
@@ -28,6 +33,7 @@ image: >-
 imageAlt: Planta de interior Begonia de Puntos
 imageCredit: Wietse Jongsma
 imageCreditUrl: 'https://unsplash.com/@wietsej?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Resumen de Cuidado Rápido

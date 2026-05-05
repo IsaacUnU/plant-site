@@ -9,7 +9,9 @@ tags:
   - cuidado de plantas
   - plantas comprobadas
 description: >-
-  Descubre las 10 plantas comprobadas que limpian y purifican el aire interior. Selecciones de expertos con consejos de cuidado, pros, contras y enlaces a guías completas.
+  Descubre las 10 plantas comprobadas que limpian y purifican el aire interior.
+  Selecciones de expertos con consejos de cuidado, pros, contras y enlaces a
+  guías completas.
 featuredPlants:
   - aloe-vera
   - bird-of-paradise
@@ -29,6 +31,7 @@ imageAlt: Las 10 Mejores Plantas Purificadoras de Aire para tu Hogar
 imageCredit: Sanni Sahil
 imageCreditUrl: >-
   https://unsplash.com/@sannisahil?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Introducción

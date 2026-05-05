@@ -29,6 +29,7 @@ description: >-
   The Red-Edged Dracaena, or *Dracaena marginata*, thrives in a north-facing
   window with 250–400 foot-candles of indirect light. Water every 7–10 days
   based on so.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

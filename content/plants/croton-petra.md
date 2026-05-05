@@ -30,6 +30,7 @@ description: >-
   Croton petra, also known as Codiaeum variegatum, thrives in bright, indirect
   light with 200-400 foot-candles of light from an east or south window. Water
   it eve.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

@@ -37,6 +37,7 @@ imageCreditUrl: 'https://unsplash.com/@wietsej?utm_source=plantcare_guide&utm_me
 additionalImages:
   - /images/plants/begonia-maculata-2.jpg
   - /images/plants/begonia-maculata-3.jpg
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 

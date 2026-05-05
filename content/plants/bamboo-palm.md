@@ -36,6 +36,7 @@ imageCreditUrl: >-
 additionalImages:
   - /images/plants/bamboo-palm-2.jpg
   - /images/plants/bamboo-palm-3.jpg
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

@@ -21,10 +21,10 @@ toxicity: mildly-toxic
 growthRate: moderate
 description: >-
   El Philodendron Rosa Princesa es una planta de interior variegada y
-  deslumbrante conocida por sus hermosas hojas rosadas y verdes,
-  convirtiéndolo en una opción popular para espacios interiores. Con el
-  cuidado adecuado, esta planta puede prosperar y convertirse en una pieza
-  destacada en cualquier habitación.
+  deslumbrante conocida por sus hermosas hojas rosadas y verdes, convirtiéndolo
+  en una opción popular para espacios interiores. Con el cuidado adecuado, esta
+  planta puede prosperar y convertirse en una pieza destacada en cualquier
+  habitación.
 datePublished: 2026-04-27T00:00:00.000Z
 dateModified: 2026-04-27T00:00:00.000Z
 image: >-
@@ -33,6 +33,7 @@ imageAlt: Philodendron Rosa Princesa planta de interior
 imageCredit: V V
 imageCreditUrl: >-
   https://unsplash.com/@hibernatingotter?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

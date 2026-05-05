@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Planta Nervio
 slug: nerve-plant
 commonName: Planta Nervio
@@ -20,7 +20,12 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Planta Nervio es una planta de interior impresionante y de bajo mantenimiento con hojas bellamente venadas que añaden un toque de elegancia tropical a cualquier habitación. Su tamaño pequeño y adaptabilidad la hacen perfecta para espacios interiores, desde escritorios hasta estanterías, y también es una excelente planta purificadora de aire que ayuda a eliminar toxinas del aire.
+  La Planta Nervio es una planta de interior impresionante y de bajo
+  mantenimiento con hojas bellamente venadas que añaden un toque de elegancia
+  tropical a cualquier habitación. Su tamaño pequeño y adaptabilidad la hacen
+  perfecta para espacios interiores, desde escritorios hasta estanterías, y
+  también es una excelente planta purificadora de aire que ayuda a eliminar
+  toxinas del aire.
 datePublished: '2026-03-03T00:00:00.000Z'
 dateModified: '2026-03-03T00:00:00.000Z'
 image: >-
@@ -29,6 +34,7 @@ imageAlt: Planta Nervio planta de interior
 imageCredit: Suri Huang
 imageCreditUrl: >-
   https://unsplash.com/@fukayamamo?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

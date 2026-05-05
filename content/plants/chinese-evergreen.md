@@ -25,6 +25,7 @@ imageAlt: Chinese Evergreen houseplant
 imageCredit: David Clode
 imageCreditUrl: >-
   https://unsplash.com/@davidclode?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 The Chinese Evergreen, Aglaonema modestum, thrives in indirect light with 200-400 foot-candles of brightness. Water every 7-10 days by checking the soil depth and weight. Maintain a humidity level between 50-70% using pebble trays or misting. Keep temperatures between 65-80°F (18-27°C) away from drafts, particularly heating vents.

@@ -28,6 +28,7 @@ image: >-
 imageAlt: String of Hearts houseplant
 imageCredit: Katarzyna Bobrowicz
 imageCreditUrl: 'https://unsplash.com/@kat_bo?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidados

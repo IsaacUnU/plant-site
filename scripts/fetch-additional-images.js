@@ -24,12 +24,11 @@ const http  = require('http');
 const matter = require('gray-matter');
 
 const CONTENT_DIR  = path.join(__dirname, '..', 'content', 'plants');
-const IMAGES_DIR   = path.join(__dirname, '..', 'public', 'images', 'plants');
 const UNSPLASH_API = 'https://api.unsplash.com';
 const GROQ_API     = 'https://api.groq.com/openai/v1/chat/completions';
 const INAT_API     = 'https://api.inaturalist.org/v1';
 const VISION_MODEL = 'meta-llama/llama-4-scout-17b-16e-instruct';
-const EXTRA_SUFFIXES = ['-2', '-3', '-detail'];
+const TARGET_COUNT = 3; // URLs to collect per plant
 
 // ── Utilities ────────────────────────────────────────────────────────────────
 
@@ -144,15 +143,7 @@ async function iNaturalistSearch(scientificName) {
   }
 }
 
-// ── Download ──────────────────────────────────────────────────────────────────
-
-async function downloadImage(url, destPath) {
-  const res = await httpsGet(url);
-  if (res.status !== 200) throw new Error(`Download HTTP ${res.status}`);
-  fs.writeFileSync(destPath, res.body);
-}
-
-// ── Per-plant processor ───────────────────────────────────────────────────────
+// ── Per-plant processor — URL only, no local downloads ───────────────────────
 
 async function processPlant(slug, accessKey, groqKey) {
   const mdPath = path.join(CONTENT_DIR, `${slug}.md`);
@@ -163,113 +154,71 @@ async function processPlant(slug, accessKey, groqKey) {
   const scientificName = fm.scientificName || commonName;
   const genus          = scientificName.split(' ')[0];
 
-  // Build search queries: specific → common → genus fallback
+  const existing = Array.isArray(fm.additionalImages) ? fm.additionalImages : [];
+
+  // Already has enough URLs → skip
+  if (existing.length >= TARGET_COUNT) {
+    console.log(`  Already has ${existing.length} images — skipping`);
+    return;
+  }
+
   const queries = [
     `${commonName} plant close up`,
     `${commonName} houseplant indoor`,
     genus.toLowerCase() !== commonName.toLowerCase() ? `${genus} plant` : `tropical plant ${commonName}`,
   ];
 
-  if (!fs.existsSync(IMAGES_DIR)) fs.mkdirSync(IMAGES_DIR, { recursive: true });
-
-  const existing    = Array.isArray(fm.additionalImages) ? fm.additionalImages : [];
+  const collected = [...existing];
   const existingSet = new Set(existing);
-  const collected   = [...existing];
-  let added = 0;
 
-  for (let i = 0; i < EXTRA_SUFFIXES.length; i++) {
-    const suffix   = EXTRA_SUFFIXES[i];
-    const webPath  = `/images/plants/${slug}${suffix}.jpg`;
-    const diskPath = path.join(IMAGES_DIR, `${slug}${suffix}.jpg`);
-
-    if (fs.existsSync(diskPath)) {
-      if (!existingSet.has(webPath)) { collected.push(webPath); existingSet.add(webPath); }
-      console.log(`  Already exists: ${slug}${suffix}.jpg`);
-      continue;
-    }
-
+  for (let i = 0; collected.length < TARGET_COUNT && i < queries.length; i++) {
     const query = queries[i];
     console.log(`  Searching Unsplash: "${query}"...`);
     await sleep(3000);
 
     let verified = null;
 
-    // 1. Try Unsplash candidates (top 5, verify each)
     try {
       const data = await unsplashSearch(query, accessKey);
-      const candidates = data.results || [];
+      const candidates = (data.results || []).filter(p => !existingSet.has(p.urls?.raw));
 
-      for (const photo of candidates) {
+      for (const photo of candidates.slice(0, 5)) {
         const previewUrl = `${photo.urls.raw}&w=400&q=70&auto=format&fit=crop`;
         const ok = await verifyImage(previewUrl, commonName, scientificName, groqKey);
         if (ok) {
           verified = {
             url: `${photo.urls.raw}&w=900&q=80&auto=format&fit=crop`,
-            credit: photo.user?.name || 'Unsplash',
             id: photo.id,
           };
           break;
         }
       }
-
       if (!verified) console.log(`  No verified Unsplash result — trying iNaturalist...`);
     } catch (err) {
       console.log(`  Unsplash error: ${err.message}`);
     }
 
-    // 2. iNaturalist fallback
-    if (!verified) {
+    // iNaturalist fallback
+    if (!verified && i === queries.length - 1) {
       const inat = await iNaturalistSearch(scientificName);
-      if (inat) {
-        verified = { url: inat.url, credit: inat.credit, id: null };
-      }
+      if (inat) verified = { url: inat.url, id: null };
     }
 
-    if (!verified) {
-      console.log(`  No image found for slot ${suffix} of ${slug}`);
-      continue;
-    }
+    if (!verified) continue;
 
-    try {
-      await downloadImage(verified.url, diskPath);
-      if (verified.id) await triggerDownload(verified.id, accessKey);
-      collected.push(webPath);
-      existingSet.add(webPath);
-      added++;
-      console.log(`  ✓ Saved: ${slug}${suffix}.jpg (${verified.credit})`);
-    } catch (err) {
-      console.log(`  Download failed: ${err.message}`);
+    if (verified.id) await triggerDownload(verified.id, accessKey);
+    if (!existingSet.has(verified.url)) {
+      collected.push(verified.url);
+      existingSet.add(verified.url);
+      console.log(`  ✓ URL saved (${i + 1}/${TARGET_COUNT})`);
     }
   }
 
-  if (added > 0 || collected.length !== existing.length) {
+  if (collected.length !== existing.length) {
     fm.additionalImages = collected;
     fs.writeFileSync(mdPath, matter.stringify(content, fm));
+    console.log(`  Frontmatter updated: ${collected.length} additional image URL(s)`);
   }
-}
-
-// ── Re-verify existing images ─────────────────────────────────────────────────
-
-async function reverifyAll(groqKey) {
-  if (!groqKey) { console.error('GROQ_API_KEY required for --reverify'); process.exit(1); }
-  const slugs = fs.readdirSync(CONTENT_DIR).filter(f => f.endsWith('.md')).map(f => f.replace('.md', ''));
-  let removed = 0;
-
-  for (const slug of slugs) {
-    const { data: fm } = matter(fs.readFileSync(path.join(CONTENT_DIR, `${slug}.md`), 'utf8'));
-    const commonName     = fm.commonName || slug.replace(/-/g, ' ');
-    const scientificName = fm.scientificName || commonName;
-
-    for (const suffix of EXTRA_SUFFIXES) {
-      const diskPath = path.join(IMAGES_DIR, `${slug}${suffix}.jpg`);
-      if (!fs.existsSync(diskPath)) continue;
-
-      // Serve via file:// isn't possible for Groq — skip local files, only verify Unsplash URLs
-      // Re-verify is best run before downloading (use --clean to delete and re-fetch)
-      console.log(`  [${slug}${suffix}] Exists — use --clean to re-download with verification`);
-    }
-  }
-  console.log(`\nTo re-fetch with verification: delete images in public/images/plants/ and re-run without --reverify`);
 }
 
 // ── Main ──────────────────────────────────────────────────────────────────────
@@ -283,8 +232,6 @@ async function main() {
 
   const args = process.argv.slice(2);
 
-  if (args.includes('--reverify')) { await reverifyAll(groqKey); return; }
-
   const specificSlug = args.find(a => !a.startsWith('--'));
   if (specificSlug) {
     console.log(`\n[extra-images] Processing: ${specificSlug}`);
@@ -294,8 +241,10 @@ async function main() {
 
   const slugs = fs.readdirSync(CONTENT_DIR).filter(f => f.endsWith('.md')).map(f => f.replace('.md', ''));
   const pending = slugs.filter(slug => {
-    return !fs.existsSync(path.join(IMAGES_DIR, `${slug}-2.jpg`)) ||
-           !fs.existsSync(path.join(IMAGES_DIR, `${slug}-3.jpg`));
+    try {
+      const { data: fm } = matter(fs.readFileSync(path.join(CONTENT_DIR, `${slug}.md`), 'utf8'));
+      return !Array.isArray(fm.additionalImages) || fm.additionalImages.length < TARGET_COUNT;
+    } catch { return true; }
   });
 
   console.log(`\n[extra-images] ${slugs.length} plants — ${pending.length} need images, ${slugs.length - pending.length} complete.`);

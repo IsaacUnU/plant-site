@@ -29,6 +29,7 @@ imageAlt: Guinea-Fowl Aloe houseplant
 imageCredit: Arpita Ghosh
 imageCreditUrl: >-
   https://unsplash.com/@arpitamukh1?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidados

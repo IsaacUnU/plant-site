@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Scindapsus pictus
 slug: scindapsus-pictus
 commonName: Pothos Plateado
@@ -20,7 +20,11 @@ temperature: 65-80°F (18-27°C)
 toxicity: mildly-toxic
 growthRate: moderate
 description: >-
-  La Scindapsus pictus, comúnmente conocida como el Pothos Plateado, es una planta versátil y de bajo mantenimiento que es perfecta para principiantes. Sus hermosas hojas en forma de corazón con marcas plateadas la hacen una excelente adición a cualquier espacio interior, y también es conocida por sus propiedades purificadoras del aire.
+  La Scindapsus pictus, comúnmente conocida como el Pothos Plateado, es una
+  planta versátil y de bajo mantenimiento que es perfecta para principiantes.
+  Sus hermosas hojas en forma de corazón con marcas plateadas la hacen una
+  excelente adición a cualquier espacio interior, y también es conocida por sus
+  propiedades purificadoras del aire.
 datePublished: 2026-04-24T00:00:00.000Z
 dateModified: 2026-04-24T00:00:00.000Z
 image: >-
@@ -28,6 +32,7 @@ image: >-
 imageAlt: Planta de Pothos Plateado
 imageCredit: Lasma Balode
 imageCreditUrl: 'https://unsplash.com/@susurins?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Resumen de Cuidado Rápido

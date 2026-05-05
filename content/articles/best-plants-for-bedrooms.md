@@ -28,6 +28,7 @@ image: >-
 imageAlt: The 10 Best Plants for Bedrooms Every Plant Lover Should Own
 imageCredit: Lucy Mui
 imageCreditUrl: 'https://unsplash.com/@lsmui?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## The Secret to a Restful Night's Sleep: Plants in the Bedroom

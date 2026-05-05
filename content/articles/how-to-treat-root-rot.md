@@ -16,6 +16,7 @@ imageAlt: How to Treat Root Rot and Save Your Plant
 imageCredit: Greg Schmigel
 imageCreditUrl: >-
   https://unsplash.com/@gregschmigel?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Introduction

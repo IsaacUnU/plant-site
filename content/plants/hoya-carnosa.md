@@ -31,6 +31,7 @@ description: >-
   To grow a thriving Hoya carnosa, place it in an east or south-facing window
   that receives 200-400 foot-candles of light, which is about the brightness
   level you.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

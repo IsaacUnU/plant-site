@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Alocasia Polly
 slug: alocasia-polly
 commonName: Alocasia Polly
@@ -20,7 +20,10 @@ temperature: 65-80°F (18-27°C)
 toxicity: mildly-toxic
 growthRate: moderate
 description: >-
-  La Alocasia Polly es una planta de interior impresionante y popular, conocida por sus hermosas hojas en forma de corazón con patrones de venas intrincados. Con el cuidado adecuado, puede prosperar en entornos interiores, proporcionando un toque de elegancia tropical y ayudando a purificar el aire.
+  La Alocasia Polly es una planta de interior impresionante y popular, conocida
+  por sus hermosas hojas en forma de corazón con patrones de venas intrincados.
+  Con el cuidado adecuado, puede prosperar en entornos interiores,
+  proporcionando un toque de elegancia tropical y ayudando a purificar el aire.
 datePublished: '2026-02-12T00:00:00.000Z'
 dateModified: '2026-02-12T00:00:00.000Z'
 image: >-
@@ -29,6 +32,7 @@ imageAlt: Planta de interior Alocasia Polly
 imageCredit: Jakayla Toney
 imageCreditUrl: >-
   https://unsplash.com/@thegardenstateexplorer?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen de Cuidado Rápido

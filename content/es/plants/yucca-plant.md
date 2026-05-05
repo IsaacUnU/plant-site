@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Planta Yucca
 slug: yucca-plant
 commonName: Yucca
@@ -20,7 +20,10 @@ temperature: 65-80°F (18-27°C)
 toxicity: mildly-toxic
 growthRate: moderate
 description: >-
-  La planta Yucca es una planta de interior versátil y de bajo mantenimiento conocida por su apariencia impactante y su capacidad para purificar el aire. Con el cuidado adecuado, puede prosperar en condiciones interiores y aportar un toque de belleza tropical a cualquier habitación.
+  La planta Yucca es una planta de interior versátil y de bajo mantenimiento
+  conocida por su apariencia impactante y su capacidad para purificar el aire.
+  Con el cuidado adecuado, puede prosperar en condiciones interiores y aportar
+  un toque de belleza tropical a cualquier habitación.
 datePublished: 2026-04-23T00:00:00.000Z
 dateModified: 2026-04-23T00:00:00.000Z
 image: >-
@@ -28,6 +31,7 @@ image: >-
 imageAlt: Planta de interior Yucca
 imageCredit: Tatiana Rodriguez
 imageCreditUrl: 'https://unsplash.com/@tata186?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

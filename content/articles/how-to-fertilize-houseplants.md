@@ -16,6 +16,7 @@ imageAlt: How and When to Fertilize Houseplants
 imageCredit: rafidh cell
 imageCreditUrl: >-
   https://unsplash.com/@rafidhcell?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Why Fertilizing Houseplants Is Often Overlooked

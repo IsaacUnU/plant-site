@@ -31,6 +31,7 @@ description: >-
   To keep your Monstera adansonii thriving, ensure it receives bright, indirect
   light with 200-400 foot-candles of light intensity, placed about 3-5 feet from
   an .
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

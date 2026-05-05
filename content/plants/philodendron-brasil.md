@@ -21,6 +21,7 @@ imageAlt: Philodendron Brasil houseplant
 imageCredit: Rebecca Matthews
 imageCreditUrl: >-
   https://unsplash.com/@rebeccamatthews?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 

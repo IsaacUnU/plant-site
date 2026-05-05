@@ -18,6 +18,7 @@ imageAlt: 'Indoor Plant Light Guide: What Every Grower Needs to Know'
 imageCredit: Eugene Chystiakov
 imageCreditUrl: >-
   https://unsplash.com/@eugenechystiakov?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Introduction

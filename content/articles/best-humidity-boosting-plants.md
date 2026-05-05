@@ -29,6 +29,7 @@ imageAlt: Top 10 Best Humidity-Boosting Houseplants for Your Home
 imageCredit: Huy Phan
 imageCreditUrl: >-
   https://unsplash.com/@huyphan2602?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Introduction

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado del Rosario de Cuentas
 slug: string-of-pearls
 commonName: Rosario de Cuentas
@@ -21,7 +21,12 @@ temperature: 65-80°F (18-27°C)
 toxicity: mildly-toxic
 growthRate: moderate
 description: >-
-  El Rosario de Cuentas es una planta de interior única y de bajo mantenimiento que es perfecta para espacios interiores, con sus tallos colgantes y pequeñas "perlas" redondas que almacenan agua, lo que la convierte en una excelente opción para quienes tienden a olvidar regar sus plantas. Su tamaño compacto y su capacidad para prosperar en una variedad de condiciones de iluminación la hacen una elección popular para escritorios, estanterías y cestas colgantes.
+  El Rosario de Cuentas es una planta de interior única y de bajo mantenimiento
+  que es perfecta para espacios interiores, con sus tallos colgantes y pequeñas
+  "perlas" redondas que almacenan agua, lo que la convierte en una excelente
+  opción para quienes tienden a olvidar regar sus plantas. Su tamaño compacto y
+  su capacidad para prosperar en una variedad de condiciones de iluminación la
+  hacen una elección popular para escritorios, estanterías y cestas colgantes.
 datePublished: '2026-03-13T00:00:00.000Z'
 dateModified: '2026-03-13T00:00:00.000Z'
 image: >-
@@ -29,6 +34,7 @@ image: >-
 imageAlt: String of Pearls houseplant
 imageCredit: Bingjie Yue
 imageCreditUrl: 'https://unsplash.com/@joyceyue?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Descripción General

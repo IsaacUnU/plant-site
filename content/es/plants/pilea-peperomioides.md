@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Planta de Dinero China
 slug: pilea-peperomioides
 commonName: Planta de Dinero China
@@ -19,7 +19,13 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Planta de Dinero China, también conocida como Pilea peperomioides, es una planta de interior de bajo mantenimiento y visualmente atractiva que aporta un toque de belleza natural a cualquier habitación, con sus hojas redondas únicas y su capacidad para purificar el aire. Nativa de China, esta planta se ha convertido en una opción popular entre los jardineros de interior debido a su facilidad de cuidado y su capacidad para prosperar en una variedad de entornos.
+  La Planta de Dinero China, también conocida como Pilea peperomioides, es una
+  planta de interior de bajo mantenimiento y visualmente atractiva que aporta un
+  toque de belleza natural a cualquier habitación, con sus hojas redondas únicas
+  y su capacidad para purificar el aire. Nativa de China, esta planta se ha
+  convertido en una opción popular entre los jardineros de interior debido a su
+  facilidad de cuidado y su capacidad para prosperar en una variedad de
+  entornos.
 datePublished: '2026-03-07T00:00:00.000Z'
 dateModified: '2026-03-07T00:00:00.000Z'
 image: >-
@@ -28,6 +34,7 @@ imageAlt: Planta de Dinero China de interior
 imageCredit: Griselidis Gaillet
 imageCreditUrl: >-
   https://unsplash.com/@yesweblog_griselidis_gaillet?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen de Cuidado Rápido

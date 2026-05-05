@@ -7,7 +7,9 @@ tags:
   - plantas de interior
   - cuidado de plantas
   - jardinería de interior
-description: Aprende a propagar plantas de interior con 5 métodos fáciles y consejos de expertos
+description: >-
+  Aprende a propagar plantas de interior con 5 métodos fáciles y consejos de
+  expertos
 datePublished: '2026-03-27T00:00:00.000Z'
 dateModified: '2026-03-27T00:00:00.000Z'
 image: >-
@@ -15,6 +17,7 @@ image: >-
 imageAlt: 'Cómo Propagar Plantas de Interior: 5 Métodos Fáciles'
 imageCredit: Christine
 imageCreditUrl: 'https://unsplash.com/@studio_cj?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Introducción

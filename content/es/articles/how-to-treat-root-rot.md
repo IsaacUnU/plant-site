@@ -16,6 +16,7 @@ imageAlt: Cómo Tratar la Putrefacción de Raíces y Salvar tu Planta
 imageCredit: Greg Schmigel
 imageCreditUrl: >-
   https://unsplash.com/@gregschmigel?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Introducción

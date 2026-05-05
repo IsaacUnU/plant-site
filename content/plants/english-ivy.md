@@ -31,6 +31,7 @@ imageCreditUrl: >-
 description: >-
   English Ivy (Hedera helix) thrives in a north-facing room with 200-400
   foot-candles of light from an east or south window.
+author: Sarah Mitchell
 ---
 # Quick Care Summary
 English Ivy (Hedera helix) thrives in a north-facing room with 200-400 foot-candles of light from an east or south window. Water every 7 to 10 days, ensuring the top 2 inches of soil are dry before watering; maintain humidity between 50-70% and temperatures between 65-75°F (18-24°C). Fertilize with a balanced 10-10-10 NPK mix monthly during spring and summer, and keep the plant away from heating vents or cold windows. It's mildly toxic to both cats and dogs.

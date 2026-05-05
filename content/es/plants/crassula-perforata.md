@@ -29,6 +29,7 @@ imageAlt: String of Buttons houseplant
 imageCredit: Anna Kharkivska
 imageCreditUrl: >-
   https://unsplash.com/@anna_kharkivska?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidados

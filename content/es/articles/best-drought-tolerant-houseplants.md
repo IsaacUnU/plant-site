@@ -8,8 +8,9 @@ tags:
   - jardinería interior
   - plantas de interior
 description: >-
-  Descubre las 5 plantas de interior drought-tolerant que prosperan con riego mínimo.
-  Selecciones de expertos con consejos de cuidado, pros, contras y enlaces a guías completas.
+  Descubre las 5 plantas de interior drought-tolerant que prosperan con riego
+  mínimo. Selecciones de expertos con consejos de cuidado, pros, contras y
+  enlaces a guías completas.
 featuredPlants:
   - aloe-vera
   - golden-pothos
@@ -24,6 +25,7 @@ imageAlt: 5 Plantas de Interior Drought-Tolerant Esenciales que Necesitas Ahora
 imageCredit: Annie Spratt
 imageCreditUrl: >-
   https://unsplash.com/@anniespratt?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ¿Estás cansado de preocuparte constantemente por que tus plantas de interior se sequen o se ahoguen en agua? ¿Tienes dificultades para mantener tus plantas felices y sanas, a pesar de tus mejores esfuerzos? No estás solo. Muchos de nosotros hemos estado ahí, buscando frenéticamente el equilibrio perfecto de agua y nutrientes para mantener a nuestras queridas plantas prosperando. Pero, ¿qué pasaría si pudieras encontrar plantas de interior que no solo toleran la sequía sino que realmente prosperan en condiciones de riego mínimo?

@@ -26,6 +26,7 @@ imageAlt: 'Mastering Indoor Greenery: 7 Best Pet-Safe Houseplants'
 imageCredit: Huy Phan
 imageCreditUrl: >-
   https://unsplash.com/@huyphan2602?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 Many plant enthusiasts struggle to find the perfect balance between their love for indoor greenery and their concern for their furry friends' safety. If you're one of them, you're not alone. With so many toxic plants out there, it's natural to worry about the well-being of your pets. But what if I told you that there are plenty of stunning, pet-safe houseplants that can bring joy and freshness to your home without putting your cats and dogs at risk?

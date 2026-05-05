@@ -30,6 +30,7 @@ description: >-
   To care for your Philodendron gloriosum, provide it with 200-400 foot-candles
   of bright indirect light, ideally placed 3-5 feet from an east or south
   window. Wa.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

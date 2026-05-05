@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Haworthia fasciata
 slug: haworthia-fasciata
 commonName: Planta Zebra
@@ -34,6 +34,7 @@ imageAlt: Planta Zebra en interior
 imageCredit: Steve DiMatteo
 imageCreditUrl: >-
   https://unsplash.com/@stevedimatteo?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Descripción General

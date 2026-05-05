@@ -34,6 +34,7 @@ imageAlt: Planta de interior Cola de Dragón
 imageCredit: Olena Shmahalo
 imageCreditUrl: >-
   https://unsplash.com/@theoperatingsystem?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

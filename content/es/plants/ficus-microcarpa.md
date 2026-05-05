@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado del Ficus microcarpa
 slug: ficus-microcarpa
 commonName: Banyán Chino
@@ -19,7 +19,12 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  El Ficus microcarpa, también conocido como Banyán Chino, es una planta de interior versátil y de bajo mantenimiento que puede prosperar en una variedad de entornos, lo que lo hace perfecto tanto para principiantes como para entusiastas de las plantas experimentados. Con su follaje atractivo y su capacidad para purificar el aire, es una excelente opción para cualquiera que busque añadir un toque de verdor a su hogar.
+  El Ficus microcarpa, también conocido como Banyán Chino, es una planta de
+  interior versátil y de bajo mantenimiento que puede prosperar en una variedad
+  de entornos, lo que lo hace perfecto tanto para principiantes como para
+  entusiastas de las plantas experimentados. Con su follaje atractivo y su
+  capacidad para purificar el aire, es una excelente opción para cualquiera que
+  busque añadir un toque de verdor a su hogar.
 datePublished: '2026-02-26T00:00:00.000Z'
 dateModified: '2026-03-08T00:00:00.000Z'
 image: >-
@@ -28,6 +33,7 @@ imageAlt: Banyán Chino planta de interior
 imageCredit: Unlimited Access
 imageCreditUrl: >-
   https://unsplash.com/@bayarbat1122?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Planta de Sombrilla
 slug: umbrella-plant
 commonName: Planta de Sombrilla
@@ -19,7 +19,11 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Planta de Sombrilla es una planta versátil y de bajo mantenimiento conocida por su follaje único, similar a una sombrilla, y su capacidad para prosperar en una variedad de condiciones de iluminación. Con el cuidado adecuado, puede crecer hasta 6 pies de altura y agregar un toque de elegancia tropical a cualquier habitación.
+  La Planta de Sombrilla es una planta versátil y de bajo mantenimiento conocida
+  por su follaje único, similar a una sombrilla, y su capacidad para prosperar
+  en una variedad de condiciones de iluminación. Con el cuidado adecuado, puede
+  crecer hasta 6 pies de altura y agregar un toque de elegancia tropical a
+  cualquier habitación.
 datePublished: '2026-03-17T00:00:00.000Z'
 dateModified: '2026-03-27T00:00:00.000Z'
 image: >-
@@ -27,6 +31,7 @@ image: >-
 imageAlt: Planta de Sombrilla de interior
 imageCredit: Jacob Spaccavento
 imageCreditUrl: 'https://unsplash.com/@sp_cca?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Resumen de Cuidado Rápido

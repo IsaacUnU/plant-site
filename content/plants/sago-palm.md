@@ -21,6 +21,7 @@ imageAlt: Sago Palm houseplant
 imageCredit: Rashid
 imageCreditUrl: >-
   https://unsplash.com/@rashidrashid?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 

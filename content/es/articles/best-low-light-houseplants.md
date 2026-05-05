@@ -1,5 +1,5 @@
 ---
-title: 'Las 10 Mejores Plantas de Interior para Espacios con Poca Luz'
+title: Las 10 Mejores Plantas de Interior para Espacios con Poca Luz
 slug: best-low-light-houseplants
 type: listicle
 category: guides
@@ -8,8 +8,9 @@ tags:
   - jardinería interior
   - plantas de interior
 description: >-
-  Descubre las 10 plantas que prosperan en condiciones de poca luz. Selecciones de expertos con
-  consejos de cuidado, pros, contras y enlaces a guías completas.
+  Descubre las 10 plantas que prosperan en condiciones de poca luz. Selecciones
+  de expertos con consejos de cuidado, pros, contras y enlaces a guías
+  completas.
 featuredPlants:
   - african-violet
   - anthurium
@@ -25,10 +26,11 @@ datePublished: '2026-03-20T00:00:00.000Z'
 dateModified: '2026-03-20T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1628246498566-c846ce32a5b5?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxNYXN0ZXJpbmclMjBJbmRvb3IlMjBHcmVlbmVyeSUzQSUyMDEwJTIwQmVzdCUyMExvdy1MaWdodCUyMEhvdXNlcGxhbnRzJTIwaG91c2VwbGFudHMlMjBpbmRvb3IlMjBnYXJkZW5pbmclMjBob3VzZXBsYW50JTIwaW5kb29yJTIwZ2FyZGVuJTIwbGlmZXN0eWxlfGVufDB8MHx8fDE3NzYzNzE3NzZ8MA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
-imageAlt: 'Las 10 Mejores Plantas de Interior para Espacios con Poca Luz'
+imageAlt: Las 10 Mejores Plantas de Interior para Espacios con Poca Luz
 imageCredit: Huy Phan
 imageCreditUrl: >-
   https://unsplash.com/@huyphan2602?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Introducción

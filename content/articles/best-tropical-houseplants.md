@@ -27,6 +27,7 @@ image: >-
 imageAlt: 9 Essential Best Tropical Houseplants You Need Right Now
 imageCredit: neil macc
 imageCreditUrl: 'https://unsplash.com/@neilmaccs?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 Are you tired of the same old boring indoor plants that seem to blend into the background? Do you want to add a touch of tropical flair to your home, but don't know where to start? Look no further. PlantCare Central has compiled a list of the 9 essential best tropical houseplants that will transform your space into a lush oasis. From low-maintenance stunners to statement pieces that demand attention, these plants are sure to impress.

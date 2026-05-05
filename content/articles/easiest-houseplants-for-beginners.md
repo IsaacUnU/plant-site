@@ -26,6 +26,7 @@ imageAlt: 'Mastering Indoor Greenery: 7 Best Easiest Houseplants for Beginners'
 imageCredit: Prudence Earl
 imageCreditUrl: >-
   https://unsplash.com/@prudenceearl?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 Are you ready to bring some life and vibrancy into your home, but don't know where to start? Indoor gardening can seem intimidating, especially for those new to plant parenthood. With so many options available, it's easy to feel overwhelmed by the sheer variety of plants and their specific needs. However, with a little guidance, you can become a successful indoor gardener and enjoy the many benefits that come with it, from improved air quality to reduced stress levels.

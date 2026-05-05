@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Ficus Benjamina
 slug: weeping-fig
 commonName: Ficus Benjamina
@@ -19,10 +19,11 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Ficus Benjamina es una planta de interior popular y versátil conocida por sus elegantes
-  ramas caídas y su capacidad para purificar el aire. Con el cuidado adecuado, puede prosperar
-  en una variedad de ambientes interiores, lo que la convierte en una excelente opción para
-  entusiastas de las plantas de todos los niveles.
+  La Ficus Benjamina es una planta de interior popular y versátil conocida por
+  sus elegantes ramas caídas y su capacidad para purificar el aire. Con el
+  cuidado adecuado, puede prosperar en una variedad de ambientes interiores, lo
+  que la convierte en una excelente opción para entusiastas de las plantas de
+  todos los niveles.
 datePublished: '2026-03-17T00:00:00.000Z'
 dateModified: '2026-03-17T00:00:00.000Z'
 image: >-
@@ -31,6 +32,7 @@ imageAlt: Ficus Benjamina en interior
 imageCredit: An Hoang
 imageCreditUrl: >-
   https://unsplash.com/@beohoang98?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

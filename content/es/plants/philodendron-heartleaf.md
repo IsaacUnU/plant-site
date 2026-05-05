@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Philodendron heartleaf
 slug: philodendron-heartleaf
 commonName: Filodendro de hoja de corazón
@@ -20,7 +20,11 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Philodendron heartleaf es una planta de interior popular y de bajo mantenimiento, conocida por sus hermosas hojas en forma de corazón y su capacidad para prosperar en una variedad de condiciones de iluminación. Con el cuidado adecuado, esta planta puede crecer rápidamente y proporcionar un toque tropical y exuberante a cualquier habitación.
+  La Philodendron heartleaf es una planta de interior popular y de bajo
+  mantenimiento, conocida por sus hermosas hojas en forma de corazón y su
+  capacidad para prosperar en una variedad de condiciones de iluminación. Con el
+  cuidado adecuado, esta planta puede crecer rápidamente y proporcionar un toque
+  tropical y exuberante a cualquier habitación.
 datePublished: '2026-03-06T00:00:00.000Z'
 dateModified: '2026-03-06T00:00:00.000Z'
 image: >-
@@ -29,6 +33,7 @@ imageAlt: Planta de interior Philodendron heartleaf
 imageCredit: Rebecca Matthews
 imageCreditUrl: >-
   https://unsplash.com/@rebeccamatthews?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen

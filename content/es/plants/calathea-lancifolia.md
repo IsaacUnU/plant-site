@@ -21,11 +21,11 @@ toxicity: non-toxic
 growthRate: moderate
 description: >-
   La Calathea lancifolia, también conocida como Planta serpiente, es una
-  impresionante planta de interior de bajo mantenimiento que cuenta con un follaje
-  hermoso y único, y puede prosperar en una variedad de ambientes interiores.
-  Con su capacidad para purificar el aire y aumentar la humedad, esta planta
-  es una excelente opción para cualquiera que busque aportar un toque de belleza
-  tropical a su hogar.
+  impresionante planta de interior de bajo mantenimiento que cuenta con un
+  follaje hermoso y único, y puede prosperar en una variedad de ambientes
+  interiores. Con su capacidad para purificar el aire y aumentar la humedad,
+  esta planta es una excelente opción para cualquiera que busque aportar un
+  toque de belleza tropical a su hogar.
 datePublished: 2026-04-29T00:00:00.000Z
 dateModified: 2026-04-29T00:00:00.000Z
 image: >-
@@ -34,6 +34,7 @@ imageAlt: Planta serpiente en interior
 imageCredit: Rebecca Matthews
 imageCreditUrl: >-
   https://unsplash.com/@rebeccamatthews?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

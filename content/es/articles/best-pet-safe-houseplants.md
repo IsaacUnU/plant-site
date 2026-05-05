@@ -1,5 +1,5 @@
 ---
-title: 'Las 7 Mejores Plantas de Interior Seguras para Mascotas'
+title: Las 7 Mejores Plantas de Interior Seguras para Mascotas
 slug: best-pet-safe-houseplants
 type: listicle
 category: guides
@@ -8,8 +8,9 @@ tags:
   - jardinería interior
   - plantas de interior
 description: >-
-  Descubre las 7 plantas de interior no tóxicas seguras para gatos y perros. Selecciones de expertos con
-  consejos de cuidado, pros, contras y enlaces a guías completas.
+  Descubre las 7 plantas de interior no tóxicas seguras para gatos y perros.
+  Selecciones de expertos con consejos de cuidado, pros, contras y enlaces a
+  guías completas.
 featuredPlants:
   - african-violet
   - begonia-maculata
@@ -22,10 +23,11 @@ datePublished: '2026-03-20T00:00:00.000Z'
 dateModified: '2026-03-29T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1571028557446-2965a546c3a9?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxNYXN0ZXJpbmclMjBJbmRvb3IlMjBHcmVlbmVyeSUzQSUyMDclMjBCZXN0JTIwUGV0LVNhZmUlMjHIb3VzZXBsYW50cyUyMGhvdXNlcGxhbnRzJTIwaW5kb29yJTIwZ2FyZGVuaW5nJTIwaG91c2VwbGFudCUyMGluZG9vciUyMGdhcmRlbiUyMGxpZmVzdHlsZXxlbnwwfDB8fHwxNzc2NDMwMTQ2fDA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
-imageAlt: 'Las 7 Mejores Plantas de Interior Seguras para Mascotas'
+imageAlt: Las 7 Mejores Plantas de Interior Seguras para Mascotas
 imageCredit: Huy Phan
 imageCreditUrl: >-
   https://unsplash.com/@huyphan2602?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 Muchos entusiastas de las plantas luchan por encontrar el equilibrio perfecto entre su amor por la vegetación interior y su preocupación por la seguridad de sus amigos peludos. Si eres uno de ellos, no estás solo. Con tantas plantas tóxicas disponibles, es natural preocuparse por el bienestar de tus mascotas. Pero, ¿qué pasaría si te dijera que hay muchas plantas de interior impresionantes y seguras para mascotas que pueden aportar alegría y frescura a tu hogar sin poner en riesgo a tus gatos y perros?

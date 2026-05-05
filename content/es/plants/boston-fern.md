@@ -1,5 +1,7 @@
-﻿---
-title: 'Guía Completa de Cuidado del Helecho de Boston: Consejos Expertos para una Planta Próspera'
+---
+title: >-
+  Guía Completa de Cuidado del Helecho de Boston: Consejos Expertos para una
+  Planta Próspera
 slug: boston-fern
 commonName: Helecho de Boston
 scientificName: Nephrolepis exaltata
@@ -22,7 +24,10 @@ temperature: 65–75°F (18–24°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  El Helecho de Boston es una planta de interior popular y de bajo mantenimiento conocida por su frondoso follaje verde y sus propiedades purificadoras del aire. Con el cuidado adecuado, esta planta tropical puede prosperar en interiores, aportando un toque de belleza natural a cualquier habitación.
+  El Helecho de Boston es una planta de interior popular y de bajo mantenimiento
+  conocida por su frondoso follaje verde y sus propiedades purificadoras del
+  aire. Con el cuidado adecuado, esta planta tropical puede prosperar en
+  interiores, aportando un toque de belleza natural a cualquier habitación.
 datePublished: '2026-02-17T00:00:00.000Z'
 dateModified: '2026-03-03T00:00:00.000Z'
 image: >-
@@ -31,6 +36,7 @@ imageAlt: Planta de interior Helecho de Boston
 imageCredit: Unknown Wong
 imageCreditUrl: >-
   https://unsplash.com/@goodchinese?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 ## Descripción General
 El Helecho de Boston, también conocida como Nephrolepis exaltata, es una planta tropical nativa de regiones tropicales de todo el mundo. Es una planta de interior popular debido a su atractivo y frondoso follaje y su capacidad para purificar el aire. La Helecho de Boston tiene frondas largas y delgadas que pueden crecer hasta 6 pies de alto, lo que la hace una adición impresionante a cualquier habitación. Su popularidad se debe a su facilidad de cuidado y su capacidad para prosperar en una variedad de condiciones, lo que la hace una excelente opción para principiantes y entusiastas de plantas experimentados.

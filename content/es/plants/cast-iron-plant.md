@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Planta de Hierro Fundido
 slug: cast-iron-plant
 commonName: Planta de Hierro Fundido
@@ -20,7 +20,13 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Planta de Hierro Fundido es una planta de interior impresionante y de bajo mantenimiento conocida por sus hojas verdes oscuras en forma de espada que pueden prosperar en una variedad de condiciones, lo que la hace perfecta para personas ocupadas o aquellas que están empezando a ser aficionados a las plantas. Con su capacidad para tolerar la luz baja y el riego infrecuente, esta planta es una excelente opción para cualquier persona que desee agregar algo de verde a su espacio sin requerir mucho alboroto.
+  La Planta de Hierro Fundido es una planta de interior impresionante y de bajo
+  mantenimiento conocida por sus hojas verdes oscuras en forma de espada que
+  pueden prosperar en una variedad de condiciones, lo que la hace perfecta para
+  personas ocupadas o aquellas que están empezando a ser aficionados a las
+  plantas. Con su capacidad para tolerar la luz baja y el riego infrecuente,
+  esta planta es una excelente opción para cualquier persona que desee agregar
+  algo de verde a su espacio sin requerir mucho alboroto.
 datePublished: '2026-02-19T00:00:00.000Z'
 dateModified: '2026-02-19T00:00:00.000Z'
 image: >-
@@ -29,6 +35,7 @@ imageAlt: Planta de Hierro Fundido de interior
 imageCredit: Gigi Visacri
 imageCreditUrl: >-
   https://unsplash.com/@georgia_vis?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 ## Descripción General
 La Planta de Hierro Fundido, también conocida como Aspidistra elatior, es una especie de planta con flores que es nativa de Japón y Taiwán. Ha sido una planta de interior popular durante muchos años debido a su capacidad para prosperar en una variedad de condiciones, incluyendo la luz baja y el riego infrecuente. La planta obtiene su nombre común por su capacidad para soportar el descuido y tolerar una variedad de condiciones, lo que la hace una excelente opción para personas ocupadas o aquellas que están empezando a ser aficionados a las plantas. La Planta de Hierro Fundido tiene hojas verdes oscuras en forma de espada que pueden crecer hasta 2 pies de largo, y puede producir pequeñas flores moradas en la primavera.

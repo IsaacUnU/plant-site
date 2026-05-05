@@ -27,6 +27,7 @@ image: >-
 imageAlt: String of Bananas houseplant
 imageCredit: Axel Fahr
 imageCreditUrl: 'https://unsplash.com/@axelfahr?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidados

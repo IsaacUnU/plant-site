@@ -21,6 +21,7 @@ imageAlt: Caladium houseplant
 imageCredit: David Clode
 imageCreditUrl: >-
   https://unsplash.com/@davidclode?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 

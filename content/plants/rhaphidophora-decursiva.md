@@ -31,6 +31,7 @@ description: >-
   The Rhaphidophora decursiva, or Dragon Tail, thrives in bright, indirect light
   with a minimum of 200 to 400 foot-candles. Water it every seven to ten days
   durin.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

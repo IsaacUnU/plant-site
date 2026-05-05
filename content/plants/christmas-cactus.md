@@ -33,6 +33,7 @@ additionalImages:
   - /images/plants/christmas-cactus-2.jpg
   - /images/plants/christmas-cactus-3.jpg
   - /images/plants/christmas-cactus-detail.jpg
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

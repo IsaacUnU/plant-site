@@ -1,5 +1,5 @@
 ---
-title: 'Las 7 Plantas de Interior Más Fáciles para Principiantes'
+title: Las 7 Plantas de Interior Más Fáciles para Principiantes
 slug: easiest-houseplants-for-beginners
 type: listicle
 category: guides
@@ -8,8 +8,9 @@ tags:
   - jardinería interior
   - principiantes
 description: >-
-  Descubre las 7 plantas amigables para principiantes que son casi imposibles de matar.
-  Selecciones de expertos con consejos de cuidado, pros, contras y enlaces a guías completas.
+  Descubre las 7 plantas amigables para principiantes que son casi imposibles de
+  matar. Selecciones de expertos con consejos de cuidado, pros, contras y
+  enlaces a guías completas.
 featuredPlants:
   - african-violet
   - aloe-vera
@@ -22,10 +23,11 @@ datePublished: '2026-03-25T00:00:00.000Z'
 dateModified: '2026-03-25T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1521334884684-d80222895322?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxNYXN0ZXJpbmclMjBJbmRvb3IlMjBHcmVlbmVyeSUzQSUyMDclMjBCZXN0JTIwRWFzaWVzdCUyMEhvdXNlcGxhbnRzJTIwZm9yJTIwQmVnaW5uZXJzJTIwaG91c2VwbGFudHMlMjBpbmRvb3IlMjBnYXJkZW5pbmclMjBob3VzZXBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzY2MzI3MTF8MA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
-imageAlt: 'Las 7 Plantas de Interior Más Fáciles para Principiantes'
+imageAlt: Las 7 Plantas de Interior Más Fáciles para Principiantes
 imageCredit: Prudence Earl
 imageCreditUrl: >-
   https://unsplash.com/@prudenceearl?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ¿Estás listo para dar vida y vibrancia a tu hogar, pero no sabes por dónde empezar? La jardinería interior puede parecer intimidante, especialmente para quienes son nuevos en el cuidado de plantas. Con tantas opciones disponibles, es fácil sentirse abrumado por la gran variedad de plantas y sus necesidades específicas. Sin embargo, con un poco de orientación, puedes convertirte en un jardinero interior exitoso y disfrutar de los muchos beneficios que conlleva, desde una mejor calidad del aire hasta niveles reducidos de estrés.

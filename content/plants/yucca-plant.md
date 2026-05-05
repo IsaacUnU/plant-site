@@ -20,6 +20,7 @@ image: >-
 imageAlt: Yucca houseplant
 imageCredit: Tatiana Rodriguez
 imageCreditUrl: 'https://unsplash.com/@tata186?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 

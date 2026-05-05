@@ -16,6 +16,7 @@ imageAlt: How to Clean Houseplant Leaves (And Why It Matters)
 imageCredit: Huy Phan
 imageCreditUrl: >-
   https://unsplash.com/@huyphan2602?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Why Cleaning Plant Leaves Actually Matters

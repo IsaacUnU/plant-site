@@ -20,12 +20,12 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Calathea zebrina, también conocida como la Planta Zebra, es una planta de interior
-  impresionante y de bajo mantenimiento que presenta hojas llamativas con rayas
-  semejantes a las de una cebra, lo que la convierte en una adición perfecta para
-  cualquier espacio interior. Su capacidad para purificar el aire y aumentar la
-  humedad la convierte en una excelente opción para quienes desean crear un
-  entorno más saludable y acogedor.
+  La Calathea zebrina, también conocida como la Planta Zebra, es una planta de
+  interior impresionante y de bajo mantenimiento que presenta hojas llamativas
+  con rayas semejantes a las de una cebra, lo que la convierte en una adición
+  perfecta para cualquier espacio interior. Su capacidad para purificar el aire
+  y aumentar la humedad la convierte en una excelente opción para quienes desean
+  crear un entorno más saludable y acogedor.
 datePublished: 2026-04-29T00:00:00.000Z
 dateModified: 2026-04-29T00:00:00.000Z
 image: >-
@@ -34,6 +34,7 @@ imageAlt: Zebra Plant houseplant
 imageCredit: Steve DiMatteo
 imageCreditUrl: >-
   https://unsplash.com/@stevedimatteo?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

@@ -24,6 +24,7 @@ image: >-
 imageAlt: Top 6 Best Plants for Bathrooms for Your Home
 imageCredit: Cole Keister
 imageCreditUrl: 'https://unsplash.com/@coleito?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 Are you tired of watching your houseplants struggle to survive in the humid conditions of your bathroom? Do you dream of having a lush, green oasis in the one room where you spend a significant amount of time each day? Look no further. At PlantCare Central, we believe that with the right plants, you can turn your bathroom into a tranquil retreat that not only relaxes your mind and body but also purifies the air and adds a touch of natural beauty to your space.

@@ -35,6 +35,7 @@ additionalImages:
   - /images/plants/african-violet-3.jpg
   - /images/plants/african-violet-2.jpg
   - /images/plants/african-violet-detail.jpg
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Planta de Jade
 slug: jade-plant
 commonName: Planta de Jade
@@ -20,7 +20,11 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Planta de Jade, conocida por sus pequeñas hojas redondeadas y su capacidad para prosperar en una variedad de condiciones, es una elección popular para principiantes y entusiastas de plantas experimentados. Su adaptabilidad y requisitos de bajo mantenimiento la hacen ideal para aquellos que buscan traer un toque de verde a sus hogares o oficinas.
+  La Planta de Jade, conocida por sus pequeñas hojas redondeadas y su capacidad
+  para prosperar en una variedad de condiciones, es una elección popular para
+  principiantes y entusiastas de plantas experimentados. Su adaptabilidad y
+  requisitos de bajo mantenimiento la hacen ideal para aquellos que buscan traer
+  un toque de verde a sus hogares o oficinas.
 datePublished: '2026-02-28T00:00:00.000Z'
 dateModified: '2026-02-28T00:00:00.000Z'
 image: >-
@@ -29,6 +33,7 @@ imageAlt: Planta de Jade de interior
 imageCredit: Ivan Pomoshchikov
 imageCreditUrl: >-
   https://unsplash.com/@littlezero?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 ## Descripción General
 La Planta de Jade, científicamente conocida como Crassula ovata, es una suculenta nativa de Sudáfrica. Ha sido una planta de interior popular durante décadas debido a sus atractivas hojas pequeñas y redondeadas de un profundo color verde y su capacidad para crecer en un hermoso arbusto frondoso con el tiempo. La Planta de Jade puede crecer hasta tres pies de altura, pero se puede podar fácilmente para mantener un tamaño deseado, lo que la hace adecuada para una variedad de espacios, desde pequeños apartamentos hasta grandes oficinas. Su popularidad también se debe a su facilidad de cuidado, ya que puede prosperar en una variedad de condiciones de iluminación y requiere riegos infrecuentes, lo que la hace perfecta para personas ocupadas o aquellas nuevas en el cuidado de plantas.

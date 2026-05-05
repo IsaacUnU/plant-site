@@ -1,5 +1,7 @@
-﻿---
-title: 'Guía de Cuidado de la Planta Araña: Consejos Fáciles para una Planta Araña Saludable'
+---
+title: >-
+  Guía de Cuidado de la Planta Araña: Consejos Fáciles para una Planta Araña
+  Saludable
 slug: spider-plant
 commonName: Planta Araña
 scientificName: Chlorophytum comosum
@@ -20,7 +22,12 @@ temperature: 65–80°F (18–27°C)
 toxicity: non-toxic
 growthRate: fast
 description: >-
-  La Planta Araña es una planta de interior popular y de bajo mantenimiento conocida por sus propiedades purificadoras del aire y su facilidad de cuidado, lo que la hace perfecta tanto para principiantes como para jardineros experimentados. Con sus tallos que se arrastran y sus hojas, es una gran adición a cualquier habitación, aportando un toque de belleza natural y frescura al espacio.
+  La Planta Araña es una planta de interior popular y de bajo mantenimiento
+  conocida por sus propiedades purificadoras del aire y su facilidad de cuidado,
+  lo que la hace perfecta tanto para principiantes como para jardineros
+  experimentados. Con sus tallos que se arrastran y sus hojas, es una gran
+  adición a cualquier habitación, aportando un toque de belleza natural y
+  frescura al espacio.
 datePublished: '2026-03-13T00:00:00.000Z'
 dateModified: '2026-03-17T00:00:00.000Z'
 image: >-
@@ -29,6 +36,7 @@ imageAlt: Planta Araña de interior
 imageCredit: Virginia Marinova
 imageCreditUrl: >-
   https://unsplash.com/@virginiaphotostories?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Descripción General

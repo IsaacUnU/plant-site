@@ -28,6 +28,7 @@ imageAlt: Burro's Tail houseplant
 imageCredit: Emanuel Haas
 imageCreditUrl: >-
   https://unsplash.com/@dermanuskript?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidados

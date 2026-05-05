@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado del Pothos Azul Cebu
 slug: pothos-cebu-blue
 commonName: Pothos Azul Cebu
@@ -20,7 +20,12 @@ temperature: 65-80°F (18-27°C)
 toxicity: mildly-toxic
 growthRate: moderate
 description: >-
-  El Pothos Azul Cebu es una planta de interior impresionante y de bajo mantenimiento, conocida por sus hojas azul-verde vibrantes y su capacidad para prosperar en una variedad de condiciones de luz. Como una planta versátil y adaptable, es perfecta tanto para principiantes como para entusiastas de las plantas experimentados, ofreciendo los beneficios adicionales de purificar el aire y aumentar la humedad.
+  El Pothos Azul Cebu es una planta de interior impresionante y de bajo
+  mantenimiento, conocida por sus hojas azul-verde vibrantes y su capacidad para
+  prosperar en una variedad de condiciones de luz. Como una planta versátil y
+  adaptable, es perfecta tanto para principiantes como para entusiastas de las
+  plantas experimentados, ofreciendo los beneficios adicionales de purificar el
+  aire y aumentar la humedad.
 datePublished: 2026-04-24T00:00:00.000Z
 dateModified: 2026-04-24T00:00:00.000Z
 image: >-
@@ -29,6 +34,7 @@ imageAlt: Pothos Azul Cebu en interior
 imageCredit: Niranjan _ Photographs
 imageCreditUrl: >-
   https://unsplash.com/@niranjan_photographs?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

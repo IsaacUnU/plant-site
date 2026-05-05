@@ -1,5 +1,7 @@
-﻿---
-title: 'Guía Completa de Cuidado del Ficus de Violín: Consejos de Expertos para una Planta Saludable'
+---
+title: >-
+  Guía Completa de Cuidado del Ficus de Violín: Consejos de Expertos para una
+  Planta Saludable
 slug: fiddle-leaf-fig
 commonName: Ficus de violín
 scientificName: Ficus lyrata
@@ -21,7 +23,12 @@ temperature: 65–80°F (18–27°C)
 toxicity: mildly-toxic
 growthRate: moderate
 description: >-
-  El Ficus de Violín es una impresionante planta de interior de bajo mantenimiento conocida por sus grandes hojas en forma de violín y su capacidad para purificar el aire, lo que lo convierte en una opción popular para espacios interiores. Con el cuidado adecuado, esta planta puede crecer hasta 10 pies de altura, aportando un toque de elegancia tropical a cualquier habitación.
+  El Ficus de Violín es una impresionante planta de interior de bajo
+  mantenimiento conocida por sus grandes hojas en forma de violín y su capacidad
+  para purificar el aire, lo que lo convierte en una opción popular para
+  espacios interiores. Con el cuidado adecuado, esta planta puede crecer hasta
+  10 pies de altura, aportando un toque de elegancia tropical a cualquier
+  habitación.
 datePublished: '2026-02-26T00:00:00.000Z'
 dateModified: '2026-02-26T00:00:00.000Z'
 image: >-
@@ -29,6 +36,7 @@ image: >-
 imageAlt: Ficus de violín
 imageCredit: Scott Webb
 imageCreditUrl: 'https://unsplash.com/@scottwebb?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Descripción General

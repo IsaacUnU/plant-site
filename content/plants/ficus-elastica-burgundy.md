@@ -30,6 +30,7 @@ description: >-
   Caring for your Ficus elastica burgundy, or Rubber Plant, is a breeze when you
   provide it with the right conditions. Place this plant 3-5 feet from an east
   or s.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

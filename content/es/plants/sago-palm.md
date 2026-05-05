@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Palma de Sago
 slug: sago-palm
 commonName: Palma de Sago
@@ -32,6 +32,7 @@ imageAlt: Palma de Sago en interior
 imageCredit: Annie Spratt
 imageCreditUrl: >-
   https://unsplash.com/@anniespratt?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

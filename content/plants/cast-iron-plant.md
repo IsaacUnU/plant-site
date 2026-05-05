@@ -38,6 +38,7 @@ additionalImages:
   - /images/plants/cast-iron-plant-2.jpg
   - /images/plants/cast-iron-plant-3.jpg
   - /images/plants/cast-iron-plant-detail.jpg
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

@@ -27,6 +27,7 @@ image: >-
 imageAlt: Christmas Kalanchoe houseplant
 imageCredit: Pavel Avakumov
 imageCreditUrl: 'https://unsplash.com/@ava_kum?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidados

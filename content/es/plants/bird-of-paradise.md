@@ -1,5 +1,7 @@
-﻿---
-title: 'Guía Completa de Cuidado de la Ave del Paraíso: Desbloqueando los Secretos de Strelitzia reginae'
+---
+title: >-
+  Guía Completa de Cuidado de la Ave del Paraíso: Desbloqueando los Secretos de
+  Strelitzia reginae
 slug: bird-of-paradise
 commonName: Ave del Paraíso
 scientificName: Strelitzia reginae
@@ -22,7 +24,11 @@ temperature: 65–80°F (18–27°C)
 toxicity: mildly-toxic
 growthRate: moderate
 description: >-
-  La Ave del Paraíso es una impresionante planta con flores únicas parecidas a un pájaro en vuelo, y su follaje verde y exuberante la hace una opción popular para jardines interiores y exteriores. Con el cuidado adecuado, esta planta tropical puede prosperar y proporcionar belleza durante todo el año, atrayendo a pájaros y otros polinizadores con sus vibrantes flores naranja y púrpura.
+  La Ave del Paraíso es una impresionante planta con flores únicas parecidas a
+  un pájaro en vuelo, y su follaje verde y exuberante la hace una opción popular
+  para jardines interiores y exteriores. Con el cuidado adecuado, esta planta
+  tropical puede prosperar y proporcionar belleza durante todo el año, atrayendo
+  a pájaros y otros polinizadores con sus vibrantes flores naranja y púrpura.
 datePublished: '2026-02-17T00:00:00.000Z'
 dateModified: '2026-02-17T00:00:00.000Z'
 image: >-
@@ -30,6 +36,7 @@ image: >-
 imageAlt: Planta de interior Ave del Paraíso
 imageCredit: Antonia Glaskova
 imageCreditUrl: 'https://unsplash.com/@glaskova?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 ## Descripción General
 La Ave del Paraíso, también conocida como Strelitzia reginae, es una planta originaria de Sudáfrica que se ha convertido en una opción popular para jardines interiores y paisajes exteriores en todo el mundo. Esta planta floración impresionante es conocida por sus flores únicas, similares a un pájaro, y su follaje verde y exuberante, que puede crecer hasta 6 pies de altura en condiciones ideales. La Ave del Paraíso es miembro de la familia de las bananeras y está estrechamente relacionada con las plantas heliconia y cannula. Su apariencia exótica y sus requisitos de cuidado relativamente bajos la han convertido en una opción favorita entre los entusiastas de las plantas y los principiantes.

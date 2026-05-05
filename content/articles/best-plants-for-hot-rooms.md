@@ -27,6 +27,7 @@ image: >-
 imageAlt: 'Mastering Indoor Greenery: 8 Best Plants for Warm Rooms'
 imageCredit: Cole Keister
 imageCreditUrl: 'https://unsplash.com/@coleito?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 Are you tired of watching your houseplants wither away in the warm temperatures of your home? Do you struggle to find the perfect plants that can thrive in the heat? You're not alone. Many plant enthusiasts face the same challenge, but the good news is that there are several plants that are specifically designed to tolerate warm temperatures. In this article, we'll explore the 8 best plants for warm rooms, including their unique characteristics, care requirements, and benefits.

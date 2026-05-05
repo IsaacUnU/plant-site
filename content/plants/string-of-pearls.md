@@ -31,6 +31,7 @@ description: >-
   The String of Pearls (Senecio rowleyanus) thrives in bright, indirect light
   with 200-400 foot-candles, requiring watering every 7-10 days. It prefers a
   well-dra.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

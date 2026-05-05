@@ -21,6 +21,7 @@ imageAlt: Window Haworthia houseplant
 imageCredit: Rafael Rodrigues
 imageCreditUrl: >-
   https://unsplash.com/@rrodriguesim?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 

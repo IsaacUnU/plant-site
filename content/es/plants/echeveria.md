@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Echeveria
 slug: echeveria
 commonName: Joya Mexicana
@@ -20,16 +20,18 @@ toxicity: non-toxic
 growthRate: moderate
 description: >-
   La Echeveria, también conocida como la Joya Mexicana, es un suculento
-  impresionante y de bajo mantenimiento que aporta un toque de elegancia a cualquier
-  espacio interior. Con sus hermosas rosetas y colores vibrantes, esta planta
-  es perfecta tanto para principiantes como para jardineros experimentados, ofreciendo
-  una combinación única de belleza y beneficios purificadores de aire.
+  impresionante y de bajo mantenimiento que aporta un toque de elegancia a
+  cualquier espacio interior. Con sus hermosas rosetas y colores vibrantes, esta
+  planta es perfecta tanto para principiantes como para jardineros
+  experimentados, ofreciendo una combinación única de belleza y beneficios
+  purificadores de aire.
 datePublished: '2026-02-25T00:00:00.000Z'
 dateModified: '2026-02-25T00:00:00.000Z'
 image: 'https://images.unsplash.com/photo-1618745281824-cf7113712e8e'
 imageAlt: Green plant with white variegated leaves on dark background
 imageCredit: Pach Visuals
 imageCreditUrl: 'https://unsplash.com/@pach_visuals'
+author: Sarah Mitchell
 ---
 
 ## Descripción General

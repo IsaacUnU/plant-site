@@ -29,6 +29,7 @@ description: >-
   To care for a Kentia Palm, place it in a spot with 200-400 foot-candles of
   light, about 3-5 feet from an east or south window. Water the plant every 7-10
   days d.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

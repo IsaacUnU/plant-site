@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Monstera Adansonii
 slug: monstera-adansonii
 commonName: Máscara de Mono
@@ -22,10 +22,10 @@ growthRate: moderate
 description: >-
   La Monstera adansonii, también conocida como Máscara de Mono, es una
   impresionante y de bajo mantenimiento planta de interior con hojas perforadas
-  únicas que añaden un toque de elegancia tropical a cualquier habitación. Con su
-  capacidad de purificar el aire y aumentar la humedad, esta planta es una gran
-  opción para jardineros de interior que buscan crear un ambiente saludable y
-  próspero.
+  únicas que añaden un toque de elegancia tropical a cualquier habitación. Con
+  su capacidad de purificar el aire y aumentar la humedad, esta planta es una
+  gran opción para jardineros de interior que buscan crear un ambiente saludable
+  y próspero.
 datePublished: '2026-03-02T00:00:00.000Z'
 dateModified: '2026-03-02T00:00:00.000Z'
 image: >-
@@ -34,6 +34,7 @@ imageAlt: Máscara de Mono planta de interior
 imageCredit: Jing Bo Wang
 imageCreditUrl: >-
   https://unsplash.com/@teresawang?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

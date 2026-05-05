@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Croton Petra
 slug: croton-petra
 commonName: Croton
@@ -19,7 +19,12 @@ temperature: 65-80°F (18-27°C)
 toxicity: mildly-toxic
 growthRate: moderate
 description: >-
-  La Croton petra, también conocida como Codiaeum variegatum, es una impresionante planta tropical de interior renombrada por sus hojas vibrantes y multicolores que agregan un toque de color a cualquier habitación. Con sus requisitos de mantenimiento relativamente bajos y su capacidad para purificar el aire, es una opción popular para jardineros de interior de todos los niveles de habilidad.
+  La Croton petra, también conocida como Codiaeum variegatum, es una
+  impresionante planta tropical de interior renombrada por sus hojas vibrantes y
+  multicolores que agregan un toque de color a cualquier habitación. Con sus
+  requisitos de mantenimiento relativamente bajos y su capacidad para purificar
+  el aire, es una opción popular para jardineros de interior de todos los
+  niveles de habilidad.
 datePublished: '2026-02-24T00:00:00.000Z'
 dateModified: '2026-02-24T00:00:00.000Z'
 image: >-
@@ -28,6 +33,7 @@ imageAlt: Planta de interior Croton
 imageCredit: Vaibhav Surana
 imageCreditUrl: >-
   https://unsplash.com/@vaibhav_surana?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen de Cuidado Rápido

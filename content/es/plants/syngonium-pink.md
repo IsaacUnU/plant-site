@@ -20,7 +20,11 @@ temperature: 65-80°F (18-27°C)
 toxicity: mildly-toxic
 growthRate: moderate
 description: >-
-  El Syngonium Rosa es una planta de interior impresionante y de bajo mantenimiento, conocida por sus hermosas hojas rosadas y su capacidad para purificar el aire, lo que la convierte en una excelente adición a cualquier espacio interior. Con su tasa de crecimiento moderada y facilidad de cuidado, es perfecta para entusiastas de las plantas de todos los niveles.
+  El Syngonium Rosa es una planta de interior impresionante y de bajo
+  mantenimiento, conocida por sus hermosas hojas rosadas y su capacidad para
+  purificar el aire, lo que la convierte en una excelente adición a cualquier
+  espacio interior. Con su tasa de crecimiento moderada y facilidad de cuidado,
+  es perfecta para entusiastas de las plantas de todos los niveles.
 datePublished: 2026-04-29T00:00:00.000Z
 dateModified: 2026-04-29T00:00:00.000Z
 image: >-
@@ -28,6 +32,7 @@ image: >-
 imageAlt: Syngonium Rosa planta de interior
 imageCredit: Soumen Ghosh
 imageCreditUrl: 'https://unsplash.com/@soumen59?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

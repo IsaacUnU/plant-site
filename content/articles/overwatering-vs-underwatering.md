@@ -15,6 +15,7 @@ image: >-
 imageAlt: 'Overwatering vs Underwatering: How to Tell the Difference'
 imageCredit: Lucas de Moura
 imageCreditUrl: 'https://unsplash.com/@root_br?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Introduction

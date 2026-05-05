@@ -32,6 +32,7 @@ description: >-
   The Syngonium pink, known scientifically as *Syngonium podophyllum*, is a
   stunning, low-maintenance houseplant that thrives in bright, indirect light
   with 200-4.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

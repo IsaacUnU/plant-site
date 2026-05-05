@@ -8,7 +8,9 @@ tags:
   - jardinería interior
   - interior
 description: >-
-  Descubre los 5 suculentos y cactus tolerantes a la sequía perfectos para alféizares soleados. Selecciones de expertos con consejos de cuidado, pros, contras y enlaces a guías completas.
+  Descubre los 5 suculentos y cactus tolerantes a la sequía perfectos para
+  alféizares soleados. Selecciones de expertos con consejos de cuidado, pros,
+  contras y enlaces a guías completas.
 featuredPlants:
   - aloe-vera
   - cactus-barrel
@@ -23,6 +25,7 @@ imageAlt: 'Selección de Expertos: Los 5 Mejores Suculentos para Cultivo Interio
 imageCredit: Timothy Hales Bennett
 imageCreditUrl: >-
   https://unsplash.com/@timothyhalesbennett?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ¿Estás cansado de ver cómo tus plantas de interior se marchitan por falta de cuidado o atención? ¿Te cuesta encontrar las plantas perfectas que puedan prosperar en condiciones de poca luz o sobrevivir con riegos mínimos? Estos son desafíos que enfrentan muchos dueños de plantas — esta guía cubre las mejores opciones de suculentos para cultivo interior. Estas increíbles plantas no solo son hermosas y de bajo mantenimiento, sino también perfectas para personas ocupadas o recién iniciadas en la jardinería interior.

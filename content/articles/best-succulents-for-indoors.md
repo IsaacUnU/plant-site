@@ -25,6 +25,7 @@ imageAlt: 'Expert''s Choice: The 5 Best Best Succulents for Indoor Growing'
 imageCredit: Timothy Hales Bennett
 imageCreditUrl: >-
   https://unsplash.com/@timothyhalesbennett?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 Are you tired of watching your indoor plants wither away due to lack of care or attention? Do you struggle to find the perfect plants that can thrive in low-light conditions or survive with minimal watering? These are challenges many plant owners face — this guide covers the top picks for the best succulents for indoor growing. These incredible plants are not only beautiful and low-maintenance but also perfect for busy people or those new to indoor gardening.

@@ -33,6 +33,7 @@ description: >-
   The Blue Barrel Cactus, or Ferocactus glaucescens, requires indirect light
   (200–400 foot-candles) and thrives in a north-facing window. Water every 7–10
   days, e.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

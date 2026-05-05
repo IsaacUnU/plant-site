@@ -1,5 +1,7 @@
-﻿---
-title: 'Guía Completa de Cuidado de la Planta ZZ: Cómo Mantener tu Planta de Interior de Bajo Mantenimiento Prosperando'
+---
+title: >-
+  Guía Completa de Cuidado de la Planta ZZ: Cómo Mantener tu Planta de Interior
+  de Bajo Mantenimiento Prosperando
 slug: zz-plant
 commonName: Planta ZZ
 scientificName: Zamioculcas zamiifolia
@@ -19,7 +21,12 @@ temperature: 65–80°F (18–27°C)
 toxicity: toxic-to-pets
 growthRate: slow
 description: >-
-  La Planta ZZ es una planta de interior de bajo mantenimiento y tolerante a la sombra, conocida por sus hojas brillantes y propiedades purificadoras de aire, lo que la hace perfecta para personas ocupadas o quienes dan sus primeros pasos en el cuidado de plantas. Con su capacidad para sobrevivir en condiciones de poca luz y riego infrecuente, la Planta ZZ es una excelente opción para cualquiera que desee traer un poco de verde a su hogar o oficina.
+  La Planta ZZ es una planta de interior de bajo mantenimiento y tolerante a la
+  sombra, conocida por sus hojas brillantes y propiedades purificadoras de aire,
+  lo que la hace perfecta para personas ocupadas o quienes dan sus primeros
+  pasos en el cuidado de plantas. Con su capacidad para sobrevivir en
+  condiciones de poca luz y riego infrecuente, la Planta ZZ es una excelente
+  opción para cualquiera que desee traer un poco de verde a su hogar o oficina.
 datePublished: '2026-03-17T00:00:00.000Z'
 dateModified: '2026-03-17T00:00:00.000Z'
 image: >-
@@ -28,6 +35,7 @@ imageAlt: Planta ZZ de interior
 imageCredit: Phuong Nguyen
 imageCreditUrl: >-
   https://unsplash.com/@phuongtography?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Descripción General

@@ -37,6 +37,7 @@ additionalImages:
   - /images/plants/citrus-limon-2.jpg
   - /images/plants/citrus-limon-3.jpg
   - /images/plants/citrus-limon-detail.jpg
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

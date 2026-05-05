@@ -31,6 +31,7 @@ description: >-
   Place your Monstera standleyana in a location that receives indirect light,
   specifically between 200-400 foot-candles, ideally 3-5 feet from an east or
   south wi.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

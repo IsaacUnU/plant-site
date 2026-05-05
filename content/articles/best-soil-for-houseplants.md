@@ -18,6 +18,7 @@ imageAlt: 'Best Potting Soil for Houseplants: A Complete Guide'
 imageCredit: Neslihan Gunaydin
 imageCreditUrl: >-
   https://unsplash.com/@neslihangunaydin?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Introduction

@@ -37,6 +37,7 @@ imageCreditUrl: >-
 additionalImages:
   - /images/plants/alocasia-polly-detail.jpg
   - /images/plants/alocasia-polly-2.jpg
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

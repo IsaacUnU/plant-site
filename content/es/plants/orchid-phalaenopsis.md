@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Orquídea Mariposa
 slug: orchid-phalaenopsis
 commonName: Orquídea Mariposa
@@ -20,11 +20,11 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Orquídea Phalaenopsis, comúnmente conocida como la Orquídea Mariposa, es una
-  impresionante y delicada planta de interior perfecta para principiantes, ofreciendo
-  elegantes flores blancas, rosadas o púrpuras que pueden durar meses. Con el cuidado
-  adecuado, esta planta puede prosperar en condiciones interiores, aportando un toque
-  de elegancia y frescura a cualquier habitación.
+  La Orquídea Phalaenopsis, comúnmente conocida como la Orquídea Mariposa, es
+  una impresionante y delicada planta de interior perfecta para principiantes,
+  ofreciendo elegantes flores blancas, rosadas o púrpuras que pueden durar
+  meses. Con el cuidado adecuado, esta planta puede prosperar en condiciones
+  interiores, aportando un toque de elegancia y frescura a cualquier habitación.
 datePublished: '2026-03-03T00:00:00.000Z'
 dateModified: '2026-03-03T00:00:00.000Z'
 image: >-
@@ -33,6 +33,7 @@ imageAlt: Orquídea Mariposa en maceta
 imageCredit: Sanni Sahil
 imageCreditUrl: >-
   https://unsplash.com/@sannisahil?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Descripción General

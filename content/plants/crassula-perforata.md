@@ -38,6 +38,7 @@ additionalImages:
   - /images/plants/crassula-perforata-2.jpg
   - /images/plants/crassula-perforata-3.jpg
   - /images/plants/crassula-perforata-detail.jpg
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Peperomia de Hoja Redonda
 slug: baby-rubber-plant
 commonName: Peperomia de Hoja Redonda
@@ -20,7 +20,11 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Peperomia de Hoja Redonda es una planta de interior compacta y de bajo mantenimiento, con hermosas hojas verdes oscuras que agregan un toque de elegancia tropical a cualquier habitación. Es una excelente opción para principiantes, ya que es fácil de cuidar y puede prosperar en una variedad de condiciones.
+  La Peperomia de Hoja Redonda es una planta de interior compacta y de bajo
+  mantenimiento, con hermosas hojas verdes oscuras que agregan un toque de
+  elegancia tropical a cualquier habitación. Es una excelente opción para
+  principiantes, ya que es fácil de cuidar y puede prosperar en una variedad de
+  condiciones.
 datePublished: '2026-02-16T00:00:00.000Z'
 dateModified: '2026-02-16T00:00:00.000Z'
 image: >-
@@ -29,6 +33,7 @@ imageAlt: Planta de Caucho para Bebés de interior
 imageCredit: Anna Kharkivska
 imageCreditUrl: >-
   https://unsplash.com/@anna_kharkivska?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen de Cuidado Rápido

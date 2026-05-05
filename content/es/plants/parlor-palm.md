@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Palmera de Salón
 slug: parlor-palm
 commonName: Palmera de Salón
@@ -20,7 +20,10 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Palmera de Salón es una planta de interior popular y de bajo mantenimiento conocida por sus elegantes hojas plumosas y su capacidad para purificar el aire. Originaria de las regiones tropicales de Centro y Sudamérica, es una adición versátil y atractiva a cualquier espacio interior.
+  La Palmera de Salón es una planta de interior popular y de bajo mantenimiento
+  conocida por sus elegantes hojas plumosas y su capacidad para purificar el
+  aire. Originaria de las regiones tropicales de Centro y Sudamérica, es una
+  adición versátil y atractiva a cualquier espacio interior.
 datePublished: '2026-03-05T00:00:00.000Z'
 dateModified: '2026-03-05T00:00:00.000Z'
 image: >-
@@ -29,6 +32,7 @@ imageAlt: Palmera de Salón en interior
 imageCredit: Anna Kharkivska
 imageCreditUrl: >-
   https://unsplash.com/@anna_kharkivska?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

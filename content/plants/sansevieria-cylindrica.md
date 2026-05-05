@@ -21,6 +21,7 @@ imageAlt: African Spear Plant houseplant
 imageCredit: Fabian Stroobants
 imageCreditUrl: >-
   https://unsplash.com/@fastroobants?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 

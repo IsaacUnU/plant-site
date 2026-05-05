@@ -18,6 +18,7 @@ imageAlt: 'Best Pots for Houseplants: Terracotta vs Plastic vs Ceramic'
 imageCredit: Smrithi Rao
 imageCreditUrl: >-
   https://unsplash.com/@freshlyminted?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Introduction

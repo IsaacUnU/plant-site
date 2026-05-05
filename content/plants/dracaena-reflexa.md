@@ -29,6 +29,7 @@ imageCreditUrl: >-
 description: >-
   Dracaena reflexa, or Pleomele, thrives in a north-facing window with 200-400
   foot-candles of indirect light.
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 

@@ -29,6 +29,7 @@ description: >-
   The Umbrella plant, or Cyperus alternifolius, is a low-maintenance indoor
   beauty that thrives in 200-400 foot-candles of bright, indirect light. Water
   it every .
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

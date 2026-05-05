@@ -7,7 +7,9 @@ tags:
   - plantas de interior
   - cuidado de plantas
   - jardinería interior
-description: Potencia la salud de tus plantas de interior con consejos expertos de fertilización
+description: >-
+  Potencia la salud de tus plantas de interior con consejos expertos de
+  fertilización
 datePublished: '2026-03-26T00:00:00.000Z'
 dateModified: '2026-03-26T00:00:00.000Z'
 image: >-
@@ -16,6 +18,7 @@ imageAlt: Cómo y Cuándo Fertilizar las Plantas de Interior
 imageCredit: rafidh cell
 imageCreditUrl: >-
   https://unsplash.com/@rafidhcell?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Por Qué la Fertilización Suele Olvidarse en Plantas de Interior

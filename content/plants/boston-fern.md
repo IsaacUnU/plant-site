@@ -36,6 +36,7 @@ description: >-
   The Boston Fern, Nephrolepis exaltata, requires a moderate growth rate (6
   inches per year) and thrives in high humidity (50–70%) at temperatures between
   65.
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 The Boston Fern, Nephrolepis exaltata, requires a moderate growth rate (6 inches per year) and thrives in high humidity (50–70%) at temperatures between 65°F to 75°F (18°C to 24°C). It prefers indirect light of 3-5 feet from an east or south window, which translates to around 200-400 foot-candles. Water it every 2-3 days and fertilize with a balanced 10-10-10 solution monthly during spring and summer.

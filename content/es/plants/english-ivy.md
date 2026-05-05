@@ -1,5 +1,7 @@
-﻿---
-title: 'Guía de Cuidado de la Hiedra Inglesa: Consejos para Cultivar y Mantener Hedera helix'
+---
+title: >-
+  Guía de Cuidado de la Hiedra Inglesa: Consejos para Cultivar y Mantener Hedera
+  helix
 slug: english-ivy
 commonName: Hiedra Inglesa
 scientificName: Hedera helix
@@ -21,7 +23,11 @@ temperature: 65–75°F (18–24°C)
 toxicity: mildly-toxic
 growthRate: fast
 description: >-
-  La Hiedra Inglesa es una planta de interior versátil y de bajo mantenimiento que puede prosperar en una variedad de condiciones de iluminación, lo que la hace perfecta para espacios interiores. Con sus atractivas lianas colgantes y propiedades purificadoras del aire, es una opción popular tanto para propietarios de viviendas como para jardineros.
+  La Hiedra Inglesa es una planta de interior versátil y de bajo mantenimiento
+  que puede prosperar en una variedad de condiciones de iluminación, lo que la
+  hace perfecta para espacios interiores. Con sus atractivas lianas colgantes y
+  propiedades purificadoras del aire, es una opción popular tanto para
+  propietarios de viviendas como para jardineros.
 datePublished: '2026-02-25T00:00:00.000Z'
 dateModified: '2026-02-25T00:00:00.000Z'
 image: >-
@@ -30,6 +36,7 @@ imageAlt: Hiedra Inglesa en casa
 imageCredit: JW K
 imageCreditUrl: >-
   https://unsplash.com/@kootograph?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 ## Descripción General
 La Hiedra Inglesa, también conocida como *Hedera helix*, es una especie de planta con flores originaria de Europa y Asia occidental. Es una trepadora perenne y versátil que puede crecer hasta 2,5 metros de largo, con hojas lobuladas atractivas que suelen ser de un verde profundo. La Hiedra Inglesa es una planta de interior popular debido a su facilidad de cuidado, su apariencia atractiva y su capacidad para prosperar en una variedad de condiciones de iluminación. También es conocida por sus propiedades purificadoras del aire, lo que la convierte en una excelente opción para espacios interiores.

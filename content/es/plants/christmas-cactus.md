@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Cactus de Navidad
 slug: christmas-cactus
 commonName: Cactus de Navidad
@@ -19,7 +19,12 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  El Cactus de Navidad es una popular planta de interior de bajo mantenimiento conocida por sus tallos segmentados vibrantes y hermosas flores en forma de embudo que florecen en tonos de rosa, rojo y blanco alrededor de la temporada de vacaciones. Con el cuidado adecuado, esta planta puede prosperar en interiores y proporcionar un despliegue impresionante de color durante los meses de invierno.
+  El Cactus de Navidad es una popular planta de interior de bajo mantenimiento
+  conocida por sus tallos segmentados vibrantes y hermosas flores en forma de
+  embudo que florecen en tonos de rosa, rojo y blanco alrededor de la temporada
+  de vacaciones. Con el cuidado adecuado, esta planta puede prosperar en
+  interiores y proporcionar un despliegue impresionante de color durante los
+  meses de invierno.
 datePublished: '2026-02-23T00:00:00.000Z'
 dateModified: '2026-02-23T00:00:00.000Z'
 image: >-
@@ -27,6 +32,7 @@ image: >-
 imageAlt: Cactus de Navidad planta de interior
 imageCredit: J. Young Jeong
 imageCreditUrl: 'https://unsplash.com/@jayossana?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Descripción General

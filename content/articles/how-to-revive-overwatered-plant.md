@@ -15,6 +15,7 @@ image: >-
 imageAlt: How to Revive an Overwatered Plant (Quick Fix Guide)
 imageCredit: Francesca Piva
 imageCreditUrl: 'https://unsplash.com/@francepi?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Introduction

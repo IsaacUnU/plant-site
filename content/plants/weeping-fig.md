@@ -21,6 +21,7 @@ imageAlt: Weeping Fig houseplant
 imageCredit: An Hoang
 imageCreditUrl: >-
   https://unsplash.com/@beohoang98?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 

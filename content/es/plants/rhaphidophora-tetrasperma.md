@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Rhaphidophora tetrasperma
 slug: rhaphidophora-tetrasperma
 commonName: Mini Monstera
@@ -32,6 +32,7 @@ image: >-
 imageAlt: Mini Monstera houseplant
 imageCredit: Nicolas Solerieu
 imageCreditUrl: 'https://unsplash.com/@slrncl?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

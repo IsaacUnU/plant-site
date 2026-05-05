@@ -27,6 +27,7 @@ imageCreditUrl: 'https://unsplash.com/@pach_visuals'
 description: >-
   The Echeveria, or Mexican Gem, thrives in indirect light (200-400
   foot-candles) 3-5 feet from an east or south window.
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 The Echeveria, or Mexican Gem, thrives in indirect light (200-400 foot-candles) 3-5 feet from an east or south window. Water every 7–10 days, allowing the soil to dry out between waterings. Maintain a temperature range of 65-80°F (18-27°C), with medium humidity levels and well-draining soil mixed in equal parts potting mix, perlite, and orchid bark. Fertilize every month during spring and summer using a balanced 10-10-10 formula, diluted to half strength. This plant is non-toxic but pet-safe only if placed out of reach.

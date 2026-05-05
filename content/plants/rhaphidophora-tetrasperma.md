@@ -32,6 +32,7 @@ description: >-
   To care for your Rhaphidophora tetrasperma, provide it with 200-400
   foot-candles of light, which is equivalent to placing the plant 3-5 feet from
   an east o.
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 

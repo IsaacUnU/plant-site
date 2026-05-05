@@ -30,6 +30,7 @@ description: >-
   The Ficus microcarpa, or Chinese Banyan, thrives in indirect light with a
   measurement of 200-400 foot-candles and is best positioned 3-5 feet from an
   east or so.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

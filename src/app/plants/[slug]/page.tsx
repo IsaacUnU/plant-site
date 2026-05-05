@@ -155,10 +155,10 @@ export default async function PlantPage({ params }: Props) {
 
             <PlantPhotoGallery
               plantName={plant.commonName}
-              slug={plant.slug}
               mainImage={plant.image}
               imageAlt={plant.imageAlt}
               imageCredit={plant.imageCredit}
+              additionalImages={plant.additionalImages}
             />
 
             <AuthorBox datePublished={plant.datePublished} dateModified={plant.dateModified} />

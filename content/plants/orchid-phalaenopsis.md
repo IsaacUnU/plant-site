@@ -31,6 +31,7 @@ imageAlt: Moth Orchid houseplant
 imageCredit: Sanni Sahil
 imageCreditUrl: >-
   https://unsplash.com/@sannisahil?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

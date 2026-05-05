@@ -33,6 +33,7 @@ imageAlt: Ceriman planta de interior
 imageCredit: Harry Atkins
 imageCreditUrl: >-
   https://unsplash.com/@harryatkins?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

@@ -36,6 +36,7 @@ description: >-
   To keep your Calathea lancifolia thriving, place it in a location that
   receives 200–400 foot-candles of light from an east or south window. Water the
   plant ever.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

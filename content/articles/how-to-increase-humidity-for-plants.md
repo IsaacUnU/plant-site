@@ -16,6 +16,7 @@ imageAlt: How to Increase Humidity for Indoor Plants
 imageCredit: Kelsey Todd
 imageCreditUrl: >-
   https://unsplash.com/@sparkledump?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Introduction

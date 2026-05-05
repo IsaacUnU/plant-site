@@ -7,7 +7,9 @@ tags:
   - plantas de interior
   - cuidado de plantas
   - jardinería de interior
-description: Aumenta la humedad para que tus plantas de interior sean felices con estos consejos de expertos
+description: >-
+  Aumenta la humedad para que tus plantas de interior sean felices con estos
+  consejos de expertos
 datePublished: '2026-03-27T00:00:00.000Z'
 dateModified: '2026-03-31T00:00:00.000Z'
 image: >-
@@ -16,6 +18,7 @@ imageAlt: Cómo aumentar la humedad para plantas de interior
 imageCredit: Kelsey Todd
 imageCreditUrl: >-
   https://unsplash.com/@sparkledump?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Introducción

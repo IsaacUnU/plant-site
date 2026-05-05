@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Limonera
 slug: citrus-limon
 commonName: Árbol de Limón
@@ -22,7 +22,11 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Citrus limon, comúnmente conocida como el árbol de limón, es una popular planta de interior valorada por sus flores fragantes, hermosa foliación y delicioso fruto. Con el cuidado adecuado, esta planta puede prosperar en interiores, proporcionando un toque de calidez y elegancia a cualquier habitación.
+  La Citrus limon, comúnmente conocida como el árbol de limón, es una popular
+  planta de interior valorada por sus flores fragantes, hermosa foliación y
+  delicioso fruto. Con el cuidado adecuado, esta planta puede prosperar en
+  interiores, proporcionando un toque de calidez y elegancia a cualquier
+  habitación.
 datePublished: '2026-02-23T00:00:00.000Z'
 dateModified: '2026-02-23T00:00:00.000Z'
 image: >-
@@ -31,6 +35,7 @@ imageAlt: Árbol de Limón planta de interior
 imageCredit: An Hoang
 imageCreditUrl: >-
   https://unsplash.com/@beohoang98?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 ## Descripción General
 La Citrus limon, o árbol de limón, es una especie de árbol pequeño y perenne nativa del sureste de Asia. Ha sido ampliamente cultivada por su fruto, que es un ingrediente clave en muchas cocinas de todo el mundo. Como planta de interior, el árbol de limón es valorado por su atractiva foliación, flores fragantes y capacidad para purificar el aire. Su tamaño compacto y requisitos de mantenimiento relativamente bajos lo hacen una excelente opción para jardines interiores. Con el cuidado adecuado, un árbol de limón puede crecer hasta 10 pies de altura, pero se puede podar para mantener un tamaño más pequeño, lo que lo hace perfecto para contenedores o espacios pequeños.

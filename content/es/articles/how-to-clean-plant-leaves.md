@@ -7,7 +7,9 @@ tags:
   - plantas de interior
   - cuidado de plantas
   - jardinería de interior
-description: 'Aprende cómo limpiar las hojas de las plantas de interior para plantas más saludables y felices'
+description: >-
+  Aprende cómo limpiar las hojas de las plantas de interior para plantas más
+  saludables y felices
 datePublished: '2026-03-26T00:00:00.000Z'
 dateModified: '2026-03-26T00:00:00.000Z'
 image: >-
@@ -16,6 +18,7 @@ imageAlt: Cómo Limpiar las Hojas de las Plantas de Interior (Y Por Qué Importa
 imageCredit: Huy Phan
 imageCreditUrl: >-
   https://unsplash.com/@huyphan2602?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Por Qué Limpiar las Hojas de las Plantas de Interior Realmente Importa

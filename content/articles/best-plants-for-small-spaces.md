@@ -26,6 +26,7 @@ imageAlt: 'Mastering Indoor Greenery: 6 Best Plants for Small Spaces'
 imageCredit: Huy Phan
 imageCreditUrl: >-
   https://unsplash.com/@huyphan2602?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 If you're living in a small apartment or have limited space, you might think that having a lush indoor garden is out of the question. However, with the right plants, you can still enjoy the benefits of indoor greenery without sacrificing too much space. The key is to choose plants that are compact, slow-growing, and don't require a lot of maintenance. In this article, we'll explore the 6 best plants for small spaces, including their care requirements, unique features, and what makes them perfect for apartments and small rooms.

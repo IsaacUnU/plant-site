@@ -21,10 +21,11 @@ toxicity: non-toxic
 growthRate: moderate
 description: >-
   El Philodendron micans, también conocido como Philodendron velludo, es una
-  impresionante planta de interior con hojas en forma de corazón que presentan una
-  textura hermosa y aterciopelada. Su capacidad para prosperar en una variedad
-  de condiciones de luz y su cuidado de bajo mantenimiento lo convierten en una
-  opción popular entre los entusiastas de las plantas de interior.
+  impresionante planta de interior con hojas en forma de corazón que presentan
+  una textura hermosa y aterciopelada. Su capacidad para prosperar en una
+  variedad de condiciones de luz y su cuidado de bajo mantenimiento lo
+  convierten en una opción popular entre los entusiastas de las plantas de
+  interior.
 datePublished: 2026-04-25T00:00:00.000Z
 dateModified: 2026-04-25T00:00:00.000Z
 image: >-
@@ -33,6 +34,7 @@ imageAlt: Philodendron velludo como planta de interior
 imageCredit: Kailun Zhang
 imageCreditUrl: >-
   https://unsplash.com/@kailun2019?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

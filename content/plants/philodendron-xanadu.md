@@ -21,6 +21,7 @@ imageAlt: Xanadu Philodendron houseplant
 imageCredit: Gigi Visacri
 imageCreditUrl: >-
   https://unsplash.com/@georgia_vis?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 

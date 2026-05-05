@@ -21,6 +21,7 @@ imageAlt: Flamingo Flower houseplant
 imageCredit: Rafael Rodrigues
 imageCreditUrl: >-
   https://unsplash.com/@rrodriguesim?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 The Anthurium, also known as the Flamingo Flower (Anthurium andreanum), is a stunning addition to any indoor space. With its heart-shaped flowers and glossy green leaves, this plant brings elegance and a touch of nature into your home. To keep your Anthurium thriving, provide it with 200-400 foot-candles of light from an east or south window. Water the plant every 7-10 days by checking soil moisture, ensuring that the top inch is dry before watering again. Maintain a humidity level between 50-70% and keep temperatures between 65-80°F (18-27°C). Fertilize with a balanced 10-10-10 NPK fertilizer monthly during spring and summer, reducing frequency in autumn and winter.

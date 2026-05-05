@@ -35,6 +35,7 @@ description: >-
   The Burro's Tail (Sedum morganianum) thrives in bright, indirect light with a
   minimum of 200–400 foot-candles. Water it every 7–10 days during the summer
   and re.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

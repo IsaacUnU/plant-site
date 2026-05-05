@@ -7,7 +7,9 @@ tags:
   - plantas de interior
   - cuidado de plantas
   - jardinería interior
-description: Aprende consejos de expertos sobre cómo regar plantas de interior para una salud óptima
+description: >-
+  Aprende consejos de expertos sobre cómo regar plantas de interior para una
+  salud óptima
 datePublished: '2026-04-04T00:00:00.000Z'
 dateModified: '2026-04-04T00:00:00.000Z'
 image: >-
@@ -16,6 +18,7 @@ imageAlt: 'Cómo Regar Plantas de Interior: La Guía Completa'
 imageCredit: Vitaly Gariev
 imageCreditUrl: >-
   https://unsplash.com/@silverkblack?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Por Qué un Riego Adecuado Marca la Diferencia

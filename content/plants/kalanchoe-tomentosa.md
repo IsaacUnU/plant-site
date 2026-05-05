@@ -20,6 +20,7 @@ image: >-
 imageAlt: Panda Plant houseplant
 imageCredit: Aliya Weer
 imageCreditUrl: 'https://unsplash.com/@aliyadsgn?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 

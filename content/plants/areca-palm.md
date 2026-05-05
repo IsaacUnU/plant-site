@@ -34,6 +34,7 @@ description: >-
   The Golden Feather Palm, also known as Dypsis lutescens, thrives in indirect
   light with a measurement of approximately 200–400 foot-candles, ideally
   placed.
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 

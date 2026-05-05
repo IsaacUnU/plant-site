@@ -8,8 +8,9 @@ tags:
   - jardinería interior
   - baños
 description: >-
-  Descubre las 6 plantas amantes de la humedad que prosperan en las condiciones del baño.
-  Selecciones de expertos con consejos de cuidado, pros, contras y enlaces a guías completas.
+  Descubre las 6 plantas amantes de la humedad que prosperan en las condiciones
+  del baño. Selecciones de expertos con consejos de cuidado, pros, contras y
+  enlaces a guías completas.
 featuredPlants:
   - alocasia-polly
   - anthurium
@@ -24,6 +25,7 @@ image: >-
 imageAlt: Las 6 mejores plantas para baños en tu hogar
 imageCredit: Cole Keister
 imageCreditUrl: 'https://unsplash.com/@coleito?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ¿Estás cansado de ver cómo tus plantas de interior luchan por sobrevivir en las condiciones húmedas de tu baño? ¿Sueñas con tener un oasis verde y exuberante en el único cuarto donde pasas una cantidad significativa de tiempo cada día? No busques más. En PlantCare Central, creemos que con las plantas adecuadas puedes convertir tu baño en un retiro tranquilo que no solo relaje tu mente y cuerpo, sino que también purifique el aire y añada un toque de belleza natural a tu espacio.

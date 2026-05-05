@@ -30,6 +30,7 @@ description: >-
   The Schefflera arboricola, or Dwarf Umbrella Tree, thrives in a north-facing
   room with 200-400 foot-candles of indirect light and prefers to be watered
   every 7–.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

@@ -16,6 +16,7 @@ imageAlt: Cómo salvar una planta moribunda (Guía paso a paso de revivificació
 imageCredit: Đào Việt Hoàng
 imageCreditUrl: >-
   https://unsplash.com/@dvhoang2106?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Introducción

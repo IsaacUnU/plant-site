@@ -22,6 +22,7 @@ image: >-
 imageAlt: 3 Essential Best Indoor Vines and Climbing Plants You Need Right Now
 imageCredit: Connor O'Keefe
 imageCreditUrl: 'https://unsplash.com/@okeefecj?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 If you're looking to add a touch of elegance and vibrancy to your indoor space, you can't go wrong with indoor vines and climbing plants. Not only do they purify the air and improve the aesthetic of your home, but they're also relatively low-maintenance and easy to care for. However, with so many options available, it can be overwhelming to choose the right one for your space. That's why we've narrowed down our top picks to the three essential best indoor vines and climbing plants that you need right now.

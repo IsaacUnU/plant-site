@@ -30,6 +30,7 @@ imageCreditUrl: >-
 description: >-
   Provide your Dumb Cane with 200-400 foot-candles of light, which can be
   achieved by placing it 3-5 feet from an east or south window.
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 Provide your Dumb Cane with 200-400 foot-candles of light, which can be achieved by placing it 3-5 feet from an east or south window. Water the plant every 7–10 days during spring and summer, reducing frequency to every 10-14 days in fall and winter. The ideal temperature range is between 65-80°F (18-27°C), with medium humidity levels maintained at around 50–70%. For optimal growth, use a balanced fertilizer once monthly during spring and summer.

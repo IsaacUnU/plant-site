@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Planta de Maíz
 slug: corn-plant
 commonName: Planta de Maíz
@@ -19,7 +19,11 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Planta de Maíz, también conocida como Dracaena fragrans, es una planta popular y versátil que aporta un toque de elegancia tropical a cualquier habitación. Con sus hojas delgadas y flores fragantes, es una excelente opción para aquellos que buscan una adición de bajo mantenimiento pero elegante a su espacio interior.
+  La Planta de Maíz, también conocida como Dracaena fragrans, es una planta
+  popular y versátil que aporta un toque de elegancia tropical a cualquier
+  habitación. Con sus hojas delgadas y flores fragantes, es una excelente opción
+  para aquellos que buscan una adición de bajo mantenimiento pero elegante a su
+  espacio interior.
 datePublished: '2026-02-23T00:00:00.000Z'
 dateModified: '2026-02-23T00:00:00.000Z'
 image: >-
@@ -28,6 +32,7 @@ imageAlt: Planta de Maíz como planta de interior
 imageCredit: Markus Winkler
 imageCreditUrl: >-
   https://unsplash.com/@markuswinkler?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 ## Resumen de Cuidado Rápido
 

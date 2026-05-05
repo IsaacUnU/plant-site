@@ -23,6 +23,7 @@ description: >-
   elemento decorativo y purificador del aire.
 datePublished: 2026-05-04T00:00:00.000Z
 dateModified: 2026-05-04T00:00:00.000Z
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidados

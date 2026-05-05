@@ -33,6 +33,7 @@ description: >-
   The Ripple Peperomia (Peperomia caperata) loves to bask in the indirect light
   of a south or east-facing window, receiving around 200-400 foot-candles. Water
   it .
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

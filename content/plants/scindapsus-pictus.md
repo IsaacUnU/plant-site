@@ -20,6 +20,7 @@ image: >-
 imageAlt: Silver Pothos houseplant
 imageCredit: Lasma Balode
 imageCreditUrl: 'https://unsplash.com/@susurins?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 

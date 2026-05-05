@@ -24,6 +24,7 @@ image: >-
 imageAlt: The 5 Best Plants for Bright Sunny Windows Every Plant Lover Should Own
 imageCredit: Kate Darmody
 imageCreditUrl: 'https://unsplash.com/@kdarmody?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 If you're a plant enthusiast, you know the struggle of finding the perfect plants for your bright, sunny windowsills. With so many options available, it can be overwhelming to choose the right ones that will thrive in these conditions. But don't worry, we've got you covered! In this article, we'll introduce you to the 5 best plants for bright sunny windows that every plant lover should own. These plants are not only stunning, but they're also relatively easy to care for, making them perfect for both beginners and experienced plant enthusiasts.

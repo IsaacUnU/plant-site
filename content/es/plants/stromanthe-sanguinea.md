@@ -28,6 +28,7 @@ image: >-
 imageAlt: Tricolor Starburst houseplant
 imageCredit: Nina Luong
 imageCreditUrl: 'https://unsplash.com/@ninaluong?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidados

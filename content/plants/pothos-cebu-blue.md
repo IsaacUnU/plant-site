@@ -31,6 +31,7 @@ description: >-
   The Cebu Blue Pothos, scientifically named Epipremnum pinnatum, thrives in
   indirect light (200-400 foot-candles), prefers to be watered every 7-10 days,
   and lik.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Palma Areca
 slug: areca-palm
 commonName: Palma de Plumas Doradas
@@ -20,7 +20,11 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Palma Areca es una planta de interior popular y versátil conocida por sus hojas plumosas y su capacidad para purificar el aire, lo que la convierte en un gran complemento para cualquier hogar o oficina. Con sus tallos dorados y hojas amarillo-verdes, esta palma no solo es una hermosa pieza decorativa, sino también un fresco natural del aire.
+  La Palma Areca es una planta de interior popular y versátil conocida por sus
+  hojas plumosas y su capacidad para purificar el aire, lo que la convierte en
+  un gran complemento para cualquier hogar o oficina. Con sus tallos dorados y
+  hojas amarillo-verdes, esta palma no solo es una hermosa pieza decorativa,
+  sino también un fresco natural del aire.
 datePublished: '2026-02-16T00:00:00.000Z'
 dateModified: '2026-02-16T00:00:00.000Z'
 image: >-
@@ -29,6 +33,7 @@ imageAlt: Palma de Plumas Doradas de interior
 imageCredit: vadim kaipov
 imageCreditUrl: >-
   https://unsplash.com/@vadimkaipov?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen de Cuidado Rápido

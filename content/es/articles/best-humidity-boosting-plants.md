@@ -8,7 +8,9 @@ tags:
   - jardinería interior
   - plantas
 description: >-
-  Descubre las 10 plantas que aumentan naturalmente la humedad en interiores. Selecciones de expertos con consejos de cuidado, pros, contras y enlaces a guías completas.
+  Descubre las 10 plantas que aumentan naturalmente la humedad en interiores.
+  Selecciones de expertos con consejos de cuidado, pros, contras y enlaces a
+  guías completas.
 featuredPlants:
   - alocasia-polly
   - anthurium
@@ -28,6 +30,7 @@ imageAlt: Las 10 Mejores Plantas de Interior que Aumentan la Humedad para tu Hog
 imageCredit: Huy Phan
 imageCreditUrl: >-
   https://unsplash.com/@huyphan2602?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Introducción

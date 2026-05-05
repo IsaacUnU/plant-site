@@ -7,7 +7,9 @@ tags:
   - plantas de interior
   - cuidado de plantas
   - jardinería interior
-description: Aprende a identificar y tratar las plagas comunes de plantas de interior con nuestra guía experta
+description: >-
+  Aprende a identificar y tratar las plagas comunes de plantas de interior con
+  nuestra guía experta
 datePublished: '2026-03-25T00:00:00.000Z'
 dateModified: '2026-03-25T00:00:00.000Z'
 image: >-
@@ -16,6 +18,7 @@ imageAlt: 'Plagas Comunes de Plantas de Interior: Cómo Identificarlas y Tratarl
 imageCredit: Huy Phan
 imageCreditUrl: >-
   https://unsplash.com/@huyphan2602?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Introducción

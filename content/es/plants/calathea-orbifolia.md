@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Calathea Orbifolia
 slug: calathea-orbifolia
 commonName: Calathea Orbifolia
@@ -20,16 +20,22 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Calathea orbifolia es una planta tropical impresionante conocida por sus hermosas hojas redondas con patrones intrincados, lo que la hace una opción popular para jardines interiores. Su capacidad para purificar el aire y aumentar la humedad la convierte en un excelente agregado a cualquier hogar, promoviendo un espacio de vida más saludable y cómodo.
+  La Calathea orbifolia es una planta tropical impresionante conocida por sus
+  hermosas hojas redondas con patrones intrincados, lo que la hace una opción
+  popular para jardines interiores. Su capacidad para purificar el aire y
+  aumentar la humedad la convierte en un excelente agregado a cualquier hogar,
+  promoviendo un espacio de vida más saludable y cómodo.
 datePublished: '2026-02-19T00:00:00.000Z'
 dateModified: '2026-02-19T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1714507767656-2fb307e1b03d?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxDYWxhdGhlYSUyMG9yYmlmb2xpYSUyMGhvdXNlcGxhbnR8ZW58MHx8fHwxNzc2NDI4MDY2fDA&ixlib=rb-4.1.0&w=900&q=80&auto=format&fit=crop
 imageAlt: >-
-  Planta de interior Calathea Orbifolia con hojas redondas grandes y patrón de franjas plateadas y verdes
+  Planta de interior Calathea Orbifolia con hojas redondas grandes y patrón de
+  franjas plateadas y verdes
 imageCredit: Gigi Visacri
 imageCreditUrl: >-
   https://unsplash.com/@georgia_vis?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 ## Resumen de Cuidado Rápido
 

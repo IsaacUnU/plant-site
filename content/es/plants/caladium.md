@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Caladium
 slug: caladium
 commonName: Caladium
@@ -20,7 +20,11 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Caladium es una planta de interior impresionante conocida por sus hojas vibrantes y coloridas que agregan un toque de color a cualquier habitación. Con el cuidado adecuado, esta planta de bajo mantenimiento puede prosperar en interiores, proporcionando una hermosa exhibición de follaje y beneficios de purificación del aire.
+  La Caladium es una planta de interior impresionante conocida por sus hojas
+  vibrantes y coloridas que agregan un toque de color a cualquier habitación.
+  Con el cuidado adecuado, esta planta de bajo mantenimiento puede prosperar en
+  interiores, proporcionando una hermosa exhibición de follaje y beneficios de
+  purificación del aire.
 datePublished: '2026-02-19T00:00:00.000Z'
 dateModified: '2026-02-19T00:00:00.000Z'
 image: >-
@@ -29,6 +33,7 @@ imageAlt: Planta de interior Caladium
 imageCredit: David Clode
 imageCreditUrl: >-
   https://unsplash.com/@davidclode?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 ## Resumen de Cuidado Rápido
 

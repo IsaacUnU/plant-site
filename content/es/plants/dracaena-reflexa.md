@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Dracaena reflexa
 slug: dracaena-reflexa
 commonName: Pleomele
@@ -20,11 +20,11 @@ toxicity: mildly-toxic
 growthRate: moderate
 description: >-
   La Dracaena reflexa, también conocida como Pleomele, es una planta de interior
-  versátil y atractiva que puede prosperar en una variedad de condiciones,
-  lo que la convierte en perfecta para principiantes. Sus hojas delgadas y su
+  versátil y atractiva que puede prosperar en una variedad de condiciones, lo
+  que la convierte en perfecta para principiantes. Sus hojas delgadas y su
   hábito de crecimiento compacto la hacen una excelente opción para espacios
-  pequeños, y también se conoce por ser un purificador de aire eficaz,
-  lo que la convierte en una gran adición a cualquier habitación.
+  pequeños, y también se conoce por ser un purificador de aire eficaz, lo que la
+  convierte en una gran adición a cualquier habitación.
 datePublished: '2026-02-24T00:00:00.000Z'
 dateModified: '2026-02-24T00:00:00.000Z'
 image: >-
@@ -33,6 +33,7 @@ imageAlt: Pleomele planta de interior
 imageCredit: Sudhan Chitgopkar
 imageCreditUrl: >-
   https://unsplash.com/@chitgopkar?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

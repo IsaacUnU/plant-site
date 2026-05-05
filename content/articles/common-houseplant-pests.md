@@ -16,6 +16,7 @@ imageAlt: 'Common Houseplant Pests: How to Identify and Treat Them'
 imageCredit: Huy Phan
 imageCreditUrl: >-
   https://unsplash.com/@huyphan2602?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Introduction

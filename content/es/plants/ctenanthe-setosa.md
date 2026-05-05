@@ -27,6 +27,7 @@ image: >-
 imageAlt: Never Never Plant houseplant
 imageCredit: Megan Nixon
 imageCreditUrl: 'https://unsplash.com/@megnixon?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidados

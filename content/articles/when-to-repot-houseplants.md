@@ -18,6 +18,7 @@ imageAlt: When Should You Repot a Houseplant? (5 Clear Signs)
 imageCredit: ana popescu
 imageCreditUrl: >-
   https://unsplash.com/@annemarria__?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Introduction

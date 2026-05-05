@@ -34,6 +34,7 @@ imageCredit: Leonardo Iheme
 imageCreditUrl: 'https://unsplash.com/@leoeye?utm_source=plantcare_guide&utm_medium=referral'
 additionalImages:
   - /images/plants/alocasia-silver-dragon-detail.jpg
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

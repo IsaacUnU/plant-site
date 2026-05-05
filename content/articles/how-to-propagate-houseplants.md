@@ -15,6 +15,7 @@ image: >-
 imageAlt: 'How to Propagate Houseplants: 5 Easy Methods'
 imageCredit: Christine
 imageCreditUrl: 'https://unsplash.com/@studio_cj?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Introduction

@@ -29,6 +29,7 @@ imageAlt: 'Expert''s Choice: The 9 Best Office Plants'
 imageCredit: Sanni Sahil
 imageCreditUrl: >-
   https://unsplash.com/@sannisahil?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 Are you tired of dull, lifeless offices that lack a touch of nature? Do you struggle to keep your indoor plants alive, despite your best efforts? You're not alone. Many of us want to bring some greenery into our workspaces, but we're not sure where to start. That's why we've put together a list of the 9 best office plants, carefully selected for their low-maintenance requirements and ability to thrive in indoor environments.

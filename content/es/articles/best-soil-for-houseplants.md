@@ -8,8 +8,8 @@ tags:
   - cuidado de plantas
   - jardinería interior
 description: >-
-  Descubre el mejor suelo para macetas de tus plantas de interior y aprende a elegir
-  la mezcla perfecta para un crecimiento y salud óptimos
+  Descubre el mejor suelo para macetas de tus plantas de interior y aprende a
+  elegir la mezcla perfecta para un crecimiento y salud óptimos
 datePublished: '2026-03-23T00:00:00.000Z'
 dateModified: '2026-03-31T00:00:00.000Z'
 image: >-
@@ -18,6 +18,7 @@ imageAlt: 'Mejor Suelo para Macetas de Interior: Una Guía Completa'
 imageCredit: Neslihan Gunaydin
 imageCreditUrl: >-
   https://unsplash.com/@neslihangunaydin?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Introducción

@@ -31,6 +31,7 @@ description: >-
   To care for your Hoya obovata, provide it with bright, indirect light and
   maintain a consistent temperature between 65-80°F (18-27°C). Water your plant
   every 7–.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

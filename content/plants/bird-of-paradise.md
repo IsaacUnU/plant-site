@@ -35,6 +35,7 @@ description: >-
   The Bird of Paradise, or Strelitzia reginae, requires a specific balance of
   light (200–400 foot-candles, 3–5 feet from an east or south window), watered
   every 7.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

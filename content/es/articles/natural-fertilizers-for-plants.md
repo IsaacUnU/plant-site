@@ -8,8 +8,9 @@ tags:
   - cuidado de plantas
   - jardinería interior
 description: >-
-  Descubre los mejores fertilizantes naturales para tus plantas de interior, desde recetas caseras
-  hasta opciones de compra, y aprende a usarlos para un crecimiento óptimo.
+  Descubre los mejores fertilizantes naturales para tus plantas de interior,
+  desde recetas caseras hasta opciones de compra, y aprende a usarlos para un
+  crecimiento óptimo.
 datePublished: '2026-04-06T00:00:00.000Z'
 dateModified: '2026-04-06T00:00:00.000Z'
 image: >-
@@ -17,6 +18,7 @@ image: >-
 imageAlt: 'Fertilizantes Naturales para Plantas de Interior: DIY y de Tienda'
 imageCredit: Fujiphilm
 imageCreditUrl: 'https://unsplash.com/@fujiphilm?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Por Qué los Fertilizantes Naturales Superan a los Sintéticos

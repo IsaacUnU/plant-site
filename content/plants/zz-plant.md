@@ -32,6 +32,7 @@ imageAlt: ZZ Plant houseplant
 imageCredit: Phuong Nguyen
 imageCreditUrl: >-
   https://unsplash.com/@phuongtography?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

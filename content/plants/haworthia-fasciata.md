@@ -30,6 +30,7 @@ description: >-
   The Haworthia fasciata, commonly known as the Zebra Plant, is a stunning
   low-maintenance succulent houseplant that thrives in indirect light with
   200-400 foot-c.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

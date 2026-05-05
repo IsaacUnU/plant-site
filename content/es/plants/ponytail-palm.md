@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Palmera Cola de Caballo
 slug: ponytail-palm
 commonName: Palmera Cola de Caballo
@@ -20,7 +20,11 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Palmera Cola de Caballo es una planta de interior única y de bajo mantenimiento, conocida por su tronco bulboso distintivo y sus largas hojas rizadas. Su capacidad para prosperar en condiciones interiores y purificar el aire la convierte en una opción popular tanto para entusiastas de las plantas como para principiantes.
+  La Palmera Cola de Caballo es una planta de interior única y de bajo
+  mantenimiento, conocida por su tronco bulboso distintivo y sus largas hojas
+  rizadas. Su capacidad para prosperar en condiciones interiores y purificar el
+  aire la convierte en una opción popular tanto para entusiastas de las plantas
+  como para principiantes.
 datePublished: '2026-03-08T00:00:00.000Z'
 dateModified: '2026-03-08T00:00:00.000Z'
 image: >-
@@ -28,6 +32,7 @@ image: >-
 imageAlt: Palmera Cola de Caballo en interior
 imageCredit: Seyedeh Hamideh Kazemi
 imageCreditUrl: 'https://unsplash.com/@shkazemi?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

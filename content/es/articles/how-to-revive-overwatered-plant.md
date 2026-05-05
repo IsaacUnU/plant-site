@@ -7,7 +7,9 @@ tags:
   - plantas de interior
   - cuidado de plantas
   - jardinería interior
-description: Salva tus plantas afectadas por el exceso de riego con nuestra guía experta paso a paso
+description: >-
+  Salva tus plantas afectadas por el exceso de riego con nuestra guía experta
+  paso a paso
 datePublished: '2026-04-01T00:00:00.000Z'
 dateModified: '2026-04-01T00:00:00.000Z'
 image: >-
@@ -15,6 +17,7 @@ image: >-
 imageAlt: Cómo Revivir una Planta con Exceso de Riego (Guía de Solución Rápida)
 imageCredit: Francesca Piva
 imageCreditUrl: 'https://unsplash.com/@francepi?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Introducción

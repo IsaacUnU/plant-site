@@ -31,6 +31,7 @@ description: >-
   Caring for your Velvet Philodendron (Philodendron micans) is a breeze. Provide
   it with bright, indirect light that measures between 200 to 400 foot-candles,
   app.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

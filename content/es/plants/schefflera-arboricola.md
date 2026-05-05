@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado del Schefflera arboricola
 slug: schefflera-arboricola
 commonName: Árbol Paraguas Enano
@@ -21,8 +21,8 @@ toxicity: non-toxic
 growthRate: moderate
 description: >-
   El Schefflera arboricola, también conocido como Árbol Paraguas Enano, es una
-  planta de interior popular debido a sus elegantes hojas en forma de paraguas
-  y a sus requisitos de bajo mantenimiento. Con el cuidado adecuado, puede
+  planta de interior popular debido a sus elegantes hojas en forma de paraguas y
+  a sus requisitos de bajo mantenimiento. Con el cuidado adecuado, puede
   prosperar en ambientes interiores, aportando un hermoso toque de follaje
   tropical a cualquier habitación.
 datePublished: 2026-04-23T00:00:00.000Z
@@ -32,6 +32,7 @@ image: >-
 imageAlt: Árbol Paraguas Enano planta de interior
 imageCredit: Nik A.
 imageCreditUrl: 'https://unsplash.com/@astasnik?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

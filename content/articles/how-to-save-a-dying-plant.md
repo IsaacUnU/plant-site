@@ -16,6 +16,7 @@ imageAlt: How to Save a Dying Plant (Step-by-Step Revival Guide)
 imageCredit: Đào Việt Hoàng
 imageCreditUrl: >-
   https://unsplash.com/@dvhoang2106?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Introduction

@@ -34,6 +34,10 @@ imageCreditUrl: 'https://unsplash.com/@astasnik?utm_source=plantcare_guide&utm_m
 additionalImages:
   - /images/plants/alocasia-cucullata-detail.jpg
   - /images/plants/alocasia-cucullata-3.jpg
+  - /images/plants/alocasia-cucullata-2.jpg
+  - /images/plants/alocasia-cucullata-3.jpg
+  - /images/plants/alocasia-cucullata-detail.jpg
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

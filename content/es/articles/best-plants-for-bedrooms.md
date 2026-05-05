@@ -1,5 +1,7 @@
 ---
-title: Las 10 Mejores Plantas para Dormitorios que Todo Amante de las Plantas Debería Tener
+title: >-
+  Las 10 Mejores Plantas para Dormitorios que Todo Amante de las Plantas Debería
+  Tener
 slug: best-plants-for-bedrooms
 type: listicle
 category: guides
@@ -8,8 +10,9 @@ tags:
   - jardinería interior
   - dormitorios
 description: >-
-  Descubre las 10 plantas no tóxicas, purificadoras de aire y fragantes ideales para
-  dormitorios. Selecciones de expertos con consejos de cuidado, pros, contras y enlaces a guías completas.
+  Descubre las 10 plantas no tóxicas, purificadoras de aire y fragantes ideales
+  para dormitorios. Selecciones de expertos con consejos de cuidado, pros,
+  contras y enlaces a guías completas.
 featuredPlants:
   - african-violet
   - areca-palm
@@ -25,9 +28,12 @@ datePublished: 2026-04-27T00:00:00.000Z
 dateModified: 2026-04-27T00:00:00.000Z
 image: >-
   https://images.unsplash.com/photo-1663620906916-7f4e2875716f?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxUaGUlMjAxMCUyMEJlc3QlMjBQbGFudHMlMjBmb3IlMjBCZWRyb29tcyUyMEV2ZXJ5JTIwUGxhbnQlMjBMb3ZlciUyMFNob3VsZCUyME93biUyMGhvdXNlcGxhbnRzJTIwaW5kb29yJTIwZ2FyZGVuaW5nJTIwaG91c2VwbGFudCUyMGluZG9vcnxlbnwwfDB8fHwxNzc3Mjg3NDQ3fDA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
-imageAlt: Las 10 Mejores Plantas para Dormitorios que Todo Amante de las Plantas Debería Tener
+imageAlt: >-
+  Las 10 Mejores Plantas para Dormitorios que Todo Amante de las Plantas Debería
+  Tener
 imageCredit: Lucy Mui
 imageCreditUrl: 'https://unsplash.com/@lsmui?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## El Secreto para una Noche de Sueño Tranquilo: Plantas en el Dormitorio

@@ -1,5 +1,7 @@
 ---
-title: 'Los Mejores Macetones para Plantas de Interior: Terracota vs Plástico vs Cerámica'
+title: >-
+  Los Mejores Macetones para Plantas de Interior: Terracota vs Plástico vs
+  Cerámica
 slug: best-pots-for-houseplants
 type: howto
 category: care-guides
@@ -8,15 +10,20 @@ tags:
   - cuidado de plantas
   - jardinería interior
 description: >-
-  Descubre los mejores macetones para tus plantas de interior y aprende a elegir entre opciones de terracota, plástico y cerámica para una salud óptima de las plantas
+  Descubre los mejores macetones para tus plantas de interior y aprende a elegir
+  entre opciones de terracota, plástico y cerámica para una salud óptima de las
+  plantas
 datePublished: '2026-03-23T00:00:00.000Z'
 dateModified: '2026-03-23T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1631099286847-4b25b74a139a?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxob3VzZXBsYW50cyUyMGluZG9vciUyMGdhcmRlbnxlbnwwfDB8fHwxNzc2NTQ1MDU0fDA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
-imageAlt: 'Los Mejores Macetones para Plantas de Interior: Terracota vs Plástico vs Cerámica'
+imageAlt: >-
+  Los Mejores Macetones para Plantas de Interior: Terracota vs Plástico vs
+  Cerámica
 imageCredit: Smrithi Rao
 imageCreditUrl: >-
   https://unsplash.com/@freshlyminted?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Introducción

@@ -27,6 +27,7 @@ image: >-
 imageAlt: Chinese Evergreen houseplant
 imageCredit: Soumen Ghosh
 imageCreditUrl: 'https://unsplash.com/@soumen59?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidados

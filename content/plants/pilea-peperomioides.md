@@ -30,6 +30,7 @@ description: >-
   To care for your Pilea peperomioides, provide it with bright, indirect light
   (200-400 foot-candles) and water it once a week, allowing the soil to dry
   slightly .
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

@@ -8,8 +8,9 @@ tags:
   - jardinería interior
   - espacios
 description: >-
-  Descubre las 6 plantas compactas y de crecimiento lento ideales para apartamentos y
-  habitaciones pequeñas. Selecciones de expertos con consejos de cuidado, pros, contras y enlaces a guías completas.
+  Descubre las 6 plantas compactas y de crecimiento lento ideales para
+  apartamentos y habitaciones pequeñas. Selecciones de expertos con consejos de
+  cuidado, pros, contras y enlaces a guías completas.
 featuredPlants:
   - african-violet
   - alocasia-cucullata
@@ -25,6 +26,7 @@ imageAlt: 'Dominando la Verde Interior: 6 Mejores Plantas para Espacios Pequeño
 imageCredit: Huy Phan
 imageCreditUrl: >-
   https://unsplash.com/@huyphan2602?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 Si vives en un apartamento pequeño o tienes espacio limitado, podrías pensar que tener un exuberante jardín interior está fuera de cuestión. Sin embargo, con las plantas adecuadas, aún puedes disfrutar de los beneficios de la vegetación interior sin sacrificar demasiado espacio. La clave es elegir plantas compactas, de crecimiento lento y que no requieran mucho mantenimiento. En este artículo, exploraremos las 6 mejores plantas para espacios pequeños, incluyendo sus requisitos de cuidado, características únicas y lo que las hace perfectas para apartamentos y habitaciones pequeñas.

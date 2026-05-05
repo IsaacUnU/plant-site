@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Caña Boba
 slug: dumb-cane
 commonName: Caña Boba
@@ -20,7 +20,11 @@ temperature: 65-80°F (18-27°C)
 toxicity: mildly-toxic
 growthRate: moderate
 description: >-
-  La Caña Boba es una planta de interior popular y de bajo mantenimiento, conocida por sus atractivas hojas variegadas y su capacidad para purificar el aire. Con el cuidado adecuado, puede prosperar en una variedad de entornos interiores, lo que la hace una excelente opción para entusiastas de las plantas de todos los niveles.
+  La Caña Boba es una planta de interior popular y de bajo mantenimiento,
+  conocida por sus atractivas hojas variegadas y su capacidad para purificar el
+  aire. Con el cuidado adecuado, puede prosperar en una variedad de entornos
+  interiores, lo que la hace una excelente opción para entusiastas de las
+  plantas de todos los niveles.
 datePublished: '2026-02-25T00:00:00.000Z'
 dateModified: '2026-02-25T00:00:00.000Z'
 image: >-
@@ -29,6 +33,7 @@ imageAlt: Planta de interior Caña Boba
 imageCredit: Kellen Barnes
 imageCreditUrl: >-
   https://unsplash.com/@boysenberriefairie?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 ## Resumen de Cuidado Rápido
 Para cuidar su Caña Boba, proporcione luz indirecta brillante y riegue semanalmente durante los meses de primavera y verano, reduciendo la frecuencia a cada 10-14 días en otoño e invierno. La temperatura ideal para esta planta es entre 65-80°F (18-27°C), y prefiere un nivel de humedad medio. Con sus requisitos de cuidado fáciles y su apariencia atractiva, la Caña Boba es una excelente opción para principiantes, lo que la hace una adición perfecta a cualquier espacio interior.

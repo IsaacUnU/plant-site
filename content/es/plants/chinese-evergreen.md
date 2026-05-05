@@ -1,5 +1,7 @@
-﻿---
-title: 'Guía Completa de Cuidado del Aglaonema: Consejos para una Planta de Interior Próspera'
+---
+title: >-
+  Guía Completa de Cuidado del Aglaonema: Consejos para una Planta de Interior
+  Próspera
 slug: chinese-evergreen
 commonName: Aglaonema
 scientificName: Aglaonema modestum
@@ -20,7 +22,11 @@ temperature: 65–80°F (18–27°C)
 toxicity: toxic-to-pets
 growthRate: moderate
 description: >-
-  El Aglaonema es una planta de interior impresionante y de bajo mantenimiento, conocida por sus hojas atractivas con marcas plateadas o doradas, lo que la hace una opción popular para espacios interiores. Con el cuidado adecuado, esta planta puede prosperar en condiciones de poca luz, purificando el aire y agregando un toque de belleza tropical a su hogar.
+  El Aglaonema es una planta de interior impresionante y de bajo mantenimiento,
+  conocida por sus hojas atractivas con marcas plateadas o doradas, lo que la
+  hace una opción popular para espacios interiores. Con el cuidado adecuado,
+  esta planta puede prosperar en condiciones de poca luz, purificando el aire y
+  agregando un toque de belleza tropical a su hogar.
 datePublished: '2026-02-22T00:00:00.000Z'
 dateModified: '2026-02-22T00:00:00.000Z'
 image: >-
@@ -28,6 +34,7 @@ image: >-
 imageAlt: Planta de interior Aglaonema
 imageCredit: Soumen Ghosh
 imageCreditUrl: 'https://unsplash.com/@soumen59?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 ## Descripción General
 El Aglaonema, también conocida como Aglaonema modestum, es una planta tropical nativa de las regiones subtropicales de Asia. Es una planta de interior popular debido a sus hojas atractivas con marcas de plata o oro, que pueden agregar un toque de elegancia a cualquier espacio interior. La Aglaonema es una planta versátil que puede prosperar en una variedad de condiciones de iluminación, lo que la hace una excelente opción para habitaciones con luz natural limitada. Su capacidad para purificar el aire y tolerar un mantenimiento bajo la hace una opción ideal para personas ocupadas o aquellas que están empezando a cuidar plantas de interior.

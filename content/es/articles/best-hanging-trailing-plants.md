@@ -1,5 +1,5 @@
 ---
-title: 'Las 3 Mejores Plantas Colgantes y Trepadoras para tu Hogar'
+title: Las 3 Mejores Plantas Colgantes y Trepadoras para tu Hogar
 slug: best-hanging-trailing-plants
 type: listicle
 category: guides
@@ -9,7 +9,8 @@ tags:
   - plantas
 description: >-
   Descubre las 3 plantas trepadoras y colgantes perfectas para cestas colgantes.
-  Selecciones de expertos con consejos de cuidado, pros, contras y enlaces a guías completas.
+  Selecciones de expertos con consejos de cuidado, pros, contras y enlaces a
+  guías completas.
 featuredPlants:
   - english-ivy
   - golden-pothos
@@ -18,10 +19,11 @@ datePublished: 2026-04-23T00:00:00.000Z
 dateModified: 2026-04-23T00:00:00.000Z
 image: >-
   https://images.unsplash.com/photo-1771814121521-7e77bbd5b4d7?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwyfHxNYXN0ZXJpbmclMjBJbmRvb3IlMjBHcmVlbmVyeSUzQSUyMDMlMjBCZXN0JTIwSGFuZ2luZyUyMGFuZCUyMFRyYWlsaW5nJTIwUGxhbnRzJTIwaG91c2VwbGFudHMlMjBpbmRvb3IlMjBnYXJkZW5pbmclMjBob3VzZXBsYW50JTIwaW5kb29yfGVufDB8MHx8fDE3NzY5NDEzNTh8MA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
-imageAlt: 'Las 3 Mejores Plantas Colgantes y Trepadoras para tu Hogar'
+imageAlt: Las 3 Mejores Plantas Colgantes y Trepadoras para tu Hogar
 imageCredit: Rebecca Matthews
 imageCreditUrl: >-
   https://unsplash.com/@rebeccamatthews?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ¿Estás cansado de la misma decoración interior aburrida? ¿Quieres agregar un toque de belleza natural a tu hogar sin gastar mucho dinero? No busques más que las plantas colgantes y trepadoras. Estos especímenes impresionantes pueden transformar cualquier habitación en un oasis verde, purificando el aire y mejorando tu estado de ánimo. Pero con tantas opciones disponibles, puede ser abrumador elegir la adecuada. Por eso hemos preparado esta lista de las 3 mejores plantas colgantes y trepadoras para entusiastas de la jardinería interior.

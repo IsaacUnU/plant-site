@@ -31,6 +31,7 @@ imageCreditUrl: 'https://unsplash.com/@ava_kum?utm_source=plantcare_guide&utm_me
 description: >-
   Kalanchoe blossfeldiana, or Christmas Kalanchoe, thrives in a bright, indirect
   light of 200-400 foot-candles and is best positioned 3-5 feet from an east o.
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 

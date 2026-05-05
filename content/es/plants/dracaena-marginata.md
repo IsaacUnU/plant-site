@@ -1,5 +1,7 @@
-﻿---
-title: 'Guía de Cuidado de la Dracaena Marginata: Consejos para una Planta Saludable y Próspera'
+---
+title: >-
+  Guía de Cuidado de la Dracaena Marginata: Consejos para una Planta Saludable y
+  Próspera
 slug: dracaena-marginata
 commonName: Dracaena de Bordes Rojos
 scientificName: Dracaena marginata
@@ -19,7 +21,11 @@ temperature: 65–80°F (18–27°C)
 toxicity: mildly-toxic
 growthRate: moderate
 description: >-
-  La Dracaena marginata es una planta de interior popular y versátil conocida por sus hojas con bordes rojos llamativos y su capacidad para purificar el aire. Con el cuidado adecuado, esta planta puede crecer hasta 10 pies de altura y aportar un toque hermoso a cualquier habitación, lo que la convierte en una excelente opción para jardineros de interior de todos los niveles.
+  La Dracaena marginata es una planta de interior popular y versátil conocida
+  por sus hojas con bordes rojos llamativos y su capacidad para purificar el
+  aire. Con el cuidado adecuado, esta planta puede crecer hasta 10 pies de
+  altura y aportar un toque hermoso a cualquier habitación, lo que la convierte
+  en una excelente opción para jardineros de interior de todos los niveles.
 datePublished: '2026-02-24T00:00:00.000Z'
 dateModified: '2026-02-24T00:00:00.000Z'
 image: >-
@@ -27,6 +33,7 @@ image: >-
 imageAlt: Dracaena marginata houseplant
 imageCredit: Tatiana Rodriguez
 imageCreditUrl: 'https://unsplash.com/@tata186?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Descripción General

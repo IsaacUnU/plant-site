@@ -35,6 +35,7 @@ description: >-
   window. Wat.
 additionalImages:
   - /images/plants/calathea-orbifolia-detail.jpg
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

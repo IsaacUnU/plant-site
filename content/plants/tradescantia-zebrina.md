@@ -30,6 +30,7 @@ imageCreditUrl: >-
 description: >-
   Caring for your Tradescantia zebrina, or Wandering Jew, is a breeze with these
   simple steps.
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 

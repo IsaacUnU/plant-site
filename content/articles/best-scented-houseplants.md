@@ -25,6 +25,7 @@ image: >-
 imageAlt: 'Expert''s Choice: The 7 Best Fragrant and Scented Houseplants'
 imageCredit: Jerry Wang
 imageCreditUrl: 'https://unsplash.com/@jerry_318?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Filling Your Home with Nature's Fragrances

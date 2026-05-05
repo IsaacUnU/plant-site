@@ -23,6 +23,7 @@ imageAlt: Top 4 Best Medicinal Houseplants for Your Home
 imageCredit: Annie Spratt
 imageCreditUrl: >-
   https://unsplash.com/@anniespratt?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 As we navigate the complexities of modern life, it's easy to overlook one of the most potent sources of wellness: the natural world. Houseplants, in particular, have been shown to have a profound impact on both our physical and mental health. From purifying the air we breathe to providing a sense of calm and tranquility, the benefits of indoor plants are numerous and well-documented. But did you know that some houseplants possess medicinal properties that can be used to treat a range of ailments, from minor cuts and scrapes to chronic conditions like anxiety and insomnia?

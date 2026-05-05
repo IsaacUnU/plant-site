@@ -34,6 +34,7 @@ description: >-
   To care for your Calathea zebrina, provide it with bright, indirect light that
   measures between 200–400 foot-candles, placed about 3–5 feet from an east or
   sout.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

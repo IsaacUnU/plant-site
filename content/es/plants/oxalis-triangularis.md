@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Oxalis triangularis
 slug: oxalis-triangularis
 commonName: Trébol Morado
@@ -20,8 +20,11 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Oxalis triangularis, también conocida como Trébol Morado, es una planta de interior encantadora y de bajo mantenimiento que agrega un toque de color y elegancia a cualquier habitación.
-  Con sus hojas únicas y triangulares y sus delicadas flores blancas, esta planta es una excelente opción para principiantes y entusiastas de las plantas experimentados.
+  La Oxalis triangularis, también conocida como Trébol Morado, es una planta de
+  interior encantadora y de bajo mantenimiento que agrega un toque de color y
+  elegancia a cualquier habitación. Con sus hojas únicas y triangulares y sus
+  delicadas flores blancas, esta planta es una excelente opción para
+  principiantes y entusiastas de las plantas experimentados.
 datePublished: '2026-03-05T00:00:00.000Z'
 dateModified: '2026-03-05T00:00:00.000Z'
 image: >-
@@ -29,6 +32,7 @@ image: >-
 imageAlt: Planta de interior Trébol Morado
 imageCredit: Rynco Maekawa
 imageCreditUrl: 'https://unsplash.com/@lynzrand?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Resumen de Cuidado Rápido

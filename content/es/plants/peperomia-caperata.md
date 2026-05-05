@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Peperomia caperata
 slug: peperomia-caperata
 commonName: Peperomia de Olas
@@ -20,7 +20,11 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Peperomia caperata, también conocida como la Peperomia de Olas, es una hermosa planta de interior de bajo mantenimiento con hojas impresionantes que agregan un toque de elegancia a cualquier habitación. Esta planta es perfecta para principiantes y entusiastas experimentados de plantas, ofreciendo una combinación única de hojas atractivas y requisitos de cuidado fáciles.
+  La Peperomia caperata, también conocida como la Peperomia de Olas, es una
+  hermosa planta de interior de bajo mantenimiento con hojas impresionantes que
+  agregan un toque de elegancia a cualquier habitación. Esta planta es perfecta
+  para principiantes y entusiastas experimentados de plantas, ofreciendo una
+  combinación única de hojas atractivas y requisitos de cuidado fáciles.
 datePublished: '2026-03-06T00:00:00.000Z'
 dateModified: '2026-03-06T00:00:00.000Z'
 image: >-
@@ -29,6 +33,7 @@ imageAlt: Planta de interior Peperomia de Olas
 imageCredit: Amelia Kinnard
 imageCreditUrl: >-
   https://unsplash.com/@ameliakinnard?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 ## Resumen de Cuidado Rápido
 

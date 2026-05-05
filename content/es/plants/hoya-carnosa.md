@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Hoya Carnosa
 slug: hoya-carnosa
 commonName: Flor de Cera
@@ -20,7 +20,10 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Hoya carnosa, también conocida como Flor de Cera, es una planta de interior popular y de bajo mantenimiento que es fácil de cuidar y ofrece hermosas flores fragantes. Con sus hojas y tallos cerosos, esta planta es perfecta para quienes desean añadir un toque de elegancia tropical a su espacio interior.
+  La Hoya carnosa, también conocida como Flor de Cera, es una planta de interior
+  popular y de bajo mantenimiento que es fácil de cuidar y ofrece hermosas
+  flores fragantes. Con sus hojas y tallos cerosos, esta planta es perfecta para
+  quienes desean añadir un toque de elegancia tropical a su espacio interior.
 datePublished: '2026-02-27T00:00:00.000Z'
 dateModified: '2026-02-27T00:00:00.000Z'
 image: >-
@@ -29,6 +32,7 @@ imageAlt: Flor de Cera planta de interior
 imageCredit: Vladimir Argenta
 imageCreditUrl: >-
   https://unsplash.com/@vladiargenta?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

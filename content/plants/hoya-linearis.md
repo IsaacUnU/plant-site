@@ -31,6 +31,7 @@ description: >-
   Caring for a Hoya linearis, or "Wax Plant," is straightforward with the right
   conditions. Provide it with 200-400 foot-candles of light from an east or
   south wi.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

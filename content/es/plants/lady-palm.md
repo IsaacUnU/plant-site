@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Palma Dama
 slug: lady-palm
 commonName: Palma Dama
@@ -20,8 +20,10 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Palma Dama es una planta versátil y atractiva conocida por sus elegantes hojas en forma de abanico y su capacidad para prosperar en una variedad de condiciones de iluminación.
-  Con el cuidado adecuado, puede crecer hasta 6 pies de altura y proporcionar un toque natural y tropical a cualquier habitación.
+  La Palma Dama es una planta versátil y atractiva conocida por sus elegantes
+  hojas en forma de abanico y su capacidad para prosperar en una variedad de
+  condiciones de iluminación. Con el cuidado adecuado, puede crecer hasta 6 pies
+  de altura y proporcionar un toque natural y tropical a cualquier habitación.
 datePublished: 2026-04-24T00:00:00.000Z
 dateModified: 2026-04-24T00:00:00.000Z
 image: >-
@@ -30,6 +32,7 @@ imageAlt: Planta de interior Palma Dama
 imageCredit: Emod
 imageCreditUrl: >-
   https://unsplash.com/@somedayfat?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen de Cuidado Rápido

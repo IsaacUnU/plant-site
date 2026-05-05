@@ -34,6 +34,7 @@ description: >-
   Caring for your Calathea roseopicta involves providing it with indirect light,
   watering once a week during summer and every 10-14 days in winter, maintaining
   hu.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

@@ -28,6 +28,7 @@ image: >-
 imageAlt: Sansevieria Moonshine houseplant
 imageCredit: Nathan Bailly
 imageCreditUrl: 'https://unsplash.com/@nbailly?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidados  

@@ -34,6 +34,7 @@ imageAlt: Philodendron Xanadu planta de interior
 imageCredit: Gigi Visacri
 imageCreditUrl: >-
   https://unsplash.com/@georgia_vis?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Tradescantia zebrina
 slug: tradescantia-zebrina
 commonName: Tradescantia Cebra
@@ -20,7 +20,12 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Tradescantia zebrina, también conocida como la Tradescantia Cebra, es una planta de interior de bajo mantenimiento y versátil que cuenta con hojas atractivas y rayadas, y un hábito de crecimiento compacto, lo que la hace perfecta para espacios interiores. Con su capacidad para purificar el aire y aumentar la humedad, esta planta es una excelente adición a cualquier hogar o oficina.
+  La Tradescantia zebrina, también conocida como la Tradescantia Cebra, es una
+  planta de interior de bajo mantenimiento y versátil que cuenta con hojas
+  atractivas y rayadas, y un hábito de crecimiento compacto, lo que la hace
+  perfecta para espacios interiores. Con su capacidad para purificar el aire y
+  aumentar la humedad, esta planta es una excelente adición a cualquier hogar o
+  oficina.
 datePublished: '2026-03-14T00:00:00.000Z'
 dateModified: '2026-03-14T00:00:00.000Z'
 image: >-
@@ -29,6 +34,7 @@ imageAlt: Planta de interior Tradescantia Cebra
 imageCredit: Rebecca Matthews
 imageCreditUrl: >-
   https://unsplash.com/@rebeccamatthews?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen de Cuidado Rápido

@@ -27,6 +27,7 @@ image: >-
 imageAlt: African Spear Plant houseplant
 imageCredit: Chandan Chaurasia
 imageCreditUrl: 'https://unsplash.com/@chaurasia?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidados

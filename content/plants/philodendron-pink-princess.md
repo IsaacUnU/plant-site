@@ -31,6 +31,7 @@ description: >-
   The Philodendron pink princess thrives best with 200-400 foot-candles of
   indirect light, watered every 7–10 days during spring and summer, reducing to
   ever.
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 

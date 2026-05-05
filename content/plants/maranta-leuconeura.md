@@ -31,6 +31,7 @@ description: >-
   To care for your Maranta leuconeura, place it in a location with bright,
   indirect light (200-400 foot-candles, about 3-5 feet from an east or south
   window) and .
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

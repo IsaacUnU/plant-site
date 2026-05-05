@@ -36,6 +36,7 @@ description: >-
   To successfully care for your Aloe aristata, place it in a location that
   receives bright, indirect light with 200–400 foot-candles of light, ideally
   3–5 feet fr.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

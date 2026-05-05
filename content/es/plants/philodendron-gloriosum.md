@@ -20,7 +20,12 @@ temperature: 65-80°F (18-27°C)
 toxicity: mildly-toxic
 growthRate: moderate
 description: >-
-  El Philodendron gloriosum es un impresionante trepador de hojas en forma de corazón que puede aportar un toque de belleza tropical a cualquier habitación, gracias a su capacidad de purificar el aire y aumentar los niveles de humedad. Con el cuidado adecuado, esta planta puede prosperar en condiciones interiores, ofreciendo una exhibición verde y exuberante que seguramente impresionará.
+  El Philodendron gloriosum es un impresionante trepador de hojas en forma de
+  corazón que puede aportar un toque de belleza tropical a cualquier habitación,
+  gracias a su capacidad de purificar el aire y aumentar los niveles de humedad.
+  Con el cuidado adecuado, esta planta puede prosperar en condiciones
+  interiores, ofreciendo una exhibición verde y exuberante que seguramente
+  impresionará.
 datePublished: 2026-04-25T00:00:00.000Z
 dateModified: 2026-04-25T00:00:00.000Z
 image: >-
@@ -28,6 +33,7 @@ image: >-
 imageAlt: Philodendron Trepador de interior
 imageCredit: Murphy Stay
 imageCreditUrl: 'https://unsplash.com/@murphyf?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

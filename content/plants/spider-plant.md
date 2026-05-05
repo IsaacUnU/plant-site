@@ -33,6 +33,7 @@ imageAlt: Spider Plant houseplant
 imageCredit: Virginia Marinova
 imageCreditUrl: >-
   https://unsplash.com/@virginiaphotostories?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

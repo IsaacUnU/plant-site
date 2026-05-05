@@ -1,5 +1,7 @@
 ---
-title: ¿Por qué las hojas de las plantas se vuelven amarillas? (9 causas + soluciones)
+title: >-
+  ¿Por qué las hojas de las plantas se vuelven amarillas? (9 causas +
+  soluciones)
 slug: why-are-my-plant-leaves-turning-yellow
 type: howto
 category: care-guides
@@ -8,15 +10,18 @@ tags:
   - cuidado de plantas
   - jardinería interior
 description: >-
-  Descubre por qué las hojas de tu planta se vuelven amarillas y aprende 9 causas con
-  soluciones paso a paso
+  Descubre por qué las hojas de tu planta se vuelven amarillas y aprende 9
+  causas con soluciones paso a paso
 datePublished: '2026-04-07T00:00:00.000Z'
 dateModified: '2026-04-07T00:00:00.000Z'
 image: >-
   https://images.unsplash.com/photo-1602889743033-5d20bba9d2da?ixid=M3w5MjI5NTd8MHwxfHNlYXJjaHwxfHxXaHklMjBBcmUlMjBQbGFudCUyMExlYXZlcyUyMFR1cm5pbmclMjBZZWxsb3clM0YlMjAlMjg5JTIwQ2F1c2VzJTIwJTJCJTIwRml4ZXNlMjklMjBob3VzZXBsYW50cyUyMHBsYW50JTIwY2FyZSUyMGhvdXNlcGxhbnQlMjBpbmRvb3IlMjBnYXJkZW4lMjBsaWZlc3R5bGV8ZW58MHwwfHx8MTc3NjU0Mjc3M3ww&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop
-imageAlt: ¿Por qué las hojas de las plantas se vuelven amarillas? (9 causas + soluciones)
+imageAlt: >-
+  ¿Por qué las hojas de las plantas se vuelven amarillas? (9 causas +
+  soluciones)
 imageCredit: Dugi Mulio Wibowo
 imageCreditUrl: 'https://unsplash.com/@dugimulio?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Introducción

@@ -32,6 +32,7 @@ description: >-
   The Ponytail Palm, scientifically known as *Beaucarnea recurvata*, thrives in
   bright but indirect light. Place it about 3-5 feet from an east or south
   window to.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

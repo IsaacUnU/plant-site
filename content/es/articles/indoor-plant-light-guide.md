@@ -8,7 +8,8 @@ tags:
   - cuidado de plantas
   - jardinería interior
 description: >-
-  Descubre los secretos de la iluminación para plantas de interior y mejora la salud de tus plantas de interior
+  Descubre los secretos de la iluminación para plantas de interior y mejora la
+  salud de tus plantas de interior
 datePublished: '2026-04-06T00:00:00.000Z'
 dateModified: '2026-04-12T00:00:00.000Z'
 image: >-
@@ -17,6 +18,7 @@ imageAlt: 'Guía de Luz para Plantas de Interior: Lo que Todo Cultivador Necesit
 imageCredit: Eugene Chystiakov
 imageCreditUrl: >-
   https://unsplash.com/@eugenechystiakov?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Introducción

@@ -22,6 +22,7 @@ imageAlt: 'Mastering Indoor Greenery: 3 Best Hanging and Trailing Plants'
 imageCredit: Rebecca Matthews
 imageCreditUrl: >-
   https://unsplash.com/@rebeccamatthews?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 Are you tired of the same old boring indoor decor? Do you want to add a touch of natural beauty to your home without breaking the bank? Look no further than hanging and trailing plants. These stunning specimens can transform any room into a lush oasis, purifying the air and uplifting your mood. But with so many options out there, it can be overwhelming to choose the right one. That's why we've put together this list of the 3 best hanging and trailing plants for indoor gardening enthusiasts.

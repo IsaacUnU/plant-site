@@ -34,6 +34,7 @@ description: >-
   The Baby Rubber Plant (Peperomia obtusifolia) thrives in a north-facing
   window, receiving indirect light that measures between 200 and 400
   foot-candles. Water i.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

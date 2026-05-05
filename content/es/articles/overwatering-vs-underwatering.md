@@ -7,7 +7,9 @@ tags:
   - plantas de interior
   - cuidado de plantas
   - jardinería interior
-description: Aprende a identificar y solucionar el riego excesivo y el riego insuficiente en tus plantas
+description: >-
+  Aprende a identificar y solucionar el riego excesivo y el riego insuficiente
+  en tus plantas
 datePublished: '2026-04-06T00:00:00.000Z'
 dateModified: '2026-04-06T00:00:00.000Z'
 image: >-
@@ -15,6 +17,7 @@ image: >-
 imageAlt: 'Riego Excesivo vs. Riego Insuficiente: Cómo Distinguirlos'
 imageCredit: Lucas de Moura
 imageCreditUrl: 'https://unsplash.com/@root_br?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Introducción

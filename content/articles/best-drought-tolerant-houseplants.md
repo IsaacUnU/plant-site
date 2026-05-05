@@ -24,6 +24,7 @@ imageAlt: 5 Essential Best Drought-Tolerant Houseplants You Need Right Now
 imageCredit: Annie Spratt
 imageCreditUrl: >-
   https://unsplash.com/@anniespratt?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 Are you tired of constantly worrying about your houseplants drying out or drowning in water? Do you struggle to keep your plants happy and healthy, despite your best efforts? You're not alone. Many of us have been there, frantically searching for the perfect balance of water and nutrients to keep our beloved plants thriving. But what if you could find houseplants that not only tolerate drought but actually thrive in conditions with minimal watering?

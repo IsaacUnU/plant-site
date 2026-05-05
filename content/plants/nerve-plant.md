@@ -31,6 +31,7 @@ description: >-
   To care for your Nerve Plant, provide it with 200-400 foot-candles of bright,
   indirect light, which can be achieved by placing the plant 3-5 feet from an
   east o.
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

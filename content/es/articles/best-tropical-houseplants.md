@@ -8,7 +8,9 @@ tags:
   - jardinería interior
   - plantas de interior
 description: >-
-  Descubre las 9 impresionantes plantas tropicales para cultivar en interiores. Selecciones de expertos con consejos de cuidado, pros, contras y enlaces a guías completas.
+  Descubre las 9 impresionantes plantas tropicales para cultivar en interiores.
+  Selecciones de expertos con consejos de cuidado, pros, contras y enlaces a
+  guías completas.
 featuredPlants:
   - african-violet
   - alocasia-polly
@@ -26,6 +28,7 @@ image: >-
 imageAlt: 9 Plantas Tropicales de Interior Esenciales que Necesitas Ahora
 imageCredit: neil macc
 imageCreditUrl: 'https://unsplash.com/@neilmaccs?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ¿Estás cansado de las mismas plantas de interior aburridas que parecen fundirse con el fondo? ¿Quieres añadir un toque tropical a tu hogar, pero no sabes por dónde empezar? No busques más. PlantCare Central ha compilado una lista de las 9 mejores plantas tropicales de interior que transformarán tu espacio en un oasis exuberante. Desde impresionantes de bajo mantenimiento hasta piezas llamativas que demandan atención, estas plantas seguramente impresionarás.

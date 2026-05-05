@@ -28,6 +28,7 @@ image: 'https://static.inaturalist.org/photos/70651845/medium.jpeg'
 imageAlt: Gasteria houseplant
 imageCredit: 'iNaturalist ((c) Glynn Alard, all rights reserved, uploaded by Glynn Alard)'
 imageCreditUrl: 'https://www.inaturalist.org'
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 

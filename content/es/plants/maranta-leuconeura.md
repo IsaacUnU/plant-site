@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Maranta leuconeura
 slug: maranta-leuconeura
 commonName: Planta de Oración
@@ -20,7 +20,12 @@ temperature: 65-80°F (18-27°C)
 toxicity: non-toxic
 growthRate: moderate
 description: >-
-  La Maranta leuconeura, comúnmente conocida como la Planta de Oración, es una planta de interior impresionante y de bajo mantenimiento que presume de una hermosa hoja con marcas únicas, lo que la hace una opción popular para la jardinería interior. Su capacidad para prosperar en condiciones de humedad media a alta y luz indirecta la hace perfecta para habitaciones con luz natural limitada.
+  La Maranta leuconeura, comúnmente conocida como la Planta de Oración, es una
+  planta de interior impresionante y de bajo mantenimiento que presume de una
+  hermosa hoja con marcas únicas, lo que la hace una opción popular para la
+  jardinería interior. Su capacidad para prosperar en condiciones de humedad
+  media a alta y luz indirecta la hace perfecta para habitaciones con luz
+  natural limitada.
 datePublished: '2026-03-02T00:00:00.000Z'
 dateModified: '2026-03-05T00:00:00.000Z'
 image: >-
@@ -29,6 +34,7 @@ imageAlt: Planta de Oración de interior
 imageCredit: Tatyana Rubleva
 imageCreditUrl: >-
   https://unsplash.com/@lisoglazka?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen de Cuidado Rápido

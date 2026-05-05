@@ -17,6 +17,7 @@ image: >-
 imageAlt: 'Natural Fertilizers for Houseplants: DIY and Store-Bought'
 imageCredit: Fujiphilm
 imageCreditUrl: 'https://unsplash.com/@fujiphilm?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Why Natural Fertilizers Outperform Synthetic Ones

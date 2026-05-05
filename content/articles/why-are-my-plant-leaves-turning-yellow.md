@@ -17,6 +17,7 @@ image: >-
 imageAlt: Why Are Plant Leaves Turning Yellow? (9 Causes + Fixes)
 imageCredit: Dugi Mulio Wibowo
 imageCreditUrl: 'https://unsplash.com/@dugimulio?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Introduction

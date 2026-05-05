@@ -29,6 +29,7 @@ imageCreditUrl: 'https://unsplash.com/@ninaluong?utm_source=plantcare_guide&utm_
 description: >-
   Caring for your Stromanthe sanguinea, or Tricolor Starburst, is a breeze with
   the right conditions.
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 

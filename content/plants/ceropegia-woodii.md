@@ -36,6 +36,7 @@ additionalImages:
   - /images/plants/ceropegia-woodii-2.jpg
   - /images/plants/ceropegia-woodii-3.jpg
   - /images/plants/ceropegia-woodii-detail.jpg
+author: Sarah Mitchell
 ---
 
 ## Quick Care Summary

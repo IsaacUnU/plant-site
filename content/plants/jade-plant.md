@@ -21,6 +21,7 @@ imageAlt: Jade Plant houseplant
 imageCredit: Khanh Do
 imageCreditUrl: >-
   https://unsplash.com/@donguyenkhanhs?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 ## Quick Care Summary
 The Jade Plant, scientifically known as Crassula ovata, thrives in bright indirect light with a minimum of 200-400 foot-candles. Water every 7-10 days by checking the soil depth or pot weight, ensuring the plant is not overwatered. Maintain humidity levels between 50-70% and temperatures within a range of 65-80°F (18-27°C). Fertilize with balanced 10-10-10 every month during spring and summer, reducing to once per season in fall and winter.

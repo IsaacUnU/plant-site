@@ -28,6 +28,7 @@ imageAlt: Rose-Painted Calathea houseplant
 imageCredit: Magali Merzougui
 imageCreditUrl: >-
   https://unsplash.com/@magali_merzougui?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidados

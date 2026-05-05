@@ -34,6 +34,7 @@ imageAlt: Heartleaf Philodendron houseplant
 imageCredit: Rebecca Matthews
 imageCreditUrl: >-
   https://unsplash.com/@rebeccamatthews?utm_source=plantcare_guide&utm_medium=referral
+author: Sarah Mitchell
 ---
 ## Quick Care Summary 
 Philodendron heartleaf prefers indirect light, with 200-400 foot-candles of light from an east or south window. Water every 7–10 days, adjusting for the season and humidity levels. Use a well-draining potting mix with perlite and orchid bark. Keep temperatures between 65-80°F (18-27°C) and maintain medium to high humidity through misting or a humidifier.

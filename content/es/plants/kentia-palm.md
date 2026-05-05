@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guía Completa de Cuidado de la Palma Kentia
 slug: kentia-palm
 commonName: Palma Kentia
@@ -21,9 +21,9 @@ growthRate: moderate
 description: >-
   La Palma Kentia es una planta de interior popular y elegante conocida por sus
   tallos delgados, hojas plumosas y su capacidad para purificar el aire. Nativa
-  de la Isla Lord Howe en Australia, esta palma es una excelente adición a cualquier
-  hogar debido a sus requisitos de bajo mantenimiento y su adaptabilidad a
-  condiciones interiores.
+  de la Isla Lord Howe en Australia, esta palma es una excelente adición a
+  cualquier hogar debido a sus requisitos de bajo mantenimiento y su
+  adaptabilidad a condiciones interiores.
 datePublished: '2026-03-02T00:00:00.000Z'
 dateModified: '2026-03-02T00:00:00.000Z'
 image: >-
@@ -31,6 +31,7 @@ image: >-
 imageAlt: Palma Kentia planta de interior
 imageCredit: NSH
 imageCreditUrl: 'https://unsplash.com/@nsh?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## Resumen Rápido de Cuidado

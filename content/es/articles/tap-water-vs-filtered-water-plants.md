@@ -8,7 +8,8 @@ tags:
   - cuidado de plantas
   - jardinería interior
 description: >-
-  Descubre el mejor agua para tus plantas y mejora su salud con nuestra guía experta
+  Descubre el mejor agua para tus plantas y mejora su salud con nuestra guía
+  experta
 datePublished: '2026-04-07T00:00:00.000Z'
 dateModified: '2026-04-07T00:00:00.000Z'
 image: >-
@@ -16,6 +17,7 @@ image: >-
 imageAlt: 'Agua del grifo vs agua filtrada para plantas: ¿Cuál es la mejor?'
 imageCredit: lilartsy
 imageCreditUrl: 'https://unsplash.com/@lilartsy?utm_source=plantcare_guide&utm_medium=referral'
+author: Sarah Mitchell
 ---
 
 ## El Impacto Sorprendente de la Calidad del Agua en las Plantas
