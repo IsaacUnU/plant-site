@@ -471,12 +471,18 @@ async function main() {
   const filePath = saveArticle(plantName, content);
   console.log(`[pipeline] ✓ Saved: ${filePath}`);
 
-  // Quality gate — delete and abort if fails
+  // Quality gate — delete and skip (advance queue) if fails; never exit(1)
   const passed = runQualityGate(filePath);
   if (!passed) {
     fs.unlinkSync(filePath);
-    console.error(`[pipeline] ✗ Quality gate failed for "${plantName}" — file deleted. Will retry next run.`);
-    process.exit(1);
+    console.warn(`[pipeline] ✗ Quality gate failed for "${plantName}" — file deleted, advancing queue.`);
+    // Still advance the queue so the next run picks a different plant
+    if (!specificPlant) {
+      queue.pending = queue.pending.filter((p) => p !== plantName);
+      saveQueue(queue);
+      console.log(`[pipeline] Queue advanced: ${queue.pending.length} plants remaining`);
+    }
+    process.exit(0);
   }
 
   // Fetch image for the new article
