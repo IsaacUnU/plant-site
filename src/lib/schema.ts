@@ -111,3 +111,41 @@ export function faqSchema(faqs: { question: string; answer: string }[]) {
     })),
   };
 }
+
+export function howToSchema(plant: Plant) {
+  const steps = [
+    {
+      name: 'Watering',
+      text: `Water ${plant.commonName} ${(plant.water ?? '').replace(/-/g, ' ')}. Allow the top inch of soil to dry between waterings and use room-temperature water.`,
+    },
+    {
+      name: 'Light',
+      text: `Provide ${(plant.light ?? '').replace(/-/g, ' ')} for ${plant.commonName}. Avoid direct harsh sun unless the species is adapted to it.`,
+    },
+    {
+      name: 'Humidity',
+      text: `Maintain ${plant.humidity ?? 'moderate'} humidity. Group plants together or use a pebble tray with water to raise ambient humidity.`,
+    },
+    {
+      name: 'Fertilizing',
+      text: `Feed ${plant.commonName} with balanced liquid fertilizer every 2–4 weeks during spring and summer. Do not fertilize in winter.`,
+    },
+    {
+      name: 'Repotting',
+      text: `Repot ${plant.commonName} every 1–2 years or when roots emerge from drainage holes. Choose a pot 1–2 inches larger than the current one.`,
+    },
+  ];
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: `How to Care for ${plant.commonName} (${plant.scientificName})`,
+    description: plant.description,
+    step: steps.map((step, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: step.name,
+      text: step.text,
+    })),
+  };
+}

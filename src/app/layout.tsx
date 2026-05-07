@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Lora, Raleway } from 'next/font/google';
+import { headers } from 'next/headers';
 import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 import Header from '@/components/Header';
@@ -68,9 +69,13 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const headersList = await headers();
+  const pathname = headersList.get('x-pathname') || '';
+  const lang = pathname.startsWith('/es') ? 'es' : 'en';
+
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={lang} suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://images.unsplash.com" />
       </head>

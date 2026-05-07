@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getAllPlantSlugs, getPlant, getPlantsByCategory, autoLinkPlantNames } from '@/lib/plants';
-import { articleSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
+import { articleSchema, breadcrumbSchema, faqSchema, howToSchema } from '@/lib/schema';
+import { buildAlternates, getSiteUrl } from '@/lib/seo';
+import QuickAnswerBox from '@/components/QuickAnswerBox';
 import CareTable from '@/components/CareTable';
 import Breadcrumb from '@/components/Breadcrumb';
 import AdSlot from '@/components/AdSlot';
@@ -25,25 +27,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const plant = await getPlant(slug);
   if (!plant) return {};
-  const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://plantcarecentral.com';
+  const siteUrl = getSiteUrl();
   return {
     title: plant.title,
     description: plant.description,
-    alternates: {
-      canonical: `${SITE_URL}/plants/${plant.slug}`,
-      languages: {
-        'en': `${SITE_URL}/plants/${plant.slug}`,
-        'es': `${SITE_URL}/es/plants/${plant.slug}`,
-      },
-    },
+    alternates: buildAlternates(`/plants/${plant.slug}`, {
+      en: `/plants/${plant.slug}`,
+      es: `/es/plants/${plant.slug}`,
+    }),
     openGraph: {
       title: plant.title,
       description: plant.description,
       type: 'article',
       publishedTime: plant.datePublished,
       modifiedTime: plant.dateModified,
-      url: `${SITE_URL}/plants/${plant.slug}`,
-      ...(plant.image && { images: [{ url: `${SITE_URL}${plant.image}`, alt: plant.imageAlt }] }),
+      url: `${siteUrl}/plants/${plant.slug}`,
+      ...(plant.image && { images: [{ url: `${siteUrl}${plant.image}`, alt: plant.imageAlt }] }),
     },
   };
 }
@@ -69,6 +68,7 @@ export default async function PlantPage({ params }: Props) {
       { name: 'Plants', url: `${SITE_URL}/plants` },
       { name: plant.commonName, url: `${SITE_URL}/plants/${plant.slug}` },
     ]),
+    howToSchema(plant),
   ];
 
   if (plant.faqs) {
@@ -142,6 +142,8 @@ export default async function PlantPage({ params }: Props) {
                 </span>
               </div>
             </header>
+
+            <QuickAnswerBox plant={plant} />
 
             {/* Editorial note */}
             <div className="flex items-start gap-3 bg-[#F0FDF4] border border-[#E2EFE7] rounded-2xl px-4 py-3 mb-8">

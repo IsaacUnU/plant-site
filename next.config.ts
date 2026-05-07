@@ -20,6 +20,12 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.plantcarecentral.com' }],
+        destination: 'https://plantcarecentral.com/:path*',
+        permanent: true,
+      },
       // Duplicate plants EN → canonical slug (permanent 301)
       { source: '/plants/aglaonema-red',             destination: '/plants/chinese-evergreen',        permanent: true },
       { source: '/plants/alocasia-dragon-scale',     destination: '/plants/alocasia-silver-dragon',   permanent: true },
