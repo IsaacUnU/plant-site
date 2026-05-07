@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Lora, Raleway } from 'next/font/google';
 import { headers } from 'next/headers';
 import { Analytics } from '@vercel/analytics/next';
+import Script from 'next/script';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -86,6 +87,13 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <CookieBanner />
         <ConsentScripts />
         <Analytics />
+        <Script
+          id="microsoft-clarity"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","wnhzv5iocj");`,
+          }}
+        />
         <script
           key="ldjson-website"
           type="application/ld+json"

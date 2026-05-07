@@ -26,6 +26,9 @@ const nextConfig: NextConfig = {
         destination: 'https://plantcarecentral.com/:path*',
         permanent: true,
       },
+      // 404 fix — alternate common names → canonical slug
+      { source: '/plants/ceriman',                   destination: '/plants/monstera-deliciosa',       permanent: true },
+      { source: '/es/plants/ceriman',                destination: '/es/plants/monstera-deliciosa',    permanent: true },
       // Duplicate plants EN → canonical slug (permanent 301)
       { source: '/plants/aglaonema-red',             destination: '/plants/chinese-evergreen',        permanent: true },
       { source: '/plants/alocasia-dragon-scale',     destination: '/plants/alocasia-silver-dragon',   permanent: true },
