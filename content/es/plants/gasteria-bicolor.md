@@ -24,6 +24,10 @@ description: >-
 datePublished: 2026-05-04T00:00:00.000Z
 dateModified: 2026-05-04T00:00:00.000Z
 author: Sarah Mitchell
+image: 'https://static.inaturalist.org/photos/70651845/medium.jpeg'
+imageAlt: Gasteria planta de interior
+imageCredit: 'iNaturalist ((c) Glynn Alard, all rights reserved, uploaded by Glynn Alard)'
+imageCreditUrl: 'https://www.inaturalist.org'
 ---
 
 ## Resumen Rápido de Cuidados

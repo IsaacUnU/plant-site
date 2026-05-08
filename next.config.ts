@@ -29,6 +29,8 @@ const nextConfig: NextConfig = {
       // 404 fix — alternate common names → canonical slug
       { source: '/plants/ceriman',                   destination: '/plants/monstera-deliciosa',       permanent: true },
       { source: '/es/plants/ceriman',                destination: '/es/plants/monstera-deliciosa',    permanent: true },
+      { source: '/plants/hoya-obovata',              destination: '/plants/hoya-linearis',            permanent: true },
+      { source: '/es/plants/hoya-obovata',           destination: '/es/plants/hoya-carnosa',          permanent: true },
       // Duplicate plants EN → canonical slug (permanent 301)
       { source: '/plants/aglaonema-red',             destination: '/plants/chinese-evergreen',        permanent: true },
       { source: '/plants/alocasia-dragon-scale',     destination: '/plants/alocasia-silver-dragon',   permanent: true },
