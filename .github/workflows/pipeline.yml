@@ -1,11 +1,23 @@
 name: Content Pipeline
 
 on:
-  schedule:
-    # Generate 1 EN plant/day at 09:00 UTC
-    - cron: '0 9 * * *'
-    # Pinterest pinning — every Monday at 11:00 UTC
-    - cron: '0 11 * * 1'
+  # ─────────────────────────────────────────────────────────────────────────────
+  # PAUSED 2026-07-17 — decision logged: pause generation until the prompt is
+  # fixed and toxicity data is verified against ASPCA. See docs/05-roadmap.md.
+  #
+  # Do NOT re-enable until all three are true:
+  #   1. toxicity is verified against the real ASPCA dataset (13 of 14 EN/ES
+  #      mismatches said "non-toxic" for plants that are toxic — see P0-0)
+  #   2. validate-post.js blocks unverified toxicity values
+  #   3. the Monday double-run is fixed: the "Generate EN plant" step has no
+  #      schedule guard, so both crons below fired it — two plants every Monday
+  #
+  # schedule:
+  #   # Generate 1 EN plant/day at 09:00 UTC
+  #   - cron: '0 9 * * *'
+  #   # Pinterest pinning — every Monday at 11:00 UTC
+  #   - cron: '0 11 * * 1'
+  # ─────────────────────────────────────────────────────────────────────────────
   workflow_dispatch:
     inputs:
       plant_name:
