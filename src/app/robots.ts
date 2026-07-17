@@ -8,7 +8,10 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/_next/'],
+        // Do not disallow /_next/ — every image is served through /_next/image,
+        // so blocking it hides the entire catalogue from Google Images and
+        // blocks the CSS/JS Googlebot needs to render the page.
+        disallow: ['/api/'],
       },
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,
