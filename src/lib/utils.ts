@@ -74,6 +74,7 @@ export const HUMIDITY_LABELS: Record<Humidity, string> = {
 };
 
 export const TOXICITY_LABELS: Record<ToxicityLevel, string> = {
+  unknown: 'Not Confirmed — Ask Your Vet',
   'non-toxic': 'Pet Safe',
   'mildly-toxic': 'Mildly Toxic',
   'toxic-to-pets': 'Toxic to Pets',
@@ -81,6 +82,8 @@ export const TOXICITY_LABELS: Record<ToxicityLevel, string> = {
 };
 
 export const TOXICITY_COLORS: Record<ToxicityLevel, string> = {
+  // Amber, never green: unconfirmed must not read as safe.
+  unknown: 'bg-amber-100 text-amber-800',
   'non-toxic': 'bg-green-100 text-green-800',
   'mildly-toxic': 'bg-yellow-100 text-yellow-800',
   'toxic-to-pets': 'bg-red-100 text-red-800',
@@ -115,6 +118,7 @@ export const HUMIDITY_LABELS_ES: Record<Humidity, string> = {
 };
 
 export const TOXICITY_LABELS_ES: Record<ToxicityLevel, string> = {
+  unknown: 'Sin Confirmar — Consulta a tu Veterinario',
   'non-toxic': 'Segura para Mascotas',
   'mildly-toxic': 'Ligeramente Tóxica',
   'toxic-to-pets': 'Tóxica para Mascotas',

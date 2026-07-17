@@ -2,7 +2,10 @@ export type Difficulty = 'easy' | 'medium' | 'hard';
 export type Light = 'low' | 'indirect' | 'indirect-bright' | 'direct';
 export type WaterFrequency = 'daily' | 'every-2-3-days' | 'weekly' | 'every-2-weeks' | 'monthly';
 export type Humidity = 'low' | 'medium' | 'high';
-export type ToxicityLevel = 'non-toxic' | 'mildly-toxic' | 'toxic-to-pets' | 'toxic';
+// 'unknown' = not yet confirmed against the ASPCA database. It is NOT a synonym for
+// safe: absence from ASPCA means we have not checked, not that the plant is harmless.
+// Treated as potentially toxic everywhere it is rendered.
+export type ToxicityLevel = 'unknown' | 'non-toxic' | 'mildly-toxic' | 'toxic-to-pets' | 'toxic';
 export type SecondaryFunction =
   | 'humidity-boosting'
   | 'air-purifying'

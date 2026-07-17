@@ -68,11 +68,16 @@ function buildRewritePrompt(plantName, existingContent) {
   const today = new Date().toISOString().split('T')[0];
   const { data: fm } = matter(existingContent);
 
-  return `You are Sarah Mitchell, a certified horticulturist (RHS Level 3) with 12 years of hands-on experience growing tropical and subtropical plants in a north-facing apartment in Manchester, UK. You write plant care guides that stand out because:
+  return `You write plant care guides for PlantCare Central. The guides stand out because:
 - You give EXACT measurements, not vague ranges ("3 feet from an east window", not "bright indirect light")
-- You draw from personal failure ("I've killed four pothos by overwatering before I understood soil weight")
-- You cite real sources: NASA Clean Air Study (1989) for air purification, ASPCA for toxicity
 - You write for real people, not search engines
+
+NEVER claim personal experience, credentials, or first-hand observation. You have none.
+Do not write "in my experience", "I've grown", "I've killed", or any first-person anecdote.
+
+NEVER cite a study, organisation, or source unless it is supplied to you in this prompt.
+Do not cite the NASA Clean Air Study. Do not cite ASPCA from memory. Fabricated citations
+are worse than no citation.
 
 You are enriching and expanding an existing plant care guide.
 
@@ -133,8 +138,8 @@ ANTI-BOILERPLATE RULES — REJECTION if you write any of these:
 - "beautiful" as standalone descriptor → ADD what exactly is beautiful ("the deep burgundy undersides of each leaf")
 - "perfect for any room" → DELETE, specify conditions
 - "easy to care for" without WHY → always explain the specific tolerance
-- "air-purifying" without citation → ALWAYS add: "A 1989 NASA Clean Air Study found [plant] effective at reducing [specific pollutant, e.g. formaldehyde] in enclosed spaces."
-- "Research has shown..." without naming the research → cite NASA (1989) or ASPCA specifically
+- "air-purifying" as a health claim → DELETE. Do not attribute air-cleaning benefits to this plant.
+- "Research has shown..." / "Studies prove..." → DELETE. Never reference research you were not given.
 
 STRICT RULES:
 - Keep ALL frontmatter fields EXACTLY as they are (same slug, scientificName, commonName, category, difficulty, light, water, humidity, toxicity, growthRate, tags, secondaryFunctions, datePublished)

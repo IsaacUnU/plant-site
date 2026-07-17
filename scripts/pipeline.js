@@ -60,11 +60,17 @@ function pickTitleTemplate(plantName) {
 function buildPrompt(plantName) {
   const today = new Date().toISOString().split('T')[0];
   const titleTemplate = pickTitleTemplate(plantName);
-  return `You are Sarah Mitchell, a certified horticulturist (RHS Level 3) with 12 years of hands-on experience growing tropical and subtropical plants in a north-facing apartment in Manchester, UK. You write plant care guides that stand out because:
+  return `You write plant care guides for PlantCare Central. The guides stand out because:
 - You give EXACT measurements, not vague ranges ("3 feet from an east window", not "bright indirect light")
-- You draw from personal failure ("I've killed four pothos by overwatering before I understood soil weight")
-- You cite real sources: NASA Clean Air Study (1989) for air purification, ASPCA for toxicity
 - You write for real people, not search engines
+
+NEVER claim personal experience, credentials, or first-hand observation. You have none.
+Do not write "in my experience", "I've grown", "I've killed", "I had to", or any first-person
+anecdote. State facts impersonally.
+
+NEVER cite a study, organisation, or source unless it is supplied to you in this prompt.
+Do not cite the NASA Clean Air Study. Do not cite ASPCA from memory. Fabricated citations
+are worse than no citation.
 
 Write a comprehensive, authoritative plant care guide for: **${plantName}**
 
@@ -73,14 +79,15 @@ STEP 1 — DECIDE secondaryFunctions FIRST (do this before writing anything else
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 You MUST assign at least one value to secondaryFunctions. There are exactly 6 allowed values:
 
-  "air-purifying"     → virtually ALL houseplants qualify; include this unless the plant is known NOT to filter air
+  "air-purifying"     → ONLY if this species is specifically documented as filtering indoor air. Do not assume. Most houseplants have no meaningful documented effect at room scale; when unsure, omit this value.
   "humidity-boosting" → ferns, tropical broad-leaf plants, peace lily, boston fern, monstera-type plants
   "insect-repelling"  → lavender, citronella, basil, snake plant, lemongrass, rosemary, marigold, aloe, ivy
   "pleasant-scent"    → jasmine, gardenia, lavender, scented geranium, peace lily, citrus plants
   "medicinal"         → aloe vera, calendula, chamomile, lavender, echinacea, holy basil, tea tree
-  "pet-safe"          → ONLY if this plant's toxicity is non-toxic (ASPCA safe). Never combine with mildly-toxic/toxic.
+  "pet-safe"          → ONLY if you are certain toxicity is non-toxic. Never combine with unknown/mildly-toxic/toxic. If unsure, omit.
 
-Pick every value that honestly applies. MINIMUM: always include "air-purifying".
+Pick every value you can honestly justify for THIS species. If none applies, use [].
+Do not pad this list to look useful.
 The field format is: secondaryFunctions: ["value1", "value2"]
 NEVER write: secondaryFunctions: undefined
 NEVER write: secondaryFunctions: []
@@ -108,7 +115,7 @@ Use this EXACT format:
 | Temperature | [°F and °C range] | [what specific event to avoid: heating vent, cold window] |
 | Soil | [exact recipe: "60% potting mix + 30% perlite + 10% orchid bark"] | [pot material recommendation] |
 | Fertilizer | [NPK ratio + frequency, e.g. "Balanced 10-10-10, monthly spring–summer"] | [dilute to half strength] |
-| Toxicity | [exact: toxic/non-toxic to cats/dogs, per ASPCA] | [placement advice] |
+| Toxicity | [state only what you are certain of; if unsure write "Not confirmed — check with your vet"] | [placement advice] |
 
 TABLE 2 — "Common Problems Diagnosis" (inside ## Common Problems section, BEFORE the ### subheadings):
 | Symptom | Most Likely Cause | Quick Fix | Prevention |
@@ -128,8 +135,8 @@ ANTI-BOILERPLATE RULES — REJECTION if you write any of these:
 - "beautiful" as standalone descriptor → ADD what exactly is beautiful ("the deep burgundy undersides of each leaf")
 - "perfect for any room" → DELETE, specify conditions
 - "easy to care for" without WHY → always explain the specific tolerance
-- "air-purifying" without citation → ALWAYS add: "A 1989 NASA Clean Air Study found [plant] effective at reducing [specific pollutant, e.g. formaldehyde] in enclosed spaces."
-- "Research has shown..." without naming the research → cite NASA (1989) or ASPCA specifically
+- "air-purifying" as a health claim → DELETE. Do not attribute air-cleaning benefits to this plant.
+- "Research has shown..." / "Studies prove..." → DELETE. Never reference research you were not given.
 
 WORD COUNT REQUIREMENT: minimum 1800 words of body content. If you're under, expand the Common Problems section and FAQ.
 
@@ -146,17 +153,17 @@ tags:
   - easy care
   - low maintenance
   - indoor
-secondaryFunctions: ["air-purifying"]
+secondaryFunctions: ["humidity-boosting"]
 difficulty: easy
 light: indirect
 water: weekly
 humidity: medium
 temperature: "65-80°F (18-27°C)"
-toxicity: non-toxic
+toxicity: unknown
 growthRate: moderate
 description: "Two engaging sentences about this plant and its main benefit or characteristic."
-author: "Sarah Mitchell"
-reviewedBy: "Sarah Mitchell, Certified Plant Specialist"
+author: "PlantCare Central"
+aiAssisted: true
 datePublished: ${today}
 dateModified: ${today}
 ---
@@ -168,10 +175,13 @@ CRITICAL YAML RULES — your response will be rejected if you break these:
 - light: exactly one of: low, indirect, indirect-bright, direct
 - water: exactly one of: daily, every-2-3-days, weekly, every-2-weeks, monthly
 - humidity: exactly one of: low, medium, high
-- toxicity: exactly one of: non-toxic, mildly-toxic, toxic-to-pets, toxic
+- toxicity: exactly one of: unknown, non-toxic, mildly-toxic, toxic-to-pets, toxic
+    Use "unknown" unless you are certain. Never guess. "Not sure" is ALWAYS "unknown",
+    never "non-toxic" — a wrong "non-toxic" can get a pet killed. This value is
+    verified against the real ASPCA dataset before publication; guessing wastes that check.
 - growthRate: exactly one of: slow, moderate, fast
 - tags: YAML block list with "  - item" format. NOT inline ["a","b"]
-- secondaryFunctions: inline array ["a","b"]. Only from the 6 values above. MINIMUM ["air-purifying"].
+- secondaryFunctions: inline array ["a","b"]. Only from the 6 values above. Omit any you cannot justify for this specific species.
 
 HEADING RULES (strictly required):
 - Use descriptive H2 headings that tell the reader what they will learn (e.g. "## Why African Violets Struggle With Tap Water" not "## Watering")
@@ -228,8 +238,11 @@ When and how to feed. Specific NPK ratios if relevant. Seasonal schedule.
 Ideal ranges with specific numbers. 3–4 actionable tips for achieving the right humidity indoors (e.g. pebble tray, grouping plants, humidifier).
 
 ## Toxicity & Safety: [Always include, Descriptive H2]
-- Exact ASPCA toxicity classification for cats, dogs, horses
-- Specific symptoms if ingested (vomiting? kidney failure? skin irritation?)
+- State the toxicity ONLY if you are certain. If you are not, write exactly:
+  "We have not yet confirmed this species against the ASPCA database. Treat it as
+   potentially toxic and consult your vet before letting pets near it."
+  Do NOT guess, and do NOT default to safe. This section is verified before publication.
+- Symptoms if ingested — only if you are certain of them
 - Emergency contact: ASPCA Animal Poison Control Center: (888) 426-4435
 - Safe placement recommendations
 
@@ -331,7 +344,7 @@ function validateContent(content) {
     light: ['low', 'indirect', 'indirect-bright', 'direct'],
     water: ['daily', 'every-2-3-days', 'weekly', 'every-2-weeks', 'monthly'],
     humidity: ['low', 'medium', 'high'],
-    toxicity: ['non-toxic', 'mildly-toxic', 'toxic-to-pets', 'toxic'],
+    toxicity: ['unknown', 'non-toxic', 'mildly-toxic', 'toxic-to-pets', 'toxic'],
     growthRate: ['slow', 'moderate', 'fast'],
   };
   for (const [field, allowed] of Object.entries(valid)) {

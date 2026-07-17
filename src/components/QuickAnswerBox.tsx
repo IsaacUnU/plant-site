@@ -24,8 +24,20 @@ export default function QuickAnswerBox({ plant }: QuickAnswerBoxProps) {
   const isToxic =
     plant.toxicity === 'toxic' || plant.toxicity === 'toxic-to-pets';
 
-  const toxicityCellBg = isToxic ? 'bg-red-50' : 'bg-[#F0FDF4]';
-  const toxicityIconColor = isToxic ? 'text-red-500' : 'text-[#15803D]';
+  // Unconfirmed is not safe. Only a positive 'non-toxic' earns the green tick;
+  // anything else warns.
+  const isConfirmedSafe = plant.toxicity === 'non-toxic';
+
+  const toxicityCellBg = isToxic
+    ? 'bg-red-50'
+    : isConfirmedSafe
+      ? 'bg-[#F0FDF4]'
+      : 'bg-amber-50';
+  const toxicityIconColor = isToxic
+    ? 'text-red-500'
+    : isConfirmedSafe
+      ? 'text-[#15803D]'
+      : 'text-amber-600';
 
   const growthRateLabel =
     plant.growthRate
@@ -52,9 +64,9 @@ export default function QuickAnswerBox({ plant }: QuickAnswerBoxProps) {
       cellBg: 'bg-[#F0FDF4]',
     },
     {
-      icon: isToxic
-        ? <AlertTriangle className={`w-4 h-4 ${toxicityIconColor}`} />
-        : <CheckCircle className={`w-4 h-4 ${toxicityIconColor}`} />,
+      icon: isConfirmedSafe
+        ? <CheckCircle className={`w-4 h-4 ${toxicityIconColor}`} />
+        : <AlertTriangle className={`w-4 h-4 ${toxicityIconColor}`} />,
       label: 'Toxicity',
       value: TOXICITY_LABELS[plant.toxicity] ?? plant.toxicity,
       cellBg: toxicityCellBg,
